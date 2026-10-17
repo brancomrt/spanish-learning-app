@@ -35,6 +35,7 @@ class TtsManager(
 
     init {
         tts = TextToSpeech(context) { status ->
+            if (status == TextToSpeech.SUCCESS) {
                 // Configura para Espanhol Latino (es-419 / es-MX) com fallback para es
                 val esLatam = Locale.forLanguageTag("es-419")
                 var result = tts?.setLanguage(esLatam)

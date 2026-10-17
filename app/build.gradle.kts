@@ -15,8 +15,8 @@ android {
         applicationId = "com.spanishlearning.app"
         minSdk = 26
         targetSdk = 36
-        versionCode = 34
-        versionName = "1.22.1"
+        versionCode = 1
+        versionName = "1.0.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
