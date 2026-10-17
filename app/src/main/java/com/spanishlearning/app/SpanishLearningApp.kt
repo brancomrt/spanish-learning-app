@@ -1,0 +1,75 @@
+package com.spanishlearning.app
+
+import android.app.Application
+import coil.Coil
+import coil.ImageLoader
+import coil.disk.DiskCache
+import coil.memory.MemoryCache
+import com.spanishlearning.app.data.seeder.DatabaseSeeder
+import dagger.hilt.android.HiltAndroidApp
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.SupervisorJob
+import kotlinx.coroutines.launch
+import javax.inject.Inject
+
+/**
+ * Application class anotada com @HiltAndroidApp para acionar a geração de código do Hilt
+ * e servir como container de injeção de dependência no nível da aplicação.
+ *
+ * Na inicialização, dispara de forma assíncrona o [DatabaseSeeder.seedIfNeeded] para
+ * popular o banco de dados Room com conteúdo JSON dos assets na primeira execução.
+ *
+ * Registrada no AndroidManifest.xml via android:name=".SpanishLearningApp".
+ *
+ * Requisito 9.2: seeding do banco executado na inicialização da aplicação.
+ */
+@HiltAndroidApp
+class SpanishLearningApp : Application() {
+
+    @Inject
+    lateinit var databaseSeeder: DatabaseSeeder
+
+    /** Escopo de coroutine vinculado ao ciclo de vida da Application. */
+    private val applicationScope = CoroutineScope(SupervisorJob() + Dispatchers.IO)
+
+    override fun onCreate() {
+        super.onCreate()
+        seedDatabaseAsync()
+        setupCoil()
+    }
+
+    /**
+     * Configura o Coil com OkHttpClient tolerante a redirects e cache em disco.
+     * Necessário para carregar imagens do Unsplash (source.unsplash.com faz redirect).
+     */
+    private fun setupCoil() {
+        val imageLoader = ImageLoader.Builder(this)
+            .memoryCache {
+                MemoryCache.Builder(this)
+                    .maxSizePercent(0.20)
+                    .build()
+            }
+            .diskCache {
+                DiskCache.Builder()
+                    .directory(cacheDir.resolve("image_cache"))
+                    .maxSizePercent(0.02)
+                    .build()
+            }
+            .crossfade(true)
+            .build()
+
+        Coil.setImageLoader(imageLoader)
+    }
+
+    /**
+     * Dispara [DatabaseSeeder.seedIfNeeded] em uma coroutine de IO.
+     * O [SupervisorJob] garante que falhas de seeding não derrubem outras coroutines
+     * do escopo da aplicação.
+     */
+    private fun seedDatabaseAsync() {
+        applicationScope.launch {
+            databaseSeeder.seedIfNeeded()
+        }
+    }
+}

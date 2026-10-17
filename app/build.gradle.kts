@@ -8,11 +8,11 @@ plugins {
 }
 
 android {
-    namespace = "com.englishlearning.app"
+    namespace = "com.spanishlearning.app"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.englishlearning.app"
+        applicationId = "com.spanishlearning.app"
         minSdk = 26
         targetSdk = 36
         versionCode = 34
@@ -45,7 +45,7 @@ android {
         val variant = this
         variant.outputs.all {
             val output = this as com.android.build.gradle.internal.api.BaseVariantOutputImpl
-            output.outputFileName = "english-learning-app.apk"
+            output.outputFileName = "spanish-learning-app.apk"
         }
     }
 

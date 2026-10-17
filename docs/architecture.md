@@ -139,10 +139,10 @@ VocabularyScreen
 
 ```
 @HiltAndroidApp
-EnglishLearningApp
+SpanishLearningApp
         │
         ├── DatabaseModule (@Singleton)
-        │       ├── EnglishLearningDatabase (Room)
+        │       ├── SpanishLearningDatabase (Room)
         │       └── 11 DAOs (LevelDao, ExerciseDao, ...)
         │
         ├── RepositoryModule (@Singleton)

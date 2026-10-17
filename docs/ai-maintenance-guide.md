@@ -19,7 +19,7 @@
 | 1 | `domain/model/ContentModels.kt` | Modelos principais (Exercise, ExerciseMode, Level) |
 | 2 | `ui/navigation/AppNavGraph.kt` | Todas as rotas e como o app navega |
 | 3 | `domain/validation/QuestionValidationEngineImpl.kt` | Como respostas são validadas |
-| 4 | `data/database/EnglishLearningDatabase.kt` | Schema do banco e migrações |
+| 4 | `data/database/SpanishLearningDatabase.kt` | Schema do banco e migrações |
 | 5 | `ui/learning/LearningSessionScreen.kt` | Tela principal (mais complexa) |
 | 6 | `ui/learning/LearningViewModel.kt` | Lógica da sessão de exercícios |
 | 7 | `data/seeder/DatabaseSeeder.kt` | Como o conteúdo é carregado |
@@ -64,7 +64,7 @@ fun MinhaTela(
 
 ### Nova migração Room
 ```kotlin
-// Em EnglishLearningDatabase.kt, dentro de companion object:
+// Em SpanishLearningDatabase.kt, dentro de companion object:
 val MIGRATION_4_5 = object : Migration(4, 5) {
     override fun migrate(db: SupportSQLiteDatabase) {
         db.execSQL("ALTER TABLE `tabela` ADD COLUMN `nova_coluna` TEXT")
@@ -72,7 +72,7 @@ val MIGRATION_4_5 = object : Migration(4, 5) {
 }
 // Incrementar version = 5
 // Em DatabaseModule.kt:
-.addMigrations(..., EnglishLearningDatabase.MIGRATION_4_5)
+.addMigrations(..., SpanishLearningDatabase.MIGRATION_4_5)
 ```
 
 ## Como depurar problemas comuns
@@ -87,7 +87,7 @@ val MIGRATION_4_5 = object : Migration(4, 5) {
 1. Verificar se `image_url` está no formato Pexels correto:
    `https://images.pexels.com/photos/{ID}/pexels-photo-{ID}.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop`
 2. Verificar se o ID do Pexels é válido
-3. Verificar se `EnglishLearningApp.setupCoil()` está sendo chamado
+3. Verificar se `SpanishLearningApp.setupCoil()` está sendo chamado
 
 ### "Banco de dados não atualiza após mudança no JSON"
 O `DatabaseSeeder` verifica `db_seeded = true` e pula o seeding.
@@ -150,10 +150,10 @@ gradle test --no-daemon
 adb install app/build/outputs/apk/debug/app-debug.apk
 
 # Ver logs do app no dispositivo
-adb logcat -s "EnglishLearningApp:*" "AndroidRuntime:E"
+adb logcat -s "SpanishLearningApp:*" "AndroidRuntime:E"
 
 # Limpar banco de dados do app (força re-seeding)
-adb shell pm clear com.englishlearning.app
+adb shell pm clear com.spanishlearning.app
 ```
 
 ## Histórico de releases
@@ -172,12 +172,12 @@ adb shell pm clear com.englishlearning.app
 
 ## Package ID
 
-`com.englishlearning.app`
+`com.spanishlearning.app`
 
 ## Repositório
 
-`https://github.com/brancomrt/english-learning-app`
-Branch principal: `feature/english-learning-app`
+`https://github.com/brancomrt/spanish-learning-app`
+Branch principal: `feature/spanish-learning-app`
 
 ---
 

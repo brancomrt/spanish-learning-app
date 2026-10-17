@@ -122,7 +122,7 @@ O app segue **Clean Architecture** com três camadas e dependências apontando p
 ## 4. Estrutura de Diretórios
 
 ```
-english-learning-app/
+spanish-learning-app/
 ├── app/src/main/
 │   ├── AndroidManifest.xml
 │   ├── assets/content/
@@ -133,10 +133,10 @@ english-learning-app/
 │   │   └── vocabulary/
 │   │       ├── level_1_vocab.json … level_6_vocab.json
 │   ├── java/com/englishlearning/app/
-│   │   ├── EnglishLearningApp.kt          ← Application class (Hilt + Coil setup)
+│   │   ├── SpanishLearningApp.kt          ← Application class (Hilt + Coil setup)
 │   │   ├── data/
 │   │   │   ├── database/
-│   │   │   │   ├── EnglishLearningDatabase.kt  ← Room DB v4
+│   │   │   │   ├── SpanishLearningDatabase.kt  ← Room DB v4
 │   │   │   │   ├── entity/                     ← 12 entidades Room
 │   │   │   │   ├── dao/                        ← 11 DAOs
 │   │   │   │   └── converter/Converters.kt
@@ -201,12 +201,12 @@ v3 → v4: Adiciona coluna image_url em vocabulary_cards
 ```
 
 **IMPORTANTE:** ao adicionar novos campos em entidades existentes, sempre criar uma
-nova migração em `EnglishLearningDatabase.kt` e registrá-la em `DatabaseModule.kt`.
+nova migração em `SpanishLearningDatabase.kt` e registrá-la em `DatabaseModule.kt`.
 Nunca use `fallbackToDestructiveMigration` em produção sem migração explícita.
 
 ### 5.3 DatabaseSeeder
 
-Roda na inicialização do app via `EnglishLearningApp.seedDatabaseAsync()`.
+Roda na inicialização do app via `SpanishLearningApp.seedDatabaseAsync()`.
 Verifica a flag `db_seeded` no SharedPreferences antes de executar (idempotente).
 Lê os arquivos JSON de `assets/content/` e popula todas as tabelas.
 
@@ -369,7 +369,7 @@ vocabulary_cards(id, word, definition, example_sentence, level_id,
 
 ### 8.2 Como adicionar uma nova versão do banco
 
-1. Incrementar `version` em `EnglishLearningDatabase.kt`
+1. Incrementar `version` em `SpanishLearningDatabase.kt`
 2. Adicionar `MIGRATION_N_M` como object dentro de `companion object`
 3. Registrar em `DatabaseModule.kt` → `.addMigrations(..., MIGRATION_N_M)`
 4. Nunca remover migrações antigas
@@ -618,13 +618,13 @@ Sempre em inglês (`en-US`), independente do idioma do dispositivo.
 
 | Módulo | Escopo | Provê |
 |--------|--------|-------|
-| `DatabaseModule` | `@Singleton` | `EnglishLearningDatabase`, todos os DAOs |
+| `DatabaseModule` | `@Singleton` | `SpanishLearningDatabase`, todos os DAOs |
 | `RepositoryModule` | `@Singleton` | `ContentRepositoryImpl`, `ProgressRepositoryImpl`, `SrsRepositoryImpl`, `SessionSettingsRepository` |
 | `AppModule` | `@Singleton` | (placeholder para bindings futuros) |
 
 ### 15.2 Ponto de entrada
 
-`@HiltAndroidApp` em `EnglishLearningApp`.
+`@HiltAndroidApp` em `SpanishLearningApp`.
 `@AndroidEntryPoint` em `MainActivity`.
 `@HiltViewModel` em todos os ViewModels.
 
@@ -663,7 +663,7 @@ geração automática de entradas aleatórias para verificar propriedades invari
 ```bash
 export JAVA_HOME=/home/houston/tools/jdk-17.0.13+11
 export GRADLE_USER_HOME=/home/houston/.gradle
-cd english-learning-app
+cd spanish-learning-app
 gradle test --no-daemon
 ```
 
@@ -693,7 +693,7 @@ gradle test --no-daemon
 export JAVA_HOME=/home/houston/tools/jdk-17.0.13+11
 export PATH=$JAVA_HOME/bin:/home/houston/tools/gradle-dist/gradle-8.11.1/bin:$PATH
 export GRADLE_USER_HOME=/home/houston/.gradle
-cd /home/houston/english-learning-app
+cd /home/houston/spanish-learning-app
 
 # Build debug
 gradle assembleDebug --no-daemon --warning-mode=none -Dorg.gradle.jvmargs="-Xmx2g"
@@ -718,19 +718,19 @@ Sem isso, o Gradle não consegue baixar dependências do `dl.google.com`.
 export PATH=/home/houston/tools/gh/bin:$PATH
 export GH_TOKEN=<token>
 
-cp app/build/outputs/apk/debug/app-debug.apk /tmp/english-learning-app.apk
+cp app/build/outputs/apk/debug/app-debug.apk /tmp/spanish-learning-app.apk
 
 gh release create v1.X.Y \
-  /tmp/english-learning-app.apk \
-  --repo brancomrt/english-learning-app \
-  --target feature/english-learning-app \
+  /tmp/spanish-learning-app.apk \
+  --repo brancomrt/spanish-learning-app \
+  --target feature/spanish-learning-app \
   --title "vX.Y.Z - Descrição" \
   --notes "Notas da release"
 ```
 
 ### 17.5 Versionamento
 
-Branch: `feature/english-learning-app`
+Branch: `feature/spanish-learning-app`
 Versão atual do app: `versionCode = 1`, `versionName = "1.0"` em `app/build.gradle.kts`
 Releases GitHub: v1.0.0 → v1.1.0 (atual)
 
@@ -770,7 +770,7 @@ Releases GitHub: v1.0.0 → v1.1.0 (atual)
 
 1. Criar `data/database/entity/NovaEntidade.kt` com `@Entity`
 2. Criar DAO em `data/database/dao/NovaEntidadeDao.kt`
-3. Adicionar no `@Database(entities = [...])` em `EnglishLearningDatabase.kt`
+3. Adicionar no `@Database(entities = [...])` em `SpanishLearningDatabase.kt`
 4. Incrementar `version`
 5. Criar `MIGRATION_N_M` e registrar em `DatabaseModule`
 6. Adicionar `@Provides fun provideNovaDao(...)` em `DatabaseModule`
@@ -790,13 +790,13 @@ Arquivo principal: `domain/validation/QuestionValidationEngineImpl.kt`
 - [ ] Rodar `gradle assembleDebug` sem erros
 - [ ] Verificar se alguma migração de banco é necessária
 - [ ] Incrementar `versionCode` em `app/build.gradle.kts`
-- [ ] Commitar no branch `feature/english-learning-app`
+- [ ] Commitar no branch `feature/spanish-learning-app`
 - [ ] Criar release no GitHub com o APK
 
 ---
 
 *Documentação gerada em setembro de 2026. Para dúvidas, consultar o repositório:
-https://github.com/brancomrt/english-learning-app*
+https://github.com/brancomrt/spanish-learning-app*
 
 ---
 
