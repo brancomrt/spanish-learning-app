@@ -85,40 +85,62 @@ class TextNormalizer {
     )
 
     /**
-     * Normaliza o texto: expande contrações, converte para minúsculas,
-     * remove pontuação e compacta espaços.
+     * Normaliza o texto: expande contrações, remove acentos (mantendo ñ),
+     * remove pontuação e signos de pontuação espanhóis (¿, ¡), converte para minúsculas
+     * e compacta espaços.
      */
-    fun normalize(text: String): String {
-        return text
-            .trim()
-            .lowercase()
-            .expandContractions()
-            .replace(Regex("[^a-z0-9\\s]"), "")
-            .replace(Regex("\\s+"), " ")
-            .trim()
-    }
+     fun normalize(text: String): String {
+         return text
+             .trim()
+             .lowercase()
+             .replace("¿", "")
+             .replace("¡", "")
+             .expandContractions()
+             .stripSpanishDiacritics()
+             .replace(Regex("[^a-z0-9ñ\\s]"), "")
+             .replace(Regex("\\s+"), " ")
+             .trim()
+     }
 
-    private fun String.expandContractions(): String {
-        var result = this
-        // Ordena por comprimento decrescente para evitar substituições parciais
-        contractions.entries
-            .sortedByDescending { it.key.length }
-            .forEach { (contraction, expansion) ->
-                result = result.replace(
-                    Regex("\\b${Regex.escape(contraction)}\\b"),
-                    expansion
-                )
-            }
-        return result
-    }
+     private fun String.stripSpanishDiacritics(): String {
+         // Preserva a letra ñ enquanto normaliza á, é, í, ó, ú, ü
+         return this
+             .replace('ñ', '\u0001')
+             .let { s ->
+                 java.text.Normalizer.normalize(s, java.text.Normalizer.Form.NFD)
+                     .replace(Regex("\\p{InCombiningDiacriticalMarks}+"), "")
+             }
+             .replace('\u0001', 'ñ')
+     }
+
+     private fun String.expandContractions(): String {
+         var result = this
+         // Contrações em espanhol
+         result = result.replace(Regex("\\bdel\\b"), "de el")
+         result = result.replace(Regex("\\bal\\b"), "a el")
+
+         // Contrações em inglês (compatibilidade)
+         contractions.entries
+             .sortedByDescending { it.key.length }
+             .forEach { (contraction, expansion) ->
+                 result = result.replace(
+                     Regex("\\b${Regex.escape(contraction)}\\b"),
+                     expansion
+                 )
+             }
+         return result
+     }
 
     /**
      * Extrai palavras-chave do texto, removendo stop words e palavras curtas.
      */
     fun extractKeywords(text: String): Set<String> {
         val stopWords = setOf(
-            "a", "an", "the", "is", "are", "was", "were",
-            "do", "does", "did", "will", "would", "can", "could"
+            // Espanhol
+            "el", "la", "los", "las", "un", "una", "unos", "unas", "de", "en", "es", "son",
+            "con", "por", "para", "que", "y", "o", "a", "al", "del", "se", "su", "sus",
+            // Inglês (compatibilidade)
+            "an", "the", "is", "are", "was", "were", "do", "does", "did", "will", "would", "can", "could"
         )
         return normalize(text)
             .split(" ")

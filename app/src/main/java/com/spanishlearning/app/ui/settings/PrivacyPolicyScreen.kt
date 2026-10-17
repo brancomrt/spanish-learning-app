@@ -68,7 +68,7 @@ fun PrivacyPolicyScreen(navController: NavController) {
 
             PolicySection(
                 title = "1. Visão Geral",
-                body = "O English Learning App é um aplicativo de aprendizado de inglês que funciona " +
+                body = "O Spanish Tech Learning é um aplicativo focado em espanhol latino para profissionais de tecnologia que funciona " +
                     "inteiramente no seu dispositivo. Esta política explica de forma transparente " +
                     "quais dados são utilizados e como são tratados."
             )

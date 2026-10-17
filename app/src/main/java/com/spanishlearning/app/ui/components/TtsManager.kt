@@ -35,8 +35,15 @@ class TtsManager(
 
     init {
         tts = TextToSpeech(context) { status ->
-            if (status == TextToSpeech.SUCCESS) {
-                val result = tts?.setLanguage(Locale.US)
+                // Configura para Espanhol Latino (es-419 / es-MX) com fallback para es
+                val esLatam = Locale.forLanguageTag("es-419")
+                var result = tts?.setLanguage(esLatam)
+                if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
+                    result = tts?.setLanguage(Locale("es", "MX"))
+                }
+                if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
+                    result = tts?.setLanguage(Locale("es"))
+                }
                 isReady = result != TextToSpeech.LANG_MISSING_DATA &&
                         result != TextToSpeech.LANG_NOT_SUPPORTED
                 onStateChange(if (isReady) TtsState.IDLE else TtsState.ERROR)

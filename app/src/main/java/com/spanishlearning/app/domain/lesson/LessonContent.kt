@@ -3,17 +3,9 @@ package com.spanishlearning.app.domain.lesson
 import com.spanishlearning.app.domain.model.QuestionType
 
 /**
- * Conteúdo de uma MiniLesson gramatical para um tipo de pergunta específico.
+ * Conteúdo de uma MiniLesson gramatical para um tipo de pergunta específico em Espanhol de TI.
  *
- * Requisito 15.9: definido inteiramente em código Kotlin.
- * Requisito 15.10: cobre todos os 13 QuestionTypes suportados.
- * Requisito 15.11: explicações em português; fórmulas e exemplos em inglês.
- *
- * @property questionType   O tipo de pergunta ao qual esta lição corresponde.
- * @property titlePt        Título curto em português exibido na tela.
- * @property ruleExplanationPt Regra gramatical explicada em 2-3 frases em português.
- * @property structuralFormula Fórmula estrutural da pergunta em inglês.
- * @property examples       Lista de 2 exemplos de perguntas em inglês.
+ * Cobre todos os 13 QuestionTypes com foco na comunicação técnica profissional na América Latina.
  */
 sealed class LessonContent(
     val questionType: QuestionType,
@@ -26,172 +18,182 @@ sealed class LessonContent(
 
     object WhatLesson : LessonContent(
         questionType = QuestionType.WH_WHAT,
-        titlePt = "Perguntas com WHAT",
-        ruleExplanationPt = "Usamos 'What' para perguntar sobre coisas, ações ou informações em geral. " +
-            "Depois de 'What', colocamos um verbo auxiliar (do/does/is/are) seguido do sujeito e do verbo principal. " +
-            "Esse tipo de pergunta é muito comum no inglês cotidiano.",
-        structuralFormula = "What + auxiliary verb + subject + main verb?",
+        titlePt = "Perguntas com QUÉ",
+        ruleExplanationPt = "Usamos 'Qué' para perguntar sobre coisas, especificações ou ações em geral. " +
+            "Em espanhol, o verbo conjugado vem logo em seguida da partícula interrogativa. " +
+            "A palavra 'qué' leva acento quando é interrogativa.",
+        structuralFormula = "¿Qué + verbo + (sujeito) + complemento?",
         examples = listOf(
-            "What is your name?",
-            "What do you do for work?"
+            "¿Qué especificaciones tiene tu computadora?",
+            "¿Qué hiciste en la daily de hoy?"
         )
     )
 
     object WhereLesson : LessonContent(
         questionType = QuestionType.WH_WHERE,
-        titlePt = "Perguntas com WHERE",
-        ruleExplanationPt = "Usamos 'Where' para perguntar sobre lugar ou localização. " +
-            "A estrutura segue o mesmo padrão das Wh-questions: palavra interrogativa, auxiliar, sujeito e verbo. " +
-            "Pode ser usada tanto no presente quanto no passado.",
-        structuralFormula = "Where + auxiliary verb + subject + main verb?",
+        titlePt = "Perguntas com DÓNDE",
+        ruleExplanationPt = "Usamos 'Dónde' ou 'Adónde' para perguntar sobre lugar, repositório, branch ou servidores. " +
+            "Leva acento na função interrogativa.",
+        structuralFormula = "¿Dónde + verbo + (sujeito) + complemento?",
         examples = listOf(
-            "Where do you live?",
-            "Where is the nearest station?"
+            "¿Dónde está el ticket en el tablero?",
+            "¿Dónde está el cuello de botella?"
         )
     )
 
     object WhenLesson : LessonContent(
         questionType = QuestionType.WH_WHEN,
-        titlePt = "Perguntas com WHEN",
-        ruleExplanationPt = "Usamos 'When' para perguntar sobre tempo, data ou horário. " +
-            "Combinamos 'When' com o auxiliar adequado ao tempo verbal da frase. " +
-            "Essa estrutura funciona nos tempos presente, passado e futuro.",
-        structuralFormula = "When + auxiliary verb + subject + main verb?",
+        titlePt = "Perguntas com CUÁNDO",
+        ruleExplanationPt = "Usamos 'Cuándo' ou 'A qué hora' para perguntar sobre tempo, prazos de sprint ou momentos de deploy. " +
+            "Combina-se com verbos no presente, pretérito ou futuro.",
+        structuralFormula = "¿Cuándo + verbo + complemento? / ¿A qué hora + verbo?",
         examples = listOf(
-            "When does the class start?",
-            "When were you born?"
+            "¿Cuándo haremos el despliegue a producción?",
+            "¿A qué hora comienza la reunión diaria?"
         )
     )
 
     object WhoLesson : LessonContent(
         questionType = QuestionType.WH_WHO,
-        titlePt = "Perguntas com WHO",
-        ruleExplanationPt = "Usamos 'Who' para perguntar sobre pessoas. " +
-            "Quando 'Who' é o sujeito da frase, não precisamos de verbo auxiliar. " +
-            "Quando 'Who' é o objeto, usamos a estrutura normal com auxiliar.",
-        structuralFormula = "Who + verb / Who + auxiliary verb + subject + main verb?",
+        titlePt = "Perguntas com QUIÉN / QUIÉNES",
+        ruleExplanationPt = "Usamos 'Quién' (singular) ou 'Quiénes' (plural) para identificar responsáveis por tarefas, PRs ou incidentes. " +
+            "Concorda em número com o sujeito da oração.",
+        structuralFormula = "¿Quién / Quiénes + verbo + complemento?",
         examples = listOf(
-            "Who is your English teacher?",
-            "Who called you this morning?"
+            "¿Quién revisó mi pull request?",
+            "¿Quiénes lideran el squad de backend?"
         )
     )
 
     object WhyLesson : LessonContent(
         questionType = QuestionType.WH_WHY,
-        titlePt = "Perguntas com WHY",
-        ruleExplanationPt = "Usamos 'Why' para perguntar sobre motivos ou razões. " +
-            "A resposta geralmente começa com 'Because' (porque). " +
-            "Segue a estrutura padrão das Wh-questions com verbo auxiliar.",
-        structuralFormula = "Why + auxiliary verb + subject + main verb?",
+        titlePt = "Perguntas com POR QUÉ",
+        ruleExplanationPt = "Usamos 'Por qué' (duas palavras e com acento) para perguntar a causa de falhas, exceções ou decisões de arquitetura. " +
+            "Para responder afirmativamente a causa, usa-se 'porque' (junto e sem acento).",
+        structuralFormula = "¿Por qué + verbo + complemento?",
         examples = listOf(
-            "Why are you late today?",
-            "Why did she leave so early?"
+            "¿Por qué se cayó el servidor?",
+            "¿Por qué falló la prueba unitaria?"
         )
     )
 
     object HowLesson : LessonContent(
         questionType = QuestionType.WH_HOW,
-        titlePt = "Perguntas com HOW",
-        ruleExplanationPt = "Usamos 'How' para perguntar sobre maneira, modo ou estado. " +
-            "Pode ser combinado com adjetivos (how old, how long) ou usado sozinho. " +
-            "É uma das palavras interrogativas mais versáteis do inglês.",
-        structuralFormula = "How + auxiliary verb + subject + main verb?",
+        titlePt = "Perguntas com CÓMO",
+        ruleExplanationPt = "Usamos 'Cómo' para perguntar sobre processos, métodos de implementação ou passos para reprodução de bugs. " +
+            "Leva acento na função interrogativa.",
+        structuralFormula = "¿Cómo + verbo + complemento?",
         examples = listOf(
-            "How do you get to work?",
-            "How was your day today?"
+            "¿Cómo se reproduce el bug?",
+            "¿Cómo podemos desacoplar los microservicios?"
         )
     )
 
     object HowMuchLesson : LessonContent(
         questionType = QuestionType.WH_HOW_MUCH,
-        titlePt = "Perguntas com HOW MUCH",
-        ruleExplanationPt = "Usamos 'How much' para perguntar sobre quantidade de substantivos incontáveis (dinheiro, tempo, água). " +
-            "Também é usado para perguntar sobre preço ou quantidade de algo não numerável. " +
-            "Diferente de 'How many', 'How much' não usa plurais.",
-        structuralFormula = "How much + (noun) + auxiliary verb + subject + verb?",
+        titlePt = "Perguntas com CUÁNTO / CUÁNTA",
+        ruleExplanationPt = "Usamos 'Cuánto' ou 'Cuánta' para grandezas contínuas e não contáveis, como tempo de estimativa, memória ou latência. " +
+            "Concorda em gênero com o substantivo.",
+        structuralFormula = "¿Cuánto / Cuánta + substantivo + verbo?",
         examples = listOf(
-            "How much does it cost?",
-            "How much time do we have left?"
+            "¿Cuánto tiempo estiman para esta épica?",
+            "¿Cuánta memoria RAM consume el contenedor?"
         )
     )
 
     object HowManyLesson : LessonContent(
         questionType = QuestionType.WH_HOW_MANY,
-        titlePt = "Perguntas com HOW MANY",
-        ruleExplanationPt = "Usamos 'How many' para perguntar sobre quantidade de substantivos contáveis (pessoas, livros, carros). " +
-            "O substantivo que segue 'How many' sempre fica no plural. " +
-            "É muito útil para contextos em que precisamos de um número específico.",
-        structuralFormula = "How many + plural noun + auxiliary verb + subject + verb?",
+        titlePt = "Perguntas com CUÁNTOS / CUÁNTAS",
+        ruleExplanationPt = "Usamos 'Cuántos' ou 'Cuántas' para quantidades contáveis, como número de sprints, tickets, commits ou servidores. " +
+            "Concorda em gênero e número.",
+        structuralFormula = "¿Cuántos / Cuántas + substantivo + verbo?",
         examples = listOf(
-            "How many people are there in your family?",
-            "How many books did you read last year?"
+            "¿Cuántos sprints tomará el desarrollo?",
+            "¿Cuántos pods están activos en el cluster?"
         )
     )
 
     object WhichLesson : LessonContent(
         questionType = QuestionType.WH_WHICH,
-        titlePt = "Perguntas com WHICH",
-        ruleExplanationPt = "Usamos 'Which' para perguntar sobre uma escolha entre opções limitadas e definidas. " +
-            "Diferente de 'What', 'Which' pressupõe um conjunto restrito de alternativas. " +
-            "Pode ser seguido de um substantivo ou usado sozinho.",
-        structuralFormula = "Which + (noun) + auxiliary verb + subject + main verb?",
+        titlePt = "Perguntas com CUÁL / CUÁLES",
+        ruleExplanationPt = "Usamos 'Cuál' (ou 'Cuáles') para escolher entre opções ou perguntar por identificadores como branches, endpoints ou nomes. " +
+            "Em espanhol, usa-se 'cuál es' em vez de 'qué es' quando se pergunta por uma informação específica.",
+        structuralFormula = "¿Cuál / Cuáles + es/son + complemento?",
         examples = listOf(
-            "Which color do you prefer?",
-            "Which bus goes to the city center?"
+            "¿Cuál es tu rama de trabajo?",
+            "¿Cuál es el plan de acción del post-mortem?"
         )
     )
 
-    // ---- Other question types ----
+    // ---- Outros tipos ----
 
     object YesNoLesson : LessonContent(
         questionType = QuestionType.YES_NO,
-        titlePt = "Perguntas de Sim ou Não",
-        ruleExplanationPt = "As perguntas de Sim/Não (Yes/No questions) começam sempre com um verbo auxiliar " +
-            "(do, does, did, is, are, was, were, will, can, etc.). " +
-            "A resposta é sempre 'Yes' ou 'No', geralmente seguida de um sujeito e auxiliar.",
-        structuralFormula = "Auxiliary verb + subject + main verb + (complement)?",
+        titlePt = "Perguntas de Sim/Não",
+        ruleExplanationPt = "Perguntas diretas de confirmação cuja resposta esperada é 'Sí' ou 'No'. " +
+            "Em espanhol, iniciam-se diretamente com o verbo conjugado, sem necessidade de auxiliares como o 'do' do inglês.",
+        structuralFormula = "¿(Verbo conjugado) + (sujeito) + complemento?",
         examples = listOf(
-            "Do you speak English?",
-            "Are you a student?"
+            "¿Tienes acceso a la VPN?",
+            "¿Pudiste revisar mi pull request?"
         )
     )
 
     object TagLesson : LessonContent(
         questionType = QuestionType.TAG,
-        titlePt = "Perguntas com Tag Question",
-        ruleExplanationPt = "As tag questions são pequenas perguntas adicionadas ao final de uma afirmação para pedir confirmação. " +
-            "Se a afirmação é positiva, a tag é negativa; se a afirmação é negativa, a tag é positiva. " +
-            "O auxiliar e o pronome da tag devem corresponder ao sujeito e tempo verbal da afirmação.",
-        structuralFormula = "Statement + , + auxiliary (negative/positive) + pronoun?",
+        titlePt = "Tag Questions (Confirmação)",
+        ruleExplanationPt = "Uma declaração afirmativa ou negativa seguida por uma confirmação curta ao final. " +
+            "Em espanhol usa-se ', ¿verdad?', ', ¿no?' ou ', ¿cierto?'.",
+        structuralFormula = "Afirmação + , ¿verdad? / , ¿no? / , ¿cierto?",
         examples = listOf(
-            "It's cold today, isn't it?",
-            "You like coffee, don't you?"
+            "Hiciste el deploy a develop, ¿verdad?",
+            "El servidor ya está en línea, ¿no?"
         )
     )
 
     object IndirectLesson : LessonContent(
         questionType = QuestionType.INDIRECT,
-        titlePt = "Perguntas Indiretas",
-        ruleExplanationPt = "As perguntas indiretas são mais formais e educadas do que as diretas. " +
-            "Começam com frases introdutórias como 'Could you tell me...', 'Do you know...' ou 'I wonder...'. " +
-            "Importante: após a frase introdutória, a ordem das palavras é a de uma afirmação (sujeito + verbo), não de uma pergunta.",
-        structuralFormula = "Introductory phrase + question word + subject + verb?",
+        titlePt = "Perguntas Indiretas e Formais",
+        ruleExplanationPt = "Usadas para soar mais cordial e respeitoso em reuniões ou mensagens com a equipe. " +
+            "Iniciam-se com '¿Podrías decirme...?', '¿Sabes si...?' ou '¿Sería posible...?'.",
+        structuralFormula = "¿Podrías decirme / Sabes si + oração afirmativa?",
         examples = listOf(
-            "Could you tell me where the library is?",
-            "Do you know what time it is?"
+            "¿Podrías decirme dónde está la documentación?",
+            "¿Sabes si ya aprobaron el pull request?"
         )
     )
 
     object ChoiceLesson : LessonContent(
         questionType = QuestionType.CHOICE,
-        titlePt = "Perguntas de Escolha (Or Questions)",
-        ruleExplanationPt = "As perguntas de escolha apresentam duas ou mais opções usando a conjunção 'or'. " +
-            "Estruturalmente, seguem o padrão das perguntas Yes/No, mas com alternativas ligadas por 'or'. " +
-            "O ouvinte deve escolher uma das opções apresentadas, não apenas responder sim ou não.",
-        structuralFormula = "Auxiliary verb + subject + verb + option A + or + option B?",
+        titlePt = "Perguntas de Escolha",
+        ruleExplanationPt = "Oferecem duas ou mais opções claras usando a conjunção 'o'. " +
+            "Muito frequentes em decisões de arquitetura e priorização de tarefas.",
+        structuralFormula = "¿Prefieres [opção A] o [opção B]?",
         examples = listOf(
-            "Would you like tea or coffee?",
-            "Do you prefer morning or evening classes?"
+            "¿Usamos PostgreSQL o MongoDB para este servicio?",
+            "¿Hacemos el deploy hoy o mañana por la mañana?"
         )
     )
+
+    companion object {
+        /**
+         * Retorna a LessonContent correspondente a um [QuestionType].
+         * Cobre exaustivamente todos os 13 QuestionTypes.
+         */
+        fun forType(type: QuestionType): LessonContent = when (type) {
+            QuestionType.WH_WHAT     -> WhatLesson
+            QuestionType.WH_WHERE    -> WhereLesson
+            QuestionType.WH_WHEN     -> WhenLesson
+            QuestionType.WH_WHO      -> WhoLesson
+            QuestionType.WH_WHY      -> WhyLesson
+            QuestionType.WH_HOW      -> HowLesson
+            QuestionType.WH_HOW_MUCH -> HowMuchLesson
+            QuestionType.WH_HOW_MANY -> HowManyLesson
+            QuestionType.WH_WHICH    -> WhichLesson
+            QuestionType.YES_NO      -> YesNoLesson
+            QuestionType.TAG         -> TagLesson
+            QuestionType.INDIRECT    -> IndirectLesson
+            QuestionType.CHOICE      -> ChoiceLesson
+        }
+    }
 }

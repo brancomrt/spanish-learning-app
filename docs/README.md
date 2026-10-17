@@ -1,10 +1,11 @@
-# English Learning App — Documentação Técnica Completa
+# Spanish Tech Learning App — Documentação Técnica Completa
 
-> Documentação gerada para permitir manutenção por IA ou desenvolvedor sem contexto prévio.
+> Aplicativo Android em Kotlin (Jetpack Compose + Clean Architecture + Room + Hilt + FSRS) focado no aprendizado de **Espanhol Latino-Americano para Tecnologia e TI**.
+> Baseado em diretrizes comprovadas de aquisição de linguagem: **PCIC (Plan Curricular del Instituto Cervantes)**, normas **ASALE/RAE** para América Latina e a metodologia **Lexical Approach (Michael Lewis)** para memorização rápida de frases e expressões de trabalho.
 
 ## Índice
 
-1. [Visão Geral](#1-visão-geral)
+1. [Visão Geral e Conteúdos Oficiais](#1-visão-geral-e-conteúdos-oficiais)
 2. [Stack e Dependências](#2-stack-e-dependências)
 3. [Arquitetura](#3-arquitetura)
 4. [Estrutura de Diretórios](#4-estrutura-de-diretórios)
@@ -12,52 +13,46 @@
 6. [Camada de Domínio](#6-camada-de-domínio)
 7. [Camada de UI](#7-camada-de-ui)
 8. [Banco de Dados](#8-banco-de-dados)
-9. [Conteúdo (JSON Assets)](#9-conteúdo-json-assets)
+9. [Conteúdo de TI (JSON Assets)](#9-conteúdo-de-ti-json-assets)
 10. [Navegação](#10-navegação)
-11. [Motor de Validação](#11-motor-de-validação)
-12. [Sistema SRS / FSRS](#12-sistema-srs--fsrs)
+11. [Motor de Validação Semântica](#11-motor-de-validação-semântica)
+12. [Sistema SRS / FSRS-4.5](#12-sistema-srs--fsrs-45)
 13. [Gamificação](#13-gamificação)
 14. [TTS e Reconhecimento de Voz](#14-tts-e-reconhecimento-de-voz)
 15. [Injeção de Dependência](#15-injeção-de-dependência)
 16. [Testes](#16-testes)
-17. [Build e Release](#17-build-e-release)
-18. [Guia de Manutenção](#18-guia-de-manutenção)
+17. [Build e Execução](#17-build-e-execução)
 
 ---
 
-## 1. Visão Geral
+## 1. Visão Geral e Conteúdos Oficiais
 
-**English Learning App** é um aplicativo Android de aprendizado de inglês com mecânica
-invertida: o usuário vê uma **resposta** em inglês e deve formular a **pergunta** correspondente.
-O app também inclui modo direto (pergunta → resposta), vocabulário visual com flip cards,
-reconhecimento de voz, TTS e repetição espaçada (SRS/FSRS).
+**Spanish Tech Learning App** é um aplicativo Android voltado especificamente para desenvolvedores, engenheiros de DevOps, QA e profissionais de tecnologia que precisam se comunicar fluentemente em espanhol com equipes da América Latina (México, Colômbia, Argentina, Chile e times remotos).
+
+### Fundamentação Pedagógica e Conteúdos Oficiais Utilizados
+1. **PCIC (Plan Curricular del Instituto Cervantes):**
+   * Alinhado aos níveis do **MCER (A1 a C1)**.
+   * Inventário de atos de fala corporativos: dar instruções, relatar incidentes técnicos, pedir esclarecimentos, discordar cordialmente em code reviews.
+2. **Normas ASALE / RAE (Espanhol da América Latina):**
+   * Supressão do *vosotros* e conjugações peninsulares em favor de *ustedes*.
+   * Vocabulário técnico de uso real em empresas de tecnologia da América Latina: *computadora* (não ordenador), *celular* (não móvil), *desplegar/deployar*, *estar trabado/blocker*, *caída del servidor*, *cuello de botella*.
+3. **Lexical Approach (Michael Lewis):**
+   * Foco na memorização de **blocos de linguagem (*lexical chunks*)** e frases completas de reuniões diárias (daily standups), revisão de código e gestão de incidentes.
+4. **Algoritmo FSRS-4.5 (Free Spaced Repetition Scheduler):**
+   * Agendamento científico de repetição espaçada para fixação do vocabulário e expressões na memória de longo prazo.
 
 | Atributo | Valor |
 |----------|-------|
 | Plataforma | Android (API 26+ / Android 8.0+) |
 | Linguagem | Kotlin 2.0.21 |
+| Namespace / Package | `com.spanishlearning.app` |
 | UI | Jetpack Compose + Material Design 3 |
 | Banco de dados | Room 2.6.1 (SQLite) |
 | Arquitetura | Clean Architecture (Data → Domain → UI) |
 | DI | Hilt 2.54 |
-| Usuário | Single-user (userId fixo = 1) |
-| Internet | Apenas para imagens de vocabulário (Pexels CDN) |
-| Privacidade | Nenhum dado pessoal coletado ou transmitido |
-
-### Funcionalidades
-
-- 6 níveis de dificuldade: Beginner A1 → Advanced C1
-- 88 exercícios (formulação de perguntas e respostas)
-- 1001 palavras no vocabulário com imagens
-- Dois modos de exercício: `QUESTION_FROM_ANSWER` e `ANSWER_FROM_QUESTION`
-- Sistema de dicas progressivas (3 níveis por exercício)
-- Motor de validação semântica (Jaccard + bigrams)
-- Teoria gramatical inline (bottom sheet por exercício)
-- Reconhecimento de voz em inglês (Android SpeechRecognizer)
-- TTS automático no vocabulário (Android TextToSpeech)
-- SRS com algoritmo FSRS-4.5
-- Gamificação: XP, streak diário, conquistas
-- Configurações: limite de questões por nível, desbloqueio forçado de níveis
+| TTS & Reconhecimento | Espanhol Latino-Americano (`es-419` / `es-MX`) |
+| Usuário | Single-user local |
+| Privacidade | 100% offline (nenhum dado pessoal coletado) |
 - Política de privacidade (LGPD)
 
 ---
@@ -132,7 +127,7 @@ spanish-learning-app/
 │   │   │   ├── level_1.json … level_6.json
 │   │   └── vocabulary/
 │   │       ├── level_1_vocab.json … level_6_vocab.json
-│   ├── java/com/englishlearning/app/
+│   ├── java/com/spanishlearning/app/
 │   │   ├── SpanishLearningApp.kt          ← Application class (Hilt + Coil setup)
 │   │   ├── data/
 │   │   │   ├── database/

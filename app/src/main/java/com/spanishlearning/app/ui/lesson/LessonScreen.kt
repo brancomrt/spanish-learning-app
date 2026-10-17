@@ -300,16 +300,16 @@ fun LessonRuleSection(ruleExplanation: String) {
 }
 
 // ---------------------------------------------------------------------------
-// LessonFormulaSection — Fórmula estrutural (em inglês)
+// LessonFormulaSection — Fórmula estrutural (em espanhol)
 // ---------------------------------------------------------------------------
 
 /**
- * Card com a fórmula estrutural da pergunta em inglês.
+ * Card com a fórmula estrutural da pergunta em espanhol.
  *
  * Requisito 15.4: exibir a fórmula estrutural.
- * Requisito 15.11: fórmula estrutural em inglês.
+ * Requisito 15.11: fórmula estrutural em espanhol.
  *
- * @param formula  Fórmula estrutural em inglês (ex: "What + auxiliary + subject + verb?").
+ * @param formula  Fórmula estrutural em espanhol (ex: "¿Qué + verbo + complemento?").
  */
 @Composable
 fun LessonFormulaSection(formula: String) {

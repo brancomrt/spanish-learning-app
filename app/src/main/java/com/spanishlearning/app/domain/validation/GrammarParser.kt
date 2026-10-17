@@ -27,10 +27,28 @@ class GrammarParser {
 
     /**
      * Mapeamento de palavras interrogativas para seus QuestionTypes.
-     * Ordenado por comprimento decrescente para que "how much" e "how many"
-     * sejam verificados antes de "how".
+     * Ordenado por comprimento decrescente para que "por que", "how much", etc.
+     * sejam verificados antes de palavras menores.
      */
     private val whWords: Map<String, QuestionType> = mapOf(
+        // Espanhol (normalizado sem acentos)
+        "por que" to QuestionType.WH_WHY,
+        "porque" to QuestionType.WH_WHY,
+        "cuanto" to QuestionType.WH_HOW_MUCH,
+        "cuanta" to QuestionType.WH_HOW_MUCH,
+        "cuantos" to QuestionType.WH_HOW_MANY,
+        "cuantas" to QuestionType.WH_HOW_MANY,
+        "adonde" to QuestionType.WH_WHERE,
+        "donde" to QuestionType.WH_WHERE,
+        "cuando" to QuestionType.WH_WHEN,
+        "quienes" to QuestionType.WH_WHO,
+        "quien" to QuestionType.WH_WHO,
+        "cuales" to QuestionType.WH_WHICH,
+        "cual" to QuestionType.WH_WHICH,
+        "como" to QuestionType.WH_HOW,
+        "que" to QuestionType.WH_WHAT,
+
+        // Inglês (compatibilidade)
         "what" to QuestionType.WH_WHAT,
         "where" to QuestionType.WH_WHERE,
         "when" to QuestionType.WH_WHEN,
@@ -43,9 +61,15 @@ class GrammarParser {
     )
 
     /**
-     * Conjunto completo de verbos auxiliares em inglês.
+     * Conjunto de verbos auxiliares e introdutores de pergunta (Espanhol e Inglês).
      */
     private val auxVerbs: Set<String> = setOf(
+        // Espanhol
+        "tienes", "tiene", "tienen", "tenemos", "puedes", "puede", "pueden", "podemos",
+        "estas", "esta", "estan", "estamos", "eres", "es", "son", "somos", "hay",
+        "hiciste", "hizo", "hicieron", "hacemos", "vamos", "va", "van", "debemos",
+        "debo", "debe", "sabes", "sabe", "sabemos", "funciona", "fallo", "quieres", "quiere",
+        // Inglês
         "do", "does", "did", "is", "are", "was", "were",
         "have", "has", "had", "will", "would", "can", "could",
         "should", "shall", "may", "might", "must"
@@ -112,12 +136,14 @@ class GrammarParser {
      * Precondição: tokens não vazio
      */
     private fun checkYesNoStructure(tokens: List<String>): StructureCheckResult {
+        // Em espanhol e inglês, aceita se começar com verbo/auxiliar ou se tiver estrutura interrogativa válida
         val firstToken = tokens.firstOrNull() ?: return StructureCheckResult(
             isValid = false,
             errorType = ErrorType.MISSING_AUX_VERB,
             corrections = emptyList()
         )
-        val isValid = firstToken in auxVerbs
+        // Em espanhol perguntas sim/não podem ter verbo no início ou ordem tonal
+        val isValid = firstToken in auxVerbs || tokens.size >= 2
         return StructureCheckResult(
             isValid = isValid,
             errorType = if (!isValid) ErrorType.MISSING_AUX_VERB else null,
@@ -125,7 +151,7 @@ class GrammarParser {
                 Correction(
                     type = ErrorType.MISSING_AUX_VERB,
                     messageKey = "error_missing_aux_verb",
-                    suggestion = "Comece com um verbo auxiliar: do, does, is, are, will..."
+                    suggestion = "Formule a pergunta de sim/não claramente (ex: ¿Tienes acceso al repo?)."
                 )
             ) else emptyList()
         )
@@ -133,62 +159,46 @@ class GrammarParser {
 
     /**
      * Verifica se a pergunta Wh- possui estrutura correta.
-     *
-     * Estrutura esperada: WH_WORD + AUX_VERB + SUBJECT + VERB + (complement)?
-     * Para "how much" e "how many", o segundo token também faz parte da Wh-word.
-     *
-     * Precondição: tokens não vazio, type é um dos tipos Wh-
      */
     private fun checkWhStructure(
         tokens: List<String>,
         type: QuestionType
     ): StructureCheckResult {
-        // Pergunta incompleta
-        if (tokens.size < 3) return StructureCheckResult(
+        // Pergunta incompleta (em espanhol 2 palavras podem formar pergunta: "¿Qué haces?")
+        if (tokens.size < 2) return StructureCheckResult(
             isValid = false,
             errorType = ErrorType.INVERTED_WORD_ORDER,
             corrections = listOf(
                 Correction(
                     type = ErrorType.INVERTED_WORD_ORDER,
                     messageKey = "error_incomplete_question",
-                    suggestion = "A pergunta está incompleta."
+                    suggestion = "La pregunta está incompleta."
                 )
             )
         )
 
-        // Pular os tokens que fazem parte da Wh-word composta (how much / how many = 2 tokens)
         val whWordTokenCount = when (type) {
-            QuestionType.WH_HOW_MUCH, QuestionType.WH_HOW_MANY -> 2
+            QuestionType.WH_HOW_MUCH, QuestionType.WH_HOW_MANY, QuestionType.WH_WHY -> {
+                // "por que", "how much", "how many" = 2 tokens se normalizado com espaço
+                if (tokens.getOrNull(0) == "por" && tokens.getOrNull(1) == "que") 2
+                else if (tokens.getOrNull(0) == "how" && (tokens.getOrNull(1) == "much" || tokens.getOrNull(1) == "many")) 2
+                else 1
+            }
             else -> 1
         }
 
         val afterWh = tokens.drop(whWordTokenCount)
-
-        // A estrutura gramatical de WH-questions aceita duas formas:
-        //  • WH + AUX + ...              ex: "Where do you live?"
-        //  • WH + NOUN/PRONOUN + AUX + ...  ex: "Which one do you prefer?",
-        //                                    ex: "How many books do you have?"
-        // Portanto verificamos o auxiliar na posição 0 OU na posição 1 após a wh-phrase.
-        //
-        // Para WH_WHO também aceitamos subject questions (sem auxiliar):
-        //  • "Who called you?" → verbo na posição 0, sem auxiliar — estrutura válida.
-        val hasAux = when (type) {
-            QuestionType.WH_WHO ->
-                afterWh.getOrNull(0) in auxVerbs
-                    || afterWh.getOrNull(1) in auxVerbs
-                    || afterWh.size >= 2   // subject question: "Who called you?"
-            else ->
-                afterWh.getOrNull(0) in auxVerbs || afterWh.getOrNull(1) in auxVerbs
-        }
+        // Em espanhol o verbo segue a partícula interrogativa ou aceita auxiliares em inglês
+        val hasContent = afterWh.isNotEmpty()
 
         return StructureCheckResult(
-            isValid = hasAux,
-            errorType = if (!hasAux) ErrorType.MISSING_AUX_VERB else null,
-            corrections = if (!hasAux) listOf(
+            isValid = hasContent,
+            errorType = if (!hasContent) ErrorType.MISSING_AUX_VERB else null,
+            corrections = if (!hasContent) listOf(
                 Correction(
                     type = ErrorType.MISSING_AUX_VERB,
                     messageKey = "error_wh_missing_aux",
-                    suggestion = "Após a palavra interrogativa, use um verbo auxiliar."
+                    suggestion = "Após a palavra interrogativa, complete com o verbo e complemento."
                 )
             ) else emptyList()
         )
@@ -196,8 +206,6 @@ class GrammarParser {
 
     /**
      * Verifica se a Tag question possui estrutura correta.
-     *
-     * Delega para [isTagQuestion] para validar o padrão regex.
      */
     private fun checkTagStructure(tokens: List<String>): StructureCheckResult {
         val isValid = isTagQuestion(tokens.joinToString(" "))
@@ -208,7 +216,7 @@ class GrammarParser {
                 Correction(
                     type = ErrorType.INVERTED_WORD_ORDER,
                     messageKey = "error_tag_structure",
-                    suggestion = "Tag questions seguem o padrão: declaração + , + auxiliar + pronome? (ex: You like coffee, don't you?)"
+                    suggestion = "Tag questions seguem o padrão de confirmação: afirmação + , ¿verdad? / , ¿no? / isn't it?"
                 )
             ) else emptyList()
         )
@@ -216,12 +224,9 @@ class GrammarParser {
 
     /**
      * Verifica se a Indirect question possui estrutura correta.
-     *
-     * Indirect questions têm ordem de palavras normal (não invertida) e devem
-     * ter pelo menos 5 tokens para ser consideradas completas.
      */
     private fun checkIndirectStructure(tokens: List<String>): StructureCheckResult {
-        val isValid = tokens.size >= 5
+        val isValid = tokens.size >= 3
         return StructureCheckResult(
             isValid = isValid,
             errorType = if (!isValid) ErrorType.INVERTED_WORD_ORDER else null,
@@ -229,7 +234,7 @@ class GrammarParser {
                 Correction(
                     type = ErrorType.INVERTED_WORD_ORDER,
                     messageKey = "error_indirect_incomplete",
-                    suggestion = "Perguntas indiretas devem ser mais completas. Ex: Could you tell me where he lives?"
+                    suggestion = "Perguntas indiretas devem ser mais completas. Ex: ¿Podrías decirme dónde está el servidor?"
                 )
             ) else emptyList()
         )
@@ -237,21 +242,28 @@ class GrammarParser {
 
     /**
      * Verifica se o texto corresponde ao padrão de Tag question.
-     *
-     * Suporta dois formatos:
-     * 1. Texto com vírgula e contrações: "You like coffee, don't you?"
-     * 2. Texto normalizado (vírgula e contrações expandidas removidas):
-     *    "you like coffee do not you" — produzido pelo TextNormalizer
      */
     fun isTagQuestion(text: String): Boolean {
-        // Padrão primário: texto original com vírgula e contrações
+        // Espanhol: "..., ¿verdad?", "..., ¿no?", "..., ¿cierto?"
+        val spanishTag = Regex(
+            """.+,\s*(no|verdad|cierto|o no)\s*$""",
+            RegexOption.IGNORE_CASE
+        )
+        if (spanishTag.containsMatchIn(text)) return true
+
+        // Espanhol normalizado (sem vírgula): "hiciste el deploy verdad", "esta listo no"
+        val spanishTagNormalized = Regex(
+            """.*\s+(verdad|cierto|no)\s*$""",
+            RegexOption.IGNORE_CASE
+        )
+        if (spanishTagNormalized.containsMatchIn(text) && text.split(" ").size >= 2) return true
+
+        // Inglês
         val tagWithComma = Regex(
             """.+,\s*(isn't|aren't|doesn't|don't|didn't|won't|wouldn't|can't|couldn't|haven't|hasn't|hadn't|is|are|do|does|did|will|would|can|could)\s+(it|he|she|they|you|we|i)\s*$"""
         )
         if (tagWithComma.containsMatchIn(text)) return true
 
-        // Padrão secundário: texto normalizado (sem vírgula, contrações expandidas)
-        // ex: "they will come will not they", "you like coffee do not you"
         val tagNormalized = Regex(
             """.*\s+(will not|is not|are not|do not|does not|did not|would not|could not|cannot|have not|has not|had not|was not|were not|might not|should not|is|are|do|does|did|will|would|can|could)\s+(it|he|she|they|you|we|i)\s*$"""
         )
@@ -260,23 +272,15 @@ class GrammarParser {
 
     /**
      * Verifica se o texto corresponde ao padrão de Indirect question.
-     *
-     * Starters reconhecidos:
-     * - "could you tell me"
-     * - "do you know"
-     * - "can you tell me"
-     * - "i wonder"
-     * - "would you mind telling me"
-     * - "i'd like to know"
      */
     fun isIndirectQuestion(text: String): Boolean {
         val indirectStarters = listOf(
-            "could you tell me",
-            "do you know",
-            "can you tell me",
-            "i wonder",
-            "would you mind telling me",
-            "i'd like to know"
+            // Espanhol
+            "podrias decirme", "podria decirme", "puedes decirme", "me puedes decir",
+            "me podrias decir", "sabes si", "sabe si", "quisiera saber", "me gustaria saber",
+            // Inglês
+            "could you tell me", "do you know", "can you tell me", "i wonder",
+            "would you mind telling me", "i'd like to know"
         )
         return indirectStarters.any { text.startsWith(it) }
     }

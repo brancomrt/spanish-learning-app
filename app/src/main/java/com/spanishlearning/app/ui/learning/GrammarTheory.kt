@@ -32,6 +32,116 @@ object GrammarTheoryProvider {
 
     private val theories: Map<String, GrammarTheory> = mapOf(
 
+        // ── Español para TI ───────────────────────────────────────────────
+        "preguntas con qué" to GrammarTheory(
+            title = "Perguntas com 'Qué' em Espanhol Técnico",
+            explanation = "Usa-se '¿Qué + substantivo?' ou '¿Qué + verbo?' para perguntar sobre características, especificações ou ações do sistema.",
+            structure = """
+                (?) ¿Qué + verbo + complemento?
+                (?) ¿Qué + substantivo + verbo?
+            """.trimIndent(),
+            examples = listOf(
+                "¿Qué especificaciones tiene tu computadora?",
+                "¿Qué hiciste en el sprint anterior?",
+                "¿Qué error sale en la consola de logs?"
+            ),
+            tip = "A palavra 'qué' leva acento quando é interrogativa ou exclamativa (diferente da conjunção átona 'que')."
+        ),
+
+        "sí/no" to GrammarTheory(
+            title = "Perguntas de Sim/Não em Espanhol",
+            explanation = "Em espanhol, perguntas de confirmação não necessitam de verbos auxiliares (como 'do/does' em inglês). Basta conjugar o verbo no início da oração.",
+            structure = """
+                (?) ¿(Verbo conjugado) + (sujeito) + complemento?
+            """.trimIndent(),
+            examples = listOf(
+                "¿Tienes acceso a la VPN corporativa?",
+                "¿Pudiste revisar mi pull request?",
+                "¿Ya terminaste la tarea de Jira?"
+            ),
+            tip = "Na escrita formal em espanhol, sempre se abre a pergunta com o ponto de interrogação invertido (¿)."
+        ),
+
+        "daily" to GrammarTheory(
+            title = "Comunicação em Daily Standups (Metodologias Ágeis)",
+            explanation = "Expressões fundamentais para responder às três perguntas clássicas do Scrum em equipes de TI da América Latina.",
+            structure = """
+                • Ayer terminé [tarefa]
+                • Hoy voy a trabajar en [tarefa]
+                • No tengo ningún blocker / Estoy trabado con [impedimento]
+            """.trimIndent(),
+            examples = listOf(
+                "¿En qué estás trabajando hoy?",
+                "¿Tienes algún blocker para avanzar?",
+                "Estoy trabado con la autenticación OAuth."
+            ),
+            tip = "Na América Latina, termos como 'blocker', 'daily', 'sprint' e 'PR' são usados naturalmente misturados ao espanhol."
+        ),
+
+        "revisión de código" to GrammarTheory(
+            title = "Revisão de Código (Code Review & PRs)",
+            explanation = "Como comentar e solicitar revisões de forma cordial e colaborativa com engenheiros hispanofalantes.",
+            structure = """
+                (?) ¿Pudiste revisar mi pull request?
+                (+) Te dejé dos comentarios sobre el tipado.
+                (+) Ya aprobé los cambios para hacer merge.
+            """.trimIndent(),
+            examples = listOf(
+                "¿Pudiste revisar mi pull request?",
+                "Falta tipar esta variable antes de fusionar a develop.",
+                "¿Ya tienes las aprobaciones necesarias?"
+            ),
+            tip = "Expressões frequentes: 'darle una mirada' ou 'echar un ojo' significam dar uma olhada rápida no código."
+        ),
+
+        "despliegues" to GrammarTheory(
+            title = "Despliegues e DevOps (CI/CD)",
+            explanation = "Vocabulário para gerenciamento de versões, pipelines e lançamentos em produção.",
+            structure = """
+                • Hacer el despliegue / pase a producción
+                • Hacer un rollback a la versión anterior
+                • Parchear una vulnerabilidad en caliente
+            """.trimIndent(),
+            examples = listOf(
+                "¿Cuándo haremos el despliegue a producción?",
+                "El servidor se cayó por una fuga de memoria.",
+                "Tuvimos que hacer un rollback de inmediato."
+            ),
+            tip = "No espanhol latino usa-se 'despliegue' ou o verbo adaptado 'deployar'."
+        ),
+
+        "cuello de botella" to GrammarTheory(
+            title = "Desempenho e Arquitetura de Sistemas",
+            explanation = "Terminologia para discutir gargalos, latência, mensageria e escalabilidade.",
+            structure = """
+                • Cuello de botella (bottleneck)
+                • Desacoplar componentes con colas de mensajes
+                • Latencia promedio y percentiles
+            """.trimIndent(),
+            examples = listOf(
+                "¿Dónde está el cuello de botella?",
+                "Podemos desacoplar los microservicios usando colas de mensajes.",
+                "La API tiene una latencia promedio de 40 milisegundos."
+            ),
+            tip = "'Cuello de botella' é a expressão pan-hispânica consagrada para gargalo de performance."
+        ),
+
+        "liderazgo" to GrammarTheory(
+            title = "Liderança Técnica e Retrospectivas",
+            explanation = "Comunicação para estimativas de esforço, análise de causa raiz e alinhamento com produto.",
+            structure = """
+                • Estimar en [puntos de historia / sprints]
+                • Plan de acción del post-mortem
+                • Pagar deuda técnica acumulada
+            """.trimIndent(),
+            examples = listOf(
+                "¿Cuánto tiempo estiman para completar esta épica?",
+                "¿Cuál es el plan de acción del post-mortem?",
+                "Destinaremos el 20% del sprint a deuda técnica."
+            ),
+            tip = "Nas reuniões de post-mortem adota-se o 'análisis sin culpas' (blameless post-mortem)."
+        ),
+
         // ── Present Simple ────────────────────────────────────────────────
         "present simple" to GrammarTheory(
             title = "Present Simple (Presente Simples)",

@@ -37,11 +37,11 @@ fun rememberSpeechLauncher(onResult: (String) -> Unit): () -> Unit {
     return remember(launcher) {
         {
             val intent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH).apply {
-                // Reconhece em inglês independente do idioma do dispositivo
-                putExtra(RecognizerIntent.EXTRA_LANGUAGE, "en-US")
-                putExtra(RecognizerIntent.EXTRA_LANGUAGE_PREFERENCE, "en-US")
+                // Reconhece em espanhol latino independente do idioma do dispositivo
+                putExtra(RecognizerIntent.EXTRA_LANGUAGE, "es-419")
+                putExtra(RecognizerIntent.EXTRA_LANGUAGE_PREFERENCE, "es-419")
                 // Mensagem exibida no diálogo de reconhecimento
-                putExtra(RecognizerIntent.EXTRA_PROMPT, "Fale a pergunta em inglês")
+                putExtra(RecognizerIntent.EXTRA_PROMPT, "Hable en español (latinoamérica)")
                 // Retorna múltiplas hipóteses (usamos só a primeira/melhor)
                 putExtra(RecognizerIntent.EXTRA_MAX_RESULTS, 3)
             }

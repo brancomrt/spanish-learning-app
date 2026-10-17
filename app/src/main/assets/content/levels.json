@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "name_key": "level_beginner",
-    "description_key": "level_beginner_desc",
+    "name_key": "A1 • Fundamentos de TI",
+    "description_key": "Setup de computadora, accesos, herramientas y comunicación básica",
     "min_score": 0,
     "max_score": 100,
     "is_unlocked": true,
@@ -10,8 +10,8 @@
   },
   {
     "id": 2,
-    "name_key": "level_elementary",
-    "description_key": "level_elementary_desc",
+    "name_key": "A2 • Rutinas Ágiles y Daily",
+    "description_key": "Daily meeting, tickets de Jira, blockers y reportes de estado",
     "min_score": 0,
     "max_score": 100,
     "is_unlocked": false,
@@ -19,8 +19,8 @@
   },
   {
     "id": 3,
-    "name_key": "level_pre_intermediate",
-    "description_key": "level_pre_intermediate_desc",
+    "name_key": "B1 • Desarrollo y Git",
+    "description_key": "Ramas, commits, pull requests, revisión de código y testing",
     "min_score": 0,
     "max_score": 100,
     "is_unlocked": false,
@@ -28,8 +28,8 @@
   },
   {
     "id": 4,
-    "name_key": "level_intermediate",
-    "description_key": "level_intermediate_desc",
+    "name_key": "B2 • DevOps e Incidentes",
+    "description_key": "Despliegues (deploy), logs, monitoreo, rollbacks y soporte",
     "min_score": 0,
     "max_score": 100,
     "is_unlocked": false,
@@ -37,8 +37,8 @@
   },
   {
     "id": 5,
-    "name_key": "level_upper_intermediate",
-    "description_key": "level_upper_intermediate_desc",
+    "name_key": "B2/C1 • Arquitectura y Cloud",
+    "description_key": "Microservicios, escalabilidad, balanceadores, APIs y bases de datos",
     "min_score": 0,
     "max_score": 100,
     "is_unlocked": false,
@@ -46,8 +46,8 @@
   },
   {
     "id": 6,
-    "name_key": "level_advanced",
-    "description_key": "level_advanced_desc",
+    "name_key": "C1 • Liderazgo y Negociación",
+    "description_key": "Estimaciones de sprint, deuda técnica, post-mortems y alineación",
     "min_score": 0,
     "max_score": 100,
     "is_unlocked": false,

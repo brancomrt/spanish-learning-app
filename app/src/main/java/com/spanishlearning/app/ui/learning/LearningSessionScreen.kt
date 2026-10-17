@@ -277,8 +277,8 @@ private fun ExerciseContent(
                     modifier = Modifier.fillMaxWidth(),
                     verticalAlignment = Alignment.CenterVertically
                 ) {
-                    val inputLabel = if (isAnswerMode) "Digite ou fale a resposta em inglês" else "Digite ou fale a pergunta em inglês"
-                    val inputPlaceholder = if (isAnswerMode) "Ex.: Yes, I do. / No, I don't." else "Ex.: What is your name?"
+                    val inputLabel = if (isAnswerMode) "Digite ou fale a resposta em espanhol" else "Digite ou fale a pergunta em espanhol"
+                    val inputPlaceholder = if (isAnswerMode) "Ex.: Sí, ya tengo acceso a la VPN." else "Ex.: ¿Qué especificaciones tiene tu computadora?"
                     OutlinedTextField(
                         value = questionInput,
                         onValueChange = { questionInput = it },

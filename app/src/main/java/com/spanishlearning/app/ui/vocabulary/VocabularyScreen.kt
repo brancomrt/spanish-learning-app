@@ -465,7 +465,7 @@ private fun CardFront(card: VocabularyCardEntity, onReveal: () -> Unit) {
                 Spacer(Modifier.height(48.dp))
 
                 Text(
-                    "Qual é a palavra em inglês?",
+                    "¿Cuál es el término en español?",
                     style = MaterialTheme.typography.bodyMedium,
                     color = MaterialTheme.colorScheme.onPrimaryContainer.copy(alpha = 0.7f)
                 )
