@@ -1,0 +1,79 @@
+name: Build & Publish APK
+
+on:
+  push:
+    branches:
+      - main
+      - feature/spanish-tech-learning-app
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    name: Build & Publish APK
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: 'gradle'
+
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
+
+      - name: Build Debug APK
+        run: ./gradlew assembleDebug --no-daemon --stacktrace
+
+      - name: Verify APK output
+        run: |
+          ls -la app/build/outputs/apk/debug/
+          test -f app/build/outputs/apk/debug/spanish-learning-app.apk
+
+      - name: Upload APK Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: spanish-learning-app-debug
+          path: app/build/outputs/apk/debug/spanish-learning-app.apk
+          if-no-files-found: error
+
+      - name: Publish APK to release-apk branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p /tmp/apk-dist
+          cp app/build/outputs/apk/debug/spanish-learning-app.apk /tmp/apk-dist/
+          
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          git checkout --orphan release-apk
+          git rm -rf . || true
+          
+          cp /tmp/apk-dist/spanish-learning-app.apk ./spanish-learning-app.apk
+          cat << 'EOF' > README.md
+          # Spanish Tech Learning App — APK Release
+
+          Esta branch contém a versão compilada (APK) mais recente do **Spanish Tech Learning App**.
+
+          ### Download Direto:
+          - **[spanish-learning-app.apk](./spanish-learning-app.apk?raw=true)**
+
+          ### Como instalar no seu dispositivo Android:
+          1. Baixe o arquivo `spanish-learning-app.apk` no seu celular.
+          2. Se solicitado, habilite a permissão para **Instalar apps de fontes desconhecidas** nas configurações do Android.
+          3. Abra o arquivo baixado e toque em **Instalar**.
+          EOF
+          
+          git add -f spanish-learning-app.apk README.md
+          git commit -m "build: publish latest spanish-learning-app.apk [skip ci]"
+          git push origin release-apk --force
