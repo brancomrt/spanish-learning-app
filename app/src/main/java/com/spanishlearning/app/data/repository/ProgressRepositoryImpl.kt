@@ -108,7 +108,7 @@ class ProgressRepositoryImpl @Inject constructor(
      * Requisito 5.1: registra atividade no dia para o streak.
      * Requisito 6.1: mantém exercisesCompleted e accuracyRate atualizados.
      */
-    suspend fun updateProgressWithLevel(
+    override suspend fun updateProgressWithLevel(
         userId: Long,
         levelId: Int,
         categoryId: Int,
@@ -118,7 +118,7 @@ class ProgressRepositoryImpl @Inject constructor(
         updateProgress(userId, attemptResult)
 
         val result = attemptResult.validationResult
-        val isCorrect = result.status == ValidationStatus.CORRECT
+        val isCorrect = result.status == ValidationStatus.CORRECT || result.status == ValidationStatus.TOO_CLOSE
 
         // Buscar progresso existente ou criar zerado
         val existing = progressDao.getProgressByUserLevelAndCategory(userId, levelId, categoryId)

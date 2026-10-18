@@ -11,6 +11,8 @@ import com.spanishlearning.app.data.database.entity.HintEntity
 import com.spanishlearning.app.data.database.entity.LevelEntity
 import com.spanishlearning.app.data.database.entity.VocabularyCardEntity
 import dagger.hilt.android.qualifiers.ApplicationContext
+import kotlinx.coroutines.sync.Mutex
+import kotlinx.coroutines.sync.withLock
 import kotlinx.serialization.SerializationException
 import kotlinx.serialization.json.Json
 import javax.inject.Inject
@@ -42,6 +44,8 @@ class DatabaseSeeder @Inject constructor(
     private val db: SpanishLearningDatabase
 ) {
 
+    private val seedMutex = Mutex()
+
     private val json = Json {
         ignoreUnknownKeys = true
         coerceInputValues = true
@@ -53,25 +57,15 @@ class DatabaseSeeder @Inject constructor(
 
     /**
      * Executa o seeding apenas se ainda não foi realizado (flag `db_seeded` ausente ou false).
-     * Idempotente: chamadas subsequentes retornam imediatamente.
+     * Idempotente e sincronizado via [seedMutex]: chamadas concorrentes aguardam a conclusão
+     * do seeding antes de prosseguir.
      *
      * Requisito 11.1: primeira inicialização popula o banco.
      */
-    suspend fun seedIfNeeded() {
+    suspend fun seedIfNeeded() = seedMutex.withLock {
         if (prefs.getBoolean(KEY_DB_SEEDED, false)) {
             Log.d(TAG, "Database already seeded — skipping.")
-            return
-        }
-
-        if (prefs.getBoolean("db_seeded_es_v2", false)) {
-            Log.i(TAG, "Updating level unlock defaults from v2 to v3...")
-            try {
-                seedLevels()
-                prefs.edit().putBoolean(KEY_DB_SEEDED, true).apply()
-            } catch (e: Exception) {
-                Log.e(TAG, "Level update failed — will retry on next launch.", e)
-            }
-            return
+            return@withLock
         }
 
         Log.i(TAG, "Starting database seeding...")
@@ -381,7 +375,7 @@ class DatabaseSeeder @Inject constructor(
     companion object {
         private const val TAG = "DatabaseSeeder"
         private const val PREFS_NAME = "app_prefs"
-        private const val KEY_DB_SEEDED = "db_seeded_es_v3"
+        private const val KEY_DB_SEEDED = "db_seeded_es_v4"
         private const val LEVELS_ASSET_PATH = "content/levels.json"
         private const val CATEGORIES_ASSET_PATH = "content/categories.json"
         private const val EXERCISES_ASSET_DIR = "content/exercises"

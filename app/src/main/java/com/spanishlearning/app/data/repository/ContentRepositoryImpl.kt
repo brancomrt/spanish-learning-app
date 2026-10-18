@@ -5,6 +5,7 @@ import com.spanishlearning.app.data.database.dao.ExerciseDao
 import com.spanishlearning.app.data.database.dao.LevelDao
 import com.spanishlearning.app.data.database.dao.ProgressDao
 import com.spanishlearning.app.data.database.entity.AttemptEntity
+import com.spanishlearning.app.data.seeder.DatabaseSeeder
 import com.spanishlearning.app.domain.model.Category
 import com.spanishlearning.app.domain.model.Exercise
 import com.spanishlearning.app.domain.model.Level
@@ -24,7 +25,8 @@ class ContentRepositoryImpl @Inject constructor(
     private val exerciseDao: ExerciseDao,
     private val levelDao: LevelDao,
     private val categoryDao: CategoryDao,
-    private val progressDao: ProgressDao
+    private val progressDao: ProgressDao,
+    private val databaseSeeder: DatabaseSeeder
 ) : ContentRepository {
 
     /**
@@ -36,6 +38,7 @@ class ContentRepositoryImpl @Inject constructor(
      * @return Lista de exercícios completos (com respostas e dicas), possivelmente vazia.
      */
     override suspend fun getExercisesByLevel(levelId: Int): List<Exercise> {
+        databaseSeeder.seedIfNeeded()
         return exerciseDao.getWithAnswersByLevel(levelId).map { it.toDomain() }
     }
 
@@ -48,6 +51,7 @@ class ContentRepositoryImpl @Inject constructor(
      * @return Lista de exercícios completos, possivelmente vazia.
      */
     override suspend fun getExercisesByCategory(categoryId: Int): List<Exercise> {
+        databaseSeeder.seedIfNeeded()
         return exerciseDao.getWithAnswersByCategory(categoryId).map { it.toDomain() }
     }
 
@@ -69,6 +73,7 @@ class ContentRepositoryImpl @Inject constructor(
         levelId: Int,
         categoryId: Int
     ): List<Exercise> {
+        databaseSeeder.seedIfNeeded()
         return getExercisesForSession(levelId, categoryId, userId = DEFAULT_USER_ID)
     }
 
@@ -79,6 +84,7 @@ class ContentRepositoryImpl @Inject constructor(
      * @return O exercício completo, ou null se não encontrado.
      */
     override suspend fun getExerciseById(id: Long): Exercise? {
+        databaseSeeder.seedIfNeeded()
         return exerciseDao.getWithAnswersById(id)?.toDomain()
     }
 
@@ -115,6 +121,7 @@ class ContentRepositoryImpl @Inject constructor(
      * @return Lista de todas as categorias.
      */
     override suspend fun getCategories(): List<Category> {
+        databaseSeeder.seedIfNeeded()
         return categoryDao.getAll().map { it.toDomain() }
     }
 
@@ -127,6 +134,7 @@ class ContentRepositoryImpl @Inject constructor(
      * @return Lista de todos os níveis.
      */
     override suspend fun getLevels(): List<Level> {
+        databaseSeeder.seedIfNeeded()
         return levelDao.getAll().map { it.toDomain() }
     }
 

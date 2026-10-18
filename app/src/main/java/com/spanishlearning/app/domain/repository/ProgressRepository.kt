@@ -34,6 +34,18 @@ interface ProgressRepository {
     suspend fun updateProgress(userId: Long, attemptResult: AttemptResult)
 
     /**
+     * Atualiza o progresso do usuário incluindo contadores de nível e categoria.
+     */
+    suspend fun updateProgressWithLevel(
+        userId: Long,
+        levelId: Int,
+        categoryId: Int,
+        attemptResult: AttemptResult
+    ) {
+        updateProgress(userId, attemptResult)
+    }
+
+    /**
      * Verifica marcos de conquistas e retorna as novas conquistas desbloqueadas.
      *
      * Verifica marcos como: primeira resposta correta, streak de 7/30 dias,

@@ -257,8 +257,8 @@ class LearningViewModel @Inject constructor(
             // 4. Persist attempt and update streak
             updateProgressUseCase(
                 userId = CheckAchievementsUseCase.DEFAULT_USER_ID,
-                levelId = levelId,
-                categoryId = categoryId,
+                levelId = exercise.levelId,
+                categoryId = exercise.categoryId,
                 attemptResult = AttemptResult(
                     exerciseId = exercise.id,
                     userId = CheckAchievementsUseCase.DEFAULT_USER_ID,

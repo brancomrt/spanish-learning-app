@@ -173,10 +173,12 @@ private fun SelectionScreen(
                     5 -> "B2"
                     else -> "C1"
                 }
+                val labelText = if (level.isUnlocked) name else "🔒 $name"
                 FilterChip(
                     selected = level.id == state.selectedLevelId,
-                    onClick = { onLevelSelected(level.id) },
-                    label = { Text(name, style = MaterialTheme.typography.labelMedium) },
+                    onClick = { if (level.isUnlocked) onLevelSelected(level.id) },
+                    enabled = level.isUnlocked,
+                    label = { Text(labelText, style = MaterialTheme.typography.labelMedium) },
                     colors = FilterChipDefaults.filterChipColors(
                         selectedContainerColor = MaterialTheme.colorScheme.primary,
                         selectedLabelColor = MaterialTheme.colorScheme.onPrimary

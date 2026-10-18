@@ -69,7 +69,7 @@ import com.spanishlearning.app.data.database.entity.VocabularyCardEntity
 abstract class SpanishLearningDatabase : RoomDatabase() {
 
     companion object {
-        const val DATABASE_NAME = "spanish_learning_db"
+        const val DATABASE_NAME = "spanish_learning_v2_db"
 
         /**
          * Migração da versão 1 para a versão 2.
