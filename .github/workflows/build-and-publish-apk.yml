@@ -39,28 +39,28 @@ jobs:
         run: |
           ls -la app/build/outputs/apk/debug/
           test -f app/build/outputs/apk/debug/spanish-learning-app.apk
-          cp app/build/outputs/apk/debug/spanish-learning-app.apk app/build/outputs/apk/debug/spanish-learning-app-v1.1.0.apk
+          cp app/build/outputs/apk/debug/spanish-learning-app.apk app/build/outputs/apk/debug/spanish-learning-app-v1.1.1.apk
 
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: spanish-learning-app-v1.1.0
+          name: spanish-learning-app-v1.1.1
           path: |
-            app/build/outputs/apk/debug/spanish-learning-app-v1.1.0.apk
+            app/build/outputs/apk/debug/spanish-learning-app-v1.1.1.apk
             app/build/outputs/apk/debug/spanish-learning-app.apk
           if-no-files-found: error
 
-      - name: Create GitHub Release (Tag v1.1.0)
+      - name: Create GitHub Release (Tag v1.1.1)
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: v1.1.0
-          name: v1.1.0 - Español Latino (TI & Cotidiano — A1 a C1)
+          tag_name: v1.1.1
+          name: v1.1.1 - Español Latino (TI & Cotidiano — A1 a C1)
           body: |
-            ## Español Latino — TI & Cotidiano (v1.1.0)
+            ## Español Latino — TI & Cotidiano (v1.1.1)
 
             Aplicativo Android nativo completo de **Espanhol Latino-Americano voltado para Tecnologia (TI) e Situações do Cotidiano** (todos os 6 níveis CEFR: A1, A2, A2+, B1, B2 e C1).
 
-            ### Novidades da v1.1.0
+            ### Novidades da v1.1.1
             - 🌎 **Conteúdo Completo TI + Cotidiano (28 Categorias):** Cobre desde rotina diária, viagens, alimentação, saúde, compras, finanças, moradia, lazer, cultura latina e expressões idiomáticas até suporte TI, desenvolvimento, bancos de dados, cloud, DevOps, segurança, arquitetura, Agile/Scrum, SRE, microsserviços, liderança técnica, System Design e escrita técnica.
             - ✏️ **229 Exercícios Interativos (A1 a C1):** Prática ativa de formulação de perguntas e respostas em espanhol latino com dicas progressivas.
             - 📚 **575 Cards de Vocabulário FSRS-4.5:** Repetição espaçada inteligente em todas as 28 categorias.
@@ -68,11 +68,11 @@ jobs:
             - 🧹 **Interface 100% Limpa (PT-BR / Español):** Remoção completa de todas as referências legadas ao inglês.
 
             ### Instalação
-            1. Baixe o arquivo `spanish-learning-app-v1.1.0.apk` abaixo (ou diretamente na raiz da branch `main`).
+            1. Baixe o arquivo `spanish-learning-app-v1.1.1.apk` abaixo (ou diretamente na raiz da branch `main`).
             2. Habilite "Instalar apps de fontes desconhecidas" no Android.
             3. Instale o APK.
           files: |
-            app/build/outputs/apk/debug/spanish-learning-app-v1.1.0.apk
+            app/build/outputs/apk/debug/spanish-learning-app-v1.1.1.apk
             app/build/outputs/apk/debug/spanish-learning-app.apk
           fail_on_unmatched_files: false
           draft: false

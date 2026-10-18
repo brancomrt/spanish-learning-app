@@ -1,14 +1,14 @@
-# 🇲🇽 Español Latino — TI & Cotidiano (`v1.1.0`)
+# 🇲🇽 Español Latino — TI & Cotidiano (`v1.1.1`)
 
 Aplicativo Android nativo para prática ativa de **Espanhol Latino-Americano** focado em **Tecnologia da Informação (TI)** e **Situações do Cotidiano**, cobrindo todos os **6 níveis CEFR (`A1`, `A2`, `A2+`, `B1`, `B2` e `C1`)**.
 
 ---
 
-## 📦 Download Direto do APK (`v1.1.0`)
+## 📦 Download Direto do APK (`v1.1.1`)
 
 O APK compilado está disponível diretamente nesta branch (`main`) e nas Releases do repositório:
 
-- 👉 **[Baixar `spanish-learning-app-v1.1.0.apk`](./spanish-learning-app-v1.1.0.apk?raw=true)** (`versionName = "1.1.0"`, `versionCode = 2`)
+- 👉 **[Baixar `spanish-learning-app-v1.1.1.apk`](./spanish-learning-app-v1.1.1.apk?raw=true)** (`versionName = "1.1.1"`, `versionCode = 3`)
 
 ---
 
