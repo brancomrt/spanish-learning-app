@@ -1,68 +1,804 @@
 {
   "cards": [
     {
-      "word": "rama / branch",
-      "definition": "ramo de desenvolvimento no Git (em espanhol técnico diz-se comumente 'la rama')",
-      "example_sentence": "Crea una rama nueva para trabajar en el nuevo endpoint de usuarios.",
+      "word": "la rama (branch)",
+      "definition": "a branch / ramificação no Git",
+      "example_sentence": "Crea una rama nueva a partir de desarrollo para trabajar en tu tarea.",
       "level_id": 3,
       "category_id": 7,
       "image_url": "local:vocab_code.xml"
     },
     {
-      "word": "hacer un commit",
-      "definition": "registrar alterações no controle de versão Git",
-      "example_sentence": "Haz un commit con un mensaje descriptivo que incluya el ID del ticket.",
+      "word": "fusionar / hacer merge",
+      "definition": "fazer merge / integrar branches",
+      "example_sentence": "Antes de fusionar tu rama, asegúrate de que pasen todas las pruebas.",
       "level_id": 3,
       "category_id": 7,
       "image_url": "local:vocab_code.xml"
     },
     {
-      "word": "resolver conflictos de merge",
-      "definition": "solucionar conflitos ao mesclar duas ramas no Git",
-      "example_sentence": "Hice un pull de develop y tuve que resolver tres conflictos de merge manualmente.",
+      "word": "el conflicto de fusión",
+      "definition": "o conflito de merge no Git",
+      "example_sentence": "Tuve que resolver un conflicto de fusión en el archivo de configuración.",
       "level_id": 3,
       "category_id": 7,
       "image_url": "local:vocab_code.xml"
     },
     {
-      "word": "solicitud de extracción / pull request",
-      "definition": "solicitação de mesclagem de código para revisão por pares (PR)",
-      "example_sentence": "Ya abrí el pull request en GitHub, ¿puedes darle una mirada cuando puedas?",
+      "word": "la revisión de código (code review)",
+      "definition": "a revisão de código",
+      "example_sentence": "Agradecí mucho las sugerencias que me dejaron en la revisión de código.",
       "level_id": 3,
-      "category_id": 8,
+      "category_id": 7,
       "image_url": "local:vocab_code.xml"
     },
     {
-      "word": "revisión de código / code review",
-      "definition": "análise técnica realizada por outros desenvolvedores antes do merge",
-      "example_sentence": "La revisión de código ayuda a detectar posibles vulnerabilidades y malas prácticas.",
+      "word": "las pruebas unitarias (unit tests)",
+      "definition": "os testes unitários",
+      "example_sentence": "Escribimos pruebas unitarias para validar toda la lógica de negocio.",
       "level_id": 3,
-      "category_id": 8,
+      "category_id": 7,
       "image_url": "local:vocab_code.xml"
     },
     {
-      "word": "aprobar los cambios",
-      "definition": "dar o 'Approve' no pull request liberando para merge",
-      "example_sentence": "Necesitamos al menos dos aprobaciones antes de poder fusionar a la rama principal.",
+      "word": "las pruebas de integración",
+      "definition": "os testes de integração",
+      "example_sentence": "Las pruebas de integración verifican que el servicio se conecte bien con la base de datos.",
       "level_id": 3,
-      "category_id": 8,
+      "category_id": 7,
       "image_url": "local:vocab_code.xml"
     },
     {
-      "word": "prueba unitaria / unit test",
-      "definition": "teste automatizado que valida uma pequena unidade ou função isolada",
-      "example_sentence": "Asegúrate de escribir pruebas unitarias para todas las funciones del repositorio.",
+      "word": "depurar el código (debuggear)",
+      "definition": "depurar o código / fazer debug",
+      "example_sentence": "Estuve depurando el código paso a paso hasta encontrar el error.",
+      "level_id": 3,
+      "category_id": 7,
+      "image_url": "local:vocab_code.xml"
+    },
+    {
+      "word": "el error / el bug / la falla",
+      "definition": "o bug / o erro de software",
+      "example_sentence": "Corregimos un bug que impedía guardar los cambios en el perfil.",
+      "level_id": 3,
+      "category_id": 7,
+      "image_url": "local:vocab_code.xml"
+    },
+    {
+      "word": "refactorizar",
+      "definition": "refatorar o código",
+      "example_sentence": "Refactorizamos la clase para que sea más limpia y fácil de mantener.",
+      "level_id": 3,
+      "category_id": 7,
+      "image_url": "local:vocab_code.xml"
+    },
+    {
+      "word": "la cobertura de pruebas",
+      "definition": "a cobertura de testes (code coverage)",
+      "example_sentence": "El repositorio exige al menos un ochenta por ciento de cobertura de pruebas.",
+      "level_id": 3,
+      "category_id": 7,
+      "image_url": "local:vocab_code.xml"
+    },
+    {
+      "word": "el entorno de desarrollo local",
+      "definition": "o ambiente de desenvolvimento local",
+      "example_sentence": "Levanté todo el entorno de desarrollo local usando contenedores.",
+      "level_id": 3,
+      "category_id": 7,
+      "image_url": "local:vocab_code.xml"
+    },
+    {
+      "word": "compilar el proyecto",
+      "definition": "compilar / fazer build do projeto",
+      "example_sentence": "El proyecto compila en menos de un minuto con la nueva configuración.",
+      "level_id": 3,
+      "category_id": 7,
+      "image_url": "local:vocab_code.xml"
+    },
+    {
+      "word": "la dependencia / la librería",
+      "definition": "a dependência / a biblioteca de código",
+      "example_sentence": "Actualizamos las librerías del proyecto para corregir alertas de seguridad.",
+      "level_id": 3,
+      "category_id": 7,
+      "image_url": "local:vocab_code.xml"
+    },
+    {
+      "word": "el punto de interrupción (breakpoint)",
+      "definition": "o breakpoint no depurador",
+      "example_sentence": "Coloca un punto de interrupción en la línea cuarenta para inspeccionar la variable.",
+      "level_id": 3,
+      "category_id": 7,
+      "image_url": "local:vocab_code.xml"
+    },
+    {
+      "word": "el manejo de excepciones",
+      "definition": "o tratamento de exceções (exception handling)",
+      "example_sentence": "Mejoramos el manejo de excepciones para devolver mensajes claros al usuario.",
+      "level_id": 3,
+      "category_id": 7,
+      "image_url": "local:vocab_code.xml"
+    },
+    {
+      "word": "el código limpio",
+      "definition": "o código limpo (clean code)",
+      "example_sentence": "Usar nombres descriptivos para las funciones es la base del código limpio.",
+      "level_id": 3,
+      "category_id": 7,
+      "image_url": "local:vocab_code.xml"
+    },
+    {
+      "word": "clonar el repositorio",
+      "definition": "clonar o repositório Git",
+      "example_sentence": "Lo primero que hice fue clonar el repositorio en mi máquina.",
+      "level_id": 3,
+      "category_id": 7,
+      "image_url": "local:vocab_code.xml"
+    },
+    {
+      "word": "revertir un commit",
+      "definition": "reverter um commit no Git",
+      "example_sentence": "Revertimos el último commit porque rompió la pantalla de inicio.",
+      "level_id": 3,
+      "category_id": 7,
+      "image_url": "local:vocab_code.xml"
+    },
+    {
+      "word": "estar trabado / bloqueado",
+      "definition": "estar travado / com impedimento em uma tarefa",
+      "example_sentence": "Avísame en el canal del equipo si te quedas trabado con la tarea.",
+      "level_id": 3,
+      "category_id": 7,
+      "image_url": "local:vocab_code.xml"
+    },
+    {
+      "word": "darle una mirada al código",
+      "definition": "dar uma olhada rápida no código (expressão latina muito comum)",
+      "example_sentence": "¿Le puedes dar una mirada a mi pull request cuando tengas cinco minutos?",
+      "level_id": 3,
+      "category_id": 7,
+      "image_url": "local:vocab_code.xml"
+    },
+    {
+      "word": "la consulta (query)",
+      "definition": "a consulta ao banco de dados (query)",
+      "example_sentence": "Optimizamos la consulta SQL y ahora responde en diez milisegundos.",
+      "level_id": 3,
+      "category_id": 8,
+      "image_url": "local:vocab_database.xml"
+    },
+    {
+      "word": "la tabla",
+      "definition": "a tabela do banco de dados",
+      "example_sentence": "Creamos una tabla nueva para registrar el historial de auditoría.",
+      "level_id": 3,
+      "category_id": 8,
+      "image_url": "local:vocab_database.xml"
+    },
+    {
+      "word": "la fila / el registro",
+      "definition": "a linha / o registro da tabela",
+      "example_sentence": "Esa consulta devuelve más de diez mil filas si no le pones un límite.",
+      "level_id": 3,
+      "category_id": 8,
+      "image_url": "local:vocab_database.xml"
+    },
+    {
+      "word": "la columna / el campo",
+      "definition": "a coluna / o campo da tabela",
+      "example_sentence": "Agregamos una columna para guardar la fecha de última modificación.",
+      "level_id": 3,
+      "category_id": 8,
+      "image_url": "local:vocab_database.xml"
+    },
+    {
+      "word": "la clave primaria / llave primaria",
+      "definition": "a chave primária (primary key)",
+      "example_sentence": "Cada tabla debe tener una clave primaria única e inmutable.",
+      "level_id": 3,
+      "category_id": 8,
+      "image_url": "local:vocab_database.xml"
+    },
+    {
+      "word": "la clave foránea / llave foránea",
+      "definition": "a chave estrangeira (foreign key)",
+      "example_sentence": "La clave foránea asegura la integridad referencial entre pedidos y clientes.",
+      "level_id": 3,
+      "category_id": 8,
+      "image_url": "local:vocab_database.xml"
+    },
+    {
+      "word": "el índice compuesto",
+      "definition": "o índice composto",
+      "example_sentence": "Creamos un índice compuesto por fecha y estado para acelerar las búsquedas.",
+      "level_id": 3,
+      "category_id": 8,
+      "image_url": "local:vocab_database.xml"
+    },
+    {
+      "word": "la migración de base de datos",
+      "definition": "a migração de esquema de banco de dados",
+      "example_sentence": "Ejecutamos el script de migración en preproducción sin ningún problema.",
+      "level_id": 3,
+      "category_id": 8,
+      "image_url": "local:vocab_database.xml"
+    },
+    {
+      "word": "la transacción atómica",
+      "definition": "a transação atômica (tudo ou nada)",
+      "example_sentence": "Envolvimos el descuento de saldo y el registro del pago en una transacción atómica.",
+      "level_id": 3,
+      "category_id": 8,
+      "image_url": "local:vocab_database.xml"
+    },
+    {
+      "word": "el bloqueo de tabla (lock)",
+      "definition": "o bloqueio / travamento de tabela",
+      "example_sentence": "Una transacción larga provocó un bloqueo en la tabla de inventario.",
+      "level_id": 3,
+      "category_id": 8,
+      "image_url": "local:vocab_database.xml"
+    },
+    {
+      "word": "la réplica de solo lectura",
+      "definition": "a réplica de leitura (read replica)",
+      "example_sentence": "Los reportes analíticos consultan directamente la réplica de solo lectura.",
+      "level_id": 3,
+      "category_id": 8,
+      "image_url": "local:vocab_database.xml"
+    },
+    {
+      "word": "el respaldo automático (backup)",
+      "definition": "o backup automático diário",
+      "example_sentence": "Configuramos respaldos automáticos cada seis horas con retención de treinta días.",
+      "level_id": 3,
+      "category_id": 8,
+      "image_url": "local:vocab_database.xml"
+    },
+    {
+      "word": "la pérdida de datos",
+      "definition": "a perda de dados",
+      "example_sentence": "Validamos la restauración del respaldo para garantizar cero pérdida de datos.",
+      "level_id": 3,
+      "category_id": 8,
+      "image_url": "local:vocab_database.xml"
+    },
+    {
+      "word": "el procedimiento almacenado",
+      "definition": "a stored procedure",
+      "example_sentence": "Migramos la lógica del antiguo procedimiento almacenado hacia el servicio backend.",
+      "level_id": 3,
+      "category_id": 8,
+      "image_url": "local:vocab_database.xml"
+    },
+    {
+      "word": "el motor de base de datos",
+      "definition": "o SGBD / motor de banco de dados",
+      "example_sentence": "Usamos PostgreSQL como motor de base de datos relacional principal.",
+      "level_id": 3,
+      "category_id": 8,
+      "image_url": "local:vocab_database.xml"
+    },
+    {
+      "word": "la base de datos documental (NoSQL)",
+      "definition": "o banco de dados orientado a documentos",
+      "example_sentence": "Guardamos el catálogo flexible de productos en una base de datos documental.",
+      "level_id": 3,
+      "category_id": 8,
+      "image_url": "local:vocab_database.xml"
+    },
+    {
+      "word": "la paginación de resultados",
+      "definition": "a paginação de resultados",
+      "example_sentence": "Implementamos paginación por cursor para no cargar toda la tabla en memoria.",
+      "level_id": 3,
+      "category_id": 8,
+      "image_url": "local:vocab_database.xml"
+    },
+    {
+      "word": "el plan de ejecución",
+      "definition": "o plano de execução da query (execution plan)",
+      "example_sentence": "Analizamos el plan de ejecución y vimos que hacía un escaneo completo de la tabla.",
+      "level_id": 3,
+      "category_id": 8,
+      "image_url": "local:vocab_database.xml"
+    },
+    {
+      "word": "el escaneo completo (full table scan)",
+      "definition": "a varredura completa de tabela",
+      "example_sentence": "Evita los escaneos completos en tablas con millones de registros.",
+      "level_id": 3,
+      "category_id": 8,
+      "image_url": "local:vocab_database.xml"
+    },
+    {
+      "word": "el grupo de conexiones (connection pool)",
+      "definition": "o pool de conexões com o banco",
+      "example_sentence": "Ajustamos el tamaño máximo del pool de conexiones en la aplicación.",
+      "level_id": 3,
+      "category_id": 8,
+      "image_url": "local:vocab_database.xml"
+    },
+    {
+      "word": "la nube (cloud)",
+      "definition": "a nuvem computacional",
+      "example_sentence": "Migramos toda nuestra infraestructura local hacia la nube el año pasado.",
       "level_id": 3,
       "category_id": 9,
-      "image_url": "local:vocab_code.xml"
+      "image_url": "local:vocab_cloud.xml"
     },
     {
-      "word": "cobertura de código",
-      "definition": "porcentagem do código fonte exercitada pela suíte de testes (code coverage)",
-      "example_sentence": "El pipeline de CI exige al menos un ochenta por ciento de cobertura de código.",
+      "word": "la instancia / máquina virtual",
+      "definition": "a instância / máquina virtual na nuvem",
+      "example_sentence": "Elegimos una instancia optimizada para memoria en el entorno de producción.",
       "level_id": 3,
       "category_id": 9,
-      "image_url": "local:vocab_code.xml"
+      "image_url": "local:vocab_cloud.xml"
+    },
+    {
+      "word": "el contenedor",
+      "definition": "o container (Docker)",
+      "example_sentence": "Empaquetamos la aplicación y sus dependencias dentro de un contenedor ligero.",
+      "level_id": 3,
+      "category_id": 9,
+      "image_url": "local:vocab_cloud.xml"
+    },
+    {
+      "word": "el almacenamiento de objetos (bucket)",
+      "definition": "o armazenamento de objetos (como S3 / Cloud Storage)",
+      "example_sentence": "Los archivos subidos por los usuarios se guardan en un bucket privado.",
+      "level_id": 3,
+      "category_id": 9,
+      "image_url": "local:vocab_cloud.xml"
+    },
+    {
+      "word": "el balanceador de carga",
+      "definition": "o balanceador de carga (load balancer)",
+      "example_sentence": "El balanceador de carga reparte las peticiones entre los servidores disponibles.",
+      "level_id": 3,
+      "category_id": 9,
+      "image_url": "local:vocab_cloud.xml"
+    },
+    {
+      "word": "el autoescalado",
+      "definition": "o auto-scaling (escalonamento automático)",
+      "example_sentence": "El grupo de autoescalado suma instancias cuando el uso de CPU supera el setenta por ciento.",
+      "level_id": 3,
+      "category_id": 9,
+      "image_url": "local:vocab_cloud.xml"
+    },
+    {
+      "word": "la región y zona de disponibilidad",
+      "definition": "a região e zona de disponibilidade (AZ)",
+      "example_sentence": "Desplegamos en múltiples zonas de disponibilidad para tolerar fallas de centro de datos.",
+      "level_id": 3,
+      "category_id": 9,
+      "image_url": "local:vocab_cloud.xml"
+    },
+    {
+      "word": "las funciones sin servidor (serverless)",
+      "definition": "as funções serverless (como AWS Lambda)",
+      "example_sentence": "Procesamos el cambio de tamaño de las imágenes mediante funciones sin servidor.",
+      "level_id": 3,
+      "category_id": 9,
+      "image_url": "local:vocab_cloud.xml"
+    },
+    {
+      "word": "las variables de entorno",
+      "definition": "as variáveis de ambiente (environment variables)",
+      "example_sentence": "Configuramos la cadena de conexión mediante variables de entorno.",
+      "level_id": 3,
+      "category_id": 9,
+      "image_url": "local:vocab_cloud.xml"
+    },
+    {
+      "word": "el gestor de secretos",
+      "definition": "o gerenciador de segredos na nuvem",
+      "example_sentence": "Las claves de API se leen de forma segura desde el gestor de secretos.",
+      "level_id": 3,
+      "category_id": 9,
+      "image_url": "local:vocab_cloud.xml"
+    },
+    {
+      "word": "el costo operativo en la nube",
+      "definition": "o custo operacional de nuvem (FinOps)",
+      "example_sentence": "Etiquetamos todos los recursos para controlar el costo operativo por equipo.",
+      "level_id": 3,
+      "category_id": 9,
+      "image_url": "local:vocab_cloud.xml"
+    },
+    {
+      "word": "apagar recursos ociosos",
+      "definition": "desligar recursos ociosos / sem uso",
+      "example_sentence": "Ahorramos un treinta por ciento apagando recursos ociosos por la noche.",
+      "level_id": 3,
+      "category_id": 9,
+      "image_url": "local:vocab_cloud.xml"
+    },
+    {
+      "word": "la imagen base",
+      "definition": "a imagem base do container",
+      "example_sentence": "Usamos una imagen base mínima de Linux para reducir el tamaño del contenedor.",
+      "level_id": 3,
+      "category_id": 9,
+      "image_url": "local:vocab_cloud.xml"
+    },
+    {
+      "word": "el registro de contenedores",
+      "definition": "o container registry (repositório de imagens)",
+      "example_sentence": "El pipeline sube la imagen compilada al registro privado de contenedores.",
+      "level_id": 3,
+      "category_id": 9,
+      "image_url": "local:vocab_cloud.xml"
+    },
+    {
+      "word": "la red virtual privada (VPC)",
+      "definition": "a rede virtual isolada na nuvem (VPC)",
+      "example_sentence": "Aislamos los entornos de producción y pruebas en redes virtuales separadas.",
+      "level_id": 3,
+      "category_id": 9,
+      "image_url": "local:vocab_cloud.xml"
+    },
+    {
+      "word": "la cuota de servicio",
+      "definition": "a cota / limite de recursos da conta cloud",
+      "example_sentence": "Solicitamos un aumento de cuota para levantar más nodos en la región.",
+      "level_id": 3,
+      "category_id": 9,
+      "image_url": "local:vocab_cloud.xml"
+    },
+    {
+      "word": "el panel de control (consola cloud)",
+      "definition": "o console de gerenciamento da nuvem",
+      "example_sentence": "Puedes revisar el estado de las instancias desde la consola de la nube.",
+      "level_id": 3,
+      "category_id": 9,
+      "image_url": "local:vocab_cloud.xml"
+    },
+    {
+      "word": "la plantilla de infraestructura",
+      "definition": "o template de infraestrutura (Terraform / CloudFormation)",
+      "example_sentence": "Definimos todos los recursos en plantillas de infraestructura versionadas en Git.",
+      "level_id": 3,
+      "category_id": 9,
+      "image_url": "local:vocab_cloud.xml"
+    },
+    {
+      "word": "la alta disponibilidad",
+      "definition": "a alta disponibilidade (HA)",
+      "example_sentence": "La arquitectura en la nube fue diseñada para garantizar alta disponibilidad.",
+      "level_id": 3,
+      "category_id": 9,
+      "image_url": "local:vocab_cloud.xml"
+    },
+    {
+      "word": "el proveedor de nube",
+      "definition": "o provedor de nuvem (AWS, GCP, Azure)",
+      "example_sentence": "Nuestra arquitectura es compatible con más de un proveedor de nube.",
+      "level_id": 3,
+      "category_id": 9,
+      "image_url": "local:vocab_cloud.xml"
+    },
+    {
+      "word": "el precio / el costo",
+      "definition": "o preço / o custo",
+      "example_sentence": "Comparé los precios en tres tiendas en línea antes de comprar.",
+      "level_id": 3,
+      "category_id": 21,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "el descuento / la rebaja",
+      "definition": "o desconto / a liquidação",
+      "example_sentence": "Aproveché un descuento del treinta por ciento en artículos de tecnología.",
+      "level_id": 3,
+      "category_id": 21,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "la oferta / la promoción",
+      "definition": "a oferta / a promoção",
+      "example_sentence": "Esta semana hay muy buenas ofertas en el supermercado del barrio.",
+      "level_id": 3,
+      "category_id": 21,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "pagar en cuotas / a meses",
+      "definition": "pagar parcelado (Cone Sul/Colômbia: en cuotas; México: a meses)",
+      "example_sentence": "Compré la heladera en seis cuotas sin interés con tarjeta de crédito.",
+      "level_id": 3,
+      "category_id": 21,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "sin interés",
+      "definition": "sem juros",
+      "example_sentence": "Verifica siempre si las cuotas son realmente sin interés.",
+      "level_id": 3,
+      "category_id": 21,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "la tarjeta de crédito y débito",
+      "definition": "o cartão de crédito e débito",
+      "example_sentence": "Hoy en día casi todos los comercios aceptan tarjeta de débito sin monto mínimo.",
+      "level_id": 3,
+      "category_id": 21,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "el cajero automático",
+      "definition": "o caixa eletrônico (ATM)",
+      "example_sentence": "Fui al cajero automático del banco para retirar algo de efectivo.",
+      "level_id": 3,
+      "category_id": 21,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "la cuenta de ahorros",
+      "definition": "a conta poupança",
+      "example_sentence": "Guardo un porcentaje de mi sueldo mensual en una cuenta de ahorros.",
+      "level_id": 3,
+      "category_id": 21,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "la transferencia bancaria",
+      "definition": "a transferência bancária",
+      "example_sentence": "Te hice una transferencia inmediata desde la aplicación de mi banco.",
+      "level_id": 3,
+      "category_id": 21,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "la billetera digital / virtual",
+      "definition": "a carteira digital (fintech / pagamento por app)",
+      "example_sentence": "Pago el transporte y el café escaneando el código QR con mi billetera digital.",
+      "level_id": 3,
+      "category_id": 21,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "la factura / la boleta / el recibo",
+      "definition": "a nota fiscal / o comprovante de compra",
+      "example_sentence": "Guarda la factura por si necesitas hacer valer la garantía del producto.",
+      "level_id": 3,
+      "category_id": 21,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "la garantía",
+      "definition": "a garantia do produto",
+      "example_sentence": "El monitor tiene dos años de garantía oficial de fábrica.",
+      "level_id": 3,
+      "category_id": 21,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "cambiar un producto / hacer una devolución",
+      "definition": "trocar um produto / fazer uma devolução",
+      "example_sentence": "Tienes treinta días para cambiar la prenda si no te queda bien la talla.",
+      "level_id": 3,
+      "category_id": 21,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "la talla / el talle",
+      "definition": "o tamanho de roupa ou calçado",
+      "example_sentence": "¿Tienes esta misma camisa en talla mediana, por favor?",
+      "level_id": 3,
+      "category_id": 21,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "el probador / el vestidor",
+      "definition": "o provador de roupas",
+      "example_sentence": "Pasé al probador para ver cómo me quedaba el pantalón.",
+      "level_id": 3,
+      "category_id": 21,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "el presupuesto mensual",
+      "definition": "o orçamento mensal",
+      "example_sentence": "Llevo una planilla para organizar mi presupuesto mensual y mis gastos.",
+      "level_id": 3,
+      "category_id": 21,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "invertir / la inversión",
+      "definition": "investir / o investimento",
+      "example_sentence": "Es recomendable invertir a largo plazo para proteger los ahorros.",
+      "level_id": 3,
+      "category_id": 21,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "el sueldo / el salario",
+      "definition": "o salário / a remuneração",
+      "example_sentence": "En nuestra empresa depositan el sueldo el último día hábil del mes.",
+      "level_id": 3,
+      "category_id": 21,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "el impuesto",
+      "definition": "o imposto",
+      "example_sentence": "Verifica si el precio publicado ya incluye el impuesto al valor agregado (IVA).",
+      "level_id": 3,
+      "category_id": 21,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "barato vs caro",
+      "definition": "barato vs caro",
+      "example_sentence": "Comprar pasajes en temporada baja sale mucho más barato.",
+      "level_id": 3,
+      "category_id": 21,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "el tiempo libre / el ocio",
+      "definition": "o tempo livre / o lazer",
+      "example_sentence": "En mi tiempo libre me gusta tocar la guitarra y salir a correr.",
+      "level_id": 3,
+      "category_id": 22,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "hacer deporte / entrenar",
+      "definition": "praticar esporte / treinar",
+      "example_sentence": "Entreno tres veces por semana por la mañana antes de encender la computadora.",
+      "level_id": 3,
+      "category_id": 22,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "el gimnasio",
+      "definition": "a academia de ginástica",
+      "example_sentence": "Me anoté en un gimnasio que tiene clases de natación y musculación.",
+      "level_id": 3,
+      "category_id": 22,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "el partido de fútbol",
+      "definition": "a partida / o jogo de futebol",
+      "example_sentence": "Nos juntamos con los amigos del trabajo para jugar un partido los jueves.",
+      "level_id": 3,
+      "category_id": 22,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "la cancha",
+      "definition": "a quadra esportiva ou o campo de futebol",
+      "example_sentence": "Alquilamos una cancha de fútbol cinco cerca de la oficina.",
+      "level_id": 3,
+      "category_id": 22,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "el equipo / el cuadro",
+      "definition": "o time esportivo",
+      "example_sentence": "¿De qué equipo de fútbol eres hincha?",
+      "level_id": 3,
+      "category_id": 22,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "el hincha / el aficionado",
+      "definition": "o torcedor / fã de um esporte",
+      "example_sentence": "En Sudamérica la gente es muy apasionada e hincha por su selección.",
+      "level_id": 3,
+      "category_id": 22,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "salir a correr",
+      "definition": "sair para correr",
+      "example_sentence": "Salgo a correr cinco kilómetros por el parque los sábados.",
+      "level_id": 3,
+      "category_id": 22,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "andar en bicicleta",
+      "definition": "andar de bicicleta",
+      "example_sentence": "Los domingos cierran la avenida principal para andar en bicicleta.",
+      "level_id": 3,
+      "category_id": 22,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "hacer senderismo / trekking",
+      "definition": "fazer trilha / caminhada na natureza",
+      "example_sentence": "Fuimos a la montaña a hacer senderismo y sacar fotografías.",
+      "level_id": 3,
+      "category_id": 22,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "acampar / el campamento",
+      "definition": "acampar / o acampamento",
+      "example_sentence": "Llevamos una carpa para acampar junto al lago el fin de semana.",
+      "level_id": 3,
+      "category_id": 22,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "el concierto / el recital",
+      "definition": "o show musical / concerto",
+      "example_sentence": "Compré dos entradas para el concierto de mi banda favorita.",
+      "level_id": 3,
+      "category_id": 22,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "la entrada / el boleto",
+      "definition": "o ingresso (para cinema, show, teatro ou estádio)",
+      "example_sentence": "Las entradas para la final se agotaron en menos de una hora.",
+      "level_id": 3,
+      "category_id": 22,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "la obra de teatro",
+      "definition": "a peça de teatro",
+      "example_sentence": "El viernes por la noche fuimos a ver una comedia al teatro.",
+      "level_id": 3,
+      "category_id": 22,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "la película / el cine",
+      "definition": "o filme / o cinema",
+      "example_sentence": "¿Qué película me recomiendas ver este fin de semana?",
+      "level_id": 3,
+      "category_id": 22,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "la serie / el episodio",
+      "definition": "a série / o episódio (ou 'el capítulo')",
+      "example_sentence": "Vimos dos capítulos seguidos de la nueva serie argentina.",
+      "level_id": 3,
+      "category_id": 22,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "el pasatiempo / el hobby",
+      "definition": "o passatempo / hobby",
+      "example_sentence": "Cocinar platos nuevos para mis amigos es mi pasatiempo favorito.",
+      "level_id": 3,
+      "category_id": 22,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "los juegos de mesa / videojuegos",
+      "definition": "os jogos de tabuleiro / videogames",
+      "example_sentence": "A veces nos conectamos por la noche para jugar videojuegos en línea.",
+      "level_id": 3,
+      "category_id": 22,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "desconectar del trabajo",
+      "definition": "desconectar / desligar-se do trabalho",
+      "example_sentence": "Apago las notificaciones el viernes a la tarde para desconectar del trabajo.",
+      "level_id": 3,
+      "category_id": 22,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "disfrutar",
+      "definition": "aproveitar / curtir",
+      "example_sentence": "¡Que disfrutes mucho de tus vacaciones en la playa!",
+      "level_id": 3,
+      "category_id": 22,
+      "image_url": "local:vocab_travel.xml"
     }
   ]
 }

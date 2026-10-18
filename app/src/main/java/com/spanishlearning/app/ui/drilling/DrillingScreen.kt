@@ -224,8 +224,8 @@ private fun QuestionScreen(
                     value = input,
                     onValueChange = { input = it },
                     modifier = Modifier.weight(1f).focusRequester(focusRequester),
-                    label = { Text("Answer in English") },
-                    placeholder = { Text("Full sentence!") },
+                    label = { Text("Responda em espanhol") },
+                    placeholder = { Text("Frase completa em espanhol!") },
                     singleLine = false,
                     maxLines = 3,
                     keyboardOptions = KeyboardOptions(imeAction = ImeAction.Done),
@@ -242,7 +242,7 @@ private fun QuestionScreen(
                 ) {
                     Icon(
                         Icons.Filled.Mic,
-                        contentDescription = "Voice",
+                        contentDescription = "Voz",
                         tint = MaterialTheme.colorScheme.primary,
                         modifier = Modifier.size(28.dp)
                     )
@@ -254,7 +254,7 @@ private fun QuestionScreen(
                 enabled = input.isNotBlank(),
                 modifier = Modifier.fillMaxWidth()
             ) {
-                Text("Check ✓", style = MaterialTheme.typography.labelLarge)
+                Text("Verificar ✓", style = MaterialTheme.typography.labelLarge)
             }
         }
     }
@@ -280,7 +280,7 @@ private fun ResultCard(
             verticalArrangement = Arrangement.spacedBy(8.dp)
         ) {
             Text(
-                text = if (wasCorrect) "✅ Correct!" else "❌ Answer:",
+                text = if (wasCorrect) "✅ ¡Correcto!" else "❌ Resposta esperada:",
                 style = MaterialTheme.typography.titleMedium,
                 fontWeight = FontWeight.Bold,
                 color = if (wasCorrect)
@@ -296,7 +296,7 @@ private fun ResultCard(
                     color = MaterialTheme.colorScheme.onErrorContainer
                 )
                 Text(
-                    text = "Repeat it out loud!",
+                    text = "Repita em voz alta em espanhol!",
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onErrorContainer.copy(alpha = 0.7f)
                 )
@@ -311,7 +311,7 @@ private fun ResultCard(
                         MaterialTheme.colorScheme.secondary
                 )
             ) {
-                Text("Next →", style = MaterialTheme.typography.labelLarge)
+                Text("Próxima →", style = MaterialTheme.typography.labelLarge)
             }
         }
     }
@@ -337,19 +337,19 @@ private fun DoneScreen(
             fontSize = 72.sp
         )
         Spacer(Modifier.height(16.dp))
-        Text("Drill Complete!", style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.Bold)
+        Text("¡Drilling Concluído!", style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.Bold)
         Spacer(Modifier.height(8.dp))
         Text(
-            "${state.score}/${state.total} correct (${state.percentage}%)",
+            "${state.score}/${state.total} acertos (${state.percentage}%)",
             style = MaterialTheme.typography.bodyLarge,
             color = MaterialTheme.colorScheme.onSurfaceVariant
         )
         Spacer(Modifier.height(8.dp))
         Text(
             when {
-                state.percentage >= 80 -> "Excellent! 🏆 Excellent! 🎉"
-                state.percentage >= 50 -> "Good progress! Keep practising."
-                else -> "Keep going! Repetition is the key."
+                state.percentage >= 80 -> "¡Excelente! Mandou muito bem! 🎉"
+                state.percentage >= 50 -> "Bom progresso! Continue praticando."
+                else -> "Continue praticando! A repetição leva à fluência."
             },
             style = MaterialTheme.typography.bodyMedium,
             color = MaterialTheme.colorScheme.onSurfaceVariant,
@@ -357,11 +357,11 @@ private fun DoneScreen(
         )
         Spacer(Modifier.height(32.dp))
         Button(onClick = onRestart, modifier = Modifier.fillMaxWidth()) {
-            Text("Drill Again", style = MaterialTheme.typography.labelLarge)
+            Text("Praticar Novamente", style = MaterialTheme.typography.labelLarge)
         }
         Spacer(Modifier.height(12.dp))
         OutlinedButton(onClick = onBack, modifier = Modifier.fillMaxWidth()) {
-            Text("Back", style = MaterialTheme.typography.labelLarge)
+            Text("Voltar", style = MaterialTheme.typography.labelLarge)
         }
     }
 }

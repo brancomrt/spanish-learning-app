@@ -142,253 +142,216 @@ object GrammarTheoryProvider {
             tip = "Nas reuniões de post-mortem adota-se o 'análisis sin culpas' (blameless post-mortem)."
         ),
 
-        // ── Present Simple ────────────────────────────────────────────────
-        "present simple" to GrammarTheory(
-            title = "Present Simple (Presente Simples)",
-            explanation = "Usado para fatos, hábitos, rotinas e verdades gerais. É o tempo verbal mais básico do inglês.",
+        // ── Presente de Indicativo ────────────────────────────────────────
+        "presente" to GrammarTheory(
+            title = "Presente de Indicativo (Rotinas, Hábitos e Fatos)",
+            explanation = "Usado para ações habituais do cotidiano e do trabalho, verdades universais e estados atuais em espanhol.",
             structure = """
-                (+) Subject + verb (3ª pessoa: verb + s/es)
-                (-) Subject + do/does + not + verb
-                (?) Do/Does + subject + verb?
+                • Verbos -AR (trabajar, hablar): trabajo, trabajas, trabaja, trabajamos, trabajan
+                • Verbos -ER (comer, correr): como, comes, come, comemos, comen
+                • Verbos -IR (vivir, subir): vivo, vives, vive, vivimos, viven
+                (?) ¿(Palabra interrogativa) + verbo conjugado + complemento?
             """.trimIndent(),
             examples = listOf(
-                "I work from home every day.",
-                "She doesn't like coffee.",
-                "Do you speak English?",
-                "He starts work at nine."
+                "Trabajo desde casa todos los días.",
+                "¿A qué hora empieza tu turno o la reunión?",
+                "¿Dónde vives actualmente?",
+                "Ella toma café por la mañana antes de programar."
             ),
-            tip = "3ª pessoa singular (he/she/it): adicione -s ou -es ao verbo."
+            tip = "Na América Latina usa-se 'ustedes' tanto para contextos formais quanto informais no plural (nunca 'vosotros')."
         ),
 
-        // ── Present Continuous ────────────────────────────────────────────
-        "present continuous" to GrammarTheory(
-            title = "Present Continuous (Presente Contínuo)",
-            explanation = "Usado para ações que estão acontecendo agora ou planos futuros próximos.",
+        // ── Estar + Gerundio (Presente Contínuo) ──────────────────────────
+        "gerundio" to GrammarTheory(
+            title = "Estar + Gerundio (Ações em Andamento)",
+            explanation = "Usado para descrever ações que estão acontecendo exatamente neste momento no dia a dia ou no trabalho.",
             structure = """
-                (+) Subject + am/is/are + verb-ing
-                (-) Subject + am/is/are + not + verb-ing
-                (?) Am/Is/Are + subject + verb-ing?
+                (+) Sujeito + estoy/estás/está/estamos/están + verbo (-ando / -iendo)
+                (-) Sujeito + no + estar + gerundio
+                (?) ¿Qué + estar + gerundio?
             """.trimIndent(),
             examples = listOf(
-                "I'm working on the bug right now.",
-                "We are deploying the update tonight.",
-                "Are you going to the conference?",
-                "The server is running out of memory."
+                "Estoy revisando el incidente en producción ahora mismo.",
+                "¿En qué estás trabajando hoy?",
+                "Estamos preparando la cena en casa.",
+                "El servidor está consumiendo demasiada memoria."
             ),
-            tip = "Contrações: I'm, you're, he's, she's, it's, we're, they're."
+            tip = "Verbos em -AR formam gerúndio em '-ando' (trabajando) e verbos em -ER/-IR em '-iendo' (comiendo, viviendo)."
         ),
 
-        // ── Present Perfect ───────────────────────────────────────────────
-        "present perfect" to GrammarTheory(
-            title = "Present Perfect (Presente Perfeito)",
-            explanation = "Conecta o passado ao presente. Usado para experiências, ações recentes ou estados que continuam.",
+        // ── Pretérito Perfecto Compuesto (Haber + Participio) ─────────────
+        "pretérito perfecto" to GrammarTheory(
+            title = "Pretérito Perfecto (Experiências e Passado Recente)",
+            explanation = "Conecta o passado ao presente. Usado para experiências de vida ('alguna vez', 'ya', 'todavía no') ou ações recentes.",
             structure = """
-                (+) Subject + have/has + past participle
-                (-) Subject + have/has + not + past participle
-                (?) Have/Has + subject + past participle?
+                (+) Sujeito + he / has / ha / hemos / han + particípio (-ado / -ido)
+                (-) Sujeito + todavía no + haber + particípio
+                (?) ¿Ya + haber + particípio + complemento?
             """.trimIndent(),
             examples = listOf(
-                "I have already pushed the fix.",
-                "She hasn't reviewed the PR yet.",
-                "Have you ever used Kubernetes?",
-                "The pipeline has failed three times today."
+                "Ya he subido los cambios al repositorio.",
+                "¿Alguna vez has viajado a Ciudad de México?",
+                "Todavía no hemos recibido la factura del proveedor.",
+                "El pipeline ha fallado dos veces esta mañana."
             ),
-            tip = "Palavras-chave: already, yet, ever, never, just, for, since."
+            tip = "Particípios irregulares importantes: hacer→hecho, decir→dicho, ver→visto, escribir→escrito, romper→roto, abrir→abierto."
         ),
 
-        // ── Present Perfect Continuous ────────────────────────────────────
-        "present perfect continuous" to GrammarTheory(
-            title = "Present Perfect Continuous",
-            explanation = "Enfatiza a duração de uma ação que começou no passado e continua ou acabou recentemente.",
+        // ── Pretérito Indefinido (Passado Simples) ────────────────────────
+        "pretérito indefinido" to GrammarTheory(
+            title = "Pretérito Indefinido (Ações Concluídas no Passado)",
+            explanation = "Muito usado na América Latina para relatar ações concluídas em um momento específico do passado (ayer, anoche, la semana pasada).",
             structure = """
-                (+) Subject + have/has + been + verb-ing
-                (-) Subject + have/has + not + been + verb-ing
-                (?) How long + have/has + subject + been + verb-ing?
+                • -AR: trabajé, trabajaste, trabajó, trabajamos, trabajaron
+                • -ER/-IR: salí, saliste, salió, salimos, salieron
+                • Irregulares comuns: fui/fue, hice/hizo, tuve/tuvo, pude/pudo, estuve/estuvo
             """.trimIndent(),
             examples = listOf(
-                "The container has been running for 48 hours.",
-                "The team has been dealing with tech debt for months.",
-                "How long have you been working here?",
-                "She hasn't been sleeping well since the incident."
+                "El servidor se cayó anoche durante el mantenimiento.",
+                "Ayer compré los boletos de avión para el viaje.",
+                "¿Cuándo desplegaron la nueva versión?",
+                "¿Qué hiciste el fin de semana pasado?"
             ),
-            tip = "Contrações: I've been, he's been, they've been."
+            tip = "Na América Latina, o Pretérito Indefinido ('Ya comí', 'Ayer terminé') é preferido mesmo para o passado recente do mesmo dia!"
         ),
 
-        // ── Past Simple ───────────────────────────────────────────────────
-        "past simple" to GrammarTheory(
-            title = "Past Simple (Passado Simples)",
-            explanation = "Usado para ações completadas em um momento específico do passado.",
+        // ── Pretérito Imperfecto ──────────────────────────────────────────
+        "pretérito imperfecto" to GrammarTheory(
+            title = "Pretérito Imperfecto (Contexto e Hábitos no Passado)",
+            explanation = "Usado para descrever cenários no passado, rotinas antigas ou uma ação em curso quando outra aconteceu.",
             structure = """
-                (+) Subject + verb-ed (ou irregular)
-                (-) Subject + did + not + base verb
-                (?) Did + subject + base verb?
+                • -AR: trabajaba, trabajabas, trabajaba, trabajábamos, trabajaban
+                • -ER/-IR: tenía, tenías, tenía, teníamos, tenían
             """.trimIndent(),
             examples = listOf(
-                "The server crashed last night.",
-                "We deployed the fix on Friday.",
-                "Why did the pipeline fail?",
-                "The attacker gained access through SQL injection."
+                "Antes trabajábamos con un monolito, pero migramos a microservicios.",
+                "Cuando vivía en Bogotá, caminaba al trabajo todos los días.",
+                "¿Qué estabas haciendo cuando ocurrió el apagón?"
             ),
-            tip = "Verbos irregulares comuns: go→went, find→found, break→broke, write→wrote."
+            tip = "Apenas três verbos são irregulares no Imperfecto: ser (era), ir (iba) e ver (veía)."
         ),
 
-        // ── Passive Voice ─────────────────────────────────────────────────
-        "passive voice" to GrammarTheory(
-            title = "Voz Passiva (Passive Voice)",
-            explanation = "Usada quando o foco é na ação ou no objeto, não em quem a pratica. Muito comum em inglês técnico e formal.",
+        // ── Voz Pasiva y Pasiva Refleja (Con 'Se') ────────────────────────
+        "voz pasiva" to GrammarTheory(
+            title = "Voz Passiva e Passiva Reflexa com 'Se'",
+            explanation = "Em espanhol, além da passiva com 'ser + particípio', usa-se muito a passiva reflexa com 'se + verbo em 3ª pessoa' tanto em TI quanto no cotidiano.",
             structure = """
-                Presente:  Subject + am/is/are + past participle
-                Passado:   Subject + was/were + past participle
-                Futuro:    Subject + will be + past participle
-                Perf.:     Subject + have/has been + past participle
+                • Pasiva con 'se': Se + verbo (3ª sing./plural) + sujeito paciente
+                • Pasiva con 'ser': Sujeito + fue/fueron + particípio + por...
             """.trimIndent(),
             examples = listOf(
-                "The ticket was assigned to the infra team.",
-                "The vulnerability was found during the pentest.",
-                "The contract has been signed.",
-                "The update will be released next month."
+                "Se corrigió la vulnerabilidad durante la auditoría.",
+                "Se alquilan departamentos amueblados en el centro.",
+                "¿Cuándo se aprobó el presupuesto del proyecto?",
+                "El incidente fue resuelto por el equipo de guardia."
             ),
-            tip = "Para perguntar: When was it...? / Has it been...? / Will it be...?"
+            tip = "Na fala cotidiana e técnica em espanhol, 'Se desplegó la versión' soa muito mais natural que 'La versión fue desplegada'."
         ),
 
-        // ── Modal Verbs ───────────────────────────────────────────────────
-        "modal verbs" to GrammarTheory(
-            title = "Verbos Modais (Modal Verbs)",
-            explanation = "Expressam possibilidade, permissão, obrigação ou recomendação. Nunca conjugados — sempre seguidos do verbo base.",
+        // ── Verbos Modales y Perífrasis de Obligación ─────────────────────
+        "verbos modales" to GrammarTheory(
+            title = "Verbos Modais e Perífrases (Poder, Deber, Tener que, Hay que)",
+            explanation = "Expressam capacidade, permissão, recomendação ou obrigação pessoal e impessoal em espanhol.",
             structure = """
-                Subject + modal + base verb
-                can / could / may / might / will / would
-                shall / should / must / need to
+                • Obrigação pessoal: Tener que + infinitivo / Deber + infinitivo
+                • Obrigação impessoal: Hay que + infinitivo
+                • Recomendação: Deberías / Convendría + infinitivo
+                • Capacidade / Permissão: Poder + infinitivo
             """.trimIndent(),
             examples = listOf(
-                "You should restart the server.",
-                "Can you reset my password?",
-                "We must back up the data daily.",
-                "You need to uninstall the old driver first.",
-                "All endpoints should be authenticated."
+                "Tienes que reiniciar el contenedor para aplicar las variables.",
+                "Hay que respaldar la base de datos todos los días.",
+                "¿Puedes ayudarme a revisar esta consulta SQL?",
+                "Deberías descansar un poco y tomar más agua."
             ),
-            tip = "Should = recomendação | Must = obrigação forte | Can = capacidade/permissão."
+            tip = "'Hay que + infinitivo' é excelente em ambiente de trabalho por indicar uma necessidade sem culpar ninguém diretamente."
         ),
 
-        // ── Modal Perfect ─────────────────────────────────────────────────
-        "modal perfect" to GrammarTheory(
-            title = "Modal Perfect (Passado Hipotético)",
-            explanation = "Expressa situações hipotéticas ou arrependimentos sobre o passado. Combina modal + have + particípio.",
+        // ── Condicional y Subjuntivo (Hipóteses) ──────────────────────────
+        "condicional" to GrammarTheory(
+            title = "Condicional e Subjuntivo em Situações Hipotéticas",
+            explanation = "Usado para expressar cortesia, conselhos e hipóteses sobre o presente, futuro ou passado.",
             structure = """
-                Subject + modal + have + past participle
-                should have / could have / would have / must have
+                • Hipótese presente/futura: Si + Imperfecto de Subjuntivo (-ra), + Condicional Simple (-ría)
+                • Hipótese passada: Si + hubiera/hubiese + particípio, + habría + particípio
             """.trimIndent(),
             examples = listOf(
-                "We should have completed the epic by Q3.",
-                "You could have used a more efficient algorithm.",
-                "The bug must have been introduced in the last commit.",
-                "I would have caught it if we had proper monitoring."
+                "Si tuviéramos más pruebas automatizadas, detectaríamos los errores antes.",
+                "Si hubiéramos configurado alertas, habríamos evitado la caída.",
+                "¿Qué harías tú en esta situación?",
+                "Me gustaría reservar una mesa para dos personas."
             ),
-            tip = "Contrações: should've, could've, would've (muito usadas na fala)."
+            tip = "Para pedidos educados no cotidiano ou em TI, use o condicional: '¿Podrías enviarme el enlace?' / 'Me gustaría...'."
         ),
 
-        // ── Third Conditional ─────────────────────────────────────────────
-        "third conditional" to GrammarTheory(
-            title = "Third Conditional (3º Condicional)",
-            explanation = "Usado para situações hipotéticas no passado — algo que não aconteceu e suas consequências imaginárias.",
+        // ── Preguntas de Confirmación (Apéndices Interrogativos) ──────────
+        "confirmación" to GrammarTheory(
+            title = "Perguntas de Confirmação (¿verdad?, ¿no?, ¿cierto?)",
+            explanation = "Em espanhol, confirmar uma informação é muito mais simples: basta adicionar '¿verdad?', '¿no?' ou '¿cierto?' ao final da frase.",
             structure = """
-                If + subject + had + past participle,
-                subject + would/could/might + have + past participle
+                • Afirmação + , + ¿verdad? / ¿no? / ¿cierto?
+                • Negação + , + ¿verdad? / ¿cierto?
             """.trimIndent(),
             examples = listOf(
-                "If we had implemented monitoring earlier, we would have detected it sooner.",
-                "If the tests had passed, the deploy would have succeeded.",
-                "If I had reviewed the PR, I could have caught the bug.",
-                "If she had been notified, she would have fixed it."
+                "Ya desplegaste el parche en producción, ¿verdad?",
+                "La reunión empieza a las diez, ¿no?",
+                "Este restaurante tiene opciones vegetarianas, ¿cierto?",
+                "No cambiaron el esquema de la base de datos, ¿verdad?"
             ),
-            tip = "Contrações comuns: If we'd implemented... / we would've detected..."
+            tip = "Na Colômbia, Chile e México, '¿cierto?' e '¿verdad?' são extremamente frequentes em conversas profissionais e cotidianas."
         ),
 
-        // ── Tag Questions ─────────────────────────────────────────────────
-        "tag questions" to GrammarTheory(
-            title = "Tag Questions (Perguntas de Confirmação)",
-            explanation = "Adicionadas ao final de uma frase para confirmar ou buscar concordância. Frase positiva → tag negativa, e vice-versa.",
+        // ── Comparativos y Superlativos ───────────────────────────────────
+        "comparativos" to GrammarTheory(
+            title = "Comparativos e Superlativos em Espanhol",
+            explanation = "Usados para comparar desempenho técnico, preços, lugares, opções do cotidiano e tomar decisões.",
             structure = """
-                Frase positiva + , + auxiliar negativo + pronome?
-                Frase negativa + , + auxiliar positivo + pronome?
+                • Superioridade: más + adjetivo + que
+                • Inferioridade: menos + adjetivo + que
+                • Igualdade: tan + adjetivo + como / tanto(a) + substantivo + como
+                • Irregulares: bueno → mejor, malo → peor, grande → mayor
             """.trimIndent(),
             examples = listOf(
-                "It's a lovely city, isn't it?",
-                "You've deployed the fix, haven't you?",
-                "The server is running, isn't it?",
-                "They don't use Kubernetes, do they?"
+                "El disco SSD es mucho más rápido que el disco mecánico.",
+                "Esta arquitectura es más fácil de mantener que la anterior.",
+                "El transporte público aquí es tan eficiente como en Santiago.",
+                "¿Cuál de las dos opciones te parece mejor?"
             ),
-            tip = "Negações: isn't, aren't, doesn't, don't, didn't, won't, haven't, hasn't."
+            tip = "Nunca diga 'más bueno' ou 'más malo' para qualidade; use sempre 'mejor' e 'peor'."
         ),
 
-        // ── Comparatives ─────────────────────────────────────────────────
-        "comparatives" to GrammarTheory(
-            title = "Comparativos (Comparatives)",
-            explanation = "Usados para comparar duas coisas. Adjetivos curtos: + -er. Adjetivos longos: more + adjetivo.",
+        // ── Oraciones Concesivas (Aunque / A pesar de) ────────────────────
+        "concesivas" to GrammarTheory(
+            title = "Orações Concessivas (Aunque, A pesar de, Si bien)",
+            explanation = "Introduzem um contraste ou ressalva em argumentações avançadas de arquitetura, negócios e debates cotidianos.",
             structure = """
-                Curtos (1-2 sílabas): adj + -er + than
-                Longos (3+ sílabas):  more + adj + than
-                Irregular: good→better, bad→worse, far→farther
+                • Aunque + Indicativo (fato real) / Subjuntivo (hipótese)
+                • A pesar de (que) + substantivo / infinitivo / oração
+                • Si bien + oração, + oração principal
             """.trimIndent(),
             examples = listOf(
-                "The SSD is faster than the HDD.",
-                "This framework is more efficient than the old one.",
-                "Microservices are harder to debug than monoliths.",
-                "The new API is better than the previous version."
+                "Aunque la prueba pasó localmente, falló en el entorno de integración.",
+                "A pesar del tráfico pesado, llegamos a tiempo al aeropuerto.",
+                "Si bien el escalado horizontal mejora el rendimiento, aumenta el costo."
             ),
-            tip = "Which + comparative: Which is faster, A or B?"
+            tip = "'Aunque' + indicativo expressa um fato confirmado; 'Aunque' + subjuntivo expressa uma possibilidade ou concessão hipotética."
         ),
 
-        // ── Concession Clauses ────────────────────────────────────────────
-        "concession" to GrammarTheory(
-            title = "Orações de Concessão (Concession Clauses)",
-            explanation = "Introduzem um contraste ou ideia oposta. Equivalem ao 'embora' e 'apesar de' do português.",
+        // ── Futuro Simple y Perifrástico (Ir a + Infinitivo) ──────────────
+        "futuro" to GrammarTheory(
+            title = "Planos e Futuro (Ir a + Infinitivo e Futuro Simple)",
+            explanation = "No espanhol latino-americano, 'ir a + infinitivo' domina os planos próximos, enquanto o Futuro Simple (-ré, -rás, -rá) é usado para previsões formais.",
             structure = """
-                While / Although / Even though + clause, + main clause
-                Despite / In spite of + noun/gerund, + main clause
+                • Futuro próximo: Voy / Vas / Va / Vamos / Van + a + infinitivo
+                • Futuro simple: Infinitivo + -é, -ás, -á, -emos, -án
             """.trimIndent(),
             examples = listOf(
-                "While scaling horizontally improves throughput, it doesn't reduce latency.",
-                "Although the test passed locally, it failed in CI.",
-                "Even though the code looks clean, the performance is poor.",
-                "Despite the fix, the bug kept appearing."
+                "Mañana vamos a lanzar la nueva funcionalidad.",
+                "¿Cuándo vas a tomar tus vacaciones?",
+                "La migración a la nube reducirá los costos operativos.",
+                "¿Dónde van a cenar esta noche?"
             ),
-            tip = "While e although são intercambiáveis no início da frase."
-        ),
-
-        // ── Short Answers ─────────────────────────────────────────────────
-        "short answers" to GrammarTheory(
-            title = "Respostas Curtas (Short Answers)",
-            explanation = "No inglês, respondemos Yes/No repetindo o auxiliar da pergunta — nunca apenas 'Yes' ou 'No' sozinhos em contexto formal.",
-            structure = """
-                Yes, + subject + auxiliary.
-                No, + subject + auxiliary + not. (ou contração)
-            """.trimIndent(),
-            examples = listOf(
-                "Do you work here? → Yes, I do. / No, I don't.",
-                "Has it been deployed? → Yes, it has. / No, it hasn't.",
-                "Did the rollback work? → Yes, it did. / No, it didn't.",
-                "Are you the team lead? → Yes, I am. / No, I'm not."
-            ),
-            tip = "Nunca repita o verbo principal: 'Yes, I do.' ✓  'Yes, I work.' ✗"
-        ),
-
-        // ── Future Passive ────────────────────────────────────────────────
-        "future passive" to GrammarTheory(
-            title = "Futuro Passivo (Future Passive)",
-            explanation = "Combina o futuro com a voz passiva. Usado quando não se sabe ou não importa quem vai executar a ação.",
-            structure = """
-                (+) Subject + will be + past participle
-                (-) Subject + will not (won't) be + past participle
-                (?) Will + subject + be + past participle?
-            """.trimIndent(),
-            examples = listOf(
-                "The instance will be scaled up during peak hours.",
-                "The update will be released next Friday.",
-                "When will the feature be deployed?",
-                "The database won't be migrated until the tests pass."
-            ),
-            tip = "Contração: won't be = will not be."
+            tip = "Irregulares no Futuro Simple têm a mesma raiz do Condicional: tener→tendré, poder→podré, hacer→haré, salir→saldré, decir→diré."
         )
     )
 }

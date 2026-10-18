@@ -54,12 +54,12 @@ fun PrivacyPolicyScreen(navController: NavController) {
             verticalArrangement = Arrangement.spacedBy(12.dp)
         ) {
             Text(
-                text = "English Learning App",
+                text = "Español Latino — TI & Cotidiano",
                 style = MaterialTheme.typography.headlineSmall,
                 fontWeight = FontWeight.Bold
             )
             Text(
-                text = "Última atualização: setembro de 2026",
+                text = "Última atualização: outubro de 2026",
                 style = MaterialTheme.typography.bodySmall,
                 color = MaterialTheme.colorScheme.onSurfaceVariant
             )
@@ -68,7 +68,7 @@ fun PrivacyPolicyScreen(navController: NavController) {
 
             PolicySection(
                 title = "1. Visão Geral",
-                body = "O Spanish Tech Learning é um aplicativo focado em espanhol latino para profissionais de tecnologia que funciona " +
+                body = "O Español Latino é um aplicativo completo de espanhol latino-americano voltado para tecnologia (TI) e situações do cotidiano que funciona " +
                     "inteiramente no seu dispositivo. Esta política explica de forma transparente " +
                     "quais dados são utilizados e como são tratados."
             )
@@ -137,7 +137,7 @@ fun PrivacyPolicyScreen(navController: NavController) {
                     "pode exercer esses direitos a qualquer momento:\n\n" +
                     "• Para apagar todos os dados: desinstale o aplicativo\n" +
                     "• Para apagar dados de progresso: Configurações do Android → Aplicativos → " +
-                    "English Learning App → Limpar dados"
+                    "Español Latino → Limpar dados"
             )
 
             PolicySection(

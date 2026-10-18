@@ -46,16 +46,20 @@ import androidx.compose.ui.unit.dp
 // Constantes do exercício de exemplo
 // ---------------------------------------------------------------------------
 
-/** Resposta em inglês exibida durante o tutorial — conteúdo em inglês (Req. 14.8). */
-private const val EXAMPLE_ANSWER = "My name is Maria."
+/** Resposta em espanhol exibida durante o tutorial (Req. 14.8). */
+private const val EXAMPLE_ANSWER = "Me llamo María."
 
 /**
- * Validação simplificada para o onboarding: a pergunta deve começar com "what"
- * (case-insensitive). Não utiliza o ValidationEngine completo para não sobrecarregar
- * o tutorial com lógica de produção.
+ * Validação simplificada para o onboarding: a pergunta deve começar com "como", "cómo",
+ * "cual" ou "cuál" (ignorando "¿" inicial e caixa).
  */
-private fun isAnswerAccepted(userQuestion: String): Boolean =
-    userQuestion.trim().lowercase().startsWith("what")
+private fun isAnswerAccepted(userQuestion: String): Boolean {
+    val cleaned = userQuestion.trim().lowercase().removePrefix("¿").trim()
+    return cleaned.startsWith("como") ||
+        cleaned.startsWith("cómo") ||
+        cleaned.startsWith("cual") ||
+        cleaned.startsWith("cuál")
+}
 
 // ---------------------------------------------------------------------------
 // Estados internos do tutorial
@@ -73,14 +77,14 @@ private enum class OnboardingStep { WELCOME, EXERCISE, COMPLETION }
  *
  * Fluxo de três etapas (Req. 14.3):
  * 1. **Boas-vindas** — explica a mecânica em português.
- * 2. **Exercício** — exibe a resposta em inglês e captura a pergunta do usuário.
+ * 2. **Exercício** — exibe a resposta em espanhol e captura a pergunta do usuário.
  * 3. **Conclusão** — parabeniza e oferece botão para a HomeScreen.
  *
  * Registro de conclusão (Req. 14.5 / 14.6 / 14.7):
  * - Ocorre **antes** de invocar [onTutorialCompleted] ou [onSkip],
  *   gravando `onboarding_completed = true` no SharedPreferences.
  *
- * Textos de interface em português; conteúdo do exercício em inglês (Req. 14.8).
+ * Textos de interface em português; conteúdo do exercício em espanhol (Req. 14.8).
  *
  * @param onTutorialCompleted Callback chamada após o usuário completar o exercício.
  * @param onSkip              Callback chamada quando o usuário pressiona "Pular Tutorial".
@@ -198,7 +202,7 @@ private fun WelcomeStep(onNext: () -> Unit) {
         verticalArrangement = Arrangement.Center
     ) {
         Text(
-            text = "Bem-vindo! 👋",
+            text = "¡Bienvenido! 👋",
             style = MaterialTheme.typography.headlineMedium,
             fontWeight = FontWeight.Bold,
             textAlign = TextAlign.Center
@@ -220,14 +224,14 @@ private fun WelcomeStep(onNext: () -> Unit) {
                 )
                 Spacer(modifier = Modifier.height(12.dp))
                 Text(
-                    text = "Você verá uma resposta em inglês e deverá digitar " +
-                        "a pergunta correspondente.",
+                    text = "Você verá uma resposta ou pergunta em espanhol latino (voltada para TI e cotidiano) " +
+                        "e deverá formular a pergunta ou resposta correspondente.",
                     style = MaterialTheme.typography.bodyLarge
                 )
                 Spacer(modifier = Modifier.height(12.dp))
                 Text(
-                    text = "Por exemplo: se a resposta for \u201cMy name is Maria.\u201d, " +
-                        "a pergunta esperada \u00e9 \u201cWhat is your name?\u201d",
+                    text = "Por exemplo: se a resposta for \u201cMe llamo María.\u201d, " +
+                        "a pergunta esperada \u00e9 \u201c¿Cómo te llamas?\u201d",
                     style = MaterialTheme.typography.bodyMedium,
                     color = MaterialTheme.colorScheme.onSurfaceVariant
                 )
@@ -237,7 +241,7 @@ private fun WelcomeStep(onNext: () -> Unit) {
         Spacer(modifier = Modifier.height(32.dp))
 
         Text(
-            text = "Veja a resposta e formule a pergunta correspondente em inglês. " +
+            text = "Veja a resposta e formule a pergunta correspondente em espanhol. " +
                 "Vamos praticar com um exemplo!",
             style = MaterialTheme.typography.bodyLarge,
             textAlign = TextAlign.Center
@@ -264,8 +268,7 @@ private fun WelcomeStep(onNext: () -> Unit) {
 // ---------------------------------------------------------------------------
 
 /**
- * Segunda etapa: exibe [answerText] em inglês, campo de entrada e botão de submissão.
- * Validação simplificada verifica se a resposta começa com "what" (Req. 14.4).
+ * Segunda etapa: exibe [answerText] em espanhol, campo de entrada e botão de submissão.
  */
 @Composable
 private fun ExerciseStep(
@@ -292,7 +295,7 @@ private fun ExerciseStep(
         Spacer(modifier = Modifier.height(8.dp))
 
         Text(
-            text = "Veja a resposta abaixo e escreva a pergunta correspondente em inglês.",
+            text = "Veja a resposta abaixo e escreva a pergunta correspondente em espanhol.",
             style = MaterialTheme.typography.bodyMedium,
             textAlign = TextAlign.Center,
             color = MaterialTheme.colorScheme.onSurfaceVariant
@@ -300,7 +303,7 @@ private fun ExerciseStep(
 
         Spacer(modifier = Modifier.height(28.dp))
 
-        // Resposta em inglês — conteúdo do exercício (Req. 14.8)
+        // Resposta em espanhol — conteúdo do exercício (Req. 14.8)
         Card(
             modifier = Modifier.fillMaxWidth(),
             colors = CardDefaults.cardColors(
@@ -343,13 +346,13 @@ private fun ExerciseStep(
             value = userInput,
             onValueChange = onUserInputChange,
             modifier = Modifier.fillMaxWidth(),
-            label = { Text("Digite a pergunta em inglês") },
-            placeholder = { Text("What is your name?") },
+            label = { Text("Digite a pergunta em espanhol") },
+            placeholder = { Text("¿Cómo te llamas?") },
             isError = showError,
             supportingText = if (showError) {
                 {
                     Text(
-                        text = "Dica: a pergunta deve começar com \"What\".",
+                        text = "Dica: a pergunta deve começar com \"¿Cómo\" ou \"¿Cuál\".",
                         color = MaterialTheme.colorScheme.error
                     )
                 }
@@ -404,7 +407,7 @@ private fun CompletionStep(onGoHome: () -> Unit) {
         Spacer(modifier = Modifier.height(24.dp))
 
         Text(
-            text = "Parabéns!",
+            text = "¡Felicidades!",
             style = MaterialTheme.typography.headlineMedium,
             fontWeight = FontWeight.Bold,
             textAlign = TextAlign.Center
@@ -422,7 +425,7 @@ private fun CompletionStep(onGoHome: () -> Unit) {
         Spacer(modifier = Modifier.height(12.dp))
 
         Text(
-            text = "Agora você está pronto para praticar inglês de verdade. " +
+            text = "Agora você está pronto para praticar espanhol latino para TI e cotidiano. " +
                 "Escolha um nível e comece a aprender!",
             style = MaterialTheme.typography.bodyMedium,
             textAlign = TextAlign.Center,

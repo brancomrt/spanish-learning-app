@@ -5,14 +5,14 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import com.spanishlearning.app.ui.navigation.AppNavGraph
-import com.spanishlearning.app.ui.theme.EnglishLearningTheme
+import com.spanishlearning.app.ui.theme.SpanishLearningTheme
 import dagger.hilt.android.AndroidEntryPoint
 
 /**
  * Única Activity do aplicativo.
  *
  * Responsabilidades:
- * - Inicializar o Compose com o tema do aplicativo ([EnglishLearningTheme]).
+ * - Inicializar o Compose com o tema do aplicativo ([SpanishLearningTheme]).
  * - Delegar toda a navegação ao [AppNavGraph].
  * - Habilitada para injeção de dependência via Hilt (@AndroidEntryPoint).
  *
@@ -28,7 +28,7 @@ class MainActivity : ComponentActivity() {
         // Habilita edge-to-edge para aproveitamento total da tela em dispositivos modernos.
         enableEdgeToEdge()
         setContent {
-            EnglishLearningTheme {
+            SpanishLearningTheme {
                 // O AppNavGraph gerencia todas as rotas, lógica de primeiro acesso
                 // (Onboarding) e exibição condicional da LessonScreen.
                 AppNavGraph()

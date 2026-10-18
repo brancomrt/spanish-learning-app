@@ -1,68 +1,804 @@
 {
   "cards": [
     {
-      "word": "despliegue / deploy",
-      "definition": "implantação / colocar uma nova versão em execução em um ambiente",
-      "example_sentence": "El despliegue a producción se realizó con éxito sin caída del servicio.",
+      "word": "el despliegue / el pase a producción",
+      "definition": "o deploy / a implantação em produção",
+      "example_sentence": "Programamos el despliegue a producción para el martes a primera hora.",
       "level_id": 4,
       "category_id": 10,
       "image_url": "local:vocab_devops.xml"
     },
     {
-      "word": "pase a producción",
-      "definition": "lançamento oficial das alterações para o ambiente final de clientes",
-      "example_sentence": "El pase a producción está programado para hoy al final de la tarde.",
+      "word": "la integración continua (CI)",
+      "definition": "a integração contínua",
+      "example_sentence": "El servidor de integración continua ejecuta los tests en cada pull request.",
       "level_id": 4,
       "category_id": 10,
       "image_url": "local:vocab_devops.xml"
     },
     {
-      "word": "hacer un rollback",
-      "definition": "reverter imediatamente a versão do software após detectar falha crítica",
-      "example_sentence": "Tuvimos que hacer un rollback porque la nueva versión rompió el login.",
+      "word": "la entrega continua (CD)",
+      "definition": "a entrega contínua",
+      "example_sentence": "Con entrega continua podemos llevar cambios a preproducción en minutos.",
       "level_id": 4,
       "category_id": 10,
       "image_url": "local:vocab_devops.xml"
     },
     {
-      "word": "caída del servidor / servicio caído",
-      "definition": "indisponibilidade não planejada de um servidor ou sistema (downtime)",
-      "example_sentence": "Recibimos una alerta de Datadog por caída del servidor de pagos.",
+      "word": "revertir los cambios (hacer rollback)",
+      "definition": "fazer rollback / reverter uma versão",
+      "example_sentence": "Revertimos los cambios en dos minutos al detectar un aumento de errores.",
       "level_id": 4,
-      "category_id": 11,
+      "category_id": 10,
       "image_url": "local:vocab_devops.xml"
     },
     {
-      "word": "revisar los logs",
-      "definition": "consultar os arquivos de registro de eventos e erros do sistema",
-      "example_sentence": "Estoy revisando los logs en CloudWatch para encontrar la causa de la excepción.",
+      "word": "el entorno de preproducción (staging)",
+      "definition": "o ambiente de homologação / staging",
+      "example_sentence": "Validamos el flujo completo de pago en el entorno de preproducción.",
       "level_id": 4,
-      "category_id": 11,
+      "category_id": 10,
       "image_url": "local:vocab_devops.xml"
     },
     {
-      "word": "fuga de memoria / memory leak",
-      "definition": "defeito onde a memória RAM alocada não é liberada, consumindo recursos até travar",
-      "example_sentence": "Una fuga de memoria en el backend provocaba que el contenedor se reiniciara cada hora.",
+      "word": "el clúster de Kubernetes",
+      "definition": "o cluster Kubernetes",
+      "example_sentence": "Actualizamos la versión del clúster de Kubernetes sin tiempo de inactividad.",
       "level_id": 4,
-      "category_id": 11,
+      "category_id": 10,
       "image_url": "local:vocab_devops.xml"
     },
     {
-      "word": "consulta lenta / slow query",
-      "definition": "query no banco de dados que demora tempo excessivo para responder",
-      "example_sentence": "Detectamos una consulta lenta sin índice que bloqueaba la tabla de usuarios.",
+      "word": "el nodo (node) y el pod",
+      "definition": "o nó e o pod no cluster",
+      "example_sentence": "Kubernetes reprogramó el pod en otro nodo saludable automáticamente.",
       "level_id": 4,
-      "category_id": 12,
-      "image_url": "local:vocab_database.xml"
+      "category_id": 10,
+      "image_url": "local:vocab_devops.xml"
     },
     {
-      "word": "parchear / aplicar un parche",
-      "definition": "aplicar uma correção pontual (patch/hotfix) para resolver vulnerabilidade ou bug urgente",
-      "example_sentence": "Tuvimos que parchear la librería de seguridad de inmediato.",
+      "word": "la infraestructura como código (IaC)",
+      "definition": "a infraestrutura como código (Terraform / Pulumi)",
+      "example_sentence": "Gestionamos toda la nube mediante infraestructura como código.",
       "level_id": 4,
-      "category_id": 12,
+      "category_id": 10,
+      "image_url": "local:vocab_devops.xml"
+    },
+    {
+      "word": "las pruebas de humo (smoke tests)",
+      "definition": "os smoke tests (testes rápidos pós-deploy)",
+      "example_sentence": "Corrimos las pruebas de humo tras el despliegue y todo respondió bien.",
+      "level_id": 4,
+      "category_id": 10,
+      "image_url": "local:vocab_devops.xml"
+    },
+    {
+      "word": "el despliegue canario (canary release)",
+      "definition": "o deploy canário (liberação gradual para parte do tráfego)",
+      "example_sentence": "Hicimos un despliegue canario enviando solo el cinco por ciento del tráfico a la versión nueva.",
+      "level_id": 4,
+      "category_id": 10,
+      "image_url": "local:vocab_devops.xml"
+    },
+    {
+      "word": "el despliegue azul-verde (blue-green)",
+      "definition": "o deploy blue-green (dois ambientes paralelos)",
+      "example_sentence": "El despliegue azul-verde nos permite cambiar de versión sin interrumpir el servicio.",
+      "level_id": 4,
+      "category_id": 10,
+      "image_url": "local:vocab_devops.xml"
+    },
+    {
+      "word": "el registro de eventos (logs)",
+      "definition": "os logs do sistema",
+      "example_sentence": "Revisamos los registros del contenedor para ver por qué se reinició.",
+      "level_id": 4,
+      "category_id": 10,
+      "image_url": "local:vocab_devops.xml"
+    },
+    {
+      "word": "el panel de métricas (dashboard)",
+      "definition": "o painel de monitoramento (Grafana / Datadog)",
+      "example_sentence": "Armamos un panel de métricas para observar la latencia en tiempo real.",
+      "level_id": 4,
+      "category_id": 10,
+      "image_url": "local:vocab_devops.xml"
+    },
+    {
+      "word": "la bandera de funcionalidad (feature flag)",
+      "definition": "a feature flag / feature toggle",
+      "example_sentence": "Ocultamos el nuevo diseño detrás de una bandera de funcionalidad.",
+      "level_id": 4,
+      "category_id": 10,
+      "image_url": "local:vocab_devops.xml"
+    },
+    {
+      "word": "aprovisionar recursos",
+      "definition": "provisionar recursos de infraestrutura",
+      "example_sentence": "El script tarda tres minutos en aprovisionar la base de datos y las redes.",
+      "level_id": 4,
+      "category_id": 10,
+      "image_url": "local:vocab_devops.xml"
+    },
+    {
+      "word": "la ventana de mantenimiento",
+      "definition": "a janela de manutenção programada",
+      "example_sentence": "Notificamos a los clientes sobre la ventana de mantenimiento nocturna.",
+      "level_id": 4,
+      "category_id": 10,
+      "image_url": "local:vocab_devops.xml"
+    },
+    {
+      "word": "el artefacto de compilación",
+      "definition": "o artefato gerado pelo build",
+      "example_sentence": "Guardamos el artefacto firmado en el repositorio de versiones.",
+      "level_id": 4,
+      "category_id": 10,
+      "image_url": "local:vocab_devops.xml"
+    },
+    {
+      "word": "la automatización de procesos",
+      "definition": "a automação de processos",
+      "example_sentence": "La automatización eliminó los pasos manuales propensos a errores.",
+      "level_id": 4,
+      "category_id": 10,
+      "image_url": "local:vocab_devops.xml"
+    },
+    {
+      "word": "la sonda de salud (health check)",
+      "definition": "o health check da aplicação",
+      "example_sentence": "El balanceador dejó de enviar tráfico porque falló la sonda de salud.",
+      "level_id": 4,
+      "category_id": 10,
+      "image_url": "local:vocab_devops.xml"
+    },
+    {
+      "word": "escalar horizontalmente",
+      "definition": "escalar horizontalmente (adicionar mais máquinas/pods)",
+      "example_sentence": "Escalamos horizontalmente el servicio agregando cuatro réplicas más.",
+      "level_id": 4,
+      "category_id": 10,
+      "image_url": "local:vocab_devops.xml"
+    },
+    {
+      "word": "la vulnerabilidad de seguridad",
+      "definition": "a vulnerabilidade de segurança",
+      "example_sentence": "El escáner automático detectó una vulnerabilidad en una librería antigua.",
+      "level_id": 4,
+      "category_id": 11,
       "image_url": "local:vocab_security.xml"
+    },
+    {
+      "word": "el parche de seguridad (patch)",
+      "definition": "o patch / correção de segurança",
+      "example_sentence": "Aplicamos el parche de seguridad en todos los servidores expuestos.",
+      "level_id": 4,
+      "category_id": 11,
+      "image_url": "local:vocab_security.xml"
+    },
+    {
+      "word": "la autenticación de dos factores (2FA)",
+      "definition": "a autenticação de dois fatores / duas etapas",
+      "example_sentence": "Es obligatorio activar la autenticación de dos factores en tu cuenta.",
+      "level_id": 4,
+      "category_id": 11,
+      "image_url": "local:vocab_security.xml"
+    },
+    {
+      "word": "el cifrado en tránsito y en reposo",
+      "definition": "a criptografia em trânsito e em repouso",
+      "example_sentence": "Todos los datos sensibles cuentan con cifrado en tránsito y en reposo.",
+      "level_id": 4,
+      "category_id": 11,
+      "image_url": "local:vocab_security.xml"
+    },
+    {
+      "word": "la filtración de datos (data breach)",
+      "definition": "o vazamento de dados",
+      "example_sentence": "El cifrado fuerte protege la información ante una eventual filtración de datos.",
+      "level_id": 4,
+      "category_id": 11,
+      "image_url": "local:vocab_security.xml"
+    },
+    {
+      "word": "el principio de menor privilegio",
+      "definition": "o princípio do privilégio mínimo",
+      "example_sentence": "Asignamos permisos siguiendo estrictamente el principio de menor privilegio.",
+      "level_id": 4,
+      "category_id": 11,
+      "image_url": "local:vocab_security.xml"
+    },
+    {
+      "word": "la inyección SQL",
+      "definition": "a injeção de SQL (SQL injection)",
+      "example_sentence": "Usamos consultas parametrizadas para prevenir ataques de inyección SQL.",
+      "level_id": 4,
+      "category_id": 11,
+      "image_url": "local:vocab_security.xml"
+    },
+    {
+      "word": "las pruebas de penetración (pentest)",
+      "definition": "o teste de intrusão / pentest",
+      "example_sentence": "Contratamos una auditoría externa para realizar pruebas de penetración.",
+      "level_id": 4,
+      "category_id": 11,
+      "image_url": "local:vocab_security.xml"
+    },
+    {
+      "word": "revocar y rotar credenciales",
+      "definition": "revogar e rotacionar credenciais/chaves",
+      "example_sentence": "Rotamos las claves de acceso a la base de datos automáticamente cada mes.",
+      "level_id": 4,
+      "category_id": 11,
+      "image_url": "local:vocab_security.xml"
+    },
+    {
+      "word": "el token de acceso (JWT)",
+      "definition": "o token de acesso e autenticação",
+      "example_sentence": "El token de acceso incluye los roles del usuario y expira en quince minutos.",
+      "level_id": 4,
+      "category_id": 11,
+      "image_url": "local:vocab_security.xml"
+    },
+    {
+      "word": "el ataque de denegación de servicio (DDoS)",
+      "definition": "o ataque de negação de serviço (DDoS)",
+      "example_sentence": "El escudo perimetral mitigó un intento de ataque de denegación de servicio.",
+      "level_id": 4,
+      "category_id": 11,
+      "image_url": "local:vocab_security.xml"
+    },
+    {
+      "word": "la suplantación de identidad (phishing)",
+      "definition": "o phishing / golpe de falsificação de identidade",
+      "example_sentence": "Capacitamos a todo el personal para reconocer correos de suplantación de identidad.",
+      "level_id": 4,
+      "category_id": 11,
+      "image_url": "local:vocab_security.xml"
+    },
+    {
+      "word": "el registro de auditoría (audit log)",
+      "definition": "o log de auditoria imutável",
+      "example_sentence": "Cada cambio en los permisos queda grabado en el registro de auditoría.",
+      "level_id": 4,
+      "category_id": 11,
+      "image_url": "local:vocab_security.xml"
+    },
+    {
+      "word": "el control de acceso basado en roles (RBAC)",
+      "definition": "o controle de acesso baseado em papéis (RBAC)",
+      "example_sentence": "Implementamos control de acceso basado en roles en el panel administrativo.",
+      "level_id": 4,
+      "category_id": 11,
+      "image_url": "local:vocab_security.xml"
+    },
+    {
+      "word": "sanitizar la entrada del usuario",
+      "definition": "sanitizar / limpar os dados de entrada do usuário",
+      "example_sentence": "Siempre debes validar y sanitizar la entrada del usuario en el backend.",
+      "level_id": 4,
+      "category_id": 11,
+      "image_url": "local:vocab_security.xml"
+    },
+    {
+      "word": "la firma digital",
+      "definition": "a assinatura digital criptográfica",
+      "example_sentence": "Verificamos la firma digital del webhook antes de procesar el pago.",
+      "level_id": 4,
+      "category_id": 11,
+      "image_url": "local:vocab_security.xml"
+    },
+    {
+      "word": "el inicio de sesión único (SSO)",
+      "definition": "o login único corporativo (Single Sign-On)",
+      "example_sentence": "Integramos el inicio de sesión único con el directorio activo de la empresa.",
+      "level_id": 4,
+      "category_id": 11,
+      "image_url": "local:vocab_security.xml"
+    },
+    {
+      "word": "los datos personales sensibles",
+      "definition": "os dados pessoais sensíveis (PII / LGPD)",
+      "example_sentence": "Enmascaramos los datos personales sensibles antes de escribir los logs.",
+      "level_id": 4,
+      "category_id": 11,
+      "image_url": "local:vocab_security.xml"
+    },
+    {
+      "word": "la brecha de seguridad",
+      "definition": "a brecha / falha de segurança",
+      "example_sentence": "Cerramos la brecha de seguridad en cuanto recibimos el reporte.",
+      "level_id": 4,
+      "category_id": 11,
+      "image_url": "local:vocab_security.xml"
+    },
+    {
+      "word": "el análisis estático de código (SAST)",
+      "definition": "a análise estática de segurança no código",
+      "example_sentence": "El pipeline corre un análisis estático de seguridad en cada commit.",
+      "level_id": 4,
+      "category_id": 11,
+      "image_url": "local:vocab_security.xml"
+    },
+    {
+      "word": "el cuello de botella (bottleneck)",
+      "definition": "o gargalo de desempenho",
+      "example_sentence": "Identificamos que el cuello de botella estaba en las lecturas a disco.",
+      "level_id": 4,
+      "category_id": 12,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "desacoplar componentes",
+      "definition": "desacoplar módulos ou serviços",
+      "example_sentence": "Desacoplamos el envío de notificaciones usando una cola de eventos.",
+      "level_id": 4,
+      "category_id": 12,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "la cola de mensajes (message queue)",
+      "definition": "a fila de mensagens (RabbitMQ / SQS)",
+      "example_sentence": "La cola de mensajes amortigua los picos de tráfico sin perder pedidos.",
+      "level_id": 4,
+      "category_id": 12,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "el patrón de diseño",
+      "definition": "o padrão de projeto (design pattern)",
+      "example_sentence": "Aplicamos el patrón adaptador para integrar la nueva pasarela de pagos.",
+      "level_id": 4,
+      "category_id": 12,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "la inyección de dependencias",
+      "definition": "a injeção de dependências",
+      "example_sentence": "La inyección de dependencias facilita reemplazar servicios por dobles de prueba.",
+      "level_id": 4,
+      "category_id": 12,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "la capa de presentación / dominio / datos",
+      "definition": "a camada de apresentação / domínio / dados",
+      "example_sentence": "La capa de dominio no debe depender de detalles de la base de datos.",
+      "level_id": 4,
+      "category_id": 12,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "la arquitectura limpia / hexagonal",
+      "definition": "a arquitetura limpa / hexagonal",
+      "example_sentence": "Estructuramos el microservicio siguiendo principios de arquitectura hexagonal.",
+      "level_id": 4,
+      "category_id": 12,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "la idempotencia",
+      "definition": "a idempotência (repetir a requisição sem duplicar o efeito)",
+      "example_sentence": "Aseguramos la idempotencia del endpoint mediante un identificador único de operación.",
+      "level_id": 4,
+      "category_id": 12,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "la caché en memoria (Redis)",
+      "definition": "o cache em memória",
+      "example_sentence": "Almacenamos las sesiones y catálogos frecuentes en una caché en memoria.",
+      "level_id": 4,
+      "category_id": 12,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "el sistema legado / heredado",
+      "definition": "o sistema legado",
+      "example_sentence": "Estamos migrando gradualmente los módulos del sistema legado.",
+      "level_id": 4,
+      "category_id": 12,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "el monolito modular",
+      "definition": "o monólito modular",
+      "example_sentence": "Empezar con un monolito modular bien definido evita la complejidad prematura.",
+      "level_id": 4,
+      "category_id": 12,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "la llamada síncrona vs asíncrona",
+      "definition": "a chamada síncrona vs assíncrona",
+      "example_sentence": "Convertimos el procesamiento pesado de reportes en una tarea asíncrona.",
+      "level_id": 4,
+      "category_id": 12,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "el contrato de interfaz (API contract)",
+      "definition": "o contrato da API",
+      "example_sentence": "Acordamos el contrato de la API entre frontend y backend el primer día del sprint.",
+      "level_id": 4,
+      "category_id": 12,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "la escalabilidad vertical y horizontal",
+      "definition": "a escalabilidade vertical e horizontal",
+      "example_sentence": "La arquitectura sin estado permite la escalabilidad horizontal inmediata.",
+      "level_id": 4,
+      "category_id": 12,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "sin estado (stateless)",
+      "definition": "sem estado (stateless)",
+      "example_sentence": "Los servicios de aplicación deben ser sin estado para poder escalar libremente.",
+      "level_id": 4,
+      "category_id": 12,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "la deuda técnica",
+      "definition": "a dívida técnica / débito técnico",
+      "example_sentence": "Documentamos la deuda técnica para refactorizar ese módulo en el próximo sprint.",
+      "level_id": 4,
+      "category_id": 12,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "la mantenibilidad del código",
+      "definition": "a manutenibilidade do código",
+      "example_sentence": "Dividir funciones largas mejora la legibilidad y la mantenibilidad del código.",
+      "level_id": 4,
+      "category_id": 12,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "la pasarela de pagos (payment gateway)",
+      "definition": "o gateway de pagamentos",
+      "example_sentence": "Diseñamos una interfaz común para soportar múltiples pasarelas de pagos en Latinoamérica.",
+      "level_id": 4,
+      "category_id": 12,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "el límite de contexto (bounded context)",
+      "definition": "o contexto delimitado (DDD)",
+      "example_sentence": "Cada equipo es responsable de un límite de contexto claro dentro del negocio.",
+      "level_id": 4,
+      "category_id": 12,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "la tolerancia a fallos",
+      "definition": "a tolerância a falhas",
+      "example_sentence": "Diseñamos el sistema con tolerancia a fallos por si cae un proveedor externo.",
+      "level_id": 4,
+      "category_id": 12,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "el alquiler / la renta / el arriendo",
+      "definition": "o aluguel (Argentina/Peru: alquiler; México: renta; Colômbia/Chile: arriendo)",
+      "example_sentence": "El contrato de alquiler se actualiza una vez al año según el índice oficial.",
+      "level_id": 4,
+      "category_id": 23,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "alquilar / rentar / arrendar",
+      "definition": "alugar um imóvel",
+      "example_sentence": "Queremos alquilar un departamento de dos ambientes cerca del metro.",
+      "level_id": 4,
+      "category_id": 23,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "el propietario / el dueño / el casero",
+      "definition": "o proprietário / senhorio do imóvel",
+      "example_sentence": "Hablé con el propietario para renovar el contrato por dos años más.",
+      "level_id": 4,
+      "category_id": 23,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "el inquilino / el arrendatario",
+      "definition": "o inquilino / locatário",
+      "example_sentence": "Los nuevos inquilinos se mudan al departamento del segundo piso mañana.",
+      "level_id": 4,
+      "category_id": 23,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "las expensas / la administración / gastos comunes",
+      "definition": "o condomínio mensal (Argentina: expensas; Colômbia: administración; Chile: gastos comunes)",
+      "example_sentence": "Las expensas del edificio incluyen seguridad las veinticuatro horas y limpieza.",
+      "level_id": 4,
+      "category_id": 23,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "los servicios públicos (luz, agua, gas)",
+      "definition": "as contas de consumo (luz, água, gás)",
+      "example_sentence": "Ya pagué todas las facturas de los servicios públicos por internet.",
+      "level_id": 4,
+      "category_id": 23,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "mudarse / la mudanza",
+      "definition": "mudar-se de residência / a mudança",
+      "example_sentence": "Contratamos un camión de mudanza para llevar los muebles el sábado.",
+      "level_id": 4,
+      "category_id": 23,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "amueblado / sin amueblar",
+      "definition": "mobiliado / sem mobília",
+      "example_sentence": "Alquilamos un departamento amueblado para los primeros meses en la ciudad.",
+      "level_id": 4,
+      "category_id": 23,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "la habitación / el dormitorio / la recámara",
+      "definition": "o quarto / dormitório (no México usa-se muito 'la recámara')",
+      "example_sentence": "Convertimos la habitación pequeña en un estudio para trabajar desde casa.",
+      "level_id": 4,
+      "category_id": 23,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "el comedor y la sala de estar",
+      "definition": "a sala de jantar e a sala de estar",
+      "example_sentence": "El comedor tiene un ventanal grande que da al balcón.",
+      "level_id": 4,
+      "category_id": 23,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "la cocina y la heladera / el refrigerador",
+      "definition": "a cozinha e a geladeira (Cone Sul: heladera; México/Colômbia: refrigerador / nevera)",
+      "example_sentence": "La cocina viene equipada con horno a gas y refrigerador nuevo.",
+      "level_id": 4,
+      "category_id": 23,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "el lavarropas / la lavadora",
+      "definition": "a máquina de lavar roupas",
+      "example_sentence": "Puse una carga de ropa en la lavadora antes de entrar a la reunión.",
+      "level_id": 4,
+      "category_id": 23,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "el aire acondicionado y la calefacción",
+      "definition": "o ar-condicionado e o aquecimento",
+      "example_sentence": "En invierno usamos la calefacción central del edificio.",
+      "level_id": 4,
+      "category_id": 23,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "el plomero / el gasfitero",
+      "definition": "o encanador",
+      "example_sentence": "Vino el plomero a reparar una pequeña pérdida de agua en el baño.",
+      "level_id": 4,
+      "category_id": 23,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "el electricista",
+      "definition": "o eletricista",
+      "example_sentence": "El electricista instaló tres tomacorrientes nuevos detrás del escritorio.",
+      "level_id": 4,
+      "category_id": 23,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "el portero / el conserje",
+      "definition": "o porteiro do prédio",
+      "example_sentence": "El portero recibió el paquete que compré por internet.",
+      "level_id": 4,
+      "category_id": 23,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "el depósito en garantía",
+      "definition": "a caução do aluguel",
+      "example_sentence": "Al firmar el contrato dejamos un mes de depósito en garantía.",
+      "level_id": 4,
+      "category_id": 23,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "la hipoteca / el crédito hipotecario",
+      "definition": "o financiamento imobiliário / hipoteca",
+      "example_sentence": "Están evaluando sacar un crédito hipotecario para comprar su primera casa.",
+      "level_id": 4,
+      "category_id": 23,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "el balcón / la terraza",
+      "definition": "a varanda / o terraço",
+      "example_sentence": "Tenemos plantas y una mesa pequeña en el balcón para tomar café.",
+      "level_id": 4,
+      "category_id": 23,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "los quehaceres domésticos",
+      "definition": "as tarefas domésticas (limpar, lavar, arrumar)",
+      "example_sentence": "Nos repartimos los quehaceres domésticos de manera equitativa en casa.",
+      "level_id": 4,
+      "category_id": 23,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "llevarse bien con alguien",
+      "definition": "dar-se bem com alguém",
+      "example_sentence": "Por suerte me llevo excelente con todos mis compañeros de equipo.",
+      "level_id": 4,
+      "category_id": 24,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "ponerse al día",
+      "definition": "colocar o papo em dia / atualizar-se",
+      "example_sentence": "Nos juntamos a tomar un café para ponernos al día con nuestras vidas.",
+      "level_id": 4,
+      "category_id": 24,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "la pareja / el novio / la novia",
+      "definition": "o(a) parceiro(a) / namorado(a)",
+      "example_sentence": "El sábado vamos a cenar con mi pareja y unos amigos.",
+      "level_id": 4,
+      "category_id": 24,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "el esposo / la esposa (marido / mujer)",
+      "definition": "o marido / a esposa",
+      "example_sentence": "Su esposa también trabaja como ingeniera de datos en una empresa fintech.",
+      "level_id": 4,
+      "category_id": 24,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "los parientes / los familiares",
+      "definition": "os parentes / familiares",
+      "example_sentence": "En las fiestas de fin de año nos reunimos con todos los parientes.",
+      "level_id": 4,
+      "category_id": 24,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "criar / crecer",
+      "definition": "criar filhos / crescer",
+      "example_sentence": "Nació en el sur del país, pero creció en la capital.",
+      "level_id": 4,
+      "category_id": 24,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "el cumpleaños",
+      "definition": "o aniversário de nascimento (atenção: 'aniversario' é para bodas/eventos!)",
+      "example_sentence": "Mañana festejamos el cumpleaños de nuestro líder de equipo.",
+      "level_id": 4,
+      "category_id": 24,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "el aniversario de bodas",
+      "definition": "o aniversário de casamento",
+      "example_sentence": "Mis padres cumplen treinta años de casados en su próximo aniversario.",
+      "level_id": 4,
+      "category_id": 24,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "la boda / el casamiento",
+      "definition": "o casamento (cerimônia e festa)",
+      "example_sentence": "Nos invitaron a una boda en Cartagena el próximo verano.",
+      "level_id": 4,
+      "category_id": 24,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "echar de menos / extrañar",
+      "definition": "sentir saudades (na América Latina usa-se muito 'extrañar')",
+      "example_sentence": "Cuando viajo por mucho tiempo, extraño la comida de mi casa.",
+      "level_id": 4,
+      "category_id": 24,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "apoyar / brindar apoyo",
+      "definition": "apoiar / dar suporte emocional ou profissional",
+      "example_sentence": "Mi familia siempre me apoyó cuando decidí cambiar de carrera hacia tecnología.",
+      "level_id": 4,
+      "category_id": 24,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "confiar / la confianza",
+      "definition": "confiar / a confiança",
+      "example_sentence": "La confianza mutua es la base de cualquier relación sana y de un buen equipo.",
+      "level_id": 4,
+      "category_id": 24,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "aclarar un malentendido",
+      "definition": "esclarecer um mal-entendido",
+      "example_sentence": "Conversamos tranquilamente cinco minutos y aclaramos el malentendido.",
+      "level_id": 4,
+      "category_id": 24,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "pedir disculpas / disculparse",
+      "definition": "pedir desculpas / desculpar-se",
+      "example_sentence": "Le pedí disculpas por haberme demorado en responder su mensaje.",
+      "level_id": 4,
+      "category_id": 24,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "quedar con alguien",
+      "definition": "combinar de se encontrar com alguém",
+      "example_sentence": "Quedamos con Sofía a las siete en la puerta del cine.",
+      "level_id": 4,
+      "category_id": 24,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "caer bien / caer genial",
+      "definition": "causar boa impressão / ser simpático ('ele é muito gente boa' = 'me cae genial')",
+      "example_sentence": "El nuevo desarrollador de Colombia nos cayó genial a todos desde el primer día.",
+      "level_id": 4,
+      "category_id": 24,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "hacer buenas migas",
+      "definition": "fazer amizade rápido / dar-se super bem",
+      "example_sentence": "Hicimos muy buenas migas durante el congreso de tecnología.",
+      "level_id": 4,
+      "category_id": 24,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "el compromiso",
+      "definition": "o noivado ou compromisso assumido",
+      "example_sentence": "Festejaron su compromiso con una cena íntima en familia.",
+      "level_id": 4,
+      "category_id": 24,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "la empatía / ponerse en el lugar del otro",
+      "definition": "a empatia / colocar-se no lugar do outro",
+      "example_sentence": "Tener empatía ayuda muchísimo al revisar el trabajo de los demás.",
+      "level_id": 4,
+      "category_id": 24,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "contar con alguien",
+      "definition": "contar com alguém",
+      "example_sentence": "Sabes que puedes contar conmigo para lo que necesites.",
+      "level_id": 4,
+      "category_id": 24,
+      "image_url": "local:vocab_people.xml"
     }
   ]
 }

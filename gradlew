@@ -27,6 +27,12 @@ CLASSPATH=$APP_HOME/gradle/wrapper/gradle-wrapper.jar
 # Determine the Java command to use
 if [ -n "$JAVA_HOME" ] ; then
     JAVACMD="$JAVA_HOME/bin/java"
+elif [ -x "$APP_HOME/.gradle/local-toolchain/jdk-17/bin/java" ] ; then
+    JAVA_HOME="$APP_HOME/.gradle/local-toolchain/jdk-17"
+    GRADLE_USER_HOME="$APP_HOME/.gradle/user-home"
+    ANDROID_USER_HOME="$APP_HOME/.gradle/user-home/.android"
+    export JAVA_HOME GRADLE_USER_HOME ANDROID_USER_HOME
+    JAVACMD="$JAVA_HOME/bin/java"
 else
     JAVACMD="java"
 fi

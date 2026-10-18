@@ -1,236 +1,2310 @@
 [
   {
-    "id": 201,
+    "id": 2001,
     "level_id": 2,
     "category_id": 4,
-    "answer_text": "Ayer terminé el endpoint de autenticación y hoy voy a trabajar en las pruebas unitarias.",
-    "context_text": "Pregunta típica en una daily meeting sobre el avance de un compañero.",
+    "answer_text": "Me sale un error de credenciales inválidas cuando intento entrar al sistema.",
+    "context_text": "Pergunte ao usuário que erro aparece na tela dele.",
     "question_type": "WH_WHAT",
     "exercise_mode": "QUESTION_FROM_ANSWER",
-    "grammar_focus": "preguntas en daily standup",
+    "grammar_focus": "pretérito indefinido - soporte técnico",
     "difficulty_score": 2,
     "xp_reward": 20,
     "sort_order": 1,
     "accepted_answers": [
       {
-        "id": 21,
-        "question_text": "¿En qué estás trabajando hoy?",
+        "id": 20011,
+        "question_text": "¿Qué error te sale en la pantalla?",
         "is_primary": true,
-        "match_threshold": 0.85
-      },
-      {
-        "id": 22,
-        "question_text": "En que estas trabajando hoy",
-        "is_primary": false,
-        "match_threshold": 0.85
-      },
-      {
-        "id": 23,
-        "question_text": "¿Qué hiciste ayer y qué harás hoy?",
-        "is_primary": false,
         "match_threshold": 0.8
       },
       {
-        "id": 24,
-        "question_text": "¿Cuál es tu avance para hoy?",
+        "id": 20012,
+        "question_text": "Qué error te sale",
         "is_primary": false,
-        "match_threshold": 0.8
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20013,
+        "question_text": "¿Qué mensaje de error aparece?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20014,
+        "question_text": "¿Qué problema tienes para entrar al sistema?",
+        "is_primary": false,
+        "match_threshold": 0.78
       }
     ],
     "hints": [
       {
-        "id": 21,
+        "id": 20011,
         "hint_order": 1,
-        "hint_text": "Pregunta clásica de la daily sobre la tarea del día.",
+        "hint_text": "Em espanhol de TI, usa-se muito '¿Qué error te sale?' (Que erro aparece para você?).",
         "hint_type": "structural"
       },
       {
-        "id": 22,
+        "id": 20012,
         "hint_order": 2,
-        "hint_text": "Usa: '¿En qué estás trabajando...?'",
+        "hint_text": "Estrutura: '¿Qué error te sale en la pantalla?'",
         "hint_type": "vocabulary"
       },
       {
-        "id": 23,
+        "id": 20013,
         "hint_order": 3,
-        "hint_text": "¿En qué estás trabajando hoy?",
+        "hint_text": "¿Qué error te sale en la pantalla?",
         "hint_type": "answer"
       }
     ]
   },
   {
-    "id": 202,
+    "id": 2002,
     "level_id": 2,
     "category_id": 4,
-    "answer_text": "No, no tengo ningún impedimento ni estoy trabado con nada.",
-    "context_text": "Pregunta en la daily si alguien tiene algún obstáculo (blocker).",
+    "answer_text": "Sí, ya reinicié la computadora dos veces pero el problema continúa.",
+    "context_text": "Pergunte se o usuário já tentou reiniciar o computador.",
     "question_type": "YES_NO",
     "exercise_mode": "QUESTION_FROM_ANSWER",
-    "grammar_focus": "impedimentos / blockers en sprint",
+    "grammar_focus": "pretérito indefinido - resolución de fallas",
     "difficulty_score": 2,
     "xp_reward": 20,
     "sort_order": 2,
     "accepted_answers": [
       {
-        "id": 25,
-        "question_text": "¿Tienes algún blocker o impedimento?",
+        "id": 20021,
+        "question_text": "¿Ya reiniciaste la computadora?",
         "is_primary": true,
-        "match_threshold": 0.85
+        "match_threshold": 0.8
       },
       {
-        "id": 26,
-        "question_text": "Tienes algún blocker o impedimento",
+        "id": 20022,
+        "question_text": "Ya reiniciaste la computadora",
         "is_primary": false,
-        "match_threshold": 0.85
+        "match_threshold": 0.78
       },
       {
-        "id": 27,
-        "question_text": "¿Estás trabado con algo?",
+        "id": 20023,
+        "question_text": "¿Intentaste reiniciar el equipo?",
         "is_primary": false,
-        "match_threshold": 0.85
+        "match_threshold": 0.78
       },
       {
-        "id": 28,
-        "question_text": "¿Tienes alguna traba para avanzar?",
+        "id": 20024,
+        "question_text": "¿Probaste reiniciando la computadora?",
         "is_primary": false,
-        "match_threshold": 0.85
+        "match_threshold": 0.78
       }
     ],
     "hints": [
       {
-        "id": 24,
+        "id": 20021,
         "hint_order": 1,
-        "hint_text": "Pregunta de sí/no sobre dificultades o bloqueos.",
+        "hint_text": "Use o Pretérito Indefinido na 2ª pessoa ('¿Ya reiniciaste...?' ou '¿Probaste...?').",
         "hint_type": "structural"
       },
       {
-        "id": 25,
+        "id": 20022,
         "hint_order": 2,
-        "hint_text": "En LatAm se usa frecuentemente 'blocker', 'impedimento' o 'estar trabado'.",
+        "hint_text": "Verbo: 'reiniciar' -> 'reiniciaste'.",
         "hint_type": "vocabulary"
       },
       {
-        "id": 26,
+        "id": 20023,
         "hint_order": 3,
-        "hint_text": "¿Tienes algún blocker o impedimento?",
+        "hint_text": "¿Ya reiniciaste la computadora?",
         "hint_type": "answer"
       }
     ]
   },
   {
-    "id": 203,
+    "id": 2003,
     "level_id": 2,
-    "category_id": 5,
-    "answer_text": "El ticket de la pasarela de pagos está en la columna 'En Progreso'.",
-    "context_text": "Pregunta por el estado o ubicación de una tarea en el tablero Jira.",
-    "question_type": "WH_WHERE",
+    "category_id": 4,
+    "answer_text": "La aplicación empezó a fallar hoy después de la actualización de las diez.",
+    "context_text": "Pergunte quando o aplicativo começou a apresentar falhas.",
+    "question_type": "WH_WHEN",
     "exercise_mode": "QUESTION_FROM_ANSWER",
-    "grammar_focus": "preguntas de ubicación con dónde",
+    "grammar_focus": "pretérito indefinido - incidentes",
     "difficulty_score": 2,
     "xp_reward": 20,
     "sort_order": 3,
     "accepted_answers": [
       {
-        "id": 29,
-        "question_text": "¿Dónde está el ticket de la pasarela de pagos?",
+        "id": 20031,
+        "question_text": "¿Cuándo empezó a fallar la aplicación?",
         "is_primary": true,
         "match_threshold": 0.8
       },
       {
-        "id": 30,
-        "question_text": "Dónde está el ticket de la pasarela de pagos",
+        "id": 20032,
+        "question_text": "Cuándo empezó a fallar",
         "is_primary": false,
-        "match_threshold": 0.8
+        "match_threshold": 0.78
       },
       {
-        "id": 31,
-        "question_text": "¿En qué columna está el ticket?",
+        "id": 20033,
+        "question_text": "¿Desde cuándo falla el sistema?",
         "is_primary": false,
-        "match_threshold": 0.8
+        "match_threshold": 0.78
       },
       {
-        "id": 32,
-        "question_text": "¿Cuál es el estado de ese ticket?",
+        "id": 20034,
+        "question_text": "¿A qué hora empezó el problema?",
         "is_primary": false,
-        "match_threshold": 0.75
+        "match_threshold": 0.78
       }
     ],
     "hints": [
       {
-        "id": 27,
+        "id": 20031,
         "hint_order": 1,
-        "hint_text": "Pregunta de lugar con 'Dónde' o 'En qué columna'.",
+        "hint_text": "Use '¿Cuándo empezó a...?' ou '¿Desde cuándo...?'",
         "hint_type": "structural"
       },
       {
-        "id": 28,
+        "id": 20032,
         "hint_order": 2,
-        "hint_text": "Usa '¿Dónde está el ticket...?'",
+        "hint_text": "Estrutura: '¿Cuándo empezó a fallar la aplicación?'",
         "hint_type": "vocabulary"
       },
       {
-        "id": 29,
+        "id": 20033,
         "hint_order": 3,
-        "hint_text": "¿Dónde está el ticket de la pasarela de pagos?",
+        "hint_text": "¿Cuándo empezó a fallar la aplicación?",
         "hint_type": "answer"
       }
     ]
   },
   {
-    "id": 204,
+    "id": 2004,
     "level_id": 2,
-    "category_id": 6,
-    "answer_text": "El bug ocurre cuando el usuario hace clic en guardar sin completar el correo electrónico.",
-    "context_text": "Pregunta al tester cómo se reproduce la falla en la aplicación.",
+    "category_id": 4,
+    "answer_text": "Puedes restablecer tu contraseña haciendo clic en el enlace del portal de soporte.",
+    "context_text": "Pergunte como você pode redefinir sua senha corporativa.",
     "question_type": "WH_HOW",
     "exercise_mode": "QUESTION_FROM_ANSWER",
-    "grammar_focus": "cómo reproducir errores / QA",
+    "grammar_focus": "verbos modales - contraseñas",
     "difficulty_score": 2,
     "xp_reward": 20,
     "sort_order": 4,
     "accepted_answers": [
       {
-        "id": 33,
-        "question_text": "¿Cómo se reproduce el bug?",
+        "id": 20041,
+        "question_text": "¿Cómo puedo restablecer mi contraseña?",
         "is_primary": true,
-        "match_threshold": 0.85
-      },
-      {
-        "id": 34,
-        "question_text": "Cómo se reproduce el bug",
-        "is_primary": false,
-        "match_threshold": 0.85
-      },
-      {
-        "id": 35,
-        "question_text": "¿Cómo ocurre el error?",
-        "is_primary": false,
-        "match_threshold": 0.85
-      },
-      {
-        "id": 36,
-        "question_text": "¿Cuándo pasa esa falla?",
-        "is_primary": false,
         "match_threshold": 0.8
+      },
+      {
+        "id": 20042,
+        "question_text": "Cómo puedo restablecer mi contraseña",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20043,
+        "question_text": "¿Cómo cambio mi contraseña?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20044,
+        "question_text": "¿Cómo recupero mi clave de acceso?",
+        "is_primary": false,
+        "match_threshold": 0.78
       }
     ],
     "hints": [
       {
-        "id": 30,
+        "id": 20041,
         "hint_order": 1,
-        "hint_text": "Pregunta de proceso/método con 'Cómo'.",
+        "hint_text": "Use '¿Cómo puedo...?' + 'restablecer / cambiar mi contraseña'.",
         "hint_type": "structural"
       },
       {
-        "id": 31,
+        "id": 20042,
         "hint_order": 2,
-        "hint_text": "Usa el verbo 'reproducir': '¿Cómo se reproduce...?'",
+        "hint_text": "Vocabulário: 'restablecer la contraseña' (redefinir a senha).",
         "hint_type": "vocabulary"
       },
       {
-        "id": 32,
+        "id": 20043,
         "hint_order": 3,
-        "hint_text": "¿Cómo se reproduce el bug?",
+        "hint_text": "¿Cómo puedo restablecer mi contraseña?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 2005,
+    "level_id": 2,
+    "category_id": 4,
+    "answer_text": "El número de mi ticket de soporte en Jira es el cuatrocientos veinte.",
+    "context_text": "Pergunte qual é o número do chamado (ticket) de suporte.",
+    "question_type": "WH_WHICH",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "presente - tickets de soporte",
+    "difficulty_score": 2,
+    "xp_reward": 20,
+    "sort_order": 5,
+    "accepted_answers": [
+      {
+        "id": 20051,
+        "question_text": "¿Cuál es el número de tu ticket?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 20052,
+        "question_text": "Cuál es el número de tu ticket",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20053,
+        "question_text": "¿Cuál es el código del ticket de soporte?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20054,
+        "question_text": "¿Qué número de ticket tienes?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 20051,
+        "hint_order": 1,
+        "hint_text": "Use '¿Cuál es el número de...?' para identificar um código ou chamado.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 20052,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Cuál es el número de tu ticket?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 20053,
+        "hint_order": 3,
+        "hint_text": "¿Cuál es el número de tu ticket?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 2006,
+    "level_id": 2,
+    "category_id": 4,
+    "answer_text": "¿Necesitas permisos de administrador para instalar ese programa?",
+    "context_text": "Responda que sim, você precisa de permissões de administrador para instalar o Docker.",
+    "question_type": "YES_NO",
+    "exercise_mode": "ANSWER_FROM_QUESTION",
+    "grammar_focus": "verbos modales - permisos TI",
+    "difficulty_score": 2,
+    "xp_reward": 20,
+    "sort_order": 6,
+    "accepted_answers": [
+      {
+        "id": 20061,
+        "question_text": "Sí, necesito permisos de administrador para instalar Docker.",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 20062,
+        "question_text": "Sí, me pide clave de administrador para instalarlo.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20063,
+        "question_text": "Sí, necesito que soporte me dé permisos de administrador.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 20061,
+        "hint_order": 1,
+        "hint_text": "Use 'Necesito permisos de administrador para + infinitivo'.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 20062,
+        "hint_order": 2,
+        "hint_text": "Responda: 'Sí, necesito permisos de administrador para instalar Docker.'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 20063,
+        "hint_order": 3,
+        "hint_text": "Sí, necesito permisos de administrador para instalar Docker.",
+        "hint_type": "answer"
+      }
+    ],
+    "prompt_text": "¿Necesitas permisos de administrador para instalar ese programa?"
+  },
+  {
+    "id": 2007,
+    "level_id": 2,
+    "category_id": 4,
+    "answer_text": "¿Qué estás viendo en la consola de errores en este momento?",
+    "context_text": "Responda que você está vendo um erro de tempo limite (timeout) ao conectar ao servidor.",
+    "question_type": "WH_WHAT",
+    "exercise_mode": "ANSWER_FROM_QUESTION",
+    "grammar_focus": "gerundio - soporte en vivo",
+    "difficulty_score": 2,
+    "xp_reward": 20,
+    "sort_order": 7,
+    "accepted_answers": [
+      {
+        "id": 20071,
+        "question_text": "Estoy viendo un error de tiempo de espera al conectar al servidor.",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 20072,
+        "question_text": "Me está saliendo un error de conexión en la consola.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20073,
+        "question_text": "Veo un mensaje de acceso denegado en los registros.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 20071,
+        "hint_order": 1,
+        "hint_text": "Use 'Estoy viendo...' (Estar + Gerúndio) ou 'Me está saliendo...'",
+        "hint_type": "structural"
+      },
+      {
+        "id": 20072,
+        "hint_order": 2,
+        "hint_text": "Vocabulário: 'tiempo de espera agotado' (timeout), 'consola'.",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 20073,
+        "hint_order": 3,
+        "hint_text": "Estoy viendo un error de tiempo de espera al conectar al servidor.",
+        "hint_type": "answer"
+      }
+    ],
+    "prompt_text": "¿Qué estás viendo en la consola de errores en este momento?"
+  },
+  {
+    "id": 2008,
+    "level_id": 2,
+    "category_id": 4,
+    "answer_text": "El equipo de infraestructura tomó el caso y ya está revisando el servidor.",
+    "context_text": "Pergunte quem assumiu o chamado de suporte.",
+    "question_type": "WH_WHO",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "pretérito indefinido - asignación de tickets",
+    "difficulty_score": 3,
+    "xp_reward": 20,
+    "sort_order": 8,
+    "accepted_answers": [
+      {
+        "id": 20081,
+        "question_text": "¿Quién tomó el ticket de soporte?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 20082,
+        "question_text": "Quién tomó el caso",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20083,
+        "question_text": "¿A quién le asignaron el ticket?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20084,
+        "question_text": "¿Quién está revisando el incidente?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 20081,
+        "hint_order": 1,
+        "hint_text": "Use '¿Quién tomó...?' ou '¿A quién le asignaron...?'",
+        "hint_type": "structural"
+      },
+      {
+        "id": 20082,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Quién tomó el ticket de soporte?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 20083,
+        "hint_order": 3,
+        "hint_text": "¿Quién tomó el ticket de soporte?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 2009,
+    "level_id": 2,
+    "category_id": 5,
+    "answer_text": "En mi máquina de desarrollo uso Ubuntu Linux porque es más rápido para contenedores.",
+    "context_text": "Pergunte qual sistema operacional o colega usa no computador dele.",
+    "question_type": "WH_WHAT",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "presente - sistema operativo",
+    "difficulty_score": 2,
+    "xp_reward": 20,
+    "sort_order": 9,
+    "accepted_answers": [
+      {
+        "id": 20091,
+        "question_text": "¿Qué sistema operativo usas?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 20092,
+        "question_text": "Qué sistema operativo usas",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20093,
+        "question_text": "¿Qué sistema operativo tienes instalado?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20094,
+        "question_text": "¿Con qué sistema operativo trabajas?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 20091,
+        "hint_order": 1,
+        "hint_text": "Use '¿Qué sistema operativo...?' com os verbos 'usar' ou 'tener'.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 20092,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Qué sistema operativo usas?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 20093,
+        "hint_order": 3,
+        "hint_text": "¿Qué sistema operativo usas?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 2010,
+    "level_id": 2,
+    "category_id": 5,
+    "answer_text": "El ventilador suena mucho porque el navegador está consumiendo toda la memoria RAM.",
+    "context_text": "Pergunte por que o computador está tão lento e fazendo barulho.",
+    "question_type": "WH_WHY",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "gerundio - rendimiento de hardware",
+    "difficulty_score": 2,
+    "xp_reward": 20,
+    "sort_order": 10,
+    "accepted_answers": [
+      {
+        "id": 20101,
+        "question_text": "¿Por qué está tan lenta la computadora?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 20102,
+        "question_text": "Por qué suena tanto el ventilador",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20103,
+        "question_text": "¿Por qué consume tanta memoria el equipo?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20104,
+        "question_text": "¿Por qué se calienta tanto la portátil?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 20101,
+        "hint_order": 1,
+        "hint_text": "Use '¿Por qué...?' para investigar a causa de um problema de hardware.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 20102,
+        "hint_order": 2,
+        "hint_text": "Vocabulário: 'el ventilador' (a ventoinha/cooler), 'calentarse' (esquentar).",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 20103,
+        "hint_order": 3,
+        "hint_text": "¿Por qué está tan lenta la computadora?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 2011,
+    "level_id": 2,
+    "category_id": 5,
+    "answer_text": "No, todavía no he instalado la última actualización de seguridad del navegador.",
+    "context_text": "Pergunte se o colega já instalou a última atualização do sistema.",
+    "question_type": "YES_NO",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "pretérito perfecto - actualizaciones",
+    "difficulty_score": 2,
+    "xp_reward": 20,
+    "sort_order": 11,
+    "accepted_answers": [
+      {
+        "id": 20111,
+        "question_text": "¿Ya instalaste la última actualización?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 20112,
+        "question_text": "Ya has instalado la actualización",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20113,
+        "question_text": "¿Actualizaste el navegador?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20114,
+        "question_text": "¿Ya hiciste la actualización de seguridad?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 20111,
+        "hint_order": 1,
+        "hint_text": "Você pode usar o Pretérito Indefinido ('¿Ya instalaste?') ou Perfecto ('¿Ya has instalado?').",
+        "hint_type": "structural"
+      },
+      {
+        "id": 20112,
+        "hint_order": 2,
+        "hint_text": "Vocabulário: 'la actualización' (o update/atualização).",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 20113,
+        "hint_order": 3,
+        "hint_text": "¿Ya instalaste la última actualización?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 2012,
+    "level_id": 2,
+    "category_id": 5,
+    "answer_text": "Me quedan solamente diez gigabytes de espacio libre en el disco duro.",
+    "context_text": "Pergunte quanto espaço livre resta no disco rígido.",
+    "question_type": "WH_HOW_MUCH",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "presente - almacenamiento",
+    "difficulty_score": 2,
+    "xp_reward": 20,
+    "sort_order": 12,
+    "accepted_answers": [
+      {
+        "id": 20121,
+        "question_text": "¿Cuánto espacio libre te queda en el disco?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 20122,
+        "question_text": "Cuánto espacio libre tienes",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20123,
+        "question_text": "¿Cuánta memoria disponible queda en el disco duro?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20124,
+        "question_text": "¿Cuánto espacio tienes en el disco?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 20121,
+        "hint_order": 1,
+        "hint_text": "Como 'espacio' é masculino singular, use '¿Cuánto espacio libre...?'",
+        "hint_type": "structural"
+      },
+      {
+        "id": 20122,
+        "hint_order": 2,
+        "hint_text": "Verbo útil: 'quedar' ('¿Cuánto espacio te queda?' = Quanto espaço lhe resta?).",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 20123,
+        "hint_order": 3,
+        "hint_text": "¿Cuánto espacio libre te queda en el disco?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 2013,
+    "level_id": 2,
+    "category_id": 5,
+    "answer_text": "Prefiero el monitor externo de veintisiete pulgadas porque cansa menos la vista.",
+    "context_text": "Pergunte qual monitor o colega prefere usar para programar.",
+    "question_type": "WH_WHICH",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "comparativos - hardware",
+    "difficulty_score": 3,
+    "xp_reward": 20,
+    "sort_order": 13,
+    "accepted_answers": [
+      {
+        "id": 20131,
+        "question_text": "¿Cuál monitor prefieres usar?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 20132,
+        "question_text": "Qué monitor prefieres",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20133,
+        "question_text": "¿Cuál de los monitores prefieres para programar?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20134,
+        "question_text": "¿Qué pantalla te gusta más?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 20131,
+        "hint_order": 1,
+        "hint_text": "Use '¿Cuál...?' ou '¿Qué monitor prefieres?'",
+        "hint_type": "structural"
+      },
+      {
+        "id": 20132,
+        "hint_order": 2,
+        "hint_text": "Vocabulário: 'pulgadas' (polegadas), 'cansar la vista'.",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 20133,
+        "hint_order": 3,
+        "hint_text": "¿Cuál monitor prefieres usar?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 2014,
+    "level_id": 2,
+    "category_id": 5,
+    "answer_text": "¿Qué accesorios necesitas que te envíe la empresa para tu oficina en casa?",
+    "context_text": "Responda que você precisa de um teclado mecânico, um mouse sem fio e fones de ouvido.",
+    "question_type": "WH_WHAT",
+    "exercise_mode": "ANSWER_FROM_QUESTION",
+    "grammar_focus": "verbos modales - periféricos",
+    "difficulty_score": 2,
+    "xp_reward": 20,
+    "sort_order": 14,
+    "accepted_answers": [
+      {
+        "id": 20141,
+        "question_text": "Necesito un teclado mecánico, un mouse inalámbrico y unos audífonos.",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 20142,
+        "question_text": "Necesito un monitor externo, un teclado y auriculares con micrófono.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20143,
+        "question_text": "Me hace falta un mouse inalámbrico y una base para la portátil.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 20141,
+        "hint_order": 1,
+        "hint_text": "Em espanhol, 'sem fio' é 'inalámbrico' e 'fones de ouvido' são 'audífonos' ou 'auriculares'.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 20142,
+        "hint_order": 2,
+        "hint_text": "Exemplo: 'Necesito un teclado mecánico, un mouse inalámbrico y unos audífonos.'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 20143,
+        "hint_order": 3,
+        "hint_text": "Necesito un teclado mecánico, un mouse inalámbrico y unos audífonos.",
+        "hint_type": "answer"
+      }
+    ],
+    "prompt_text": "¿Qué accesorios necesitas que te envíe la empresa para tu oficina en casa?"
+  },
+  {
+    "id": 2015,
+    "level_id": 2,
+    "category_id": 5,
+    "answer_text": "¿Tienes un cargador tipo C que me puedas prestar por media hora?",
+    "context_text": "Responda que sim, e que o carregador está conectado na tomada ao lado da mesa.",
+    "question_type": "YES_NO",
+    "exercise_mode": "ANSWER_FROM_QUESTION",
+    "grammar_focus": "sí/no - batería y cargador",
+    "difficulty_score": 2,
+    "xp_reward": 20,
+    "sort_order": 15,
+    "accepted_answers": [
+      {
+        "id": 20151,
+        "question_text": "Sí, claro, el cargador está enchufado al lado de la mesa.",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 20152,
+        "question_text": "Sí, toma, aquí tienes mi cargador tipo C.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20153,
+        "question_text": "Sí, puedes usar el mío sin problema.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 20151,
+        "hint_order": 1,
+        "hint_text": "Vocabulário útil: 'el cargador' (o carregador), 'el enchufe / tomacorriente' (a tomada).",
+        "hint_type": "structural"
+      },
+      {
+        "id": 20152,
+        "hint_order": 2,
+        "hint_text": "Responda: 'Sí, claro, el cargador está enchufado al lado de la mesa.'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 20153,
+        "hint_order": 3,
+        "hint_text": "Sí, claro, el cargador está enchufado al lado de la mesa.",
+        "hint_type": "answer"
+      }
+    ],
+    "prompt_text": "¿Tienes un cargador tipo C que me puedas prestar por media hora?"
+  },
+  {
+    "id": 2016,
+    "level_id": 2,
+    "category_id": 5,
+    "answer_text": "Trabajo con dos pantallas externas conectadas por un cable HDMI.",
+    "context_text": "Pergunte com quantas telas o colega trabalha.",
+    "question_type": "WH_HOW_MANY",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "presente - pantallas de trabajo",
+    "difficulty_score": 2,
+    "xp_reward": 20,
+    "sort_order": 16,
+    "accepted_answers": [
+      {
+        "id": 20161,
+        "question_text": "¿Con cuántas pantallas trabajas?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 20162,
+        "question_text": "Cuántas pantallas usas",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20163,
+        "question_text": "¿Cuántos monitores tienes conectados?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20164,
+        "question_text": "¿Con cuántos monitores trabajas?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 20161,
+        "hint_order": 1,
+        "hint_text": "Use '¿Con cuántas pantallas...?' ou '¿Cuántas pantallas usas?'",
+        "hint_type": "structural"
+      },
+      {
+        "id": 20162,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Con cuántas pantallas trabajas?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 20163,
+        "hint_order": 3,
+        "hint_text": "¿Con cuántas pantallas trabajas?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 2017,
+    "level_id": 2,
+    "category_id": 6,
+    "answer_text": "La contraseña del wifi de invitados está escrita en la pizarra de la sala.",
+    "context_text": "Pergunte qual é a senha do Wi-Fi do escritório.",
+    "question_type": "WH_WHAT",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "presente - wifi y red",
+    "difficulty_score": 2,
+    "xp_reward": 20,
+    "sort_order": 17,
+    "accepted_answers": [
+      {
+        "id": 20171,
+        "question_text": "¿Qué contraseña tiene el wifi?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 20172,
+        "question_text": "Cuál es la contraseña del wifi",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20173,
+        "question_text": "¿Cuál es la clave del wifi de la oficina?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20174,
+        "question_text": "¿Me pasas la contraseña del wifi?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 20171,
+        "hint_order": 1,
+        "hint_text": "Use '¿Qué contraseña tiene...?' ou '¿Cuál es la contraseña del wifi?'",
+        "hint_type": "structural"
+      },
+      {
+        "id": 20172,
+        "hint_order": 2,
+        "hint_text": "Vocabulário: 'la contraseña / la clave del wifi'.",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 20173,
+        "hint_order": 3,
+        "hint_text": "¿Qué contraseña tiene el wifi?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 2018,
+    "level_id": 2,
+    "category_id": 6,
+    "answer_text": "No, el servidor de pruebas no responde al comando ping desde mi terminal.",
+    "context_text": "Pergunte se o servidor de testes está respondendo na rede.",
+    "question_type": "YES_NO",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "sí/no - conectividad",
+    "difficulty_score": 2,
+    "xp_reward": 20,
+    "sort_order": 18,
+    "accepted_answers": [
+      {
+        "id": 20181,
+        "question_text": "¿Responde el servidor de pruebas?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 20182,
+        "question_text": "Tienes conexión con el servidor de pruebas",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20183,
+        "question_text": "¿El servidor responde al comando ping?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20184,
+        "question_text": "¿Puedes conectarte al servidor de pruebas?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 20181,
+        "hint_order": 1,
+        "hint_text": "Pergunta de confirmação direta sobre a conectividade do servidor.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 20182,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Responde el servidor de pruebas?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 20183,
+        "hint_order": 3,
+        "hint_text": "¿Responde el servidor de pruebas?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 2019,
+    "level_id": 2,
+    "category_id": 6,
+    "answer_text": "Se cortó el internet en toda la zona por una falla del proveedor de fibra óptica.",
+    "context_text": "Pergunte por que a conexão de internet caiu.",
+    "question_type": "WH_WHY",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "pretérito indefinido - caída de red",
+    "difficulty_score": 3,
+    "xp_reward": 20,
+    "sort_order": 19,
+    "accepted_answers": [
+      {
+        "id": 20191,
+        "question_text": "¿Por qué se cortó el internet?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 20192,
+        "question_text": "Por qué se cayó la conexión",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20193,
+        "question_text": "¿Por qué no hay internet en la oficina?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20194,
+        "question_text": "¿Por qué falló la red?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 20191,
+        "hint_order": 1,
+        "hint_text": "Em espanhol, 'a internet caiu' diz-se 'se cayó el internet' ou 'se cortó el internet'.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 20192,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Por qué se cortó el internet?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 20193,
+        "hint_order": 3,
+        "hint_text": "¿Por qué se cortó el internet?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 2020,
+    "level_id": 2,
+    "category_id": 6,
+    "answer_text": "Tengo una conexión de fibra óptica de trescientos megas de subida y de bajada.",
+    "context_text": "Pergunte qual é a velocidade de internet ou largura de banda do colega.",
+    "question_type": "WH_HOW_MUCH",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "presente - velocidad de red",
+    "difficulty_score": 2,
+    "xp_reward": 20,
+    "sort_order": 20,
+    "accepted_answers": [
+      {
+        "id": 20201,
+        "question_text": "¿Cuánta velocidad de internet tienes?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 20202,
+        "question_text": "Cuánto ancho de banda tienes",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20203,
+        "question_text": "¿Cuántos megas de internet tienes en casa?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20204,
+        "question_text": "¿Qué velocidad tiene tu conexión?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 20201,
+        "hint_order": 1,
+        "hint_text": "Use '¿Cuánta velocidad...?' ou '¿Cuánto ancho de banda...?'",
+        "hint_type": "structural"
+      },
+      {
+        "id": 20202,
+        "hint_order": 2,
+        "hint_text": "Vocabulário: 'ancho de banda' (largura de banda), 'subida y bajada' (upload e download).",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 20203,
+        "hint_order": 3,
+        "hint_text": "¿Cuánta velocidad de internet tienes?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 2021,
+    "level_id": 2,
+    "category_id": 6,
+    "answer_text": "Debemos abrir el puerto cuatrocientos cuarenta y tres en el cortafuegos para el tráfico seguro.",
+    "context_text": "Pergunte qual porta precisamos abrir no firewall.",
+    "question_type": "WH_WHICH",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "presente - puertos y firewall",
+    "difficulty_score": 3,
+    "xp_reward": 20,
+    "sort_order": 21,
+    "accepted_answers": [
+      {
+        "id": 20211,
+        "question_text": "¿Cuál puerto debemos abrir en el firewall?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 20212,
+        "question_text": "Qué puerto tenemos que abrir",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20213,
+        "question_text": "¿Cuál es el puerto para el tráfico seguro?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20214,
+        "question_text": "¿Qué puerto está bloqueado en el cortafuegos?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 20211,
+        "hint_order": 1,
+        "hint_text": "Em espanhol, 'porta de rede' é 'el puerto' (masculino) e 'porta de casa' é 'la puerta'!",
+        "hint_type": "structural"
+      },
+      {
+        "id": 20212,
+        "hint_order": 2,
+        "hint_text": "Atenção ao falso amigo de gênero: 'el puerto 443' (porta de rede).",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 20213,
+        "hint_order": 3,
+        "hint_text": "¿Cuál puerto debemos abrir en el firewall?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 2022,
+    "level_id": 2,
+    "category_id": 6,
+    "answer_text": "¿Por qué no carga el dominio interno de desarrollo en tu navegador?",
+    "context_text": "Responda que a VPN está desconectada ou falta atualizar o cache de DNS.",
+    "question_type": "WH_WHAT",
+    "exercise_mode": "ANSWER_FROM_QUESTION",
+    "grammar_focus": "presente - dirección IP y DNS",
+    "difficulty_score": 3,
+    "xp_reward": 20,
+    "sort_order": 22,
+    "accepted_answers": [
+      {
+        "id": 20221,
+        "question_text": "Porque la VPN está desconectada y no resuelve el DNS privado.",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 20222,
+        "question_text": "Falta limpiar la caché de DNS o reconectar la VPN.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20223,
+        "question_text": "Porque todavía no se propagaron los cambios del servidor DNS.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 20221,
+        "hint_order": 1,
+        "hint_text": "Use 'Porque...' para responder uma pergunta com '¿Por qué...?'",
+        "hint_type": "structural"
+      },
+      {
+        "id": 20222,
+        "hint_order": 2,
+        "hint_text": "Vocabulário: 'resolver el DNS', 'limpiar la caché'.",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 20223,
+        "hint_order": 3,
+        "hint_text": "Porque la VPN está desconectada y no resuelve el DNS privado.",
+        "hint_type": "answer"
+      }
+    ],
+    "prompt_text": "¿Por qué no carga el dominio interno de desarrollo en tu navegador?"
+  },
+  {
+    "id": 2023,
+    "level_id": 2,
+    "category_id": 6,
+    "answer_text": "¿Tienes buena señal de wifi donde estás o prefieres apagar la cámara?",
+    "context_text": "Responda que o sinal está um pouco instável, então você vai desligar a câmera para melhorar o áudio.",
+    "question_type": "YES_NO",
+    "exercise_mode": "ANSWER_FROM_QUESTION",
+    "grammar_focus": "sí/no - latencia en llamadas",
+    "difficulty_score": 2,
+    "xp_reward": 20,
+    "sort_order": 23,
+    "accepted_answers": [
+      {
+        "id": 20231,
+        "question_text": "La señal está un poco inestable, así que voy a apagar la cámara.",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 20232,
+        "question_text": "Tengo poca señal de wifi, prefiero apagar el video para que se escuche mejor.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20233,
+        "question_text": "Voy a apagar la cámara porque mi conexión está lenta hoy.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 20231,
+        "hint_order": 1,
+        "hint_text": "Expressão muito útil em chamadas remotas: 'apagar la cámara para mejorar el audio'.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 20232,
+        "hint_order": 2,
+        "hint_text": "Use: 'La señal está un poco inestable, así que voy a apagar la cámara.'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 20233,
+        "hint_order": 3,
+        "hint_text": "La señal está un poco inestable, así que voy a apagar la cámara.",
+        "hint_type": "answer"
+      }
+    ],
+    "prompt_text": "¿Tienes buena señal de wifi donde estás o prefieres apagar la cámara?"
+  },
+  {
+    "id": 2024,
+    "level_id": 2,
+    "category_id": 6,
+    "answer_text": "Conecté mi computadora directamente por cable de red al módem de la sala.",
+    "context_text": "Pergunte onde o colega conectou o computador dele.",
+    "question_type": "WH_WHERE",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "presente - enrutador",
+    "difficulty_score": 2,
+    "xp_reward": 20,
+    "sort_order": 24,
+    "accepted_answers": [
+      {
+        "id": 20241,
+        "question_text": "¿Dónde conectaste tu computadora?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 20242,
+        "question_text": "Dónde conectaste el cable de red",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20243,
+        "question_text": "¿En dónde enchufaste la computadora?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20244,
+        "question_text": "¿A dónde conectaste el equipo?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 20241,
+        "hint_order": 1,
+        "hint_text": "Use '¿Dónde conectaste...?' (Pretérito Indefinido de 'conectar').",
+        "hint_type": "structural"
+      },
+      {
+        "id": 20242,
+        "hint_order": 2,
+        "hint_text": "Vocabulário: 'cable de red' (cabo Ethernet), 'el módem / el router'.",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 20243,
+        "hint_order": 3,
+        "hint_text": "¿Dónde conectaste tu computadora?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 2025,
+    "level_id": 2,
+    "category_id": 19,
+    "answer_text": "Para empezar, me gustaría pedir una sopa de verduras y de plato fuerte el pescado a la plancha.",
+    "context_text": "Como garçom, pergunte o que o cliente deseja pedir para comer.",
+    "question_type": "WH_WHAT",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "condicional - restaurante",
+    "difficulty_score": 2,
+    "xp_reward": 20,
+    "sort_order": 25,
+    "accepted_answers": [
+      {
+        "id": 20251,
+        "question_text": "¿Qué le gustaría pedir?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 20252,
+        "question_text": "Qué va a ordenar hoy",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20253,
+        "question_text": "¿Qué desea comer de plato fuerte?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20254,
+        "question_text": "¿Qué le traigo para comer?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 20251,
+        "hint_order": 1,
+        "hint_text": "Em restaurantes na América Latina, usa-se '¿Qué va a ordenar?' ou '¿Qué le gustaría pedir?'",
+        "hint_type": "structural"
+      },
+      {
+        "id": 20252,
+        "hint_order": 2,
+        "hint_text": "Vocabulário: 'el plato fuerte / plato principal', 'a la plancha' (grelhado).",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 20253,
+        "hint_order": 3,
+        "hint_text": "¿Qué le gustaría pedir?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 2026,
+    "level_id": 2,
+    "category_id": 19,
+    "answer_text": "Sí, este menú incluye tres opciones vegetarianas y dos platos sin gluten.",
+    "context_text": "Pergunte se o restaurante tem opções vegetarianas no cardápio.",
+    "question_type": "YES_NO",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "sí/no - restricciones alimentarias",
+    "difficulty_score": 2,
+    "xp_reward": 20,
+    "sort_order": 26,
+    "accepted_answers": [
+      {
+        "id": 20261,
+        "question_text": "¿Tienen opciones vegetarianas en el menú?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 20262,
+        "question_text": "Tienen platos vegetarianos",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20263,
+        "question_text": "¿Hay comida vegetariana en la carta?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20264,
+        "question_text": "¿El menú tiene opciones sin carne?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 20261,
+        "hint_order": 1,
+        "hint_text": "Use '¿Tienen...?' ou '¿Hay...?' para perguntar sobre disponibilidade no cardápio.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 20262,
+        "hint_order": 2,
+        "hint_text": "Vocabulário: 'el menú / la carta', 'opciones vegetarianas'.",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 20263,
+        "hint_order": 3,
+        "hint_text": "¿Tienen opciones vegetarianas en el menú?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 2027,
+    "level_id": 2,
+    "category_id": 19,
+    "answer_text": "El total de la cena con la propina incluida es de cuarenta y cinco dólares.",
+    "context_text": "Pergunte quanto deu a conta do jantar.",
+    "question_type": "WH_HOW_MUCH",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "presente - pedir la cuenta",
+    "difficulty_score": 2,
+    "xp_reward": 20,
+    "sort_order": 27,
+    "accepted_answers": [
+      {
+        "id": 20271,
+        "question_text": "¿Cuánto es la cuenta en total?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 20272,
+        "question_text": "Cuánto cuesta la cena",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20273,
+        "question_text": "¿Cuánto salió la cuenta con propina?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20274,
+        "question_text": "¿Cuánto debemos pagar en total?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 20271,
+        "hint_order": 1,
+        "hint_text": "Use '¿Cuánto es...?' para perguntar o valor total da conta.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 20272,
+        "hint_order": 2,
+        "hint_text": "Vocabulário: 'la cuenta' (a conta), 'la propina' (a gorjeta).",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 20273,
+        "hint_order": 3,
+        "hint_text": "¿Cuánto es la cuenta en total?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 2028,
+    "level_id": 2,
+    "category_id": 19,
+    "answer_text": "Prefiero la carne asada a término medio y con ensalada fresca de guarnición.",
+    "context_text": "Pergunte como o cliente prefere o ponto da carne.",
+    "question_type": "WH_HOW",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "presente - punto de la carne",
+    "difficulty_score": 2,
+    "xp_reward": 20,
+    "sort_order": 28,
+    "accepted_answers": [
+      {
+        "id": 20281,
+        "question_text": "¿Cómo prefiere la carne?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 20282,
+        "question_text": "En qué término quiere la carne",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20283,
+        "question_text": "¿Cómo te gusta el punto de la carne?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20284,
+        "question_text": "¿Cómo quiere su corte de carne?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 20281,
+        "hint_order": 1,
+        "hint_text": "Na América Latina, o ponto da carne é 'el término de la carne' (bien cocido, término medio, jugoso).",
+        "hint_type": "structural"
+      },
+      {
+        "id": 20282,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Cómo prefiere la carne?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 20283,
+        "hint_order": 3,
+        "hint_text": "¿Cómo prefiere la carne?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 2029,
+    "level_id": 2,
+    "category_id": 19,
+    "answer_text": "Mi plato típico favorito de la gastronomía peruana es el ceviche de pescado fresco.",
+    "context_text": "Pergunte qual é o prato típico favorito da pessoa.",
+    "question_type": "WH_WHICH",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "presente - gastronomía latina",
+    "difficulty_score": 2,
+    "xp_reward": 20,
+    "sort_order": 29,
+    "accepted_answers": [
+      {
+        "id": 20291,
+        "question_text": "¿Cuál es tu plato típico favorito?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 20292,
+        "question_text": "Cuál es tu comida favorita",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20293,
+        "question_text": "¿Qué plato típico te gusta más?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20294,
+        "question_text": "¿Cuál plato de la gastronomía latina prefieres?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 20291,
+        "hint_order": 1,
+        "hint_text": "Use '¿Cuál es tu plato favorito?' para perguntar sobre preferências culinárias.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 20292,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Cuál es tu plato típico favorito?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 20293,
+        "hint_order": 3,
+        "hint_text": "¿Cuál es tu plato típico favorito?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 2030,
+    "level_id": 2,
+    "category_id": 19,
+    "answer_text": "¿La salsa verde que está en la mesa pica mucho?",
+    "context_text": "Responda que sim, ela é bastante apimentada, mas a salsa vermelha é suave.",
+    "question_type": "YES_NO",
+    "exercise_mode": "ANSWER_FROM_QUESTION",
+    "grammar_focus": "sí/no - comida picante",
+    "difficulty_score": 2,
+    "xp_reward": 20,
+    "sort_order": 30,
+    "accepted_answers": [
+      {
+        "id": 20301,
+        "question_text": "Sí, pica bastante, pero la salsa roja es suave.",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 20302,
+        "question_text": "Sí, es muy picante, ten cuidado.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20303,
+        "question_text": "No pica tanto, tiene solo un poco de ají.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 20301,
+        "hint_order": 1,
+        "hint_text": "Em espanhol, para dizer que algo arde/tem pimenta, usa-se o verbo 'picar' ('¿Pica mucho?').",
+        "hint_type": "structural"
+      },
+      {
+        "id": 20302,
+        "hint_order": 2,
+        "hint_text": "No México pimenta é 'el chile'; no Peru e Colômbia, 'el ají'.",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 20303,
+        "hint_order": 3,
+        "hint_text": "Sí, pica bastante, pero la salsa roja es suave.",
+        "hint_type": "answer"
+      }
+    ],
+    "prompt_text": "¿La salsa verde que está en la mesa pica mucho?"
+  },
+  {
+    "id": 2031,
+    "level_id": 2,
+    "category_id": 19,
+    "answer_text": "¿Desean algún postre o café para terminar?",
+    "context_text": "Responda que não, obrigado, e peça a conta para pagar com cartão.",
+    "question_type": "WH_WHAT",
+    "exercise_mode": "ANSWER_FROM_QUESTION",
+    "grammar_focus": "verbos modales - pedir la cuenta",
+    "difficulty_score": 2,
+    "xp_reward": 20,
+    "sort_order": 31,
+    "accepted_answers": [
+      {
+        "id": 20311,
+        "question_text": "No, muchas gracias, ¿nos trae la cuenta para pagar con tarjeta?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 20312,
+        "question_text": "Solo la cuenta, por favor, vamos a pagar con tarjeta de crédito.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20313,
+        "question_text": "Nada más, gracias, ¿me puede traer la cuenta por favor?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 20311,
+        "hint_order": 1,
+        "hint_text": "Para pedir a conta educadamente: '¿Nos trae la cuenta, por favor?'",
+        "hint_type": "structural"
+      },
+      {
+        "id": 20312,
+        "hint_order": 2,
+        "hint_text": "Vocabulário: 'el postre' (a sobremesa), 'pagar con tarjeta' (pagar com cartão).",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 20313,
+        "hint_order": 3,
+        "hint_text": "No, muchas gracias, ¿nos trae la cuenta para pagar con tarjeta?",
+        "hint_type": "answer"
+      }
+    ],
+    "prompt_text": "¿Desean algún postre o café para terminar?"
+  },
+  {
+    "id": 2032,
+    "level_id": 2,
+    "category_id": 19,
+    "answer_text": "Compro las frutas y verduras frescas en la feria del barrio todos los sábados.",
+    "context_text": "Pergunte onde a pessoa compra frutas e verduras frescas.",
+    "question_type": "WH_WHERE",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "presente - compras de supermercado",
+    "difficulty_score": 2,
+    "xp_reward": 20,
+    "sort_order": 32,
+    "accepted_answers": [
+      {
+        "id": 20321,
+        "question_text": "¿Dónde compras las frutas y verduras?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 20322,
+        "question_text": "Dónde compras la verdura fresca",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20323,
+        "question_text": "¿En qué lugar haces las compras del mercado?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20324,
+        "question_text": "¿Dónde sueles comprar la fruta?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 20321,
+        "hint_order": 1,
+        "hint_text": "Use '¿Dónde compras...?' (2ª pessoa do presente de 'comprar').",
+        "hint_type": "structural"
+      },
+      {
+        "id": 20322,
+        "hint_order": 2,
+        "hint_text": "Na América Latina usa-se 'el mercado', 'la feria' ou 'el tianguis' (México).",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 20323,
+        "hint_order": 3,
+        "hint_text": "¿Dónde compras las frutas y verduras?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 2033,
+    "level_id": 2,
+    "category_id": 20,
+    "answer_text": "Me duele mucho la garganta desde ayer y tengo un poco de fiebre.",
+    "context_text": "Como médico, pergunte o que o paciente está sentindo ou o que dói.",
+    "question_type": "WH_WHAT",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "presente - consulta médica",
+    "difficulty_score": 2,
+    "xp_reward": 20,
+    "sort_order": 33,
+    "accepted_answers": [
+      {
+        "id": 20331,
+        "question_text": "¿Qué síntomas tienes?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 20332,
+        "question_text": "Qué te duele",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20333,
+        "question_text": "¿Cómo te sientes hoy?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20334,
+        "question_text": "¿Qué malestar tienes?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 20331,
+        "hint_order": 1,
+        "hint_text": "Em espanhol, o verbo 'doler' funciona como 'gustar': '¿Qué te duele?' / 'Me duele la cabeza'.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 20332,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Qué síntomas tienes?' ou '¿Qué te duele?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 20333,
+        "hint_order": 3,
+        "hint_text": "¿Qué síntomas tienes?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 2034,
+    "level_id": 2,
+    "category_id": 20,
+    "answer_text": "El dolor de espalda empezó hace tres días después de estar sentado muchas horas.",
+    "context_text": "Pergunte quando começou a dor nas costas.",
+    "question_type": "WH_WHEN",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "pretérito indefinido - síntomas",
+    "difficulty_score": 2,
+    "xp_reward": 20,
+    "sort_order": 34,
+    "accepted_answers": [
+      {
+        "id": 20341,
+        "question_text": "¿Cuándo empezó el dolor de espalda?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 20342,
+        "question_text": "Desde cuándo te duele la espalda",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20343,
+        "question_text": "¿Cuándo comenzaron las molestias?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20344,
+        "question_text": "¿Hace cuánto tiempo tienes ese dolor?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 20341,
+        "hint_order": 1,
+        "hint_text": "Use '¿Cuándo empezó...?' ou '¿Desde cuándo...?'",
+        "hint_type": "structural"
+      },
+      {
+        "id": 20342,
+        "hint_order": 2,
+        "hint_text": "Vocabulário: 'el dolor de espalda' (a dor nas costas), 'hace tres días' (há três dias).",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 20343,
+        "hint_order": 3,
+        "hint_text": "¿Cuándo empezó el dolor de espalda?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 2035,
+    "level_id": 2,
+    "category_id": 20,
+    "answer_text": "No, no soy alérgico a ningún medicamento ni a la penicilina.",
+    "context_text": "Pergunte ao paciente se ele é alérgico a algum medicamento.",
+    "question_type": "YES_NO",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "sí/no - alergias y medicamentos",
+    "difficulty_score": 2,
+    "xp_reward": 20,
+    "sort_order": 35,
+    "accepted_answers": [
+      {
+        "id": 20351,
+        "question_text": "¿Eres alérgico a algún medicamento?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 20352,
+        "question_text": "Tienes alergia a algún medicamento",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20353,
+        "question_text": "¿Es usted alérgico a alguna medicina?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20354,
+        "question_text": "¿Sufres de alguna alergia?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 20351,
+        "hint_order": 1,
+        "hint_text": "Use '¿Eres alérgico a...?' ou '¿Tienes alergia a...?'",
+        "hint_type": "structural"
+      },
+      {
+        "id": 20352,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Eres alérgico a algún medicamento?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 20353,
+        "hint_order": 3,
+        "hint_text": "¿Eres alérgico a algún medicamento?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 2036,
+    "level_id": 2,
+    "category_id": 20,
+    "answer_text": "Salgo a correr al parque y hago ejercicios de estiramiento tres veces por semana.",
+    "context_text": "Pergunte com que frequência a pessoa pratica exercícios físicos.",
+    "question_type": "WH_HOW",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "presente - frecuencia de ejercicio",
+    "difficulty_score": 2,
+    "xp_reward": 20,
+    "sort_order": 36,
+    "accepted_answers": [
+      {
+        "id": 20361,
+        "question_text": "¿Con qué frecuencia haces ejercicio?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 20362,
+        "question_text": "Cada cuánto haces deporte",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20363,
+        "question_text": "¿Cómo cuidas tu salud física?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20364,
+        "question_text": "¿Cuántas veces por semana entrenas?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 20361,
+        "hint_order": 1,
+        "hint_text": "Use '¿Con qué frecuencia...?' para perguntar sobre periodicidade.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 20362,
+        "hint_order": 2,
+        "hint_text": "Vocabulário: 'hacer ejercicio', 'estiramiento' (alongamento).",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 20363,
+        "hint_order": 3,
+        "hint_text": "¿Con qué frecuencia haces ejercicio?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 2037,
+    "level_id": 2,
+    "category_id": 20,
+    "answer_text": "Debes tomar una pastilla cada ocho horas durante cinco días después de comer.",
+    "context_text": "Pergunte quantos comprimidos ou de quantas em quantas horas você deve tomar o remédio.",
+    "question_type": "WH_HOW_MANY",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "verbos modales - receta médica",
+    "difficulty_score": 2,
+    "xp_reward": 20,
+    "sort_order": 37,
+    "accepted_answers": [
+      {
+        "id": 20371,
+        "question_text": "¿Cuántas pastillas debo tomar?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 20372,
+        "question_text": "Cada cuántas horas tomo el medicamento",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20373,
+        "question_text": "¿Cuántas veces al día debo tomar la medicina?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20374,
+        "question_text": "¿Cuántas pastillas son por día?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 20371,
+        "hint_order": 1,
+        "hint_text": "Em espanhol, 'comprimido' é 'la pastilla' ou 'el comprimido'.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 20372,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Cuántas pastillas debo tomar?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 20373,
+        "hint_order": 3,
+        "hint_text": "¿Cuántas pastillas debo tomar?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 2038,
+    "level_id": 2,
+    "category_id": 20,
+    "answer_text": "¿Qué haces para evitar el dolor de cuello y vista cansada cuando programas todo el día?",
+    "context_text": "Responda que você usa uma cadeira ergonômica e faz pausas a cada hora.",
+    "question_type": "WH_WHAT",
+    "exercise_mode": "ANSWER_FROM_QUESTION",
+    "grammar_focus": "verbos modales - ergonomía en TI",
+    "difficulty_score": 2,
+    "xp_reward": 20,
+    "sort_order": 38,
+    "accepted_answers": [
+      {
+        "id": 20381,
+        "question_text": "Uso una silla ergonómica y hago pausas activas cada hora.",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 20382,
+        "question_text": "Ajusto la altura de la pantalla y descanso la vista cada cincuenta minutos.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20383,
+        "question_text": "Me levanto a caminar un poco y estiro los brazos.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 20381,
+        "hint_order": 1,
+        "hint_text": "Vocabulário: 'silla ergonómica', 'pausas activas', 'descansar la vista'.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 20382,
+        "hint_order": 2,
+        "hint_text": "Responda: 'Uso una silla ergonómica y hago pausas activas cada hora.'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 20383,
+        "hint_order": 3,
+        "hint_text": "Uso una silla ergonómica y hago pausas activas cada hora.",
+        "hint_type": "answer"
+      }
+    ],
+    "prompt_text": "¿Qué haces para evitar el dolor de cuello y vista cansada cuando programas todo el día?"
+  },
+  {
+    "id": 2039,
+    "level_id": 2,
+    "category_id": 20,
+    "answer_text": "¿Se necesita receta médica para comprar este jarabe para la tos?",
+    "context_text": "Responda que não, é um medicamento de venda livre na farmácia.",
+    "question_type": "YES_NO",
+    "exercise_mode": "ANSWER_FROM_QUESTION",
+    "grammar_focus": "sí/no - farmacia",
+    "difficulty_score": 2,
+    "xp_reward": 20,
+    "sort_order": 39,
+    "accepted_answers": [
+      {
+        "id": 20391,
+        "question_text": "No, es un medicamento de venta libre.",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 20392,
+        "question_text": "No hace falta receta médica para este jarabe.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20393,
+        "question_text": "No, lo puedes comprar sin receta en cualquier farmacia.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 20391,
+        "hint_order": 1,
+        "hint_text": "Expressão útil em farmácias: 'de venta libre' (isento de prescrição/receita).",
+        "hint_type": "structural"
+      },
+      {
+        "id": 20392,
+        "hint_order": 2,
+        "hint_text": "Responda: 'No, es un medicamento de venta libre.'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 20393,
+        "hint_order": 3,
+        "hint_text": "No, es un medicamento de venta libre.",
+        "hint_type": "answer"
+      }
+    ],
+    "prompt_text": "¿Se necesita receta médica para comprar este jarabe para la tos?"
+  },
+  {
+    "id": 2040,
+    "level_id": 2,
+    "category_id": 20,
+    "answer_text": "La clínica más cercana con guardia las veinticuatro horas queda a cuatro cuadras de aquí.",
+    "context_text": "Pergunte onde fica a clínica ou hospital mais próximo.",
+    "question_type": "WH_WHERE",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "presente - urgencias médicas",
+    "difficulty_score": 2,
+    "xp_reward": 20,
+    "sort_order": 40,
+    "accepted_answers": [
+      {
+        "id": 20401,
+        "question_text": "¿Dónde queda la clínica más cercana?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 20402,
+        "question_text": "Dónde está el hospital más cercano",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20403,
+        "question_text": "¿Dónde hay una guardia médica cerca de aquí?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 20404,
+        "question_text": "¿En dónde puedo encontrar una farmacia o clínica?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 20401,
+        "hint_order": 1,
+        "hint_text": "Use '¿Dónde queda...?' ou '¿Dónde está...?'",
+        "hint_type": "structural"
+      },
+      {
+        "id": 20402,
+        "hint_order": 2,
+        "hint_text": "Vocabulário: 'la guardia médica / urgencias' (o pronto-socorro).",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 20403,
+        "hint_order": 3,
+        "hint_text": "¿Dónde queda la clínica más cercana?",
         "hint_type": "answer"
       }
     ]

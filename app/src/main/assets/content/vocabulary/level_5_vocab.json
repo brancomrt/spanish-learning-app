@@ -1,44 +1,804 @@
 {
   "cards": [
     {
-      "word": "cuello de botella / bottleneck",
-      "definition": "ponto do sistema onde o fluxo de dados é estrangulado limitando a capacidade total",
-      "example_sentence": "El cuello de botella está en el procesamiento síncrono de las imágenes.",
+      "word": "la planificación del sprint (sprint planning)",
+      "definition": "o planejamento da sprint",
+      "example_sentence": "En la planificación del sprint definimos el objetivo y las historias comprometidas.",
       "level_id": 5,
-      "category_id": 15,
-      "image_url": "local:vocab_architecture.xml"
+      "category_id": 13,
+      "image_url": "local:vocab_agile.xml"
     },
     {
-      "word": "desacoplar componentes",
-      "definition": "separar partes interdependentes do sistema para aumentar resiliência e manutenibilidade",
-      "example_sentence": "Usamos Kafka para desacoplar el servicio de pedidos del servicio de facturación.",
+      "word": "la sesión de refinamiento (grooming)",
+      "definition": "a reunião de refinamento do backlog",
+      "example_sentence": "Durante el refinamiento aclaramos las dudas técnicas y dividimos las tareas grandes.",
+      "level_id": 5,
+      "category_id": 13,
+      "image_url": "local:vocab_agile.xml"
+    },
+    {
+      "word": "la retrospectiva del sprint",
+      "definition": "a retrospectiva da sprint",
+      "example_sentence": "En la retrospectiva acordamos acciones concretas para mejorar nuestro flujo.",
+      "level_id": 5,
+      "category_id": 13,
+      "image_url": "local:vocab_agile.xml"
+    },
+    {
+      "word": "la historia de usuario (user story)",
+      "definition": "a história de usuário",
+      "example_sentence": "Esta historia de usuario aporta mucho valor a los clientes del segmento corporativo.",
+      "level_id": 5,
+      "category_id": 13,
+      "image_url": "local:vocab_agile.xml"
+    },
+    {
+      "word": "la épica (epic)",
+      "definition": "o épico (conjunto de histórias de usuário)",
+      "example_sentence": "Dividimos la épica de pagos internacionales en tres entregables incrementales.",
+      "level_id": 5,
+      "category_id": 13,
+      "image_url": "local:vocab_agile.xml"
+    },
+    {
+      "word": "los puntos de historia (story points)",
+      "definition": "os story points (estimativa de complexidade)",
+      "example_sentence": "Estimamos la complejidad en puntos de historia usando la serie de Fibonacci.",
+      "level_id": 5,
+      "category_id": 13,
+      "image_url": "local:vocab_agile.xml"
+    },
+    {
+      "word": "los criterios de aceptación",
+      "definition": "os critérios de aceite",
+      "example_sentence": "Revisamos todos los criterios de aceptación junto con el analista de calidad.",
+      "level_id": 5,
+      "category_id": 13,
+      "image_url": "local:vocab_agile.xml"
+    },
+    {
+      "word": "la definición de terminado (DoD)",
+      "definition": "a definição de pronto (Definition of Done)",
+      "example_sentence": "Nuestra definición de terminado incluye pruebas automatizadas y documentación actualizada.",
+      "level_id": 5,
+      "category_id": 13,
+      "image_url": "local:vocab_agile.xml"
+    },
+    {
+      "word": "el producto mínimo viable (MVP)",
+      "definition": "o produto mínimo viável (MVP)",
+      "example_sentence": "Lanzamos un producto mínimo viable para validar la hipótesis con usuarios reales.",
+      "level_id": 5,
+      "category_id": 13,
+      "image_url": "local:vocab_agile.xml"
+    },
+    {
+      "word": "la hoja de ruta (roadmap)",
+      "definition": "o roadmap de produto",
+      "example_sentence": "Presentamos la hoja de ruta del próximo semestre a todas las partes interesadas.",
+      "level_id": 5,
+      "category_id": 13,
+      "image_url": "local:vocab_agile.xml"
+    },
+    {
+      "word": "las partes interesadas (stakeholders)",
+      "definition": "os stakeholders / áreas interessadas",
+      "example_sentence": "Alineamos las expectativas con las partes interesadas antes de iniciar el desarrollo.",
+      "level_id": 5,
+      "category_id": 13,
+      "image_url": "local:vocab_agile.xml"
+    },
+    {
+      "word": "el alcance del proyecto (scope)",
+      "definition": "o escopo do projeto",
+      "example_sentence": "Para llegar a la fecha acordada tuvimos que acotar el alcance inicial.",
+      "level_id": 5,
+      "category_id": 13,
+      "image_url": "local:vocab_agile.xml"
+    },
+    {
+      "word": "el desvío de alcance (scope creep)",
+      "definition": "o aumento não planejado de escopo",
+      "example_sentence": "Evitamos el desvío de alcance documentando los pedidos nuevos para la fase dos.",
+      "level_id": 5,
+      "category_id": 13,
+      "image_url": "local:vocab_agile.xml"
+    },
+    {
+      "word": "el cuello de botella en revisiones",
+      "definition": "o gargalo na coluna de code review",
+      "example_sentence": "Limitar el trabajo en progreso ayudó a eliminar el cuello de botella en revisiones.",
+      "level_id": 5,
+      "category_id": 13,
+      "image_url": "local:vocab_agile.xml"
+    },
+    {
+      "word": "el trabajo en curso (WIP)",
+      "definition": "o trabalho em progresso (Work In Progress)",
+      "example_sentence": "Acordamos un límite máximo de trabajo en curso en el tablero Kanban.",
+      "level_id": 5,
+      "category_id": 13,
+      "image_url": "local:vocab_agile.xml"
+    },
+    {
+      "word": "la velocidad del equipo (velocity)",
+      "definition": "a velocidade média de entrega da equipe",
+      "example_sentence": "La velocidad del equipo se estabilizó en cuarenta puntos por sprint.",
+      "level_id": 5,
+      "category_id": 13,
+      "image_url": "local:vocab_agile.xml"
+    },
+    {
+      "word": "el indicador clave de rendimiento (KPI / OKR)",
+      "definition": "o indicador-chave de desempenho",
+      "example_sentence": "Nuestro objetivo trimestral es mejorar la tasa de conversión en un diez por ciento.",
+      "level_id": 5,
+      "category_id": 13,
+      "image_url": "local:vocab_agile.xml"
+    },
+    {
+      "word": "el entregable (deliverable)",
+      "definition": "o entregável / resultado concreto",
+      "example_sentence": "El entregable principal de esta iteración es el módulo de facturación electrónica.",
+      "level_id": 5,
+      "category_id": 13,
+      "image_url": "local:vocab_agile.xml"
+    },
+    {
+      "word": "priorizar la pila de producto (backlog)",
+      "definition": "priorizar o backlog do produto",
+      "example_sentence": "El dueño de producto priorizó las tareas según el impacto en el negocio.",
+      "level_id": 5,
+      "category_id": 13,
+      "image_url": "local:vocab_agile.xml"
+    },
+    {
+      "word": "la demostración de fin de sprint (review)",
+      "definition": "a sprint review / demo do produto",
+      "example_sentence": "En la demostración del viernes mostramos la funcionalidad corriendo en preproducción.",
+      "level_id": 5,
+      "category_id": 13,
+      "image_url": "local:vocab_agile.xml"
+    },
+    {
+      "word": "el acuerdo de nivel de servicio (SLA)",
+      "definition": "o acordo de nível de serviço (SLA contratual)",
+      "example_sentence": "Cumplimos con el acuerdo de nivel de servicio del noventa y nueve coma nueve por ciento.",
       "level_id": 5,
       "category_id": 14,
-      "image_url": "local:vocab_architecture.xml"
+      "image_url": "local:vocab_devops.xml"
     },
     {
-      "word": "balanceador de carga",
-      "definition": "serviço que distribui requisições de rede entre múltiplos servidores (Load Balancer)",
-      "example_sentence": "El balanceador de carga redirige el tráfico hacia los pods que tienen menor uso de CPU.",
+      "word": "el objetivo de nivel de servicio (SLO)",
+      "definition": "o objetivo interno de nível de serviço (SLO)",
+      "example_sentence": "Definimos un SLO interno más estricto para detectar degradaciones antes que el cliente.",
       "level_id": 5,
-      "category_id": 13,
-      "image_url": "local:vocab_cloud.xml"
+      "category_id": 14,
+      "image_url": "local:vocab_devops.xml"
     },
     {
-      "word": "latencia",
-      "definition": "tempo de resposta entre o envio de uma requisição e o recebimento da resposta",
-      "example_sentence": "Implementamos una capa de caché con Redis para reducir la latencia de la API a menos de 50 milisegundos.",
+      "word": "el presupuesto de error (error budget)",
+      "definition": "o orçamento de erro",
+      "example_sentence": "Como consumimos parte del presupuesto de error, este sprint priorizaremos la estabilidad.",
+      "level_id": 5,
+      "category_id": 14,
+      "image_url": "local:vocab_devops.xml"
+    },
+    {
+      "word": "estar de guardia (on-call)",
+      "definition": "estar de plantão técnico",
+      "example_sentence": "Esta semana me toca estar de guardia para atender alertas críticas.",
+      "level_id": 5,
+      "category_id": 14,
+      "image_url": "local:vocab_devops.xml"
+    },
+    {
+      "word": "el análisis de causa raíz (RCA)",
+      "definition": "a análise de causa raiz",
+      "example_sentence": "El análisis de causa raíz demostró que faltaba un límite de memoria en el contenedor.",
+      "level_id": 5,
+      "category_id": 14,
+      "image_url": "local:vocab_devops.xml"
+    },
+    {
+      "word": "el tiempo medio de recuperación (MTTR)",
+      "definition": "o tempo médio de recuperação após falha",
+      "example_sentence": "Las guías automatizadas redujeron nuestro tiempo medio de recuperación a cinco minutos.",
+      "level_id": 5,
+      "category_id": 14,
+      "image_url": "local:vocab_devops.xml"
+    },
+    {
+      "word": "la observabilidad (métricas, logs y trazas)",
+      "definition": "a observabilidade do sistema",
+      "example_sentence": "Invertimos en observabilidad para entender el comportamiento interno de la plataforma.",
+      "level_id": 5,
+      "category_id": 14,
+      "image_url": "local:vocab_devops.xml"
+    },
+    {
+      "word": "la trazabilidad distribuida (distributed tracing)",
+      "definition": "o rastreamento distribuído entre microsserviços",
+      "example_sentence": "Con la trazabilidad distribuida vimos exactamente en qué servicio se demoraba la petición.",
+      "level_id": 5,
+      "category_id": 14,
+      "image_url": "local:vocab_devops.xml"
+    },
+    {
+      "word": "mitigar un incidente",
+      "definition": "mitigar / conter o impacto de um incidente",
+      "example_sentence": "Primero nos enfocamos en mitigar el incidente para los usuarios y luego buscamos la causa.",
+      "level_id": 5,
+      "category_id": 14,
+      "image_url": "local:vocab_devops.xml"
+    },
+    {
+      "word": "la degradación elegante (graceful degradation)",
+      "definition": "a degradação graciosa (funcionar parcialmente sem cair tudo)",
+      "example_sentence": "Si el motor de recomendaciones falla, aplicamos degradación elegante mostrando productos populares.",
+      "level_id": 5,
+      "category_id": 14,
+      "image_url": "local:vocab_devops.xml"
+    },
+    {
+      "word": "el limitador de tasa (rate limiter)",
+      "definition": "o limitador de taxa de requisições",
+      "example_sentence": "El limitador de tasa protegió la API frente a un cliente mal configurado.",
+      "level_id": 5,
+      "category_id": 14,
+      "image_url": "local:vocab_devops.xml"
+    },
+    {
+      "word": "la fatiga de alertas",
+      "definition": "a fadiga de alertas (excesso de alertas falsos ou ruidosos)",
+      "example_sentence": "Eliminamos las alertas redundantes para evitar la fatiga de alertas en la guardia.",
+      "level_id": 5,
+      "category_id": 14,
+      "image_url": "local:vocab_devops.xml"
+    },
+    {
+      "word": "el simulacro de falla (game day)",
+      "definition": "o simulado de falha / teste de resiliência",
+      "example_sentence": "Organizamos un simulacro de falla para practicar la caída de una zona entera.",
+      "level_id": 5,
+      "category_id": 14,
+      "image_url": "local:vocab_devops.xml"
+    },
+    {
+      "word": "la recuperación ante desastres (DRP)",
+      "definition": "o plano de recuperação de desastres",
+      "example_sentence": "Probamos el plan de recuperação ante desastres dos veces al año.",
+      "level_id": 5,
+      "category_id": 14,
+      "image_url": "local:vocab_devops.xml"
+    },
+    {
+      "word": "la saturación de recursos",
+      "definition": "a saturação de CPU, memória ou I/O",
+      "example_sentence": "La alerta temprana nos avisó antes de llegar a la saturación de memoria.",
+      "level_id": 5,
+      "category_id": 14,
+      "image_url": "local:vocab_devops.xml"
+    },
+    {
+      "word": "la hora pico / hora punta",
+      "definition": "o horário de pico de tráfego",
+      "example_sentence": "El sistema procesa el triple de pedidos durante la hora pico del viernes.",
+      "level_id": 5,
+      "category_id": 14,
+      "image_url": "local:vocab_devops.xml"
+    },
+    {
+      "word": "el tiempo de inactividad (downtime)",
+      "definition": "o tempo fora do ar / indisponibilidade",
+      "example_sentence": "Realizamos la migración de base de datos con cero tiempo de inactividad.",
+      "level_id": 5,
+      "category_id": 14,
+      "image_url": "local:vocab_devops.xml"
+    },
+    {
+      "word": "escalar el incidente",
+      "definition": "escalonar o incidente para outra equipe ou nível",
+      "example_sentence": "Si no logramos resolverlo en quince minutos, debemos escalar el incidente a plataforma.",
+      "level_id": 5,
+      "category_id": 14,
+      "image_url": "local:vocab_devops.xml"
+    },
+    {
+      "word": "la severidad del incidente (SEV-1 / SEV-2)",
+      "definition": "a severidade / criticidade do incidente",
+      "example_sentence": "Declaramos un incidente de severidad uno porque afectaba el flujo de cobros.",
+      "level_id": 5,
+      "category_id": 14,
+      "image_url": "local:vocab_devops.xml"
+    },
+    {
+      "word": "el trabajo repetitivo manual (toil)",
+      "definition": "o trabalho operacional repetitivo (toil)",
+      "example_sentence": "Nuestro objetivo en SRE es automatizar el trabajo manual repetitivo.",
+      "level_id": 5,
+      "category_id": 14,
+      "image_url": "local:vocab_devops.xml"
+    },
+    {
+      "word": "la puerta de enlace API (API Gateway)",
+      "definition": "o API Gateway",
+      "example_sentence": "Todas las aplicaciones móviles se conectan a través de la puerta de enlace API.",
       "level_id": 5,
       "category_id": 15,
       "image_url": "local:vocab_architecture.xml"
     },
     {
-      "word": "escalabilidad horizontal",
-      "definition": "capacidade de lidar com mais carga adicionando mais nós/máquinas ao cluster",
-      "example_sentence": "Nuestra arquitectura soporta escalabilidad horizontal automática en Kubernetes.",
+      "word": "el cortacircuitos (circuit breaker)",
+      "definition": "o circuit breaker (disjuntor de proteção contra falhas em cascata)",
+      "example_sentence": "El cortacircuitos evita que la lentitud de un proveedor externo tumbe todo nuestro sistema.",
       "level_id": 5,
-      "category_id": 13,
-      "image_url": "local:vocab_cloud.xml"
+      "category_id": 15,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "la falla en cascada",
+      "definition": "a falha em cascata entre serviços",
+      "example_sentence": "Aislamos los recursos para impedir una falla en cascada en la plataforma.",
+      "level_id": 5,
+      "category_id": 15,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "la consistencia eventual",
+      "definition": "a consistência eventual",
+      "example_sentence": "En arquitecturas orientadas a eventos trabajamos con consistencia eventual.",
+      "level_id": 5,
+      "category_id": 15,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "el patrón Saga",
+      "definition": "o padrão Saga para transações distribuídas",
+      "example_sentence": "Si el cobro falla, la Saga ejecuta un evento de compensación para liberar el stock.",
+      "level_id": 5,
+      "category_id": 15,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "la cola de mensajes muertos (DLQ)",
+      "definition": "a Dead Letter Queue (fila de mensagens com erro)",
+      "example_sentence": "Configuramos una alerta cada vez que entra un evento a la cola de mensajes muertos.",
+      "level_id": 5,
+      "category_id": 15,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "el reintento con retroceso exponencial",
+      "definition": "o retry com exponential backoff",
+      "example_sentence": "El cliente HTTP aplica reintentos con retroceso exponencial para no saturar al servidor.",
+      "level_id": 5,
+      "category_id": 15,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "el tópico / tema de eventos (Kafka topic)",
+      "definition": "o tópico de eventos no Kafka",
+      "example_sentence": "El servicio de pedidos publica un evento en el tópico cada vez que se confirma una compra.",
+      "level_id": 5,
+      "category_id": 15,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "el productor y el consumidor",
+      "definition": "o produtor e o consumidor de mensagens",
+      "example_sentence": "Los consumidores procesan los eventos de facturación de manera asíncrona.",
+      "level_id": 5,
+      "category_id": 15,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "el versionado semántico",
+      "definition": "o versionamento semântico (SemVer)",
+      "example_sentence": "Aplicamos versionado semántico estricto en todas nuestras librerías internas.",
+      "level_id": 5,
+      "category_id": 15,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "la compatibilidad hacia atrás",
+      "definition": "a retrocompatibilidade (backward compatibility)",
+      "example_sentence": "Al agregar un campo opcional en el JSON mantenemos la compatibilidad hacia atrás.",
+      "level_id": 5,
+      "category_id": 15,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "deprecar / dar de baja un endpoint",
+      "definition": "descontinuar / depreciar um endpoint",
+      "example_sentence": "Avisamos con tres meses de anticipación antes de deprecar un endpoint antiguo.",
+      "level_id": 5,
+      "category_id": 15,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "el descubrimiento de servicios",
+      "definition": "o service discovery",
+      "example_sentence": "Los contenedores se encuentran dinámicamente mediante el descubrimiento de servicios.",
+      "level_id": 5,
+      "category_id": 15,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "la malla de servicios (service mesh)",
+      "definition": "o service mesh (Istio / Linkerd)",
+      "example_sentence": "La malla de servicios gestiona el cifrado mutuo TLS entre todos los pods.",
+      "level_id": 5,
+      "category_id": 15,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "el identificador de correlación",
+      "definition": "o correlation ID (para rastrear requisições)",
+      "example_sentence": "Propagamos el identificador de correlación en los encabezados de cada llamada.",
+      "level_id": 5,
+      "category_id": 15,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "la carga útil (payload)",
+      "definition": "o payload (corpo de dados da requisição ou evento)",
+      "example_sentence": "Comprimimos la carga útil del mensaje para reducir el uso de red.",
+      "level_id": 5,
+      "category_id": 15,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "el límite de tiempo (timeout)",
+      "definition": "o timeout de conexão e leitura",
+      "example_sentence": "Nunca hagas una llamada de red sin configurar un límite de tiempo explícito.",
+      "level_id": 5,
+      "category_id": 15,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "la paginación por cursor",
+      "definition": "a paginação baseada em cursor",
+      "example_sentence": "La paginación por cursor es mucho más eficiente que usar desplazamiento en listas grandes.",
+      "level_id": 5,
+      "category_id": 15,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "el contrato OpenAPI / Swagger",
+      "definition": "a especificação OpenAPI / Swagger",
+      "example_sentence": "Validamos las peticiones entrantes contra el contrato OpenAPI automáticamente.",
+      "level_id": 5,
+      "category_id": 15,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "el aislamiento de fallos (bulkhead)",
+      "definition": "o isolamento de recursos (padrão Bulkhead)",
+      "example_sentence": "Separamos los grupos de hilos por proveedor para garantizar el aislamiento de fallos.",
+      "level_id": 5,
+      "category_id": 15,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "el acento y la entonación",
+      "definition": "o sotaque e a entonação",
+      "example_sentence": "Trabajar con colegas de distintos países te enseña a reconocer cada acento.",
+      "level_id": 5,
+      "category_id": 25,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "el voseo (vos tenés, vos podés)",
+      "definition": "o uso do pronome 'vos' (padrão na Argentina, Uruguai e partes da Colômbia/América Central)",
+      "example_sentence": "En Buenos Aires y Montevideo se usa el voseo en todos los ámbitos profesionales.",
+      "level_id": 5,
+      "category_id": 25,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "el tuteo vs el ustedeo",
+      "definition": "o tratamento por 'tú' (informal) vs 'usted' (formal)",
+      "example_sentence": "En Colombia es muy común escuchar el uso de 'usted' incluso entre amigos cercanos.",
+      "level_id": 5,
+      "category_id": 25,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "los subtítulos",
+      "definition": "as legendas de filme ou vídeo (falso amigo: 'la leyenda' = lenda!)",
+      "example_sentence": "Ver cine latinoamericano con subtítulos en español mejora muchísimo el vocabulario.",
+      "level_id": 5,
+      "category_id": 25,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "la novela (literatura) vs la telenovela (TV)",
+      "definition": "o romance literário vs a novela de TV",
+      "example_sentence": "Leí la última novela de Isabel Allende durante el viaje.",
+      "level_id": 5,
+      "category_id": 25,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "el realismo mágico",
+      "definition": "o realismo mágico (movimento literário latino-americano)",
+      "example_sentence": "El realismo mágico combina elementos fantásticos con la vida cotidiana de nuestra región.",
+      "level_id": 5,
+      "category_id": 25,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "el documental",
+      "definition": "o documentário",
+      "example_sentence": "Vimos un documental excelente sobre la geografía de la Patagonia.",
+      "level_id": 5,
+      "category_id": 25,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "la prensa escrita y digital",
+      "definition": "a imprensa escrita e digital",
+      "example_sentence": "Leo los titulares de la prensa digital cada mañana mientras desayuno.",
+      "level_id": 5,
+      "category_id": 25,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "el pódcast / la emisión",
+      "definition": "o podcast / o programa de áudio",
+      "example_sentence": "Escucho un pódcast de tecnología e historia en español cuando salgo a caminar.",
+      "level_id": 5,
+      "category_id": 25,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "el patrimonio cultural",
+      "definition": "o patrimônio cultural",
+      "example_sentence": "Cusco, Cartagena y Oaxaca son joyas del patrimonio cultural de América Latina.",
+      "level_id": 5,
+      "category_id": 25,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "la feria del libro",
+      "definition": "a feira do livro",
+      "example_sentence": "La Feria Internacional del Libro reúne a miles de lectores y editoriales cada año.",
+      "level_id": 5,
+      "category_id": 25,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "la gastronomía regional",
+      "definition": "a culinária / gastronomia regional",
+      "example_sentence": "La gastronomía peruana y la mexicana son reconocidas en todo el planeta.",
+      "level_id": 5,
+      "category_id": 25,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "la sobremesa",
+      "definition": "a conversa agradável à mesa após terminar a refeição (falso amigo: sobremesa doce é 'el postre'!)",
+      "example_sentence": "Nos quedamos dos horas haciendo sobremesa y charlando con la familia.",
+      "level_id": 5,
+      "category_id": 25,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "compartir un mate",
+      "definition": "tomar chimarrão/mate em roda (tradição na Argentina, Uruguai e Paraguai)",
+      "example_sentence": "En el Río de la Plata invitar un mate es un símbolo de hospitalidad y amistad.",
+      "level_id": 5,
+      "category_id": 25,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "la peña / la tertulia",
+      "definition": "o encontro cultural de música, conversa ou arte",
+      "example_sentence": "El viernes fuimos a una peña folclórica a escuchar música en vivo.",
+      "level_id": 5,
+      "category_id": 25,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "la artesanía",
+      "definition": "o artesanato tradicional",
+      "example_sentence": "Compré una manta tejida a mano en el mercado de artesanías.",
+      "level_id": 5,
+      "category_id": 25,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "el estreno",
+      "definition": "a estreia (de filme, série ou peça)",
+      "example_sentence": "El estreno de la película recibió excelentes críticas en los festivales.",
+      "level_id": 5,
+      "category_id": 25,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "la banda sonora",
+      "definition": "a trilha sonora",
+      "example_sentence": "La banda sonora de esa película tiene canciones clásicas del rock argentino.",
+      "level_id": 5,
+      "category_id": 25,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "la diversidad lingüística",
+      "definition": "a diversidade linguística",
+      "example_sentence": "La diversidad lingüística del español enriquece nuestras conversaciones diarias.",
+      "level_id": 5,
+      "category_id": 25,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "el sentido de pertenencia",
+      "definition": "o sentimento de pertencimento",
+      "example_sentence": "Compartir tradiciones fortalece el sentido de pertenencia en la comunidad.",
+      "level_id": 5,
+      "category_id": 25,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "la huella de carbono",
+      "definition": "a pegada de carbono",
+      "example_sentence": "Optimizamos el uso de servidores para reducir la huella de carbono digital.",
+      "level_id": 5,
+      "category_id": 26,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "el cambio climático",
+      "definition": "a mudança climática",
+      "example_sentence": "El cambio climático exige una transición rápida hacia energías limpias.",
+      "level_id": 5,
+      "category_id": 26,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "la contaminación ambiental",
+      "definition": "a poluição ambiental (atenção: em espanhol usa-se 'contaminación' para poluição!)",
+      "example_sentence": "Los autobuses eléctricos ayudan a disminuir la contaminación del aire y el ruido.",
+      "level_id": 5,
+      "category_id": 26,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "las energías renovables (solar y eólica)",
+      "definition": "as energias renováveis (solar e eólica)",
+      "example_sentence": "El norte de Chile y el sur de Argentina tienen un potencial enorme de energía solar y eólica.",
+      "level_id": 5,
+      "category_id": 26,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "el desarrollo sustentable / sostenible",
+      "definition": "o desenvolvimento sustentável",
+      "example_sentence": "El desarrollo sostenible busca equilibrar el crecimiento económico con el cuidado ambiental.",
+      "level_id": 5,
+      "category_id": 26,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "reciclar y reutilizar",
+      "definition": "reciclar e reutilizar",
+      "example_sentence": "Separamos el cartón, el plástico y el vidrio para llevarlos al punto de reciclaje.",
+      "level_id": 5,
+      "category_id": 26,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "los residuos orgánicos e inorgánicos",
+      "definition": "os resíduos orgânicos e recicláveis",
+      "example_sentence": "Con los residuos orgánicos de la cocina hacemos abono para las plantas.",
+      "level_id": 5,
+      "category_id": 26,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "los plásticos de un solo uso",
+      "definition": "os plásticos descartáveis de uso único",
+      "example_sentence": "Muchos comercios prohibieron las bolsas y plásticos de un solo uso.",
+      "level_id": 5,
+      "category_id": 26,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "el ahorro de energía",
+      "definition": "a economia de energia elétrica",
+      "example_sentence": "Los procesadores modernos ofrecen un mejor rendimiento con gran ahorro de energía.",
+      "level_id": 5,
+      "category_id": 26,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "la biodiversidad",
+      "definition": "a biodiversidade (fauna e flora)",
+      "example_sentence": "América Latina concentra más del cuarenta por ciento de la biodiversidad mundial.",
+      "level_id": 5,
+      "category_id": 26,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "la deforestación vs la reforestación",
+      "definition": "o desmatamento vs o reflorestamento",
+      "example_sentence": "Apoyamos proyectos comunitarios de reforestación con árboles nativos.",
+      "level_id": 5,
+      "category_id": 26,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "el calentamiento global",
+      "definition": "o aquecimento global",
+      "example_sentence": "El derretimiento de los glaciares andinos es una señal clara del calentamiento global.",
+      "level_id": 5,
+      "category_id": 26,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "la escasez de agua / la sequía",
+      "definition": "a escassez de água / a seca",
+      "example_sentence": "La sequía prolongada afectó la generación de las represas hidroeléctricas.",
+      "level_id": 5,
+      "category_id": 26,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "la economía circular",
+      "definition": "a economia circular (reaproveitamento de equipamentos e materiais)",
+      "example_sentence": "Donamos o reacondicionamos las computadoras antiguas siguiendo la economía circular.",
+      "level_id": 5,
+      "category_id": 26,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "la basura electrónica (residuos electrónicos)",
+      "definition": "o lixo eletrônico (e-waste)",
+      "example_sentence": "Lleva las baterías y celulares viejos a un punto limpio de basura electrónica.",
+      "level_id": 5,
+      "category_id": 26,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "la movilidad sustentable / ciclovía",
+      "definition": "a mobilidade sustentável / ciclovia",
+      "example_sentence": "Voy a la oficina por la ciclovía en bicicleta eléctrica.",
+      "level_id": 5,
+      "category_id": 26,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "el envase retornable / biodegradable",
+      "definition": "a embalagem retornável / biodegradável",
+      "example_sentence": "Elegimos proveedores que utilizan empaques biodegradables.",
+      "level_id": 5,
+      "category_id": 26,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "el centro de datos verde (green data center)",
+      "definition": "o data center sustentável",
+      "example_sentence": "Elegimos regiones de nube que operan con energía cien por ciento renovable.",
+      "level_id": 5,
+      "category_id": 26,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "conservar los recursos naturales",
+      "definition": "preservar / conservar os recursos naturais",
+      "example_sentence": "Es responsabilidad de todos conservar los recursos naturales para el futuro.",
+      "level_id": 5,
+      "category_id": 26,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "tomar conciencia",
+      "definition": "conscientizar-se",
+      "example_sentence": "Cada vez más empresas toman conciencia del impacto ambiental de sus operaciones.",
+      "level_id": 5,
+      "category_id": 26,
+      "image_url": "local:vocab_home.xml"
     }
   ]
 }

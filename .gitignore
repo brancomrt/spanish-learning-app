@@ -12,6 +12,7 @@ local.properties
 
 # APK e keystore
 *.apk
+!/spanish-learning-app*.apk
 *.aab
 *.jks
 *.keystore

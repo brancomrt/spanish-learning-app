@@ -1,57 +1,57 @@
 [
   {
-    "id": 401,
+    "id": 4001,
     "level_id": 4,
     "category_id": 10,
-    "answer_text": "Haremos el despliegue a producción a las once de la noche para minimizar el impacto en los usuarios.",
-    "context_text": "Pregunta sobre el momento previsto para subir los cambios a producción.",
+    "answer_text": "Haremos el despliegue a producción hoy a las diez de la noche, cuando baje el tráfico.",
+    "context_text": "Pergunte quando será feito o deploy em produção.",
     "question_type": "WH_WHEN",
     "exercise_mode": "QUESTION_FROM_ANSWER",
-    "grammar_focus": "tiempo futuro y despliegues",
+    "grammar_focus": "despliegues - pase a producción",
     "difficulty_score": 4,
     "xp_reward": 30,
     "sort_order": 1,
     "accepted_answers": [
       {
-        "id": 61,
+        "id": 40011,
         "question_text": "¿Cuándo haremos el despliegue a producción?",
         "is_primary": true,
-        "match_threshold": 0.85
-      },
-      {
-        "id": 62,
-        "question_text": "Cuándo haremos el despliegue a producción",
-        "is_primary": false,
-        "match_threshold": 0.85
-      },
-      {
-        "id": 63,
-        "question_text": "¿A qué hora vamos a deployar a producción?",
-        "is_primary": false,
         "match_threshold": 0.8
       },
       {
-        "id": 64,
-        "question_text": "¿Cuándo se hace el pase a producción?",
+        "id": 40012,
+        "question_text": "Cuándo van a desplegar a producción",
         "is_primary": false,
-        "match_threshold": 0.8
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40013,
+        "question_text": "¿A qué hora es el pase a producción?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40014,
+        "question_text": "¿Cuándo se despliega la nueva versión?",
+        "is_primary": false,
+        "match_threshold": 0.78
       }
     ],
     "hints": [
       {
-        "id": 61,
+        "id": 40011,
         "hint_order": 1,
-        "hint_text": "Pregunta temporal sobre la fecha/hora del deploy.",
+        "hint_text": "Use '¿Cuándo haremos el despliegue...?' ou '¿A qué hora es el pase a producción?'",
         "hint_type": "structural"
       },
       {
-        "id": 62,
+        "id": 40012,
         "hint_order": 2,
-        "hint_text": "Usa '¿Cuándo haremos el despliegue...?' o '¿A qué hora...?'",
+        "hint_text": "Vocabulário: 'el despliegue / el pase a producción' (deploy).",
         "hint_type": "vocabulary"
       },
       {
-        "id": 63,
+        "id": 40013,
         "hint_order": 3,
         "hint_text": "¿Cuándo haremos el despliegue a producción?",
         "hint_type": "answer"
@@ -59,119 +59,2240 @@
     ]
   },
   {
-    "id": 402,
+    "id": 4002,
     "level_id": 4,
-    "category_id": 11,
-    "answer_text": "El servidor se cayó debido a una fuga de memoria en el servicio de notificaciones.",
-    "context_text": "Pregunta por qué ocurrió la indisponibilidade del servidor.",
+    "category_id": 10,
+    "answer_text": "El pipeline de integración continua falló porque la imagen de Docker superó el tiempo límite de construcción.",
+    "context_text": "Pergunte por que o pipeline de CI/CD falhou.",
     "question_type": "WH_WHY",
     "exercise_mode": "QUESTION_FROM_ANSWER",
-    "grammar_focus": "causa de incidente técnico",
+    "grammar_focus": "pretérito indefinido - pipelines CI/CD",
     "difficulty_score": 4,
     "xp_reward": 30,
     "sort_order": 2,
     "accepted_answers": [
       {
-        "id": 65,
-        "question_text": "¿Por qué se cayó el servidor?",
+        "id": 40021,
+        "question_text": "¿Por qué falló el pipeline de integración continua?",
         "is_primary": true,
-        "match_threshold": 0.85
-      },
-      {
-        "id": 66,
-        "question_text": "Por qué se cayó el servidor",
-        "is_primary": false,
-        "match_threshold": 0.85
-      },
-      {
-        "id": 67,
-        "question_text": "¿Cuál fue la causa de la caída del servidor?",
-        "is_primary": false,
         "match_threshold": 0.8
       },
       {
-        "id": 68,
-        "question_text": "¿Por qué se fue abajo el servicio?",
+        "id": 40022,
+        "question_text": "Por qué se rompió el pipeline",
         "is_primary": false,
-        "match_threshold": 0.8
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40023,
+        "question_text": "¿Por qué dio error el despliegue automático?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40024,
+        "question_text": "¿Por qué no pasó la construcción de Docker?",
+        "is_primary": false,
+        "match_threshold": 0.78
       }
     ],
     "hints": [
       {
-        "id": 64,
+        "id": 40021,
         "hint_order": 1,
-        "hint_text": "Pregunta de causa sobre la caída del sistema.",
+        "hint_text": "Use '¿Por qué falló el pipeline...?'",
         "hint_type": "structural"
       },
       {
-        "id": 65,
+        "id": 40022,
         "hint_order": 2,
-        "hint_text": "En LatAm se dice 'caerse el servidor'. Usa '¿Por qué se cayó...?'",
+        "hint_text": "Vocabulário: 'integración continua', 'imagen de Docker', 'tiempo límite'.",
         "hint_type": "vocabulary"
       },
       {
-        "id": 66,
+        "id": 40023,
         "hint_order": 3,
-        "hint_text": "¿Por qué se cayó el servidor?",
+        "hint_text": "¿Por qué falló el pipeline de integración continua?",
         "hint_type": "answer"
       }
     ]
   },
   {
-    "id": 403,
+    "id": 4003,
     "level_id": 4,
     "category_id": 10,
-    "answer_text": "Sí, tuvimos que hacer un rollback inmediatamente a la versión anterior.",
-    "context_text": "Pregunta si fue necesario revertir el último despliegue.",
+    "answer_text": "Sí, tuvimos que revertir los cambios de inmediato y volver a la versión estable anterior.",
+    "context_text": "Pergunte se tiveram que fazer rollback para a versão anterior.",
     "question_type": "YES_NO",
     "exercise_mode": "QUESTION_FROM_ANSWER",
-    "grammar_focus": "revertir despliegue / rollback",
+    "grammar_focus": "pretérito indefinido - rollback",
     "difficulty_score": 4,
     "xp_reward": 30,
     "sort_order": 3,
     "accepted_answers": [
       {
-        "id": 69,
+        "id": 40031,
         "question_text": "¿Tuvieron que hacer un rollback?",
         "is_primary": true,
-        "match_threshold": 0.85
-      },
-      {
-        "id": 70,
-        "question_text": "Tuvieron que hacer un rollback",
-        "is_primary": false,
-        "match_threshold": 0.85
-      },
-      {
-        "id": 71,
-        "question_text": "¿Hicieron un rollback de la versión?",
-        "is_primary": false,
-        "match_threshold": 0.85
-      },
-      {
-        "id": 72,
-        "question_text": "¿Fue necesario revertir los cambios?",
-        "is_primary": false,
         "match_threshold": 0.8
+      },
+      {
+        "id": 40032,
+        "question_text": "Tuvieron que revertir los cambios",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40033,
+        "question_text": "¿Volvieron a la versión anterior en producción?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40034,
+        "question_text": "¿Hicieron rollback del despliegue?",
+        "is_primary": false,
+        "match_threshold": 0.78
       }
     ],
     "hints": [
       {
-        "id": 67,
+        "id": 40031,
         "hint_order": 1,
-        "hint_text": "Pregunta de sí/no en pasado sobre la acción de rollback.",
+        "hint_text": "Em espanhol de TI, usa-se tanto 'revertir los cambios' quanto 'hacer un rollback'.",
         "hint_type": "structural"
       },
       {
-        "id": 68,
+        "id": 40032,
         "hint_order": 2,
-        "hint_text": "Usa '¿Tuvieron que hacer un rollback?' o '¿Hicieron rollback?'",
+        "hint_text": "Estrutura: '¿Tuvieron que revertir los cambios?'",
         "hint_type": "vocabulary"
       },
       {
-        "id": 69,
+        "id": 40033,
         "hint_order": 3,
         "hint_text": "¿Tuvieron que hacer un rollback?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 4004,
+    "level_id": 4,
+    "category_id": 10,
+    "answer_text": "Todos los recursos del clúster de Kubernetes se aprovisionan automáticamente usando Terraform.",
+    "context_text": "Pergunte como os recursos do cluster são provisionados.",
+    "question_type": "WH_HOW",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "voz pasiva - infraestructura como código",
+    "difficulty_score": 4,
+    "xp_reward": 30,
+    "sort_order": 4,
+    "accepted_answers": [
+      {
+        "id": 40041,
+        "question_text": "¿Cómo se aprovisionan los recursos del clúster?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 40042,
+        "question_text": "Con qué herramienta gestionan la infraestructura",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40043,
+        "question_text": "¿Cómo crean los entornos en Kubernetes?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40044,
+        "question_text": "¿Cómo automatizan la infraestructura?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 40041,
+        "hint_order": 1,
+        "hint_text": "Use '¿Cómo se aprovisionan...?' (passiva reflexa com 'se').",
+        "hint_type": "structural"
+      },
+      {
+        "id": 40042,
+        "hint_order": 2,
+        "hint_text": "Vocabulário: 'aprovisionar recursos' (provision resources), 'clúster'.",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 40043,
+        "hint_order": 3,
+        "hint_text": "¿Cómo se aprovisionan los recursos del clúster?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 4005,
+    "level_id": 4,
+    "category_id": 10,
+    "answer_text": "¿Qué pasos debemos seguir justo después de lanzar la versión en producción?",
+    "context_text": "Responda que devemos monitorar os logs de erro e validar as métricas de latência por trinta minutos.",
+    "question_type": "WH_WHAT",
+    "exercise_mode": "ANSWER_FROM_QUESTION",
+    "grammar_focus": "despliegues - monitoreo post-deploy",
+    "difficulty_score": 4,
+    "xp_reward": 30,
+    "sort_order": 5,
+    "accepted_answers": [
+      {
+        "id": 40051,
+        "question_text": "Debemos monitorear los registros de error y validar las métricas de latencia.",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 40052,
+        "question_text": "Hay que revisar las gráficas de uso de memoria y verificar que no suban los errores.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40053,
+        "question_text": "Tenemos que correr las pruebas de humo y vigilar el panel de alertas.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 40051,
+        "hint_order": 1,
+        "hint_text": "Em espanhol, 'smoke tests' é 'pruebas de humo' e 'logs' é 'registros / logs'.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 40052,
+        "hint_order": 2,
+        "hint_text": "Responda: 'Debemos monitorear los registros de error y validar las métricas de latencia.'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 40053,
+        "hint_order": 3,
+        "hint_text": "Debemos monitorear los registros de error y validar las métricas de latencia.",
+        "hint_type": "answer"
+      }
+    ],
+    "prompt_text": "¿Qué pasos debemos seguir justo después de lanzar la versión en producción?"
+  },
+  {
+    "id": 4006,
+    "level_id": 4,
+    "category_id": 10,
+    "answer_text": "Ya probaste estos cambios en el entorno de preproducción antes de abrir el release, ¿verdad?",
+    "context_text": "Responda que sim, todas as validações passaram sem erros em staging.",
+    "question_type": "YES_NO",
+    "exercise_mode": "ANSWER_FROM_QUESTION",
+    "grammar_focus": "confirmación - entorno de staging",
+    "difficulty_score": 4,
+    "xp_reward": 30,
+    "sort_order": 6,
+    "accepted_answers": [
+      {
+        "id": 40061,
+        "question_text": "Sí, todas las validaciones pasaron sin errores en preproducción.",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 40062,
+        "question_text": "Sí, claro, ya lo probamos en staging con el equipo de QA.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40063,
+        "question_text": "Sí, las pruebas de extremo a extremo funcionaron perfectamente.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 40061,
+        "hint_order": 1,
+        "hint_text": "Vocabulário: 'preproducción / staging', 'pruebas de extremo a extremo' (end-to-end tests).",
+        "hint_type": "structural"
+      },
+      {
+        "id": 40062,
+        "hint_order": 2,
+        "hint_text": "Responda: 'Sí, todas las validaciones pasaron sin errores en preproducción.'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 40063,
+        "hint_order": 3,
+        "hint_text": "Sí, todas las validaciones pasaron sin errores en preproducción.",
+        "hint_type": "answer"
+      }
+    ],
+    "prompt_text": "Ya probaste estos cambios en el entorno de preproducción antes de abrir el release, ¿verdad?"
+  },
+  {
+    "id": 4007,
+    "level_id": 4,
+    "category_id": 10,
+    "answer_text": "El servicio de pagos corre actualmente con seis réplicas activas en el clúster.",
+    "context_text": "Pergunte com quantas réplicas o serviço de pagamentos está rodando.",
+    "question_type": "WH_HOW_MANY",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "presente - contenedores y pods",
+    "difficulty_score": 4,
+    "xp_reward": 30,
+    "sort_order": 7,
+    "accepted_answers": [
+      {
+        "id": 40071,
+        "question_text": "¿Con cuántas réplicas corre el servicio de pagos?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 40072,
+        "question_text": "Cuántos pods activos tiene el servicio",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40073,
+        "question_text": "¿Cuántas réplicas están corriendo en el clúster?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40074,
+        "question_text": "¿Con cuántos contenedores opera pagos?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 40071,
+        "hint_order": 1,
+        "hint_text": "Use '¿Con cuántas réplicas...?' ou '¿Cuántos pods...?'",
+        "hint_type": "structural"
+      },
+      {
+        "id": 40072,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Con cuántas réplicas corre el servicio de pagos?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 40073,
+        "hint_order": 3,
+        "hint_text": "¿Con cuántas réplicas corre el servicio de pagos?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 4008,
+    "level_id": 4,
+    "category_id": 10,
+    "answer_text": "Sí, el certificado SSL se renueva automáticamente cada noventa días.",
+    "context_text": "Confirme com o colega que o certificado SSL se renova automaticamente, não é?",
+    "question_type": "TAG",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "confirmación - despliegue continuo",
+    "difficulty_score": 4,
+    "xp_reward": 30,
+    "sort_order": 8,
+    "accepted_answers": [
+      {
+        "id": 40081,
+        "question_text": "El certificado SSL se renueva automáticamente, ¿verdad?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 40082,
+        "question_text": "El certificado se renueva solo, ¿no?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40083,
+        "question_text": "El certificado SSL se actualiza automáticamente, ¿cierto?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 40081,
+        "hint_order": 1,
+        "hint_text": "Para perguntas de confirmação (TAG), termine com ', ¿verdad?', ', ¿no?' ou ', ¿cierto?'",
+        "hint_type": "structural"
+      },
+      {
+        "id": 40082,
+        "hint_order": 2,
+        "hint_text": "Estrutura: 'El certificado SSL se renueva automáticamente, ¿verdad?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 40083,
+        "hint_order": 3,
+        "hint_text": "El certificado SSL se renueva automáticamente, ¿verdad?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 4009,
+    "level_id": 4,
+    "category_id": 11,
+    "answer_text": "Los tokens de sesión se firman digitalmente y expiran después de quince minutos de inactividad.",
+    "context_text": "Pergunte como os tokens de sessão são protegidos ou gerenciados.",
+    "question_type": "WH_HOW",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "voz pasiva - autenticación",
+    "difficulty_score": 4,
+    "xp_reward": 30,
+    "sort_order": 9,
+    "accepted_answers": [
+      {
+        "id": 40091,
+        "question_text": "¿Cómo se manejan los tokens de sesión?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 40092,
+        "question_text": "Cómo se protegen las sesiones de usuario",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40093,
+        "question_text": "¿Cada cuánto tiempo expiran los tokens?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40094,
+        "question_text": "¿Cómo funciona la autenticación por token?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 40091,
+        "hint_order": 1,
+        "hint_text": "Use '¿Cómo se manejan...?' ou '¿Cómo se protegen...?'",
+        "hint_type": "structural"
+      },
+      {
+        "id": 40092,
+        "hint_order": 2,
+        "hint_text": "Vocabulário: 'firmar digitalmente' (assinar digitalmente), 'expirar / caducar'.",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 40093,
+        "hint_order": 3,
+        "hint_text": "¿Cómo se manejan los tokens de sesión?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 4010,
+    "level_id": 4,
+    "category_id": 11,
+    "answer_text": "Encontraron una vulnerabilidad de inyección SQL en el formulario de búsqueda avanzada.",
+    "context_text": "Pergunte que vulnerabilidade foi encontrada durante a auditoria de segurança.",
+    "question_type": "WH_WHAT",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "pretérito indefinido - vulnerabilidades",
+    "difficulty_score": 4,
+    "xp_reward": 30,
+    "sort_order": 10,
+    "accepted_answers": [
+      {
+        "id": 40101,
+        "question_text": "¿Qué vulnerabilidad encontraron en la auditoría?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 40102,
+        "question_text": "Qué falla de seguridad detectaron",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40103,
+        "question_text": "¿Qué problema encontraron en el formulario?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40104,
+        "question_text": "¿Qué brecha de seguridad reportó el pentest?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 40101,
+        "hint_order": 1,
+        "hint_text": "Use '¿Qué vulnerabilidad encontraron...?'",
+        "hint_type": "structural"
+      },
+      {
+        "id": 40102,
+        "hint_order": 2,
+        "hint_text": "Vocabulário: 'inyección SQL', 'auditoría de seguridad', 'brecha'.",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 40103,
+        "hint_order": 3,
+        "hint_text": "¿Qué vulnerabilidad encontraron en la auditoría?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 4011,
+    "level_id": 4,
+    "category_id": 11,
+    "answer_text": "Sí, es obligatorio activar la autenticación de dos factores para acceder al panel de administración.",
+    "context_text": "Pergunte se é obrigatório ativar a autenticação de dois fatores (2FA).",
+    "question_type": "YES_NO",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "verbos modales - doble factor",
+    "difficulty_score": 4,
+    "xp_reward": 30,
+    "sort_order": 11,
+    "accepted_answers": [
+      {
+        "id": 40111,
+        "question_text": "¿Es obligatorio activar la autenticación de dos factores?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 40112,
+        "question_text": "Tenemos que usar doble factor de autenticación",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40113,
+        "question_text": "¿Se requiere verificación en dos pasos?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40114,
+        "question_text": "¿Hay que configurar el segundo factor?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 40111,
+        "hint_order": 1,
+        "hint_text": "Em espanhol: 'autenticación de dos factores' ou 'verificación en dos pasos'.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 40112,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Es obligatorio activar la autenticación de dos factores?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 40113,
+        "hint_order": 3,
+        "hint_text": "¿Es obligatorio activar la autenticación de dos factores?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 4012,
+    "level_id": 4,
+    "category_id": 11,
+    "answer_text": "El parche crítico para corregir la librería vulnerable se aplicó ayer por la tarde.",
+    "context_text": "Pergunte quando foi aplicado o patch de segurança.",
+    "question_type": "WH_WHEN",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "voz pasiva - parches de seguridad",
+    "difficulty_score": 4,
+    "xp_reward": 30,
+    "sort_order": 12,
+    "accepted_answers": [
+      {
+        "id": 40121,
+        "question_text": "¿Cuándo se aplicó el parche de seguridad?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 40122,
+        "question_text": "Cuándo actualizaron la librería vulnerable",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40123,
+        "question_text": "¿Cuándo corrigieron la vulnerabilidad crítica?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40124,
+        "question_text": "¿En qué momento parcharon el servidor?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 40121,
+        "hint_order": 1,
+        "hint_text": "Em espanhol, 'patch' é 'el parche' e 'aplicar patch' é 'parchear / aplicar un parche'.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 40122,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Cuándo se aplicó el parche de seguridad?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 40123,
+        "hint_order": 3,
+        "hint_text": "¿Cuándo se aplicó el parche de seguridad?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 4013,
+    "level_id": 4,
+    "category_id": 11,
+    "answer_text": "¿Por qué no debemos subir claves de API ni contraseñas directamente al repositorio de Git?",
+    "context_text": "Responda que qualquer pessoa com acesso ao código poderia vazar as credenciais de produção.",
+    "question_type": "WH_WHY",
+    "exercise_mode": "ANSWER_FROM_QUESTION",
+    "grammar_focus": "verbos modales - principio de menor privilegio",
+    "difficulty_score": 4,
+    "xp_reward": 30,
+    "sort_order": 13,
+    "accepted_answers": [
+      {
+        "id": 40131,
+        "question_text": "Porque cualquiera con acceso al repositorio podría filtrar las credenciales de producción.",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 40132,
+        "question_text": "Porque expondremos datos sensibles en el historial de commits.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40133,
+        "question_text": "Porque es un riesgo grave de seguridad y debemos usar variables de entorno cifradas.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 40131,
+        "hint_order": 1,
+        "hint_text": "Em espanhol, 'vazar dados' é 'filtrar datos' e 'vazamento de dados' é 'filtración de datos'.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 40132,
+        "hint_order": 2,
+        "hint_text": "Responda: 'Porque cualquiera con acceso al repositorio podría filtrar las credenciales...'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 40133,
+        "hint_order": 3,
+        "hint_text": "Porque cualquiera con acceso al repositorio podría filtrar las credenciales de producción.",
+        "hint_type": "answer"
+      }
+    ],
+    "prompt_text": "¿Por qué no debemos subir claves de API ni contraseñas directamente al repositorio de Git?"
+  },
+  {
+    "id": 4014,
+    "level_id": 4,
+    "category_id": 11,
+    "answer_text": "¿Qué es lo primero que hay que hacer si sospechamos que una clave de acceso fue comprometida?",
+    "context_text": "Responda que precisamos revogar a chave imediatamente e gerar uma nova.",
+    "question_type": "WH_WHAT",
+    "exercise_mode": "ANSWER_FROM_QUESTION",
+    "grammar_focus": "verbos modales - respuesta a incidentes",
+    "difficulty_score": 4,
+    "xp_reward": 30,
+    "sort_order": 14,
+    "accepted_answers": [
+      {
+        "id": 40141,
+        "question_text": "Hay que revocar la clave de inmediato y rotar todas las credenciales afectadas.",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 40142,
+        "question_text": "Debemos invalidar el token comprometido y revisar los registros de auditoría.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40143,
+        "question_text": "Lo primero es bloquear el acceso y generar una clave nueva.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 40141,
+        "hint_order": 1,
+        "hint_text": "Vocabulário de segurança: 'revocar la clave', 'rotar las credenciales' (credential rotation).",
+        "hint_type": "structural"
+      },
+      {
+        "id": 40142,
+        "hint_order": 2,
+        "hint_text": "Responda: 'Hay que revocar la clave de inmediato y rotar todas las credenciales afectadas.'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 40143,
+        "hint_order": 3,
+        "hint_text": "Hay que revocar la clave de inmediato y rotar todas las credenciales afectadas.",
+        "hint_type": "answer"
+      }
+    ],
+    "prompt_text": "¿Qué es lo primero que hay que hacer si sospechamos que una clave de acceso fue comprometida?"
+  },
+  {
+    "id": 4015,
+    "level_id": 4,
+    "category_id": 11,
+    "answer_text": "Solamente los ingenieros de seguridad y el líder de infraestructura tienen permisos de escritura en producción.",
+    "context_text": "Pergunte quem tem permissão de escrita no ambiente de produção.",
+    "question_type": "WH_WHO",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "presente - control de accesos",
+    "difficulty_score": 4,
+    "xp_reward": 30,
+    "sort_order": 15,
+    "accepted_answers": [
+      {
+        "id": 40151,
+        "question_text": "¿Quién tiene permisos de escritura en producción?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 40152,
+        "question_text": "Quiénes pueden modificar la base de datos de producción",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40153,
+        "question_text": "¿Quién tiene acceso de administrador en producción?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40154,
+        "question_text": "¿A quién se le permite escribir en ese entorno?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 40151,
+        "hint_order": 1,
+        "hint_text": "Use '¿Quién tiene permisos de...?' ou '¿Quiénes pueden...?'",
+        "hint_type": "structural"
+      },
+      {
+        "id": 40152,
+        "hint_order": 2,
+        "hint_text": "Vocabulário: 'permisos de lectura y escritura' (read/write permissions).",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 40153,
+        "hint_order": 3,
+        "hint_text": "¿Quién tiene permisos de escritura en producción?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 4016,
+    "level_id": 4,
+    "category_id": 11,
+    "answer_text": "Sí, todos los datos personales de los clientes están cifrados tanto en tránsito como en reposo.",
+    "context_text": "Pergunte se os dados dos clientes estão criptografados.",
+    "question_type": "YES_NO",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "voz pasiva - cifrado de datos",
+    "difficulty_score": 4,
+    "xp_reward": 30,
+    "sort_order": 16,
+    "accepted_answers": [
+      {
+        "id": 40161,
+        "question_text": "¿Están cifrados los datos de los clientes?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 40162,
+        "question_text": "Se encriptan los datos personales",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40163,
+        "question_text": "¿La información está cifrada en tránsito y en reposo?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40164,
+        "question_text": "¿Están protegidos con cifrado los datos sensibles?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 40161,
+        "hint_order": 1,
+        "hint_text": "Em espanhol, 'criptografar' é 'cifrar' ou 'encriptar', e 'em trânsito/em repouso' é 'en tránsito y en reposo'.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 40162,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Están cifrados los datos de los clientes?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 40163,
+        "hint_order": 3,
+        "hint_text": "¿Están cifrados los datos de los clientes?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 4017,
+    "level_id": 4,
+    "category_id": 12,
+    "answer_text": "Decidimos usar una cola de mensajes para desacoplar el servicio de pedidos del envío de correos.",
+    "context_text": "Pergunte por que decidiram usar uma fila de mensagens na arquitetura.",
+    "question_type": "WH_WHY",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "cuello de botella - desacoplamiento",
+    "difficulty_score": 4,
+    "xp_reward": 30,
+    "sort_order": 17,
+    "accepted_answers": [
+      {
+        "id": 40171,
+        "question_text": "¿Por qué decidieron usar una cola de mensajes?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 40172,
+        "question_text": "Para qué agregaron una cola de mensajería",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40173,
+        "question_text": "¿Por qué desacoplaron el servicio de pedidos?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40174,
+        "question_text": "¿Por qué eligieron una arquitectura orientada a eventos?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 40171,
+        "hint_order": 1,
+        "hint_text": "Use '¿Por qué decidieron...?' ou '¿Para qué...?'",
+        "hint_type": "structural"
+      },
+      {
+        "id": 40172,
+        "hint_order": 2,
+        "hint_text": "Vocabulário: 'cola de mensajes' (message queue), 'desacoplar' (decouple).",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 40173,
+        "hint_order": 3,
+        "hint_text": "¿Por qué decidieron usar una cola de mensajes?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 4018,
+    "level_id": 4,
+    "category_id": 12,
+    "answer_text": "El cuello de botella principal está en la serialización del archivo JSON cuando supera los diez megas.",
+    "context_text": "Pergunte onde está o gargalo de performance do sistema.",
+    "question_type": "WH_WHERE",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "cuello de botella - rendimiento",
+    "difficulty_score": 4,
+    "xp_reward": 30,
+    "sort_order": 18,
+    "accepted_answers": [
+      {
+        "id": 40181,
+        "question_text": "¿Dónde está el cuello de botella del sistema?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 40182,
+        "question_text": "En dónde se produce el cuello de botella",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40183,
+        "question_text": "¿Qué componente está causando la lentitud?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40184,
+        "question_text": "¿Dónde está el problema de rendimiento?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 40181,
+        "hint_order": 1,
+        "hint_text": "Expressão essencial de arquitetura em espanhol: 'el cuello de botella' (bottleneck).",
+        "hint_type": "structural"
+      },
+      {
+        "id": 40182,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Dónde está el cuello de botella del sistema?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 40183,
+        "hint_order": 3,
+        "hint_text": "¿Dónde está el cuello de botella del sistema?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 4019,
+    "level_id": 4,
+    "category_id": 12,
+    "answer_text": "Implementamos el patrón de repositorio e inyección de dependencias para facilitar las pruebas unitarias.",
+    "context_text": "Pergunte qual padrão de projeto foi implementado na camada de dados.",
+    "question_type": "WH_WHAT",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "presente - patrones de diseño",
+    "difficulty_score": 4,
+    "xp_reward": 30,
+    "sort_order": 19,
+    "accepted_answers": [
+      {
+        "id": 40191,
+        "question_text": "¿Qué patrón de diseño implementaron?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 40192,
+        "question_text": "Qué arquitectura usaron en la capa de datos",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40193,
+        "question_text": "¿Cuál patrón aplicaron para facilitar las pruebas?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40194,
+        "question_text": "¿Cómo estructuraron las dependencias del código?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 40191,
+        "hint_order": 1,
+        "hint_text": "Use '¿Qué patrón de diseño...?' ('padrão de projeto' = 'patrón de diseño').",
+        "hint_type": "structural"
+      },
+      {
+        "id": 40192,
+        "hint_order": 2,
+        "hint_text": "Vocabulário: 'inyección de dependencias', 'capa de datos' (data layer).",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 40193,
+        "hint_order": 3,
+        "hint_text": "¿Qué patrón de diseño implementaron?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 4020,
+    "level_id": 4,
+    "category_id": 12,
+    "answer_text": "Los servicios internos se comunican mediante llamadas gRPC síncronas y eventos asíncronos en Kafka.",
+    "context_text": "Pergunte como os serviços internos se comunicam entre si.",
+    "question_type": "WH_HOW",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "presente - comunicación entre servicios",
+    "difficulty_score": 4,
+    "xp_reward": 30,
+    "sort_order": 20,
+    "accepted_answers": [
+      {
+        "id": 40201,
+        "question_text": "¿Cómo se comunican los servicios internos?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 40202,
+        "question_text": "Qué protocolo usan para comunicarse entre servicios",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40203,
+        "question_text": "¿Cómo interactúan los microservicios?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40204,
+        "question_text": "¿De qué forma se integran los módulos?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 40201,
+        "hint_order": 1,
+        "hint_text": "Use '¿Cómo se comunican...?'",
+        "hint_type": "structural"
+      },
+      {
+        "id": 40202,
+        "hint_order": 2,
+        "hint_text": "Vocabulário: 'llamadas síncronas y asíncronas', 'eventos'.",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 40203,
+        "hint_order": 3,
+        "hint_text": "¿Cómo se comunican los servicios internos?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 4021,
+    "level_id": 4,
+    "category_id": 12,
+    "answer_text": "¿Qué ventaja tiene mantener un monolito modular al inicio de un proyecto nuevo?",
+    "context_text": "Responda que é muito mais simples de implantar, depurar e refatorar enquanto a equipe é pequena.",
+    "question_type": "WH_WHICH",
+    "exercise_mode": "ANSWER_FROM_QUESTION",
+    "grammar_focus": "comparativos - monolito vs microservicios",
+    "difficulty_score": 4,
+    "xp_reward": 30,
+    "sort_order": 21,
+    "accepted_answers": [
+      {
+        "id": 40211,
+        "question_text": "Es mucho más sencillo de desplegar, depurar y refactorizar cuando el equipo es pequeño.",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 40212,
+        "question_text": "Evita la complejidad operativa de una red distribuida al principio del proyecto.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40213,
+        "question_text": "Permite iterar más rápido sin tener que coordinar múltiples despliegues.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 40211,
+        "hint_order": 1,
+        "hint_text": "Use comparativos como 'más sencillo de desplegar' ou 'más rápido'.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 40212,
+        "hint_order": 2,
+        "hint_text": "Vocabulário: 'monolito modular', 'depurar' (debug), 'complejidad operativa'.",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 40213,
+        "hint_order": 3,
+        "hint_text": "Es mucho más sencillo de desplegar, depurar y refactorizar cuando el equipo es pequeño.",
+        "hint_type": "answer"
+      }
+    ],
+    "prompt_text": "¿Qué ventaja tiene mantener un monolito modular al inicio de un proyecto nuevo?"
+  },
+  {
+    "id": 4022,
+    "level_id": 4,
+    "category_id": 12,
+    "answer_text": "¿El endpoint de cobro es idempotente en caso de que el cliente reintente la petición por error de red?",
+    "context_text": "Responda que sim, usamos uma chave de idempotência para evitar cobranças duplicadas.",
+    "question_type": "YES_NO",
+    "exercise_mode": "ANSWER_FROM_QUESTION",
+    "grammar_focus": "sí/no - idempotencia en APIs",
+    "difficulty_score": 4,
+    "xp_reward": 30,
+    "sort_order": 22,
+    "accepted_answers": [
+      {
+        "id": 40221,
+        "question_text": "Sí, enviamos una clave de idempotencia para evitar cobros duplicados.",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 40222,
+        "question_text": "Sí, si llega la misma petición dos veces, el servidor devuelve el mismo resultado sin cobrar de nuevo.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40223,
+        "question_text": "Sí, el sistema valida el identificador único de la transacción antes de procesarla.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 40221,
+        "hint_order": 1,
+        "hint_text": "Vocabulário técnico: 'clave de idempotencia', 'reintentar la petición' (retry the request), 'cobros duplicados'.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 40222,
+        "hint_order": 2,
+        "hint_text": "Responda: 'Sí, enviamos una clave de idempotencia para evitar cobros duplicados.'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 40223,
+        "hint_order": 3,
+        "hint_text": "Sí, enviamos una clave de idempotencia para evitar cobros duplicados.",
+        "hint_type": "answer"
+      }
+    ],
+    "prompt_text": "¿El endpoint de cobro es idempotente en caso de que el cliente reintente la petición por error de red?"
+  },
+  {
+    "id": 4023,
+    "level_id": 4,
+    "category_id": 12,
+    "answer_text": "Apagaremos el sistema legado definitivamente en el cuarto trimestre, cuando termine la migración.",
+    "context_text": "Pergunte quando o sistema legado será desativado.",
+    "question_type": "WH_WHEN",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "futuro - migración de legado",
+    "difficulty_score": 4,
+    "xp_reward": 30,
+    "sort_order": 23,
+    "accepted_answers": [
+      {
+        "id": 40231,
+        "question_text": "¿Cuándo apagarán el sistema legado?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 40232,
+        "question_text": "En qué fecha darán de baja el sistema antiguo",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40233,
+        "question_text": "¿Cuándo se retirará la plataforma heredada?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40234,
+        "question_text": "¿Cuándo terminaremos de migrar el sistema legado?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 40231,
+        "hint_order": 1,
+        "hint_text": "Sistema legado em espanhol é 'el sistema legado' ou 'el sistema heredado', e desativar é 'apagar / dar de baja'.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 40232,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Cuándo apagarán el sistema legado?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 40233,
+        "hint_order": 3,
+        "hint_text": "¿Cuándo apagarán el sistema legado?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 4024,
+    "level_id": 4,
+    "category_id": 12,
+    "answer_text": "Sí, agregamos una capa de caché con Redis para reducir la carga sobre la base de datos relacional.",
+    "context_text": "Pergunte se adicionaram uma camada de cache para aliviar o banco de dados.",
+    "question_type": "YES_NO",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "sí/no - caché en memoria",
+    "difficulty_score": 4,
+    "xp_reward": 30,
+    "sort_order": 24,
+    "accepted_answers": [
+      {
+        "id": 40241,
+        "question_text": "¿Agregaron una capa de caché con Redis?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 40242,
+        "question_text": "Usan caché en memoria para reducir la carga",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40243,
+        "question_text": "¿Implementaron Redis delante de la base de datos?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40244,
+        "question_text": "¿Pusieron una caché para optimizar las lecturas?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 40241,
+        "hint_order": 1,
+        "hint_text": "Em espanhol, 'camada' é 'la capa' ('capa de caché', 'capa de red', 'capa de presentación').",
+        "hint_type": "structural"
+      },
+      {
+        "id": 40242,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Agregaron una capa de caché con Redis?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 40243,
+        "hint_order": 3,
+        "hint_text": "¿Agregaron una capa de caché con Redis?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 4025,
+    "level_id": 4,
+    "category_id": 23,
+    "answer_text": "El alquiler mensual del departamento es de seiscientos dólares más los gastos de mantenimiento del edificio.",
+    "context_text": "Pergunte quanto custa o aluguel mensal do apartamento.",
+    "question_type": "WH_HOW_MUCH",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "presente - alquiler y vivienda",
+    "difficulty_score": 4,
+    "xp_reward": 30,
+    "sort_order": 25,
+    "accepted_answers": [
+      {
+        "id": 40251,
+        "question_text": "¿Cuánto cuesta el alquiler mensual del departamento?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 40252,
+        "question_text": "Cuánto pagas de renta al mes",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40253,
+        "question_text": "¿En cuánto está el arriendo del apartamento?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40254,
+        "question_text": "¿Cuánto sale alquilar ese departamento?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 40251,
+        "hint_order": 1,
+        "hint_text": "Na América Latina, aluguel é 'el alquiler' (Argentina/Peru), 'la renta' (México) ou 'el arriendo' (Colômbia/Chile)!",
+        "hint_type": "structural"
+      },
+      {
+        "id": 40252,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Cuánto cuesta el alquiler mensual del departamento?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 40253,
+        "hint_order": 3,
+        "hint_text": "¿Cuánto cuesta el alquiler mensual del departamento?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 4026,
+    "level_id": 4,
+    "category_id": 23,
+    "answer_text": "Sí, el departamento se alquila totalmente amueblado y con electrodomésticos nuevos.",
+    "context_text": "Pergunte se o apartamento é alugado mobiliado.",
+    "question_type": "YES_NO",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "sí/no - departamento amueblado",
+    "difficulty_score": 4,
+    "xp_reward": 30,
+    "sort_order": 26,
+    "accepted_answers": [
+      {
+        "id": 40261,
+        "question_text": "¿El departamento se alquila amueblado?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 40262,
+        "question_text": "Viene amoblado el apartamento",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40263,
+        "question_text": "¿Tiene muebles incluidos el departamento?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40264,
+        "question_text": "¿Está amueblado el lugar?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 40261,
+        "hint_order": 1,
+        "hint_text": "Em espanhol, 'mobiliado' é 'amueblado' ou 'amoblado'.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 40262,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿El departamento se alquila amueblado?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 40263,
+        "hint_order": 3,
+        "hint_text": "¿El departamento se alquila amueblado?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 4027,
+    "level_id": 4,
+    "category_id": 23,
+    "answer_text": "Nos mudamos a este barrio hace seis meses porque queríamos estar más cerca de un parque.",
+    "context_text": "Pergunte quando eles se mudaram para este bairro.",
+    "question_type": "WH_WHEN",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "pretérito indefinido - mudanza",
+    "difficulty_score": 4,
+    "xp_reward": 30,
+    "sort_order": 27,
+    "accepted_answers": [
+      {
+        "id": 40271,
+        "question_text": "¿Cuándo se mudaron a este barrio?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 40272,
+        "question_text": "Hace cuánto tiempo viven aquí",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40273,
+        "question_text": "¿Cuándo se cambiaron de casa?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40274,
+        "question_text": "¿En qué fecha hicieron la mudanza?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 40271,
+        "hint_order": 1,
+        "hint_text": "O verbo para 'mudar-se de casa' em espanhol é 'mudarse' ou 'cambiarse de casa'.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 40272,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Cuándo se mudaron a este barrio?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 40273,
+        "hint_order": 3,
+        "hint_text": "¿Cuándo se mudaron a este barrio?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 4028,
+    "level_id": 4,
+    "category_id": 23,
+    "answer_text": "El precio del alquiler incluye el agua y el gas, pero la electricidad y el internet se pagan aparte.",
+    "context_text": "Pergunte quais contas (serviços) estão incluídas no valor do aluguel.",
+    "question_type": "WH_WHAT",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "presente - servicios públicos",
+    "difficulty_score": 4,
+    "xp_reward": 30,
+    "sort_order": 28,
+    "accepted_answers": [
+      {
+        "id": 40281,
+        "question_text": "¿Qué servicios incluye el precio del alquiler?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 40282,
+        "question_text": "Qué gastos están incluidos en la renta",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40283,
+        "question_text": "¿El alquiler incluye luz, agua e internet?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40284,
+        "question_text": "¿Qué servicios se pagan aparte?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 40281,
+        "hint_order": 1,
+        "hint_text": "Contas de consumo (água, luz, gás) são chamadas de 'los servicios públicos' ou 'los servicios básicos'.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 40282,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Qué servicios incluye el precio del alquiler?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 40283,
+        "hint_order": 3,
+        "hint_text": "¿Qué servicios incluye el precio del alquiler?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 4029,
+    "level_id": 4,
+    "category_id": 23,
+    "answer_text": "La casa tiene tres habitaciones amplias, dos baños completos y un balcón con vista a la calle.",
+    "context_text": "Pergunte quantos quartos e banheiros a casa tem.",
+    "question_type": "WH_HOW_MANY",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "presente - habitaciones",
+    "difficulty_score": 4,
+    "xp_reward": 30,
+    "sort_order": 29,
+    "accepted_answers": [
+      {
+        "id": 40291,
+        "question_text": "¿Cuántas habitaciones y baños tiene la casa?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 40292,
+        "question_text": "Cuántos dormitorios tiene el departamento",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40293,
+        "question_text": "¿De cuántos ambientes es la propiedad?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40294,
+        "question_text": "¿Cuántos cuartos tiene la casa?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 40291,
+        "hint_order": 1,
+        "hint_text": "Quarto em espanhol pode ser 'la habitación', 'el dormitorio', 'el cuarto' ou 'la recámara' (México).",
+        "hint_type": "structural"
+      },
+      {
+        "id": 40292,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Cuántas habitaciones y baños tiene la casa?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 40293,
+        "hint_order": 3,
+        "hint_text": "¿Cuántas habitaciones y baños tiene la casa?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 4030,
+    "level_id": 4,
+    "category_id": 23,
+    "answer_text": "¿Qué tenemos que arreglar en la cocina antes de que vengan los invitados el sábado?",
+    "context_text": "Responda que precisamos chamar o encanador porque a torneira da pia está pingando.",
+    "question_type": "WH_WHAT",
+    "exercise_mode": "ANSWER_FROM_QUESTION",
+    "grammar_focus": "verbos modales - reparaciones del hogar",
+    "difficulty_score": 4,
+    "xp_reward": 30,
+    "sort_order": 30,
+    "accepted_answers": [
+      {
+        "id": 40301,
+        "question_text": "Tenemos que llamar al plomero porque la llave del lavaplatos está goteando.",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 40302,
+        "question_text": "Hay que cambiar un foco quemado y arreglar la puerta de la alacena.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40303,
+        "question_text": "Debemos revisar la calefacción y limpiar bien el horno.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 40301,
+        "hint_order": 1,
+        "hint_text": "Vocabulário doméstico: 'el plomero / el gasfitero' (encanador), 'gotear' (pingar), 'el foco / el bombillo' (lâmpada).",
+        "hint_type": "structural"
+      },
+      {
+        "id": 40302,
+        "hint_order": 2,
+        "hint_text": "Responda: 'Tenemos que llamar al plomero porque la llave del lavaplatos está goteando.'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 40303,
+        "hint_order": 3,
+        "hint_text": "Tenemos que llamar al plomero porque la llave del lavaplatos está goteando.",
+        "hint_type": "answer"
+      }
+    ],
+    "prompt_text": "¿Qué tenemos que arreglar en la cocina antes de que vengan los invitados el sábado?"
+  },
+  {
+    "id": 4031,
+    "level_id": 4,
+    "category_id": 23,
+    "answer_text": "¿El propietario pide un mes de depósito en garantía para firmar el contrato de alquiler?",
+    "context_text": "Responda que sim, ele pede um mês de caução e comprovante de renda.",
+    "question_type": "YES_NO",
+    "exercise_mode": "ANSWER_FROM_QUESTION",
+    "grammar_focus": "sí/no - contrato de alquiler",
+    "difficulty_score": 4,
+    "xp_reward": 30,
+    "sort_order": 31,
+    "accepted_answers": [
+      {
+        "id": 40311,
+        "question_text": "Sí, pide un mes de depósito en garantía y comprobante de ingresos.",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 40312,
+        "question_text": "Sí, hay que dejar un mes de depósito que se devuelve al finalizar el contrato.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40313,
+        "question_text": "Sí, además solicita una garantía o seguro de caución.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 40311,
+        "hint_order": 1,
+        "hint_text": "Vocabulário: 'depósito en garantía' (caução), 'comprobante de ingresos' (comprovante de renda).",
+        "hint_type": "structural"
+      },
+      {
+        "id": 40312,
+        "hint_order": 2,
+        "hint_text": "Responda: 'Sí, pide un mes de depósito en garantía y comprobante de ingresos.'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 40313,
+        "hint_order": 3,
+        "hint_text": "Sí, pide un mes de depósito en garantía y comprobante de ingresos.",
+        "hint_type": "answer"
+      }
+    ],
+    "prompt_text": "¿El propietario pide un mes de depósito en garantía para firmar el contrato de alquiler?"
+  },
+  {
+    "id": 4032,
+    "level_id": 4,
+    "category_id": 23,
+    "answer_text": "Configuré mi escritorio de trabajo junto a la ventana del estudio para aprovechar la luz natural.",
+    "context_text": "Pergunte onde a pessoa montou a mesa de trabalho em casa.",
+    "question_type": "WH_WHERE",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "presente - ubicación de vivienda",
+    "difficulty_score": 4,
+    "xp_reward": 30,
+    "sort_order": 32,
+    "accepted_answers": [
+      {
+        "id": 40321,
+        "question_text": "¿Dónde armaste tu escritorio de trabajo?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 40322,
+        "question_text": "En qué parte de la casa pusiste el escritorio",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40323,
+        "question_text": "¿Dónde trabajas cuando estás en casa?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40324,
+        "question_text": "¿Dónde ubicaste tu espacio de oficina?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 40321,
+        "hint_order": 1,
+        "hint_text": "Em espanhol, 'escrivaninha / mesa de trabalho' é 'el escritorio' (e 'escritório empresa' é 'la oficina'!).",
+        "hint_type": "structural"
+      },
+      {
+        "id": 40322,
+        "hint_order": 2,
+        "hint_text": "Cuidado com o falso amigo: 'el escritorio' = a mesa de trabalho; 'la oficina' = o escritório.",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 40323,
+        "hint_order": 3,
+        "hint_text": "¿Dónde armaste tu escritorio de trabajo?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 4033,
+    "level_id": 4,
+    "category_id": 24,
+    "answer_text": "Conocí a mi mejor amigo cuando estudiábamos ingeniería de sistemas en la universidad.",
+    "context_text": "Pergunte como a pessoa conheceu o melhor amigo dela.",
+    "question_type": "WH_HOW",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "pretérito indefinido - amistad",
+    "difficulty_score": 4,
+    "xp_reward": 30,
+    "sort_order": 33,
+    "accepted_answers": [
+      {
+        "id": 40331,
+        "question_text": "¿Cómo conociste a tu mejor amigo?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 40332,
+        "question_text": "Dónde se conocieron ustedes",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40333,
+        "question_text": "¿Cuándo conociste a tu mejor amigo?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40334,
+        "question_text": "¿Cómo empezó su amistad?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 40331,
+        "hint_order": 1,
+        "hint_text": "Use '¿Cómo conociste a...?' (lembre-se da preposição 'a' antes de objeto direto de pessoa!).",
+        "hint_type": "structural"
+      },
+      {
+        "id": 40332,
+        "hint_order": 2,
+        "hint_text": "Regra de ouro do espanhol: 'conocer A alguien', 'visitar A mis padres'.",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 40333,
+        "hint_order": 3,
+        "hint_text": "¿Cómo conociste a tu mejor amigo?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 4034,
+    "level_id": 4,
+    "category_id": 24,
+    "answer_text": "Sí, me llevo muy bien con mis vecinos y a veces organizamos un asado en la terraza.",
+    "context_text": "Pergunte se a pessoa se dá bem com os vizinhos.",
+    "question_type": "YES_NO",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "sí/no - convivencia",
+    "difficulty_score": 4,
+    "xp_reward": 30,
+    "sort_order": 34,
+    "accepted_answers": [
+      {
+        "id": 40341,
+        "question_text": "¿Te llevas bien con tus vecinos?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 40342,
+        "question_text": "Tienes buena relación con los vecinos",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40343,
+        "question_text": "¿Se llevan bien en el edificio?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40344,
+        "question_text": "¿Cómo te llevas con la gente de tu barrio?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 40341,
+        "hint_order": 1,
+        "hint_text": "A expressão idiomática para 'dar-se bem com alguém' em espanhol é 'llevarse bien con alguien'!",
+        "hint_type": "structural"
+      },
+      {
+        "id": 40342,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Te llevas bien con tus vecinos?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 40343,
+        "hint_order": 3,
+        "hint_text": "¿Te llevas bien con tus vecinos?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 4035,
+    "level_id": 4,
+    "category_id": 24,
+    "answer_text": "Vamos a celebrar el aniversario de bodas de mis padres el próximo sábado en un restaurante.",
+    "context_text": "Pergunte quando vão comemorar o aniversário de casamento dos pais.",
+    "question_type": "WH_WHEN",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "futuro - celebraciones familiares",
+    "difficulty_score": 4,
+    "xp_reward": 30,
+    "sort_order": 35,
+    "accepted_answers": [
+      {
+        "id": 40351,
+        "question_text": "¿Cuándo van a celebrar el aniversario de tus padres?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 40352,
+        "question_text": "Qué día festejan el aniversario",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40353,
+        "question_text": "¿Cuándo es la cena de aniversario?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40354,
+        "question_text": "¿Cuándo cumplen años de casados tus padres?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 40351,
+        "hint_order": 1,
+        "hint_text": "Em espanhol: 'cumpleaños' = aniversário de nascimento; 'aniversario' = aniversário de casamento/empresa!",
+        "hint_type": "structural"
+      },
+      {
+        "id": 40352,
+        "hint_order": 2,
+        "hint_text": "Atenção ao falso amigo: 'cumpleaños' (natalício) vs 'aniversario' (bodas/fundação).",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 40353,
+        "hint_order": 3,
+        "hint_text": "¿Cuándo van a celebrar el aniversario de tus padres?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 4036,
+    "level_id": 4,
+    "category_id": 24,
+    "answer_text": "Invitamos a toda la familia y a los compañeros más cercanos de la oficina a nuestra boda.",
+    "context_text": "Pergunte quem eles convidaram para o casamento.",
+    "question_type": "WH_WHO",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "pretérito indefinido - eventos sociales",
+    "difficulty_score": 4,
+    "xp_reward": 30,
+    "sort_order": 36,
+    "accepted_answers": [
+      {
+        "id": 40361,
+        "question_text": "¿A quiénes invitaron a la boda?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 40362,
+        "question_text": "A quién invitaste al casamiento",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40363,
+        "question_text": "¿Quiénes van a ir a la fiesta?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40364,
+        "question_text": "¿A cuántas personas invitaron?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 40361,
+        "hint_order": 1,
+        "hint_text": "Para perguntar sobre pessoas como objeto direto, comece com '¿A quién...?' ou '¿A quiénes...?'",
+        "hint_type": "structural"
+      },
+      {
+        "id": 40362,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿A quiénes invitaron a la boda?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 40363,
+        "hint_order": 3,
+        "hint_text": "¿A quiénes invitaron a la boda?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 4037,
+    "level_id": 4,
+    "category_id": 24,
+    "answer_text": "¿Cómo haces para mantener el contacto con tus amigos que viven en otros países?",
+    "context_text": "Responda que vocês fazem chamadas de vídeo nos fins de semana e conversam num grupo de WhatsApp.",
+    "question_type": "WH_HOW",
+    "exercise_mode": "ANSWER_FROM_QUESTION",
+    "grammar_focus": "presente - mantener el contacto",
+    "difficulty_score": 4,
+    "xp_reward": 30,
+    "sort_order": 37,
+    "accepted_answers": [
+      {
+        "id": 40371,
+        "question_text": "Hacemos videollamadas los fines de semana y hablamos todos los días por nuestro grupo.",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 40372,
+        "question_text": "Nos escribimos seguido y tratamos de viajar para vernos una vez al año.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40373,
+        "question_text": "Nos ponemos al día por teléfono cada domingo.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 40371,
+        "hint_order": 1,
+        "hint_text": "Expressão muito natural: 'ponerse al día' (colocar o papo em dia).",
+        "hint_type": "structural"
+      },
+      {
+        "id": 40372,
+        "hint_order": 2,
+        "hint_text": "Responda: 'Hacemos videollamadas los fines de semana y hablamos todos los días...'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 40373,
+        "hint_order": 3,
+        "hint_text": "Hacemos videollamadas los fines de semana y hablamos todos los días por nuestro grupo.",
+        "hint_type": "answer"
+      }
+    ],
+    "prompt_text": "¿Cómo haces para mantener el contacto con tus amigos que viven en otros países?"
+  },
+  {
+    "id": 4038,
+    "level_id": 4,
+    "category_id": 24,
+    "answer_text": "¿Qué harías si surgiera un malentendido con un amigo o compañero de trabajo?",
+    "context_text": "Responda que você conversaria em particular com calma para esclarecer a situação.",
+    "question_type": "WH_WHAT",
+    "exercise_mode": "ANSWER_FROM_QUESTION",
+    "grammar_focus": "condicional - consejos personales",
+    "difficulty_score": 4,
+    "xp_reward": 30,
+    "sort_order": 38,
+    "accepted_answers": [
+      {
+        "id": 40381,
+        "question_text": "Hablaría con él en privado y con calma para aclarar el malentendido.",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 40382,
+        "question_text": "Le pediría conversar unos minutos para escuchar su punto de vista.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40383,
+        "question_text": "Trataría de resolverlo directamente de forma empática y sincera.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 40381,
+        "hint_order": 1,
+        "hint_text": "Use o Condicional Simple ('Hablaría...', 'Le pediría...', 'Trataría...').",
+        "hint_type": "structural"
+      },
+      {
+        "id": 40382,
+        "hint_order": 2,
+        "hint_text": "Vocabulário: 'aclarar un malentendido' (esclarecer um mal-entendido).",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 40383,
+        "hint_order": 3,
+        "hint_text": "Hablaría con él en privado y con calma para aclarar el malentendido.",
+        "hint_type": "answer"
+      }
+    ],
+    "prompt_text": "¿Qué harías si surgiera un malentendido con un amigo o compañero de trabajo?"
+  },
+  {
+    "id": 4039,
+    "level_id": 4,
+    "category_id": 24,
+    "answer_text": "Sí, por supuesto, nosotros llevamos las bebidas y el postre para la cena de esta noche.",
+    "context_text": "Confirme se eles vão levar as bebidas para o jantar de hoje, certo?",
+    "question_type": "TAG",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "confirmación - reuniones sociales",
+    "difficulty_score": 4,
+    "xp_reward": 30,
+    "sort_order": 39,
+    "accepted_answers": [
+      {
+        "id": 40391,
+        "question_text": "Ustedes llevan las bebidas para la cena, ¿verdad?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 40392,
+        "question_text": "Van a traer las bebidas y el postre, ¿no?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40393,
+        "question_text": "Ustedes se encargan de las bebidas hoy, ¿cierto?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 40391,
+        "hint_order": 1,
+        "hint_text": "Adicione ', ¿verdad?', ', ¿no?' ou ', ¿cierto?' ao final da afirmação.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 40392,
+        "hint_order": 2,
+        "hint_text": "Estrutura: 'Ustedes llevan las bebidas para la cena, ¿verdad?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 40393,
+        "hint_order": 3,
+        "hint_text": "Ustedes llevan las bebidas para la cena, ¿verdad?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 4040,
+    "level_id": 4,
+    "category_id": 24,
+    "answer_text": "De niños siempre pasábamos las vacaciones de verano en la casa de mis abuelos en el campo.",
+    "context_text": "Pergunte onde eles passavam as férias de verão quando eram crianças.",
+    "question_type": "WH_WHY",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "pretérito imperfecto - recuerdos",
+    "difficulty_score": 4,
+    "xp_reward": 30,
+    "sort_order": 40,
+    "accepted_answers": [
+      {
+        "id": 40401,
+        "question_text": "¿Dónde pasaban las vacaciones de verano de niños?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 40402,
+        "question_text": "Adónde iban de vacaciones cuando eran chicos",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40403,
+        "question_text": "¿En dónde se quedaban durante el verano?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 40404,
+        "question_text": "¿Por qué iban al campo en verano?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 40401,
+        "hint_order": 1,
+        "hint_text": "Use o Pretérito Imperfecto ('pasaban', 'iban') para hábitos da infância.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 40402,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Dónde pasaban las vacaciones de verano de niños?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 40403,
+        "hint_order": 3,
+        "hint_text": "¿Dónde pasaban las vacaciones de verano de niños?",
         "hint_type": "answer"
       }
     ]

@@ -1,100 +1,604 @@
 {
   "cards": [
     {
-      "word": "computadora",
-      "definition": "computador (termo padrão no espanhol latino-americano; na Espanha usa-se 'ordenador')",
-      "example_sentence": "Me entregaron una computadora portátil nueva para el trabajo remoto.",
+      "word": "despertarse",
+      "definition": "acordar / despertar",
+      "example_sentence": "Me despierto todos los días a las seis y media de la mañana.",
       "level_id": 1,
       "category_id": 1,
-      "image_url": "local:vocab_tech.xml"
+      "image_url": "local:vocab_home.xml"
     },
     {
-      "word": "pantalla",
-      "definition": "tela / monitor de vídeo",
-      "example_sentence": "Prefiero trabajar con dos pantallas para ver el código y la consola al mismo tiempo.",
+      "word": "levantarse",
+      "definition": "levantar-se da cama",
+      "example_sentence": "Los domingos me levanto más tarde para descansar.",
       "level_id": 1,
       "category_id": 1,
-      "image_url": "local:vocab_tech.xml"
+      "image_url": "local:vocab_home.xml"
     },
     {
-      "word": "teclado",
-      "definition": "teclado de computador",
-      "example_sentence": "Mi teclado mecánico tiene distribución en inglés internacional.",
+      "word": "el desayuno",
+      "definition": "o café da manhã (desjejum)",
+      "example_sentence": "El desayuno es la comida más importante antes de empezar a trabajar.",
       "level_id": 1,
       "category_id": 1,
-      "image_url": "local:vocab_tech.xml"
+      "image_url": "local:vocab_home.xml"
     },
     {
-      "word": "ratón / mouse",
-      "definition": "mouse (em vários países latinos como México e Argentina usa-se 'el mouse')",
-      "example_sentence": "El mouse inalámbrico se quedó sin batería en medio de la llamada.",
+      "word": "desayunar",
+      "definition": "tomar café da manhã",
+      "example_sentence": "Normalmente desayuno café con leche y pan tostado.",
       "level_id": 1,
       "category_id": 1,
-      "image_url": "local:vocab_tech.xml"
+      "image_url": "local:vocab_home.xml"
     },
     {
-      "word": "auriculares / audífonos",
-      "definition": "fones de ouvido (na América Latina usa-se frequentemente 'audífonos')",
-      "example_sentence": "Ponte los audífonos para escuchar bien la reunión con el equipo.",
+      "word": "el almuerzo",
+      "definition": "o almoço",
+      "example_sentence": "Tenemos una hora libre al mediodía para el almuerzo.",
       "level_id": 1,
       "category_id": 1,
-      "image_url": "local:vocab_tech.xml"
+      "image_url": "local:vocab_home.xml"
     },
     {
-      "word": "contraseña / clave",
-      "definition": "senha / palavra-passe",
-      "example_sentence": "Debes cambiar tu contraseña cada noventa días por seguridad.",
+      "word": "almorzar",
+      "definition": "almoçar",
+      "example_sentence": "Vamos a almorzar en el restaurante que está frente a la plaza.",
+      "level_id": 1,
+      "category_id": 1,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "la cena",
+      "definition": "o jantar",
+      "example_sentence": "Preparamos una cena ligera antes de ir a dormir.",
+      "level_id": 1,
+      "category_id": 1,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "cenar",
+      "definition": "jantar",
+      "example_sentence": "¿A qué hora sueles cenar con tu familia entre semana?",
+      "level_id": 1,
+      "category_id": 1,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "el departamento / apartamento",
+      "definition": "o apartamento (Cone Sul/México: departamento; Colômbia: apartamento)",
+      "example_sentence": "Vivo en un departamento muy luminoso en el tercer piso.",
+      "level_id": 1,
+      "category_id": 1,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "el barrio / la colonia",
+      "definition": "o bairro (no México usa-se muito 'la colonia')",
+      "example_sentence": "Mi barrio es muy tranquilo y tiene varios parques cerca.",
+      "level_id": 1,
+      "category_id": 1,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "la cuadra",
+      "definition": "o quarteirão / a quadra",
+      "example_sentence": "El supermercado queda a solo dos cuadras de mi casa.",
+      "level_id": 1,
+      "category_id": 1,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "el autobús / el colectivo / el camión",
+      "definition": "o ônibus (Argentina: colectivo; México: camión; Chile: micro)",
+      "example_sentence": "Tomo el autobús todas las mañanas para ir al centro.",
+      "level_id": 1,
+      "category_id": 1,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "el metro / el subte",
+      "definition": "o metrô (em Buenos Aires chama-se 'el subte')",
+      "example_sentence": "Viajar en metro es la forma más rápida de cruzar la ciudad.",
+      "level_id": 1,
+      "category_id": 1,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "el fin de semana",
+      "definition": "o fim de semana",
+      "example_sentence": "¿Qué planes tienes para este fin de semana?",
+      "level_id": 1,
+      "category_id": 1,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "descansar",
+      "definition": "descansar / relaxar",
+      "example_sentence": "Después de una semana intensa necesito descansar bien.",
+      "level_id": 1,
+      "category_id": 1,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "pasear / dar una vuelta",
+      "definition": "passear / dar uma volta",
+      "example_sentence": "Salimos a dar una vuelta por el parque con el perro.",
+      "level_id": 1,
+      "category_id": 1,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "hacer las compras",
+      "definition": "fazer as compras de supermercado",
+      "example_sentence": "Los sábados por la mañana hacemos las compras de la semana.",
+      "level_id": 1,
+      "category_id": 1,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "temprano",
+      "definition": "cedo (advérbio de tempo)",
+      "example_sentence": "Mañana tengo que salir temprano porque tengo una cita médica.",
+      "level_id": 1,
+      "category_id": 1,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "tarde",
+      "definition": "tarde (advérbio ou período do dia)",
+      "example_sentence": "Disculpa por llegar tarde, había muchísimo tráfico en la avenida.",
+      "level_id": 1,
+      "category_id": 1,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "ahorita / ahora mismo",
+      "definition": "agora mesmo / já, daqui a pouco (muito usado na América Latina)",
+      "example_sentence": "Ahorita mismo te envío la dirección por mensaje.",
+      "level_id": 1,
+      "category_id": 1,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "el celular",
+      "definition": "o telefone celular (na Espanha diz-se 'el móvil')",
+      "example_sentence": "Dejé mi celular cargando en la mesa de la sala.",
+      "level_id": 1,
+      "category_id": 1,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "la llave",
+      "definition": "a chave (de porta) ou torneira",
+      "example_sentence": "No encuentro las llaves de la puerta principal.",
+      "level_id": 1,
+      "category_id": 1,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "el vecino / la vecina",
+      "definition": "o vizinho / a vizinha",
+      "example_sentence": "Nuestros vecinos del cuarto piso son muy amables.",
+      "level_id": 1,
+      "category_id": 1,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "la mascota",
+      "definition": "o animal de estimação (pet)",
+      "example_sentence": "En este edificio sí permiten vivir con mascotas.",
+      "level_id": 1,
+      "category_id": 1,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "costumbre / hábito",
+      "definition": "costume / hábito diário",
+      "example_sentence": "Tengo la costumbre de leer veinte minutos cada noche.",
+      "level_id": 1,
+      "category_id": 1,
+      "image_url": "local:vocab_home.xml"
+    },
+    {
+      "word": "la computadora / el computador",
+      "definition": "o computador (América Latina; na Espanha é 'el ordenador')",
+      "example_sentence": "Me entregaron una computadora portátil nueva para trabajar desde casa.",
       "level_id": 1,
       "category_id": 2,
-      "image_url": "local:vocab_security.xml"
+      "image_url": "local:vocab_work.xml"
     },
     {
-      "word": "acceso a la VPN",
-      "definition": "acesso à rede privada virtual corporativa",
-      "example_sentence": "Necesitas conectarte a la VPN para acceder a la base de datos de pruebas.",
+      "word": "la portátil / la laptop",
+      "definition": "o notebook / laptop",
+      "example_sentence": "Llevo mi laptop en la mochila cuando voy a la oficina.",
       "level_id": 1,
       "category_id": 2,
-      "image_url": "local:vocab_security.xml"
+      "image_url": "local:vocab_work.xml"
     },
     {
-      "word": "permisos de administrador",
-      "definition": "permissões de administrador / root",
-      "example_sentence": "Pide permisos de administrador en Jira para instalar Docker.",
+      "word": "la pantalla / el monitor",
+      "definition": "a tela / o monitor",
+      "example_sentence": "Trabajar con dos pantallas mejora muchísimo mi productividad.",
       "level_id": 1,
       "category_id": 2,
-      "image_url": "local:vocab_security.xml"
+      "image_url": "local:vocab_work.xml"
     },
     {
-      "word": "equipo / squad",
-      "definition": "equipe de trabalho / squad ágil",
-      "example_sentence": "En nuestro equipo tenemos tres desarrolladores y un especialista en QA.",
+      "word": "el teclado",
+      "definition": "o teclado",
+      "example_sentence": "Prefiero usar un teclado externo cuando escribo mucho código.",
       "level_id": 1,
-      "category_id": 3,
-      "image_url": "local:vocab_people.xml"
+      "category_id": 2,
+      "image_url": "local:vocab_work.xml"
     },
     {
-      "word": "llamada / reunión",
-      "definition": "reunião / call",
-      "example_sentence": "Tenemos una llamada de bienvenida con recursos humanos a las tres.",
+      "word": "el ratón / el mouse",
+      "definition": "o mouse",
+      "example_sentence": "El mouse inalámbrico necesita pilas nuevas.",
       "level_id": 1,
-      "category_id": 3,
-      "image_url": "local:vocab_people.xml"
+      "category_id": 2,
+      "image_url": "local:vocab_work.xml"
     },
     {
-      "word": "canal de Slack",
-      "definition": "canal de comunicação no Slack ou Teams",
-      "example_sentence": "Cualquier duda técnica la resolvemos en el canal de backend.",
+      "word": "los audífonos / los auriculares",
+      "definition": "os fones de ouvido",
+      "example_sentence": "Ponte los audífonos para que no se escuche eco en la llamada.",
       "level_id": 1,
-      "category_id": 3,
-      "image_url": "local:vocab_people.xml"
+      "category_id": 2,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "el micrófono",
+      "definition": "o microfone",
+      "example_sentence": "Tienes el micrófono silenciado, no te estamos escuchando.",
+      "level_id": 1,
+      "category_id": 2,
+      "image_url": "local:vocab_work.xml"
     },
     {
       "word": "compartir pantalla",
-      "definition": "compartilhar a tela em uma videoconferência",
-      "example_sentence": "¿Puedes compartir pantalla para ver el error que te sale?",
+      "definition": "compartilhar a tela",
+      "example_sentence": "¿Puedes compartir pantalla para mostrarnos la presentación?",
+      "level_id": 1,
+      "category_id": 2,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "la oficina",
+      "definition": "o escritório (local de trabalho; atenção: oficina mecânica é 'el taller')",
+      "example_sentence": "Vamos a la oficina los martes y jueves para trabajar en equipo.",
+      "level_id": 1,
+      "category_id": 2,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "el escritorio",
+      "definition": "a mesa de trabalho / escrivaninha (ou área de trabalho do sistema)",
+      "example_sentence": "Ordené todos los cables que estaban sobre mi escritorio.",
+      "level_id": 1,
+      "category_id": 2,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "trabajar desde casa / teletrabajo",
+      "definition": "trabalhar de casa / home office",
+      "example_sentence": "Hoy trabajo desde casa porque tengo reuniones todo el día.",
+      "level_id": 1,
+      "category_id": 2,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "el correo electrónico",
+      "definition": "o e-mail",
+      "example_sentence": "Te acabo de mandar el documento adjunto por correo electrónico.",
+      "level_id": 1,
+      "category_id": 2,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "la reunión / la llamada",
+      "definition": "a reunião / a call",
+      "example_sentence": "La reunión con el cliente empieza puntualmente a las diez.",
+      "level_id": 1,
+      "category_id": 2,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "el compañero / la compañera de trabajo",
+      "definition": "o colega de trabalho",
+      "example_sentence": "Mis compañeros de equipo viven en cuatro países distintos.",
+      "level_id": 1,
+      "category_id": 2,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "el horario laboral",
+      "definition": "o horário de trabalho / expediente",
+      "example_sentence": "Nuestro horario laboral es flexible siempre que cumplamos los objetivos.",
+      "level_id": 1,
+      "category_id": 2,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "el puesto / el rol",
+      "definition": "o cargo / a função",
+      "example_sentence": "¿Cuál es tu rol actual dentro del proyecto de tecnología?",
+      "level_id": 1,
+      "category_id": 2,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "la contraseña / la clave",
+      "definition": "a senha de acesso",
+      "example_sentence": "Debes crear una contraseña segura con letras, números y símbolos.",
+      "level_id": 1,
+      "category_id": 2,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "iniciar sesión / loguearse",
+      "definition": "fazer login / entrar na conta",
+      "example_sentence": "No puedo iniciar sesión con mi cuenta corporativa.",
+      "level_id": 1,
+      "category_id": 2,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "cerrar sesión",
+      "definition": "fazer logout / sair da conta",
+      "example_sentence": "Recuerda cerrar sesión cuando uses un equipo compartido.",
+      "level_id": 1,
+      "category_id": 2,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "el enlace / el link",
+      "definition": "o link / hiperlink",
+      "example_sentence": "Te dejé el enlace a la llamada en el calendario.",
+      "level_id": 1,
+      "category_id": 2,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "el archivo adjunto",
+      "definition": "o arquivo em anexo",
+      "example_sentence": "Olvidé agregar el archivo adjunto en el correo anterior.",
+      "level_id": 1,
+      "category_id": 2,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "la carpeta",
+      "definition": "a pasta (de arquivos ou física)",
+      "example_sentence": "Guarda todos los reportes mensuales dentro de la carpeta compartida.",
+      "level_id": 1,
+      "category_id": 2,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "descargar / bajar",
+      "definition": "fazer download / baixar",
+      "example_sentence": "Tienes que descargar el instalador desde la página oficial.",
+      "level_id": 1,
+      "category_id": 2,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "subir un archivo",
+      "definition": "fazer upload / enviar um arquivo",
+      "example_sentence": "Ya subí las diapositivas de la reunión a la nube.",
+      "level_id": 1,
+      "category_id": 2,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "el equipo / la célula",
+      "definition": "a equipe / a squad",
+      "example_sentence": "Formo parte de la célula encargada de la aplicación móvil.",
+      "level_id": 1,
+      "category_id": 2,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "el aeropuerto",
+      "definition": "o aeroporto",
+      "example_sentence": "Debemos llegar al aeropuerto tres horas antes del vuelo internacional.",
       "level_id": 1,
       "category_id": 3,
-      "image_url": "local:vocab_people.xml"
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "el vuelo",
+      "definition": "o voo",
+      "example_sentence": "El vuelo directo de São Paulo a Santiago dura unas cuatro horas.",
+      "level_id": 1,
+      "category_id": 3,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "la puerta de embarque",
+      "definition": "o portão de embarque",
+      "example_sentence": "Cambiaron nuestra puerta de embarque a la número veinticuatro.",
+      "level_id": 1,
+      "category_id": 3,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "el pase de abordar / tarjeta de embarque",
+      "definition": "o cartão de embarque",
+      "example_sentence": "Puedes mostrar el pase de abordar directamente desde tu celular.",
+      "level_id": 1,
+      "category_id": 3,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "el pasaporte",
+      "definition": "o passaporte",
+      "example_sentence": "Verifica que tu pasaporte tenga al menos seis meses de vigencia.",
+      "level_id": 1,
+      "category_id": 3,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "la maleta / la valija",
+      "definition": "a mala de viagem (Cone Sul: la valija; resto da AL: la maleta)",
+      "example_sentence": "Empaqué ropa de abrigo en la maleta porque allá hace frío.",
+      "level_id": 1,
+      "category_id": 3,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "el equipaje de mano",
+      "definition": "a bagagem de mão",
+      "example_sentence": "Llevo mi computadora portátil siempre en el equipaje de mano.",
+      "level_id": 1,
+      "category_id": 3,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "documentar / despachar el equipaje",
+      "definition": "despachar a bagagem no balcão",
+      "example_sentence": "Hicimos fila en el mostrador para documentar las maletas.",
+      "level_id": 1,
+      "category_id": 3,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "la escala",
+      "definition": "a escala / conexão de voo",
+      "example_sentence": "Nuestro vuelo hace una escala corta en Bogotá antes de seguir a México.",
+      "level_id": 1,
+      "category_id": 3,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "la aduana",
+      "definition": "a alfândega",
+      "example_sentence": "Pasamos por el control de migración y aduana muy rápido.",
+      "level_id": 1,
+      "category_id": 3,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "la reservación / la reserva",
+      "definition": "a reserva (de hotel, voo ou restaurante)",
+      "example_sentence": "Tengo una reservación para dos personas por cuatro noches.",
+      "level_id": 1,
+      "category_id": 3,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "la habitación doble",
+      "definition": "o quarto duplo de hotel",
+      "example_sentence": "Pedimos una habitación silenciosa en un piso alto del hotel.",
+      "level_id": 1,
+      "category_id": 3,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "la recepción",
+      "definition": "a recepção do hotel",
+      "example_sentence": "Puedes dejar las llaves en la recepción cuando salgas a pasear.",
+      "level_id": 1,
+      "category_id": 3,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "el tipo de cambio",
+      "definition": "a taxa de câmbio",
+      "example_sentence": "¿A cuánto está el tipo de cambio del dólar hoy?",
+      "level_id": 1,
+      "category_id": 3,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "el efectivo",
+      "definition": "o dinheiro em espécie / vivo",
+      "example_sentence": "Conviene llevar algo de efectivo para pequeños gastos o propinas.",
+      "level_id": 1,
+      "category_id": 3,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "el boleto / el pasaje",
+      "definition": "a passagem (de avião, trem ou ônibus)",
+      "example_sentence": "Compré los pasajes de ida y vuelta con dos meses de anticipación.",
+      "level_id": 1,
+      "category_id": 3,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "el retraso / la demora",
+      "definition": "o atraso (de voo ou transporte)",
+      "example_sentence": "Anunciaron una demora de treinta minutos por mal clima.",
+      "level_id": 1,
+      "category_id": 3,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "el centro histórico",
+      "definition": "o centro histórico da cidade",
+      "example_sentence": "Caminamos toda la tarde por las calles del centro histórico.",
+      "level_id": 1,
+      "category_id": 3,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "doblar / girar",
+      "definition": "virar (à direita ou à esquerda)",
+      "example_sentence": "Camina tres cuadras derecho y luego dobla a la derecha.",
+      "level_id": 1,
+      "category_id": 3,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "seguir derecho / todo recto",
+      "definition": "seguir reto / em frente",
+      "example_sentence": "Sigue derecho por esta avenida hasta llegar a la estación.",
+      "level_id": 1,
+      "category_id": 3,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "la parada de autobús",
+      "definition": "o ponto de ônibus",
+      "example_sentence": "La parada del autobús al aeropuerto está cruzando la calle.",
+      "level_id": 1,
+      "category_id": 3,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "el seguro de viaje",
+      "definition": "o seguro-viagem",
+      "example_sentence": "Siempre contrato un seguro de viaje médico cuando salgo del país.",
+      "level_id": 1,
+      "category_id": 3,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "hacer el registro (check-in)",
+      "definition": "fazer o check-in no hotel ou voo",
+      "example_sentence": "Ya hice el registro en línea para elegir asiento en la ventanilla.",
+      "level_id": 1,
+      "category_id": 3,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "el asiento de pasillo / ventanilla",
+      "definition": "o assento de corredor / janela",
+      "example_sentence": "En vuelos largos prefiero el asiento de pasillo para estirar las piernas.",
+      "level_id": 1,
+      "category_id": 3,
+      "image_url": "local:vocab_travel.xml"
+    },
+    {
+      "word": "el recuerdo / el souvenir",
+      "definition": "a lembrancinha de viagem",
+      "example_sentence": "Traje café colombiano y dulces típicos de recuerdo para mi familia.",
+      "level_id": 1,
+      "category_id": 3,
+      "image_url": "local:vocab_travel.xml"
     }
   ]
 }

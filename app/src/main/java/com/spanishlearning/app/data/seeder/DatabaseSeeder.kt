@@ -370,7 +370,7 @@ class DatabaseSeeder @Inject constructor(
     companion object {
         private const val TAG = "DatabaseSeeder"
         private const val PREFS_NAME = "app_prefs"
-        private const val KEY_DB_SEEDED = "db_seeded"
+        private const val KEY_DB_SEEDED = "db_seeded_es_v2"
         private const val LEVELS_ASSET_PATH = "content/levels.json"
         private const val CATEGORIES_ASSET_PATH = "content/categories.json"
         private const val EXERCISES_ASSET_DIR = "content/exercises"

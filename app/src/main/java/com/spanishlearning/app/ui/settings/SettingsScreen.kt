@@ -331,7 +331,7 @@ private fun LanguageSelectorCard(
                     else
                         MaterialTheme.colorScheme.onSurfaceVariant
                 )
-            ) { Text("🇬🇧 English") }
+            ) { Text("🇲🇽 Español") }
         }
     }
 }

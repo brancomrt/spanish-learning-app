@@ -1,118 +1,2298 @@
 [
   {
-    "id": 501,
+    "id": 5001,
     "level_id": 5,
-    "category_id": 15,
-    "answer_text": "El cuello de botella principal se encuentra en la consulta a la base de datos de transacciones.",
-    "context_text": "Pregunta dónde está la lentitud o restricción de rendimiento del sistema.",
-    "question_type": "WH_WHERE",
+    "category_id": 13,
+    "answer_text": "Estimamos esta historia de usuario en ocho puntos porque requiere cambios en dos microservicios.",
+    "context_text": "Na planning, pergunte em quantos pontos de história a equipe estimou a tarefa.",
+    "question_type": "WH_HOW_MANY",
     "exercise_mode": "QUESTION_FROM_ANSWER",
-    "grammar_focus": "localización de cuellos de botella",
+    "grammar_focus": "liderazgo - estimación de sprint",
     "difficulty_score": 5,
-    "xp_reward": 35,
+    "xp_reward": 40,
     "sort_order": 1,
     "accepted_answers": [
       {
-        "id": 81,
-        "question_text": "¿Dónde está el cuello de botella?",
+        "id": 50011,
+        "question_text": "¿En cuántos puntos estimaron esta historia?",
         "is_primary": true,
-        "match_threshold": 0.85
-      },
-      {
-        "id": 82,
-        "question_text": "Dónde está el cuello de botella",
-        "is_primary": false,
-        "match_threshold": 0.85
-      },
-      {
-        "id": 83,
-        "question_text": "¿En qué parte se encuentra el cuello de botella?",
-        "is_primary": false,
-        "match_threshold": 0.85
-      },
-      {
-        "id": 84,
-        "question_text": "¿Dónde se produce la lentitud?",
-        "is_primary": false,
         "match_threshold": 0.8
+      },
+      {
+        "id": 50012,
+        "question_text": "Cuántos puntos de historia tiene la tarea",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50013,
+        "question_text": "¿Qué puntuación le dieron a esta historia de usuario?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50014,
+        "question_text": "¿Cuánto esfuerzo estiman para este ticket?",
+        "is_primary": false,
+        "match_threshold": 0.78
       }
     ],
     "hints": [
       {
-        "id": 81,
+        "id": 50011,
         "hint_order": 1,
-        "hint_text": "Pregunta de ubicación sobre 'cuello de botella'.",
+        "hint_text": "Use '¿En cuántos puntos estimaron...?' ou '¿Cuántos puntos de historia...?'",
         "hint_type": "structural"
       },
       {
-        "id": 82,
+        "id": 50012,
         "hint_order": 2,
-        "hint_text": "Término técnico clave: 'cuello de botella' (bottleneck).",
+        "hint_text": "Vocabulário: 'historia de usuario' (user story), 'puntos de historia' (story points).",
         "hint_type": "vocabulary"
       },
       {
-        "id": 83,
+        "id": 50013,
         "hint_order": 3,
-        "hint_text": "¿Dónde está el cuello de botella?",
+        "hint_text": "¿En cuántos puntos estimaron esta historia?",
         "hint_type": "answer"
       }
     ]
   },
   {
-    "id": 502,
+    "id": 5002,
     "level_id": 5,
-    "category_id": 14,
-    "answer_text": "Podemos desacoplar los microservicios implementando una cola de mensajes asíncrona.",
-    "context_text": "Pregunta cómo resolver la alta dependencia entre servicios.",
-    "question_type": "WH_HOW",
+    "category_id": 13,
+    "answer_text": "Para dar por terminada la tarea, debe pasar las pruebas de integración y estar validada por producto.",
+    "context_text": "Pergunte quais são os critérios de aceite ou a definição de pronto (Definition of Done).",
+    "question_type": "WH_WHAT",
     "exercise_mode": "QUESTION_FROM_ANSWER",
-    "grammar_focus": "arquitectura de microservicios y métodos",
+    "grammar_focus": "presente - criterios de aceptación",
     "difficulty_score": 5,
-    "xp_reward": 35,
+    "xp_reward": 40,
     "sort_order": 2,
     "accepted_answers": [
       {
-        "id": 85,
-        "question_text": "¿Cómo podemos desacoplar los microservicios?",
+        "id": 50021,
+        "question_text": "¿Cuáles son los criterios de aceptación de la historia?",
         "is_primary": true,
-        "match_threshold": 0.85
+        "match_threshold": 0.8
       },
       {
-        "id": 86,
-        "question_text": "Cómo podemos desacoplar los microservicios",
+        "id": 50022,
+        "question_text": "Qué falta para dar por terminada la tarea",
         "is_primary": false,
-        "match_threshold": 0.85
+        "match_threshold": 0.78
       },
       {
-        "id": 87,
-        "question_text": "¿Cómo desacoplamos estos servicios?",
+        "id": 50023,
+        "question_text": "¿Cuál es la definición de terminado para este entregable?",
         "is_primary": false,
-        "match_threshold": 0.85
+        "match_threshold": 0.78
       },
       {
-        "id": 88,
-        "question_text": "¿De qué manera podemos separar los componentes?",
+        "id": 50024,
+        "question_text": "¿Qué validaciones pide producto para aprobar el ticket?",
         "is_primary": false,
-        "match_threshold": 0.75
+        "match_threshold": 0.78
       }
     ],
     "hints": [
       {
-        "id": 84,
+        "id": 50021,
         "hint_order": 1,
-        "hint_text": "Pregunta de procedimiento usando 'Cómo'.",
+        "hint_text": "Em espanhol ágil: 'criterios de aceptación' e 'definición de terminado' (DoD).",
         "hint_type": "structural"
       },
       {
-        "id": 85,
+        "id": 50022,
         "hint_order": 2,
-        "hint_text": "Usa el verbo 'desacoplar' (decouple): '¿Cómo podemos desacoplar...?'",
+        "hint_text": "Estrutura: '¿Cuáles son los criterios de aceptación de la historia?'",
         "hint_type": "vocabulary"
       },
       {
-        "id": 86,
+        "id": 50023,
         "hint_order": 3,
-        "hint_text": "¿Cómo podemos desacoplar los microservicios?",
+        "hint_text": "¿Cuáles son los criterios de aceptación de la historia?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 5003,
+    "level_id": 5,
+    "category_id": 13,
+    "answer_text": "Tuvimos que sacar esa funcionalidad del sprint actual porque surgió un incidente prioritario en producción.",
+    "context_text": "Pergunte por que tiveram que retirar aquela funcionalidade do sprint atual.",
+    "question_type": "WH_WHY",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "pretérito indefinido - alcance del sprint",
+    "difficulty_score": 5,
+    "xp_reward": 40,
+    "sort_order": 3,
+    "accepted_answers": [
+      {
+        "id": 50031,
+        "question_text": "¿Por qué sacaron esa funcionalidad del sprint?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 50032,
+        "question_text": "Por qué se pospuso esa historia para el próximo sprint",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50033,
+        "question_text": "¿Por qué cambió el alcance del sprint?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50034,
+        "question_text": "¿Por qué no entró esa tarea en la entrega?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 50031,
+        "hint_order": 1,
+        "hint_text": "Use '¿Por qué sacaron...?' ou '¿Por qué cambió el alcance del sprint?'",
+        "hint_type": "structural"
+      },
+      {
+        "id": 50032,
+        "hint_order": 2,
+        "hint_text": "Vocabulário: 'el alcance' (scope), 'posponer / postergar' (adiar).",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 50033,
+        "hint_order": 3,
+        "hint_text": "¿Por qué sacaron esa funcionalidad del sprint?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 5004,
+    "level_id": 5,
+    "category_id": 13,
+    "answer_text": "Hacemos la sesión de refinamiento los miércoles a la tarde y la retrospectiva cada dos viernes.",
+    "context_text": "Pergunte quando a equipe realiza o refinamento e a retrospectiva.",
+    "question_type": "WH_WHEN",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "presente - ceremonias ágiles",
+    "difficulty_score": 5,
+    "xp_reward": 40,
+    "sort_order": 4,
+    "accepted_answers": [
+      {
+        "id": 50041,
+        "question_text": "¿Cuándo hacen el refinamiento y la retrospectiva?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 50042,
+        "question_text": "Qué días tienen las ceremonias del sprint",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50043,
+        "question_text": "¿Cuándo se reúne el equipo para refinar el backlog?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50044,
+        "question_text": "¿Con qué frecuencia hacen la retrospectiva?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 50041,
+        "hint_order": 1,
+        "hint_text": "Use '¿Cuándo hacen...?' para perguntar sobre o calendário das cerimônias.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 50042,
+        "hint_order": 2,
+        "hint_text": "Vocabulário: 'sesión de refinamiento', 'la retrospectiva', 'el tablero'.",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 50043,
+        "hint_order": 3,
+        "hint_text": "¿Cuándo hacen el refinamiento y la retrospectiva?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 5005,
+    "level_id": 5,
+    "category_id": 13,
+    "answer_text": "¿Qué acción concreta propones en esta retrospectiva para mejorar la velocidad de revisión de código?",
+    "context_text": "Responda que você propõe reservar a primeira hora da manhã para revisar pull requests pendentes.",
+    "question_type": "WH_WHAT",
+    "exercise_mode": "ANSWER_FROM_QUESTION",
+    "grammar_focus": "liderazgo - retrospectiva",
+    "difficulty_score": 5,
+    "xp_reward": 40,
+    "sort_order": 5,
+    "accepted_answers": [
+      {
+        "id": 50051,
+        "question_text": "Propongo reservar la primera hora de la mañana para revisar los pull requests pendientes.",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 50052,
+        "question_text": "Sugiero dividir las historias en entregas más pequeñas para que sean fáciles de revisar.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50053,
+        "question_text": "Podemos acordar un tiempo máximo de respuesta de cuatro horas para las revisiones.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 50051,
+        "hint_order": 1,
+        "hint_text": "Use verbos de proposta: 'Propongo + infinitivo', 'Sugiero + infinitivo', 'Podemos acordar...'",
+        "hint_type": "structural"
+      },
+      {
+        "id": 50052,
+        "hint_order": 2,
+        "hint_text": "Responda: 'Propongo reservar la primera hora de la mañana para revisar los pull requests...'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 50053,
+        "hint_order": 3,
+        "hint_text": "Propongo reservar la primera hora de la mañana para revisar los pull requests pendientes.",
+        "hint_type": "answer"
+      }
+    ],
+    "prompt_text": "¿Qué acción concreta propones en esta retrospectiva para mejorar la velocidad de revisión de código?"
+  },
+  {
+    "id": 5006,
+    "level_id": 5,
+    "category_id": 13,
+    "answer_text": "¿Podríamos lanzar un producto mínimo viable este mes y dejar los reportes avanzados para la fase dos?",
+    "context_text": "Responda que sim, dividir o lançamento reduz o risco e entrega valor mais rápido aos usuários.",
+    "question_type": "YES_NO",
+    "exercise_mode": "ANSWER_FROM_QUESTION",
+    "grammar_focus": "condicional - negociación con producto",
+    "difficulty_score": 5,
+    "xp_reward": 40,
+    "sort_order": 6,
+    "accepted_answers": [
+      {
+        "id": 50061,
+        "question_text": "Sí, dividir el lanzamiento reduce el riesgo y entrega valor más rápido a los usuarios.",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 50062,
+        "question_text": "Totalmente de acuerdo, así validamos primero el flujo principal en producción.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50063,
+        "question_text": "Sí, me parece la mejor estrategia para cumplir con la fecha comprometida.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 50061,
+        "hint_order": 1,
+        "hint_text": "Em espanhol de produto: 'producto mínimo viable (MVP)', 'entregar valor', 'flujo principal'.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 50062,
+        "hint_order": 2,
+        "hint_text": "Responda: 'Sí, dividir el lanzamiento reduce el riesgo y entrega valor más rápido...'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 50063,
+        "hint_order": 3,
+        "hint_text": "Sí, dividir el lanzamiento reduce el riesgo y entrega valor más rápido a los usuarios.",
+        "hint_type": "answer"
+      }
+    ],
+    "prompt_text": "¿Podríamos lanzar un producto mínimo viable este mes y dejar los reportes avanzados para la fase dos?"
+  },
+  {
+    "id": 5007,
+    "level_id": 5,
+    "category_id": 13,
+    "answer_text": "La prioridad número uno para este trimestre es reducir la tasa de abandono en el proceso de pago.",
+    "context_text": "Pergunte qual é a prioridade principal do produto para este trimestre.",
+    "question_type": "WH_WHICH",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "presente - priorización del backlog",
+    "difficulty_score": 5,
+    "xp_reward": 40,
+    "sort_order": 7,
+    "accepted_answers": [
+      {
+        "id": 50071,
+        "question_text": "¿Cuál es la prioridad principal para este trimestre?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 50072,
+        "question_text": "Qué objetivo tiene mayor prioridad en el roadmap",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50073,
+        "question_text": "¿En qué métrica nos vamos a enfocar este trimestre?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50074,
+        "question_text": "¿Cuál es la meta más importante del equipo?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 50071,
+        "hint_order": 1,
+        "hint_text": "Use '¿Cuál es la prioridad principal...?'",
+        "hint_type": "structural"
+      },
+      {
+        "id": 50072,
+        "hint_order": 2,
+        "hint_text": "Vocabulário: 'tasa de abandono' (churn / drop-off rate), 'trimestre' (quarter / Q).",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 50073,
+        "hint_order": 3,
+        "hint_text": "¿Cuál es la prioridad principal para este trimestre?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 5008,
+    "level_id": 5,
+    "category_id": 13,
+    "answer_text": "Claro, el enlace al tablero de seguimiento está fijado en la descripción del canal del proyecto.",
+    "context_text": "Pergunte educadamente (pergunta indireta) se o colega poderia lhe dizer onde está o link do quadro.",
+    "question_type": "INDIRECT",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "condicional - preguntas indirectas",
+    "difficulty_score": 5,
+    "xp_reward": 40,
+    "sort_order": 8,
+    "accepted_answers": [
+      {
+        "id": 50081,
+        "question_text": "¿Podrías decirme dónde está el enlace al tablero?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 50082,
+        "question_text": "Me puedes decir dónde encuentro el link del tablero",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50083,
+        "question_text": "¿Sabes dónde está fijado el enlace del proyecto?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 50081,
+        "hint_order": 1,
+        "hint_text": "Para perguntas indiretas, comece com '¿Podrías decirme...?' ou '¿Me puedes decir...?'",
+        "hint_type": "structural"
+      },
+      {
+        "id": 50082,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Podrías decirme dónde está el enlace al tablero?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 50083,
+        "hint_order": 3,
+        "hint_text": "¿Podrías decirme dónde está el enlace al tablero?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 5009,
+    "level_id": 5,
+    "category_id": 14,
+    "answer_text": "La causa raíz de la caída fue un agotamiento del pool de conexiones hacia la base de datos.",
+    "context_text": "No post-mortem, pergunte qual foi a causa raiz do incidente.",
+    "question_type": "WH_WHAT",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "pretérito indefinido - análisis de causa raíz",
+    "difficulty_score": 5,
+    "xp_reward": 40,
+    "sort_order": 9,
+    "accepted_answers": [
+      {
+        "id": 50091,
+        "question_text": "¿Cuál fue la causa raíz de la caída?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 50092,
+        "question_text": "Qué provocó el incidente en producción",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50093,
+        "question_text": "¿Por qué se saturó el servicio ayer?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50094,
+        "question_text": "¿Qué originó la interrupción del sistema?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 50091,
+        "hint_order": 1,
+        "hint_text": "Use '¿Cuál fue la causa raíz...?' ou '¿Qué provocó el incidente?'",
+        "hint_type": "structural"
+      },
+      {
+        "id": 50092,
+        "hint_order": 2,
+        "hint_text": "Vocabulário SRE: 'la causa raíz' (root cause), 'agotamiento del pool de conexiones'.",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 50093,
+        "hint_order": 3,
+        "hint_text": "¿Cuál fue la causa raíz de la caída?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 5010,
+    "level_id": 5,
+    "category_id": 14,
+    "answer_text": "Nuestro objetivo de disponibilidad mensual es del noventa y nueve coma nueve por ciento.",
+    "context_text": "Pergunte qual é o SLO ou percentual de disponibilidade exigido para o serviço.",
+    "question_type": "WH_HOW_MUCH",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "presente - acuerdos de nivel de servicio",
+    "difficulty_score": 5,
+    "xp_reward": 40,
+    "sort_order": 10,
+    "accepted_answers": [
+      {
+        "id": 50101,
+        "question_text": "¿Cuánto es el objetivo de disponibilidad mensual?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 50102,
+        "question_text": "Qué porcentaje de disponibilidad exige el SLA",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50103,
+        "question_text": "¿Cuál es nuestro SLO de tiempo de actividad?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50104,
+        "question_text": "¿Cuánta disponibilidad debemos garantizar?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 50101,
+        "hint_order": 1,
+        "hint_text": "Em espanhol, decimais leem-se com 'coma' ou 'punto': 'noventa y nueve coma nueve por ciento'.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 50102,
+        "hint_order": 2,
+        "hint_text": "Vocabulário: 'tiempo de actividad' (uptime), 'disponibilidad'.",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 50103,
+        "hint_order": 3,
+        "hint_text": "¿Cuánto es el objetivo de disponibilidad mensual?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 5011,
+    "level_id": 5,
+    "category_id": 14,
+    "answer_text": "Mitigamos el incidente reiniciando los nodos afectados y activando el limitador de tasa de peticiones.",
+    "context_text": "Pergunte como a equipe de plantão mitigou o incidente.",
+    "question_type": "WH_HOW",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "pretérito indefinido - mitigación de incidentes",
+    "difficulty_score": 5,
+    "xp_reward": 40,
+    "sort_order": 11,
+    "accepted_answers": [
+      {
+        "id": 50111,
+        "question_text": "¿Cómo mitigaron el incidente?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 50112,
+        "question_text": "De qué manera resolvieron la alerta crítica",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50113,
+        "question_text": "¿Cómo lograron estabilizar el servicio?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50114,
+        "question_text": "¿Qué hicieron para contener la falla?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 50111,
+        "hint_order": 1,
+        "hint_text": "Use '¿Cómo mitigaron...?' ou '¿Cómo lograron estabilizar...?'",
+        "hint_type": "structural"
+      },
+      {
+        "id": 50112,
+        "hint_order": 2,
+        "hint_text": "Vocabulário: 'limitador de tasa' (rate limiter), 'estabilizar el servicio'.",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 50113,
+        "hint_order": 3,
+        "hint_text": "¿Cómo mitigaron el incidente?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 5012,
+    "level_id": 5,
+    "category_id": 14,
+    "answer_text": "Esta semana le toca estar de guardia a Martín en el turno principal y a Sofía como respaldo.",
+    "context_text": "Pergunte quem está de plantão (on-call) nesta semana.",
+    "question_type": "WH_WHO",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "presente - guardia técnica",
+    "difficulty_score": 5,
+    "xp_reward": 40,
+    "sort_order": 12,
+    "accepted_answers": [
+      {
+        "id": 50121,
+        "question_text": "¿Quién está de guardia esta semana?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 50122,
+        "question_text": "A quién le toca la guardia técnica hoy",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50123,
+        "question_text": "¿Quién es el ingeniero de guardia este fin de semana?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50124,
+        "question_text": "¿Con quién me comunico si salta una alerta?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 50121,
+        "hint_order": 1,
+        "hint_text": "Em espanhol de TI, 'estar de plantão / on-call' é 'estar de guardia'!",
+        "hint_type": "structural"
+      },
+      {
+        "id": 50122,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Quién está de guardia esta semana?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 50123,
+        "hint_order": 3,
+        "hint_text": "¿Quién está de guardia esta semana?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 5013,
+    "level_id": 5,
+    "category_id": 14,
+    "answer_text": "¿Qué habríamos evitado si hubiéramos configurado alertas tempranas de uso de disco?",
+    "context_text": "Responda que teríamos evitado a queda do banco de dados durante o horário de pico.",
+    "question_type": "WH_WHAT",
+    "exercise_mode": "ANSWER_FROM_QUESTION",
+    "grammar_focus": "condicional - prevención de caídas",
+    "difficulty_score": 5,
+    "xp_reward": 40,
+    "sort_order": 13,
+    "accepted_answers": [
+      {
+        "id": 50131,
+        "question_text": "Habríamos evitado la caída de la base de datos durante la hora pico.",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 50132,
+        "question_text": "Hubiéramos detectado que el disco se estaba llenando por los archivos de registro.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50133,
+        "question_text": "El sistema habría limpiado los archivos temporales antes de quedarse sin espacio.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 50131,
+        "hint_order": 1,
+        "hint_text": "Use o Condicional Compuesto ('Habríamos evitado...') para consequências hipotéticas no passado.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 50132,
+        "hint_order": 2,
+        "hint_text": "Vocabulário: 'la hora pico' (horário de pico), 'quedarse sin espacio' (ficar sem espaço).",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 50133,
+        "hint_order": 3,
+        "hint_text": "Habríamos evitado la caída de la base de datos durante la hora pico.",
+        "hint_type": "answer"
+      }
+    ],
+    "prompt_text": "¿Qué habríamos evitado si hubiéramos configurado alertas tempranas de uso de disco?"
+  },
+  {
+    "id": 5014,
+    "level_id": 5,
+    "category_id": 14,
+    "answer_text": "¿Por qué necesitamos trazabilidad distribuida aunque ya tengamos registros en cada contenedor?",
+    "context_text": "Responda que embora tenhamos logs locais, a rastreabilidade permite seguir uma requisição por vários serviços.",
+    "question_type": "WH_WHY",
+    "exercise_mode": "ANSWER_FROM_QUESTION",
+    "grammar_focus": "concesivas - observabilidad",
+    "difficulty_score": 5,
+    "xp_reward": 40,
+    "sort_order": 14,
+    "accepted_answers": [
+      {
+        "id": 50141,
+        "question_text": "Porque aunque tengamos registros locales, la trazabilidad permite seguir una petición a través de todos los servicios.",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 50142,
+        "question_text": "Porque sin un identificador de correlación es muy difícil encontrar dónde se pierde tiempo.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50143,
+        "question_text": "Porque nos ayuda a visualizar la latencia exacta de cada salto en la red.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 50141,
+        "hint_order": 1,
+        "hint_text": "Use 'aunque' (embora) e 'trazabilidad distribuida' (distributed tracing).",
+        "hint_type": "structural"
+      },
+      {
+        "id": 50142,
+        "hint_order": 2,
+        "hint_text": "Vocabulário: 'identificador de correlación' (correlation ID), 'trazabilidad'.",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 50143,
+        "hint_order": 3,
+        "hint_text": "Porque aunque tengamos registros locales, la trazabilidad permite seguir una petición a través de todos los servicios.",
+        "hint_type": "answer"
+      }
+    ],
+    "prompt_text": "¿Por qué necesitamos trazabilidad distribuida aunque ya tengamos registros en cada contenedor?"
+  },
+  {
+    "id": 5015,
+    "level_id": 5,
+    "category_id": 14,
+    "answer_text": "El servicio estuvo degradado durante doce minutos hasta que entró en acción el circuito de respaldo.",
+    "context_text": "Pergunte quando o serviço voltou ao normal ou quanto tempo durou a degradação.",
+    "question_type": "WH_WHEN",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "pretérito indefinido - tiempo de recuperación",
+    "difficulty_score": 5,
+    "xp_reward": 40,
+    "sort_order": 15,
+    "accepted_answers": [
+      {
+        "id": 50151,
+        "question_text": "¿Cuándo volvió a la normalidad el servicio?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 50152,
+        "question_text": "Cuánto tiempo estuvo degradado el sistema",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50153,
+        "question_text": "¿Cuándo se recuperó la plataforma?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50154,
+        "question_text": "¿En qué momento se activó el respaldo?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 50151,
+        "hint_order": 1,
+        "hint_text": "Use '¿Cuándo volvió a la normalidad...?' ou '¿Cuánto tiempo estuvo degradado...?'",
+        "hint_type": "structural"
+      },
+      {
+        "id": 50152,
+        "hint_order": 2,
+        "hint_text": "Vocabulário: 'servicio degradado', 'tiempo medio de recuperación (MTTR)'.",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 50153,
+        "hint_order": 3,
+        "hint_text": "¿Cuándo volvió a la normalidad el servicio?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 5016,
+    "level_id": 5,
+    "category_id": 14,
+    "answer_text": "Sí, ejecutamos simulacros de falla en preproducción cada mes para validar la recuperación automática.",
+    "context_text": "Pergunte se a equipe realiza testes de resiliência ou simulados de falha.",
+    "question_type": "YES_NO",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "sí/no - pruebas de caos",
+    "difficulty_score": 5,
+    "xp_reward": 40,
+    "sort_order": 16,
+    "accepted_answers": [
+      {
+        "id": 50161,
+        "question_text": "¿Ejecutan simulacros de falla en preproducción?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 50162,
+        "question_text": "Hacen pruebas de resiliencia regularmente",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50163,
+        "question_text": "¿Prueban la recuperación automática ante caídas?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50164,
+        "question_text": "¿Realizan ejercicios de ingeniería del caos?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 50161,
+        "hint_order": 1,
+        "hint_text": "Vocabulário SRE: 'simulacros de falla', 'recuperación automática' (auto-healing).",
+        "hint_type": "structural"
+      },
+      {
+        "id": 50162,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Ejecutan simulacros de falla en preproducción?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 50163,
+        "hint_order": 3,
+        "hint_text": "¿Ejecutan simulacros de falla en preproducción?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 5017,
+    "level_id": 5,
+    "category_id": 15,
+    "answer_text": "Garantizamos la consistencia eventual utilizando el patrón Saga y eventos de compensación.",
+    "context_text": "Pergunte como vocês garantem a consistência dos dados entre múltiplos microsserviços.",
+    "question_type": "WH_HOW",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "presente - consistencia eventual",
+    "difficulty_score": 5,
+    "xp_reward": 40,
+    "sort_order": 17,
+    "accepted_answers": [
+      {
+        "id": 50171,
+        "question_text": "¿Cómo garantizan la consistencia entre los microservicios?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 50172,
+        "question_text": "Cómo manejan las transacciones distribuidas",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50173,
+        "question_text": "¿De qué manera aseguran la consistencia eventual?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50174,
+        "question_text": "¿Qué patrón usan cuando falla un paso de la transacción?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 50171,
+        "hint_order": 1,
+        "hint_text": "Use '¿Cómo garantizan...?' ou '¿Cómo manejan...?'",
+        "hint_type": "structural"
+      },
+      {
+        "id": 50172,
+        "hint_order": 2,
+        "hint_text": "Vocabulário: 'consistencia eventual', 'transacciones distribuidas', 'eventos de compensación'.",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 50173,
+        "hint_order": 3,
+        "hint_text": "¿Cómo garantizan la consistencia entre los microservicios?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 5018,
+    "level_id": 5,
+    "category_id": 15,
+    "answer_text": "El API Gateway se encarga de validar los tokens, limitar el tráfico y enrutar las peticiones.",
+    "context_text": "Pergunte qual é a responsabilidade do API Gateway na arquitetura.",
+    "question_type": "WH_WHAT",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "presente - puerta de enlace API",
+    "difficulty_score": 5,
+    "xp_reward": 40,
+    "sort_order": 18,
+    "accepted_answers": [
+      {
+        "id": 50181,
+        "question_text": "¿Qué función cumple el API Gateway?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 50182,
+        "question_text": "De qué se encarga la puerta de enlace en la arquitectura",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50183,
+        "question_text": "¿Qué responsabilidades tiene el API Gateway?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50184,
+        "question_text": "¿Qué valida la capa de entrada antes de pasar al microservicio?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 50181,
+        "hint_order": 1,
+        "hint_text": "Use '¿Qué función cumple...?' ou '¿De qué se encarga...?'",
+        "hint_type": "structural"
+      },
+      {
+        "id": 50182,
+        "hint_order": 2,
+        "hint_text": "Vocabulário: 'enrutar las peticiones' (route requests), 'limitar el tráfico'.",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 50183,
+        "hint_order": 3,
+        "hint_text": "¿Qué función cumple el API Gateway?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 5019,
+    "level_id": 5,
+    "category_id": 15,
+    "answer_text": "Se abrió el cortacircuitos porque el proveedor externo de pagos superó el umbral de errores.",
+    "context_text": "Pergunte por que o circuit breaker (cortacircuitos) abriu.",
+    "question_type": "WH_WHY",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "pretérito indefinido - cortacircuitos",
+    "difficulty_score": 5,
+    "xp_reward": 40,
+    "sort_order": 19,
+    "accepted_answers": [
+      {
+        "id": 50191,
+        "question_text": "¿Por qué se abrió el cortacircuitos?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 50192,
+        "question_text": "Por qué se activó el circuit breaker",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50193,
+        "question_text": "¿Por qué dejamos de enviar peticiones al proveedor externo?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50194,
+        "question_text": "¿Por qué entró en modo de contingencia el servicio?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 50191,
+        "hint_order": 1,
+        "hint_text": "Em espanhol técnico, 'circuit breaker' é 'el cortacircuitos' ou 'el disyuntor' (e 'umbral' = threshold!).",
+        "hint_type": "structural"
+      },
+      {
+        "id": 50192,
+        "hint_order": 2,
+        "hint_text": "Vocabulário essencial: 'el umbral de errores' (error threshold).",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 50193,
+        "hint_order": 3,
+        "hint_text": "¿Por qué se abrió el cortacircuitos?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 5020,
+    "level_id": 5,
+    "category_id": 15,
+    "answer_text": "Los eventos que no pueden procesarse después de tres reintentos se envían a una cola de mensajes muertos.",
+    "context_text": "Pergunte para onde vão as mensagens que falham após todas as tentativas.",
+    "question_type": "WH_WHERE",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "presente - mensajes fallidos",
+    "difficulty_score": 5,
+    "xp_reward": 40,
+    "sort_order": 20,
+    "accepted_answers": [
+      {
+        "id": 50201,
+        "question_text": "¿Adónde van los mensajes que fallan tras los reintentos?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 50202,
+        "question_text": "Dónde se guardan los eventos que no se pueden procesar",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50203,
+        "question_text": "¿A qué cola se envían los mensajes con error?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50204,
+        "question_text": "¿Dónde terminan los eventos rechazados?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 50201,
+        "hint_order": 1,
+        "hint_text": "Dead Letter Queue (DLQ) em espanhol é 'la cola de mensajes muertos' ou 'cola de cartas muertas'.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 50202,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Adónde van los mensajes que fallan tras los reintentos?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 50203,
+        "hint_order": 3,
+        "hint_text": "¿Adónde van los mensajes que fallan tras los reintentos?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 5021,
+    "level_id": 5,
+    "category_id": 15,
+    "answer_text": "¿Cómo manejan los cambios incompatibles en los contratos de la API sin afectar a las aplicaciones móviles antiguas?",
+    "context_text": "Responda que mantemos o versionamento na URL e damos seis meses antes de descontinuar a versão antiga.",
+    "question_type": "WH_HOW",
+    "exercise_mode": "ANSWER_FROM_QUESTION",
+    "grammar_focus": "presente - versionado de APIs",
+    "difficulty_score": 5,
+    "xp_reward": 40,
+    "sort_order": 21,
+    "accepted_answers": [
+      {
+        "id": 50211,
+        "question_text": "Mantenemos el versionado en la ruta de la API y damos seis meses antes de deprecar la versión anterior.",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 50212,
+        "question_text": "Publicamos una nueva versión del contrato sin romper la compatibilidad hacia atrás.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50213,
+        "question_text": "Usamos encabezados de versión y notificamos a los clientes antes de dar de baja el endpoint antiguo.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 50211,
+        "hint_order": 1,
+        "hint_text": "Vocabulário: 'compatibilidad hacia atrás' (backward compatibility), 'deprecar / dar de baja' (deprecate).",
+        "hint_type": "structural"
+      },
+      {
+        "id": 50212,
+        "hint_order": 2,
+        "hint_text": "Responda: 'Mantenemos el versionado en la ruta de la API...'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 50213,
+        "hint_order": 3,
+        "hint_text": "Mantenemos el versionado en la ruta de la API y damos seis meses antes de deprecar la versión anterior.",
+        "hint_type": "answer"
+      }
+    ],
+    "prompt_text": "¿Cómo manejan los cambios incompatibles en los contratos de la API sin afectar a las aplicaciones móviles antiguas?"
+  },
+  {
+    "id": 5022,
+    "level_id": 5,
+    "category_id": 15,
+    "answer_text": "¿Cada microservicio tiene su propio esquema de base de datos independiente?",
+    "context_text": "Responda que sim, nenhum serviço acessa diretamente as tabelas de outro domínio.",
+    "question_type": "YES_NO",
+    "exercise_mode": "ANSWER_FROM_QUESTION",
+    "grammar_focus": "concesivas - base de datos por servicio",
+    "difficulty_score": 5,
+    "xp_reward": 40,
+    "sort_order": 22,
+    "accepted_answers": [
+      {
+        "id": 50221,
+        "question_text": "Sí, cada microservicio es dueño de sus datos y ninguno consulta directamente las tablas de otro.",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 50222,
+        "question_text": "Sí, aunque comparten el mismo motor en la nube, los esquemas están totalmente aislados.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50223,
+        "question_text": "Sí, toda la comunicación entre dominios se hace únicamente por API o eventos.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 50221,
+        "hint_order": 1,
+        "hint_text": "Expressão de arquitetura: 'ser dueño de sus datos' (own its data), 'esquemas aislados' (isolated schemas).",
+        "hint_type": "structural"
+      },
+      {
+        "id": 50222,
+        "hint_order": 2,
+        "hint_text": "Responda: 'Sí, cada microservicio es dueño de sus datos...'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 50223,
+        "hint_order": 3,
+        "hint_text": "Sí, cada microservicio es dueño de sus datos y ninguno consulta directamente las tablas de otro.",
+        "hint_type": "answer"
+      }
+    ],
+    "prompt_text": "¿Cada microservicio tiene su propio esquema de base de datos independiente?"
+  },
+  {
+    "id": 5023,
+    "level_id": 5,
+    "category_id": 15,
+    "answer_text": "Configuramos doce particiones en el tópico de eventos para que doce consumidores procesen en paralelo.",
+    "context_text": "Pergunte quantas partições foram configuradas no tópico de eventos.",
+    "question_type": "WH_HOW_MANY",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "presente - consumidores de Kafka",
+    "difficulty_score": 5,
+    "xp_reward": 40,
+    "sort_order": 23,
+    "accepted_answers": [
+      {
+        "id": 50231,
+        "question_text": "¿Cuántas particiones configuraron en el tópico?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 50232,
+        "question_text": "Cuántos consumidores pueden procesar en paralelo",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50233,
+        "question_text": "¿Con cuántas particiones crearon el tópico de Kafka?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50234,
+        "question_text": "¿Cuántos hilos consumen de esa cola?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 50231,
+        "hint_order": 1,
+        "hint_text": "Em espanhol de mensageria: 'el tópico / el tema' (topic), 'la partición' (partition), 'el consumidor'.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 50232,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Cuántas particiones configuraron en el tópico?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 50233,
+        "hint_order": 3,
+        "hint_text": "¿Cuántas particiones configuraron en el tópico?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 5024,
+    "level_id": 5,
+    "category_id": 15,
+    "answer_text": "Sí, la documentación de Swagger se genera automáticamente a partir de las anotaciones del código.",
+    "context_text": "Confirme se a documentação da API é gerada automaticamente, certo?",
+    "question_type": "TAG",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "confirmación - contratos OpenAPI",
+    "difficulty_score": 5,
+    "xp_reward": 40,
+    "sort_order": 24,
+    "accepted_answers": [
+      {
+        "id": 50241,
+        "question_text": "La documentación de la API se genera automáticamente, ¿verdad?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 50242,
+        "question_text": "El contrato de Swagger se actualiza solo desde el código, ¿no?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50243,
+        "question_text": "Generan la especificación OpenAPI de forma automática, ¿cierto?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 50241,
+        "hint_order": 1,
+        "hint_text": "Termine a afirmação com ', ¿verdad?', ', ¿no?' ou ', ¿cierto?'",
+        "hint_type": "structural"
+      },
+      {
+        "id": 50242,
+        "hint_order": 2,
+        "hint_text": "Estrutura: 'La documentación de la API se genera automáticamente, ¿verdad?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 50243,
+        "hint_order": 3,
+        "hint_text": "La documentación de la API se genera automáticamente, ¿verdad?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 5025,
+    "level_id": 5,
+    "category_id": 25,
+    "answer_text": "El escritor colombiano Gabriel García Márquez escribió la novela Cien años de soledad en mil novecientos sesenta y siete.",
+    "context_text": "Pergunte quem escreveu o romance Cem Anos de Solidão.",
+    "question_type": "WH_WHO",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "pretérito indefinido - literatura latinoamericana",
+    "difficulty_score": 5,
+    "xp_reward": 40,
+    "sort_order": 25,
+    "accepted_answers": [
+      {
+        "id": 50251,
+        "question_text": "¿Quién escribió la novela Cien años de soledad?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 50252,
+        "question_text": "Qué autor escribió Cien años de soledad",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50253,
+        "question_text": "¿Quién fue el autor de esa obra literaria?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50254,
+        "question_text": "¿De qué escritor es Cien años de soledad?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 50251,
+        "hint_order": 1,
+        "hint_text": "Use '¿Quién escribió...?' (Pretérito Indefinido de 'escribir').",
+        "hint_type": "structural"
+      },
+      {
+        "id": 50252,
+        "hint_order": 2,
+        "hint_text": "Vocabulário: 'la novela' (o romance literário — atenção: telenovela de TV é 'la telenovela'!).",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 50253,
+        "hint_order": 3,
+        "hint_text": "¿Quién escribió la novela Cien años de soledad?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 5026,
+    "level_id": 5,
+    "category_id": 25,
+    "answer_text": "El Festival Internacional de Cine se celebra todos los años en la ciudad de Mar del Plata y en Guadalajara.",
+    "context_text": "Pergunte onde é celebrado o festival internacional de cinema.",
+    "question_type": "WH_WHERE",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "voz pasiva - festivales culturales",
+    "difficulty_score": 5,
+    "xp_reward": 40,
+    "sort_order": 26,
+    "accepted_answers": [
+      {
+        "id": 50261,
+        "question_text": "¿Dónde se celebra el Festival Internacional de Cine?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 50262,
+        "question_text": "En qué ciudades se realiza el festival de cine",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50263,
+        "question_text": "¿Dónde tiene lugar ese evento cultural?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50264,
+        "question_text": "¿En dónde se lleva a cabo el festival?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 50261,
+        "hint_order": 1,
+        "hint_text": "Expressões formais: 'celebrarse', 'tener lugar', 'llevarse a cabo' (ser realizado).",
+        "hint_type": "structural"
+      },
+      {
+        "id": 50262,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Dónde se celebra el Festival Internacional de Cine?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 50263,
+        "hint_order": 3,
+        "hint_text": "¿Dónde se celebra el Festival Internacional de Cine?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 5027,
+    "level_id": 5,
+    "category_id": 25,
+    "answer_text": "El Día de los Muertos en México honra la memoria de los antepasados con altares, flores y comida tradicional.",
+    "context_text": "Pergunte o que se celebra ou o que representa a tradição do Dia dos Mortos no México.",
+    "question_type": "WH_WHAT",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "presente - tradiciones y gastronomía",
+    "difficulty_score": 5,
+    "xp_reward": 40,
+    "sort_order": 27,
+    "accepted_answers": [
+      {
+        "id": 50271,
+        "question_text": "¿Qué se celebra en el Día de los Muertos en México?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 50272,
+        "question_text": "Qué significa la tradición del Día de los Muertos",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50273,
+        "question_text": "¿Qué conmemoran los mexicanos en esa festividad?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50274,
+        "question_text": "¿En qué consiste esa celebración tradicional?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 50271,
+        "hint_order": 1,
+        "hint_text": "Use '¿Qué se celebra...?' ou '¿En qué consiste...?'",
+        "hint_type": "structural"
+      },
+      {
+        "id": 50272,
+        "hint_order": 2,
+        "hint_text": "Vocabulário: 'honrar la memoria', 'los antepasados', 'el altar'.",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 50273,
+        "hint_order": 3,
+        "hint_text": "¿Qué se celebra en el Día de los Muertos en México?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 5028,
+    "level_id": 5,
+    "category_id": 25,
+    "answer_text": "Hoy en día los jóvenes prefieren informarse a través de pódcast y redes sociales antes que por la televisión tradicional.",
+    "context_text": "Pergunte qual meio de comunicação os jovens preferem para se informar hoje em dia.",
+    "question_type": "WH_WHICH",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "comparativos - medios de comunicación",
+    "difficulty_score": 5,
+    "xp_reward": 40,
+    "sort_order": 28,
+    "accepted_answers": [
+      {
+        "id": 50281,
+        "question_text": "¿Cuál medio de comunicación prefieren los jóvenes para informarse?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 50282,
+        "question_text": "Qué canal prefieren hoy para leer noticias",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50283,
+        "question_text": "¿Cómo prefieren informarse las nuevas generaciones?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50284,
+        "question_text": "¿Qué plataformas eligen antes que la televisión?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 50281,
+        "hint_order": 1,
+        "hint_text": "Use '¿Cuál medio...?' ou '¿Qué plataformas...?'",
+        "hint_type": "structural"
+      },
+      {
+        "id": 50282,
+        "hint_order": 2,
+        "hint_text": "Vocabulário: 'informarse', 'redes sociales', 'televisión tradicional'.",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 50283,
+        "hint_order": 3,
+        "hint_text": "¿Cuál medio de comunicación prefieren los jóvenes para informarse?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 5029,
+    "level_id": 5,
+    "category_id": 25,
+    "answer_text": "¿Por qué es tan recomendable ver películas y escuchar pódcast de distintos países de Hispanoamérica?",
+    "context_text": "Responda que isso ajuda a acostumar o ouvido aos diferentes sotaques e expressões do continente.",
+    "question_type": "WH_WHY",
+    "exercise_mode": "ANSWER_FROM_QUESTION",
+    "grammar_focus": "presente - cine en español",
+    "difficulty_score": 5,
+    "xp_reward": 40,
+    "sort_order": 29,
+    "accepted_answers": [
+      {
+        "id": 50291,
+        "question_text": "Porque ayuda a acostumbrar el oído a los distintos acentos y modismos de la región.",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 50292,
+        "question_text": "Porque te permite conocer la riqueza cultural y el vocabulario propio de cada país.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50293,
+        "question_text": "Porque en los equipos de trabajo internacionales escucharás acentos de México, Colombia, Perú, Chile y Argentina.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 50291,
+        "hint_order": 1,
+        "hint_text": "Expressão excelente: 'acostumbrar el oído a los distintos acentos'.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 50292,
+        "hint_order": 2,
+        "hint_text": "Responda: 'Porque ayuda a acostumbrar el oído a los distintos acentos y modismos de la región.'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 50293,
+        "hint_order": 3,
+        "hint_text": "Porque ayuda a acostumbrar el oído a los distintos acentos y modismos de la región.",
+        "hint_type": "answer"
+      }
+    ],
+    "prompt_text": "¿Por qué es tan recomendable ver películas y escuchar pódcast de distintos países de Hispanoamérica?"
+  },
+  {
+    "id": 5030,
+    "level_id": 5,
+    "category_id": 25,
+    "answer_text": "¿Qué ritmos musicales de América Latina han tenido mayor influencia a nivel mundial?",
+    "context_text": "Responda que ritmos como a salsa, o tango, a bossa nova, o bolero e o rock em espanhol marcaram gerações.",
+    "question_type": "WH_WHAT",
+    "exercise_mode": "ANSWER_FROM_QUESTION",
+    "grammar_focus": "pretérito perfecto - música latina",
+    "difficulty_score": 5,
+    "xp_reward": 40,
+    "sort_order": 30,
+    "accepted_answers": [
+      {
+        "id": 50301,
+        "question_text": "Ritmos como la salsa, el tango, el bolero y el rock en español han influido en todo el mundo.",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 50302,
+        "question_text": "La música folclórica andina, la cumbia y el jazz latino son reconocidos internacionalmente.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50303,
+        "question_text": "Muchos géneros latinoamericanos han cruzado fronteras por su riqueza rítmica.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 50301,
+        "hint_order": 1,
+        "hint_text": "Use o Pretérito Perfecto ('han influido', 'han cruzado fronteras') para impacto até o presente.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 50302,
+        "hint_order": 2,
+        "hint_text": "Responda: 'Ritmos como la salsa, el tango, el bolero y el rock en español han influido...'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 50303,
+        "hint_order": 3,
+        "hint_text": "Ritmos como la salsa, el tango, el bolero y el rock en español han influido en todo el mundo.",
+        "hint_type": "answer"
+      }
+    ],
+    "prompt_text": "¿Qué ritmos musicales de América Latina han tenido mayor influencia a nivel mundial?"
+  },
+  {
+    "id": 5031,
+    "level_id": 5,
+    "category_id": 25,
+    "answer_text": "Sí, ahora veo todas las series con subtítulos en español en vez de portugués para fijar cómo se escriben las palabras.",
+    "context_text": "Pergunte se a pessoa assiste às séries com legendas em espanhol.",
+    "question_type": "YES_NO",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "sí/no - subtítulos",
+    "difficulty_score": 5,
+    "xp_reward": 40,
+    "sort_order": 31,
+    "accepted_answers": [
+      {
+        "id": 50311,
+        "question_text": "¿Ves las series con subtítulos en español?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 50312,
+        "question_text": "Pones los subtítulos en español cuando ves películas",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50313,
+        "question_text": "¿Miras las películas subtituladas al español?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50314,
+        "question_text": "¿Ya ves contenido sin subtítulos en portugués?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 50311,
+        "hint_order": 1,
+        "hint_text": "Atenção ao falso amigo clássico: 'legenda de filme' em espanhol é 'los subtítulos' (e 'la leyenda' é uma lenda/mito!).",
+        "hint_type": "structural"
+      },
+      {
+        "id": 50312,
+        "hint_order": 2,
+        "hint_text": "Falso amigo: 'los subtítulos' = legendas; 'la leyenda' = lenda folclórica.",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 50313,
+        "hint_order": 3,
+        "hint_text": "¿Ves las series con subtítulos en español?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 5032,
+    "level_id": 5,
+    "category_id": 25,
+    "answer_text": "La Feria Internacional del Libro de Buenos Aires y la de Guadalajara batieron récords de asistencia el año pasado.",
+    "context_text": "Pergunte quando as feiras do livro bateram recorde de público.",
+    "question_type": "WH_WHEN",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "pretérito indefinido - feria del libro",
+    "difficulty_score": 5,
+    "xp_reward": 40,
+    "sort_order": 32,
+    "accepted_answers": [
+      {
+        "id": 50321,
+        "question_text": "¿Cuándo batieron récords de asistencia las ferias del libro?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 50322,
+        "question_text": "En qué año tuvieron récord de público",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50323,
+        "question_text": "¿Cuándo se realizó la Feria Internacional del Libro?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50324,
+        "question_text": "¿Cuándo ocurrió ese récord de visitantes?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 50321,
+        "hint_order": 1,
+        "hint_text": "Expressão idiomática: 'batir un récord' (bater um recorde).",
+        "hint_type": "structural"
+      },
+      {
+        "id": 50322,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Cuándo batieron récords de asistencia las ferias del libro?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 50323,
+        "hint_order": 3,
+        "hint_text": "¿Cuándo batieron récords de asistencia las ferias del libro?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 5033,
+    "level_id": 5,
+    "category_id": 26,
+    "answer_text": "En nuestra comunidad separamos los residuos orgánicos de los envases reciclables y el vidrio.",
+    "context_text": "Pergunte como eles fazem a separação do lixo na comunidade.",
+    "question_type": "WH_HOW",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "presente - reciclaje y residuos",
+    "difficulty_score": 5,
+    "xp_reward": 40,
+    "sort_order": 33,
+    "accepted_answers": [
+      {
+        "id": 50331,
+        "question_text": "¿Cómo separan los residuos en tu comunidad?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 50332,
+        "question_text": "Cómo clasifican la basura para reciclar",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50333,
+        "question_text": "¿De qué manera gestionan el reciclaje en casa?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50334,
+        "question_text": "¿Cómo organizan la recolección de residuos?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 50331,
+        "hint_order": 1,
+        "hint_text": "Use '¿Cómo separan los residuos...?' ('residuos / basura' = lixo/resíduos).",
+        "hint_type": "structural"
+      },
+      {
+        "id": 50332,
+        "hint_order": 2,
+        "hint_text": "Vocabulário: 'residuos orgánicos', 'envases reciclables'.",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 50333,
+        "hint_order": 3,
+        "hint_text": "¿Cómo separan los residuos en tu comunidad?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 5034,
+    "level_id": 5,
+    "category_id": 26,
+    "answer_text": "Muchos centros de datos están invirtiendo en energía solar y eólica para reducir su huella de carbono.",
+    "context_text": "Pergunte por que os data centers estão investindo em energia renovável.",
+    "question_type": "WH_WHY",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "presente - energías renovables",
+    "difficulty_score": 5,
+    "xp_reward": 40,
+    "sort_order": 34,
+    "accepted_answers": [
+      {
+        "id": 50341,
+        "question_text": "¿Por qué invierten en energía renovable los centros de datos?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 50342,
+        "question_text": "Para qué usan energía solar y eólica",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50343,
+        "question_text": "¿Por qué buscan reducir su huella de carbono?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50344,
+        "question_text": "¿Cuál es la razón de migrar a energías limpias?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 50341,
+        "hint_order": 1,
+        "hint_text": "Expressão essencial: 'la huella de carbono' (a pegada de carbono).",
+        "hint_type": "structural"
+      },
+      {
+        "id": 50342,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Por qué invierten en energía renovable los centros de datos?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 50343,
+        "hint_order": 3,
+        "hint_text": "¿Por qué invierten en energía renovable los centros de datos?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 5035,
+    "level_id": 5,
+    "category_id": 26,
+    "answer_text": "Si redujéramos el consumo de plásticos de un solo uso, disminuiría drásticamente la contaminación de los océanos.",
+    "context_text": "Pergunte o que aconteceria se reduzíssemos o consumo de plásticos descartáveis.",
+    "question_type": "WH_WHAT",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "condicional - cambio climático",
+    "difficulty_score": 5,
+    "xp_reward": 40,
+    "sort_order": 35,
+    "accepted_answers": [
+      {
+        "id": 50351,
+        "question_text": "¿Qué pasaría si redujéramos el consumo de plásticos?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 50352,
+        "question_text": "Qué ocurriría si dejáramos los plásticos de un solo uso",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50353,
+        "question_text": "¿Cómo impactaría reducir el plástico descartable?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50354,
+        "question_text": "¿Qué lograríamos al disminuir los residuos plásticos?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 50351,
+        "hint_order": 1,
+        "hint_text": "Estrutura condicional hipotética: '¿Qué pasaría si + Imperfecto de Subjuntivo (-ramos)?'",
+        "hint_type": "structural"
+      },
+      {
+        "id": 50352,
+        "hint_order": 2,
+        "hint_text": "Vocabulário: 'plásticos de un solo uso' (single-use plastics), 'contaminación' (poluição!).",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 50353,
+        "hint_order": 3,
+        "hint_text": "¿Qué pasaría si redujéramos el consumo de plásticos?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 5036,
+    "level_id": 5,
+    "category_id": 26,
+    "answer_text": "La selva amazónica y la cordillera de los Andes albergan la mayor biodiversidad del planeta.",
+    "context_text": "Pergunte onde se concentra a maior biodiversidade do planeta.",
+    "question_type": "WH_WHERE",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "presente - biodiversidad",
+    "difficulty_score": 5,
+    "xp_reward": 40,
+    "sort_order": 36,
+    "accepted_answers": [
+      {
+        "id": 50361,
+        "question_text": "¿Dónde se encuentra la mayor biodiversidad del planeta?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 50362,
+        "question_text": "En qué regiones hay más biodiversidad",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50363,
+        "question_text": "¿Dónde se concentra la fauna y flora más diversa?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50364,
+        "question_text": "¿Qué ecosistemas albergan mayor biodiversidad?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 50361,
+        "hint_order": 1,
+        "hint_text": "Atenção ao falso amigo: 'poluição' em espanhol é 'la contaminación' (e 'la polución' é muito raro).",
+        "hint_type": "structural"
+      },
+      {
+        "id": 50362,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Dónde se encuentra la mayor biodiversidad del planeta?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 50363,
+        "hint_order": 3,
+        "hint_text": "¿Dónde se encuentra la mayor biodiversidad del planeta?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 5037,
+    "level_id": 5,
+    "category_id": 26,
+    "answer_text": "¿Cómo puede contribuir un equipo de ingeniería de software a reducir el consumo energético de la nube?",
+    "context_text": "Responda que otimizando algoritmos pesados, desligando recursos ociosos e usando arquiteturas eficientes.",
+    "question_type": "WH_HOW",
+    "exercise_mode": "ANSWER_FROM_QUESTION",
+    "grammar_focus": "verbos modales - sostenibilidad en TI",
+    "difficulty_score": 5,
+    "xp_reward": 40,
+    "sort_order": 37,
+    "accepted_answers": [
+      {
+        "id": 50371,
+        "question_text": "Optimizando algoritmos pesados, apagando recursos ociosos y eligiendo arquitecturas eficientes.",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 50372,
+        "question_text": "Podemos escalar a cero los entornos que no se usan y eliminar datos duplicados.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50373,
+        "question_text": "Escribiendo consultas más eficientes para no desperdiciar ciclos de procesador.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 50371,
+        "hint_order": 1,
+        "hint_text": "Vocabulário de Green IT: 'recursos ociosos' (idle resources), 'escalar a cero', 'ciclos de procesador'.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 50372,
+        "hint_order": 2,
+        "hint_text": "Responda: 'Optimizando algoritmos pesados, apagando recursos ociosos...'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 50373,
+        "hint_order": 3,
+        "hint_text": "Optimizando algoritmos pesados, apagando recursos ociosos y eligiendo arquitecturas eficientes.",
+        "hint_type": "answer"
+      }
+    ],
+    "prompt_text": "¿Cómo puede contribuir un equipo de ingeniería de software a reducir el consumo energético de la nube?"
+  },
+  {
+    "id": 5038,
+    "level_id": 5,
+    "category_id": 26,
+    "answer_text": "¿Tu ciudad cuenta con una buena red de ciclovías y transporte público eléctrico?",
+    "context_text": "Responda que sim, nos últimos anos ampliaram bastante as ciclovias e os ônibus elétricos.",
+    "question_type": "YES_NO",
+    "exercise_mode": "ANSWER_FROM_QUESTION",
+    "grammar_focus": "sí/no - transporte sustentable",
+    "difficulty_score": 5,
+    "xp_reward": 40,
+    "sort_order": 38,
+    "accepted_answers": [
+      {
+        "id": 50381,
+        "question_text": "Sí, en los últimos años ampliaron bastante la red de ciclovías y los autobuses eléctricos.",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 50382,
+        "question_text": "Sí, cada vez más personas usan la bicicleta o el metro para evitar el tráfico.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50383,
+        "question_text": "Todavía falta infraestructura, pero ya hay varias líneas de transporte eléctrico.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 50381,
+        "hint_order": 1,
+        "hint_text": "Vocabulário urbano: 'la ciclovía' (ciclovia), 'autobuses eléctricos', 'infraestructura'.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 50382,
+        "hint_order": 2,
+        "hint_text": "Responda: 'Sí, en los últimos años ampliaron bastante la red de ciclovías...'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 50383,
+        "hint_order": 3,
+        "hint_text": "Sí, en los últimos años ampliaron bastante la red de ciclovías y los autobuses eléctricos.",
+        "hint_type": "answer"
+      }
+    ],
+    "prompt_text": "¿Tu ciudad cuenta con una buena red de ciclovías y transporte público eléctrico?"
+  },
+  {
+    "id": 5039,
+    "level_id": 5,
+    "category_id": 26,
+    "answer_text": "Con el nuevo sistema de riego inteligente ahorraremos hasta un cuarenta por ciento de agua potable.",
+    "context_text": "Pergunte quanta água potável será economizada com o novo sistema.",
+    "question_type": "WH_HOW_MUCH",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "futuro - ahorro de agua",
+    "difficulty_score": 5,
+    "xp_reward": 40,
+    "sort_order": 39,
+    "accepted_answers": [
+      {
+        "id": 50391,
+        "question_text": "¿Cuánta agua potable ahorraremos con el nuevo sistema?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 50392,
+        "question_text": "Qué porcentaje de agua se va a ahorrar",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50393,
+        "question_text": "¿Cuánto reducirá el consumo de agua ese sistema?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50394,
+        "question_text": "¿Cuánta agua permitirá conservar el riego inteligente?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 50391,
+        "hint_order": 1,
+        "hint_text": "Atenção: 'agua' é feminina, mas leva 'el' no singular ('el agua limpia'), e com 'cuánta' usa-se '¿Cuánta agua...?'!",
+        "hint_type": "structural"
+      },
+      {
+        "id": 50392,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Cuánta agua potable ahorraremos con el nuevo sistema?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 50393,
+        "hint_order": 3,
+        "hint_text": "¿Cuánta agua potable ahorraremos con el nuevo sistema?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 5040,
+    "level_id": 5,
+    "category_id": 26,
+    "answer_text": "Sí, aunque los productos ecológicos a veces son un poco más caros, duran más y cuidan el medio ambiente.",
+    "context_text": "Pergunte se vale a pena comprar produtos ecológicos e sustentáveis.",
+    "question_type": "YES_NO",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "concesivas - consumo responsable",
+    "difficulty_score": 5,
+    "xp_reward": 40,
+    "sort_order": 40,
+    "accepted_answers": [
+      {
+        "id": 50401,
+        "question_text": "¿Vale la pena comprar productos ecológicos?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 50402,
+        "question_text": "Prefieres consumir productos sustentables",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50403,
+        "question_text": "¿Compras artículos amigables con el medio ambiente?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 50404,
+        "question_text": "¿Crees que conviene elegir envases reutilizables?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 50401,
+        "hint_order": 1,
+        "hint_text": "Expressão útil: 'valer la pena' / 'amigable con el medio ambiente' (eco-friendly).",
+        "hint_type": "structural"
+      },
+      {
+        "id": 50402,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Vale la pena comprar productos ecológicos?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 50403,
+        "hint_order": 3,
+        "hint_text": "¿Vale la pena comprar productos ecológicos?",
         "hint_type": "answer"
       }
     ]

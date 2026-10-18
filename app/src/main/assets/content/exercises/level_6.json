@@ -1,118 +1,2292 @@
 [
   {
-    "id": 601,
+    "id": 6001,
     "level_id": 6,
-    "category_id": 17,
-    "answer_text": "Estimamos tres sprints de desarrollo para completar esta funcionalidad, incluyendo pruebas de carga.",
-    "context_text": "Pregunta por la estimación de esfuerzo o tiempo para entregar la feature.",
-    "question_type": "WH_HOW_MUCH",
+    "category_id": 16,
+    "answer_text": "Acordamos con la gerencia de producto destinar el veinte por ciento de cada sprint para pagar deuda técnica.",
+    "context_text": "Pergunte como vocês negociaram o pagamento da dívida técnica com a área de produto.",
+    "question_type": "WH_HOW",
     "exercise_mode": "QUESTION_FROM_ANSWER",
-    "grammar_focus": "estimación de tiempo y cantidad",
+    "grammar_focus": "liderazgo - deuda técnica",
     "difficulty_score": 6,
-    "xp_reward": 40,
+    "xp_reward": 50,
     "sort_order": 1,
     "accepted_answers": [
       {
-        "id": 91,
-        "question_text": "¿Cuánto tiempo estiman para esta funcionalidad?",
+        "id": 60011,
+        "question_text": "¿Cómo negociaron el pago de la deuda técnica con producto?",
         "is_primary": true,
-        "match_threshold": 0.85
-      },
-      {
-        "id": 92,
-        "question_text": "Cuánto tiempo estiman para esta funcionalidad",
-        "is_primary": false,
-        "match_threshold": 0.85
-      },
-      {
-        "id": 93,
-        "question_text": "¿Cuánto estiman que tomará esta tarea?",
-        "is_primary": false,
-        "match_threshold": 0.85
-      },
-      {
-        "id": 94,
-        "question_text": "¿Cuántos sprints va a demorar este desarrollo?",
-        "is_primary": false,
         "match_threshold": 0.8
+      },
+      {
+        "id": 60012,
+        "question_text": "De qué manera manejan la deuda técnica en los sprints",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60013,
+        "question_text": "¿Qué porcentaje del sprint destinan a deuda técnica?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60014,
+        "question_text": "¿Cómo lograron priorizar las mejoras de arquitectura?",
+        "is_primary": false,
+        "match_threshold": 0.78
       }
     ],
     "hints": [
       {
-        "id": 91,
+        "id": 60011,
         "hint_order": 1,
-        "hint_text": "Pregunta de cantidad temporal usando 'Cuánto tiempo'.",
+        "hint_text": "Em espanhol de engenharia: 'pagar la deuda técnica', 'destinar el 20% del sprint'.",
         "hint_type": "structural"
       },
       {
-        "id": 92,
+        "id": 60012,
         "hint_order": 2,
-        "hint_text": "Usa 'estimar' o 'demorar': '¿Cuánto tiempo estiman...?'",
+        "hint_text": "Estrutura: '¿Cómo negociaron el pago de la deuda técnica con producto?'",
         "hint_type": "vocabulary"
       },
       {
-        "id": 93,
+        "id": 60013,
         "hint_order": 3,
-        "hint_text": "¿Cuánto tiempo estiman para esta funcionalidad?",
+        "hint_text": "¿Cómo negociaron el pago de la deuda técnica con producto?",
         "hint_type": "answer"
       }
     ]
   },
   {
-    "id": 602,
+    "id": 6002,
     "level_id": 6,
-    "category_id": 18,
-    "answer_text": "El plan de acción del post-mortem es agregar alertas proactivas y documentar el procedimiento de contingencia.",
-    "context_text": "Pregunta cuál fue el resultado o acuerdo tras analizar el incidente técnico.",
+    "category_id": 16,
+    "answer_text": "En las sesiones individuales conversamos sobre el crecimiento profesional, la motivación y posibles bloqueos del equipo.",
+    "context_text": "Pergunte sobre o que vocês conversam nas reuniões 1-on-1 (individuais).",
     "question_type": "WH_WHAT",
     "exercise_mode": "QUESTION_FROM_ANSWER",
-    "grammar_focus": "planes de acción y post-mortem",
+    "grammar_focus": "liderazgo - reuniones uno a uno",
     "difficulty_score": 6,
-    "xp_reward": 40,
+    "xp_reward": 50,
     "sort_order": 2,
     "accepted_answers": [
       {
-        "id": 95,
-        "question_text": "¿Cuál es el plan de acción del post-mortem?",
+        "id": 60021,
+        "question_text": "¿De qué hablan en las reuniones individuales?",
         "is_primary": true,
-        "match_threshold": 0.85
-      },
-      {
-        "id": 96,
-        "question_text": "Cuál es el plan de acción del post-mortem",
-        "is_primary": false,
-        "match_threshold": 0.85
-      },
-      {
-        "id": 97,
-        "question_text": "¿Qué acciones acordaron en el post-mortem?",
-        "is_primary": false,
-        "match_threshold": 0.85
-      },
-      {
-        "id": 98,
-        "question_text": "¿Qué medidas tomaremos tras el incidente?",
-        "is_primary": false,
         "match_threshold": 0.8
+      },
+      {
+        "id": 60022,
+        "question_text": "Qué temas tratan en las sesiones uno a uno",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60023,
+        "question_text": "¿En qué te enfocas durante las charlas de mentoría?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60024,
+        "question_text": "¿Qué conversas con los desarrolladores en el uno a uno?",
+        "is_primary": false,
+        "match_threshold": 0.78
       }
     ],
     "hints": [
       {
-        "id": 94,
+        "id": 60021,
         "hint_order": 1,
-        "hint_text": "Pregunta de definición o contenido con 'Cuál' o 'Qué'.",
+        "hint_text": "Use '¿De qué hablan...?' ou '¿Qué temas tratan...?'",
         "hint_type": "structural"
       },
       {
-        "id": 95,
+        "id": 60022,
         "hint_order": 2,
-        "hint_text": "Término clave: 'plan de acción' o 'post-mortem'.",
+        "hint_text": "Vocabulário: 'crecimiento profesional', 'retroalimentación constructiva' (constructive feedback).",
         "hint_type": "vocabulary"
       },
       {
-        "id": 96,
+        "id": 60023,
         "hint_order": 3,
-        "hint_text": "¿Cuál es el plan de acción del post-mortem?",
+        "hint_text": "¿De qué hablan en las reuniones individuales?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 6003,
+    "level_id": 6,
+    "category_id": 16,
+    "answer_text": "Aunque la nueva tecnología es prometedora, decidimos mantener nuestro stack actual para no retrasar el lanzamiento.",
+    "context_text": "Pergunte por que decidiram manter a stack atual apesar da nova tecnologia parecer promissora.",
+    "question_type": "WH_WHY",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "concesivas - toma de decisiones",
+    "difficulty_score": 6,
+    "xp_reward": 50,
+    "sort_order": 3,
+    "accepted_answers": [
+      {
+        "id": 60031,
+        "question_text": "¿Por qué decidieron mantener el stack actual?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 60032,
+        "question_text": "Por qué descartaron migrar a la nueva tecnología ahora",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60033,
+        "question_text": "¿Cuál fue la razón para no cambiar de herramienta en este proyecto?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60034,
+        "question_text": "¿Por qué prefirieron conservar la arquitectura actual?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 60031,
+        "hint_order": 1,
+        "hint_text": "Use '¿Por qué decidieron...?'",
+        "hint_type": "structural"
+      },
+      {
+        "id": 60032,
+        "hint_order": 2,
+        "hint_text": "Vocabulário: 'prometedora' (promissora), 'retrasar el lanzamiento' (atrasar o lançamento).",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 60033,
+        "hint_order": 3,
+        "hint_text": "¿Por qué decidieron mantener el stack actual?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 6004,
+    "level_id": 6,
+    "category_id": 16,
+    "answer_text": "Por supuesto, el equipo de plataforma puede entregarnos el nuevo servicio de autenticación a mediados del próximo mes.",
+    "context_text": "Pergunte de forma indireta e cordial se sabem quando a equipe de plataforma poderá entregar o serviço.",
+    "question_type": "INDIRECT",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "condicional - alineación entre equipos",
+    "difficulty_score": 6,
+    "xp_reward": 50,
+    "sort_order": 4,
+    "accepted_answers": [
+      {
+        "id": 60041,
+        "question_text": "¿Sabes cuándo podrá entregarnos el servicio el equipo de plataforma?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 60042,
+        "question_text": "Podrías confirmarme para cuándo estará listo el módulo de autenticación",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60043,
+        "question_text": "¿Me podrías decir en qué fecha tendremos la dependencia lista?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 60041,
+        "hint_order": 1,
+        "hint_text": "Perguntas indiretas de alto nível: '¿Sabes cuándo...?' / '¿Podrías confirmarme...?'",
+        "hint_type": "structural"
+      },
+      {
+        "id": 60042,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Sabes cuándo podrá entregarnos el servicio el equipo de plataforma?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 60043,
+        "hint_order": 3,
+        "hint_text": "¿Sabes cuándo podrá entregarnos el servicio el equipo de plataforma?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 6005,
+    "level_id": 6,
+    "category_id": 16,
+    "answer_text": "¿Cómo fomentas una cultura de aprendizaje sin culpas cuando ocurre un error grave en producción?",
+    "context_text": "Responda que focamos nos processos e nas falhas do sistema em vez de apontar culpados individuais.",
+    "question_type": "WH_HOW",
+    "exercise_mode": "ANSWER_FROM_QUESTION",
+    "grammar_focus": "liderazgo - cultura sin culpas",
+    "difficulty_score": 6,
+    "xp_reward": 50,
+    "sort_order": 5,
+    "accepted_answers": [
+      {
+        "id": 60051,
+        "question_text": "Nos enfocamos en mejorar los procesos y las defensas del sistema en lugar de buscar culpables.",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 60052,
+        "question_text": "Analizamos qué falló en nuestras pruebas y automatizaciones para que no vuelva a ocurrir.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60053,
+        "question_text": "Promovemos la transparencia para que cualquiera se sienta seguro reportando un incidente a tiempo.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 60051,
+        "hint_order": 1,
+        "hint_text": "Expressão C1 de liderança: 'cultura sin culpas' (blameless culture), 'buscar culpables'.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 60052,
+        "hint_order": 2,
+        "hint_text": "Responda: 'Nos enfocamos en mejorar los procesos y las defensas del sistema...'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 60053,
+        "hint_order": 3,
+        "hint_text": "Nos enfocamos en mejorar los procesos y las defensas del sistema en lugar de buscar culpables.",
+        "hint_type": "answer"
+      }
+    ],
+    "prompt_text": "¿Cómo fomentas una cultura de aprendizaje sin culpas cuando ocurre un error grave en producción?"
+  },
+  {
+    "id": 6006,
+    "level_id": 6,
+    "category_id": 16,
+    "answer_text": "¿Qué medidas implementarías para reducir la rotación de ingenieros sénior en la organización?",
+    "context_text": "Responda que você ofereceria desafios técnicos claros, autonomia arquitetural e um plano de carreira transparente.",
+    "question_type": "WH_WHAT",
+    "exercise_mode": "ANSWER_FROM_QUESTION",
+    "grammar_focus": "condicional - retención de talento",
+    "difficulty_score": 6,
+    "xp_reward": 50,
+    "sort_order": 6,
+    "accepted_answers": [
+      {
+        "id": 60061,
+        "question_text": "Ofrecería desafíos técnicos relevantes, autonomía arquitectónica y un plan de carrera transparente.",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 60062,
+        "question_text": "Mejoraría la flexibilidad del trabajo remoto y reduciría la carga burocrática de reuniones.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60063,
+        "question_text": "Fomentaría espacios de innovación y reconocimiento justo al impacto técnico.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 60061,
+        "hint_order": 1,
+        "hint_text": "Em recursos humanos e liderança, 'turnover' é 'la rotación de personal / rotación de talento'.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 60062,
+        "hint_order": 2,
+        "hint_text": "Responda: 'Ofrecería desafíos técnicos relevantes, autonomía arquitectónica...'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 60063,
+        "hint_order": 3,
+        "hint_text": "Ofrecería desafíos técnicos relevantes, autonomía arquitectónica y un plan de carrera transparente.",
+        "hint_type": "answer"
+      }
+    ],
+    "prompt_text": "¿Qué medidas implementarías para reducir la rotación de ingenieros sénior en la organización?"
+  },
+  {
+    "id": 6007,
+    "level_id": 6,
+    "category_id": 16,
+    "answer_text": "Coordinamos cuatro células multidisciplinarias compuestas por seis ingenieros y un diseñador cada una.",
+    "context_text": "Pergunte quantas squads ou células multidisciplinares você coordena.",
+    "question_type": "WH_HOW_MANY",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "presente - estructura de equipos",
+    "difficulty_score": 6,
+    "xp_reward": 50,
+    "sort_order": 7,
+    "accepted_answers": [
+      {
+        "id": 60071,
+        "question_text": "¿Cuántas células multidisciplinarias coordinas?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 60072,
+        "question_text": "Cuántos equipos tienes a tu cargo actualmente",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60073,
+        "question_text": "¿De cuántas personas se compone cada célula?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60074,
+        "question_text": "¿Cuántos escuadrones lideras en el área?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 60071,
+        "hint_order": 1,
+        "hint_text": "Vocabulário: 'célula multidisciplinaria' (cross-functional squad), 'tener a cargo' (gerenciar).",
+        "hint_type": "structural"
+      },
+      {
+        "id": 60072,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Cuántas células multidisciplinarias coordinas?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 60073,
+        "hint_order": 3,
+        "hint_text": "¿Cuántas células multidisciplinarias coordinas?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 6008,
+    "level_id": 6,
+    "category_id": 16,
+    "answer_text": "Efectivamente, la dirección aprobó las nuevas contrataciones para expandir el equipo de datos en Latinoamérica.",
+    "context_text": "Confirme se a diretoria aprovou as novas contratações para a equipe, certo?",
+    "question_type": "TAG",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "confirmación - presupuesto anual",
+    "difficulty_score": 6,
+    "xp_reward": 50,
+    "sort_order": 8,
+    "accepted_answers": [
+      {
+        "id": 60081,
+        "question_text": "La dirección aprobó las nuevas contrataciones, ¿verdad?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 60082,
+        "question_text": "Ya autorizaron las vacantes para expandir el equipo, ¿no?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60083,
+        "question_text": "Aprobaron el presupuesto para contratar más ingenieros, ¿cierto?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 60081,
+        "hint_order": 1,
+        "hint_text": "Em espanhol corporativo, 'vaga de emprego' é 'la vacante' ou 'el puesto'.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 60082,
+        "hint_order": 2,
+        "hint_text": "Estrutura: 'La dirección aprobó las nuevas contrataciones, ¿verdad?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 60083,
+        "hint_order": 3,
+        "hint_text": "La dirección aprobó las nuevas contrataciones, ¿verdad?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 6009,
+    "level_id": 6,
+    "category_id": 17,
+    "answer_text": "Particionamos la base de datos horizontalmente por identificador de cliente para soportar diez mil escrituras por segundo.",
+    "context_text": "Pergunte como vocês particionaram (sharding) o banco de dados para suportar alta escrita.",
+    "question_type": "WH_HOW",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "cuello de botella - particionamiento",
+    "difficulty_score": 6,
+    "xp_reward": 50,
+    "sort_order": 9,
+    "accepted_answers": [
+      {
+        "id": 60091,
+        "question_text": "¿Cómo particionaron la base de datos para escalar las escrituras?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 60092,
+        "question_text": "Qué criterio de particionamiento usaron en la base de datos",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60093,
+        "question_text": "¿Cómo lograron soportar diez mil escrituras por segundo?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60094,
+        "question_text": "¿De qué manera distribuyeron los datos entre los nodos?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 60091,
+        "hint_order": 1,
+        "hint_text": "Em espanhol de System Design, 'sharding' é 'el particionamiento horizontal' ou 'fragmentación'.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 60092,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Cómo particionaron la base de datos para escalar las escrituras?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 60093,
+        "hint_order": 3,
+        "hint_text": "¿Cómo particionaron la base de datos para escalar las escrituras?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 6010,
+    "level_id": 6,
+    "category_id": 17,
+    "answer_text": "Utilizamos una estrategia de escritura a través de la caché con un tiempo de vida corto para evitar datos obsoletos.",
+    "context_text": "Pergunte qual estratégia de cache vocês utilizam para evitar dados desatualizados (stale data).",
+    "question_type": "WH_WHAT",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "presente - invalidación de caché",
+    "difficulty_score": 6,
+    "xp_reward": 50,
+    "sort_order": 10,
+    "accepted_answers": [
+      {
+        "id": 60101,
+        "question_text": "¿Qué estrategia de caché utilizan para evitar datos obsoletos?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 60102,
+        "question_text": "Cómo resuelven la invalidación de la caché",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60103,
+        "question_text": "¿Qué política aplican para mantener actualizada la caché?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60104,
+        "question_text": "¿Cómo evitan servir información desactualizada?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 60101,
+        "hint_order": 1,
+        "hint_text": "Vocabulário: 'datos obsoletos / desactualizados' (stale data), 'tiempo de vida (TTL)'.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 60102,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Qué estrategia de caché utilizan para evitar datos obsoletos?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 60103,
+        "hint_order": 3,
+        "hint_text": "¿Qué estrategia de caché utilizan para evitar datos obsoletos?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 6011,
+    "level_id": 6,
+    "category_id": 17,
+    "answer_text": "Priorizamos la disponibilidad sobre la consistencia inmediata para que el carrito de compras nunca deje de funcionar.",
+    "context_text": "Pergunte por que priorizaram a disponibilidade em vez da consistência imediata.",
+    "question_type": "WH_WHY",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "concesivas - teorema CAP",
+    "difficulty_score": 6,
+    "xp_reward": 50,
+    "sort_order": 11,
+    "accepted_answers": [
+      {
+        "id": 60111,
+        "question_text": "¿Por qué priorizaron la disponibilidad sobre la consistencia?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 60112,
+        "question_text": "Por qué eligieron un modelo altamente disponible para el carrito",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60113,
+        "question_text": "¿Cuál fue el motivo de preferir disponibilidad en ese servicio?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60114,
+        "question_text": "¿Por qué sacrificaron la consistencia fuerte?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 60111,
+        "hint_order": 1,
+        "hint_text": "Vocabulário de sistemas distribuídos: 'consistencia fuerte vs consistencia eventual', 'alta disponibilidad'.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 60112,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Por qué priorizaron la disponibilidad sobre la consistencia?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 60113,
+        "hint_order": 3,
+        "hint_text": "¿Por qué priorizaron la disponibilidad sobre la consistencia?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 6012,
+    "level_id": 6,
+    "category_id": 17,
+    "answer_text": "Almacenamos los recursos estáticos y videos en una red CDN con nodos de borde en toda Sudamérica.",
+    "context_text": "Pergunte onde os arquivos estáticos são armazenados em cache para reduzir a latência.",
+    "question_type": "WH_WHERE",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "presente - red de entrega de contenidos",
+    "difficulty_score": 6,
+    "xp_reward": 50,
+    "sort_order": 12,
+    "accepted_answers": [
+      {
+        "id": 60121,
+        "question_text": "¿Dónde almacenan los recursos estáticos para bajar la latencia?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 60122,
+        "question_text": "En dónde cachean los videos y archivos estáticos",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60123,
+        "question_text": "¿Cómo distribuyen el contenido cerca de los usuarios?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60124,
+        "question_text": "¿Dónde están ubicados los nodos de la CDN?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 60121,
+        "hint_order": 1,
+        "hint_text": "Edge nodes em espanhol são 'los nodos de borde'.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 60122,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Dónde almacenan los recursos estáticos para bajar la latencia?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 60123,
+        "hint_order": 3,
+        "hint_text": "¿Dónde almacenan los recursos estáticos para bajar la latencia?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 6013,
+    "level_id": 6,
+    "category_id": 17,
+    "answer_text": "¿Cómo diseñarías el sistema de venta de entradas para absorber un millón de usuarios concurrentes en un minuto?",
+    "context_text": "Responda que você colocaria uma sala de espera virtual na borda e processaria as reservas de forma assíncrona via fila.",
+    "question_type": "WH_HOW",
+    "exercise_mode": "ANSWER_FROM_QUESTION",
+    "grammar_focus": "cuello de botella - picos de tráfico",
+    "difficulty_score": 6,
+    "xp_reward": 50,
+    "sort_order": 13,
+    "accepted_answers": [
+      {
+        "id": 60131,
+        "question_text": "Colocaría una sala de espera virtual en el borde y procesaría las reservas de forma asíncrona mediante colas.",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 60132,
+        "question_text": "Usaría caché agresiva para el catálogo y desacoplaría el cobro para no saturar la base de datos.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60133,
+        "question_text": "Implementaría limitación de tráfico por usuario y escalado previo de todos los nodos.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 60131,
+        "hint_order": 1,
+        "hint_text": "Use o Condicional Simple ('Colocaría...', 'Usaría...', 'Implementaría...') para perguntas de System Design.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 60132,
+        "hint_order": 2,
+        "hint_text": "Vocabulário: 'usuarios concurrentes', 'sala de espera virtual', 'escalado previo' (pre-scaling).",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 60133,
+        "hint_order": 3,
+        "hint_text": "Colocaría una sala de espera virtual en el borde y procesaría las reservas de forma asíncrona mediante colas.",
+        "hint_type": "answer"
+      }
+    ],
+    "prompt_text": "¿Cómo diseñarías el sistema de venta de entradas para absorber un millón de usuarios concurrentes en un minuto?"
+  },
+  {
+    "id": 6014,
+    "level_id": 6,
+    "category_id": 17,
+    "answer_text": "¿Qué compromisos implica desplegar una arquitectura activo-activo en dos regiones geográficas distintas?",
+    "context_text": "Responda que embora garanta recuperação imediata contra desastres, aumenta o custo e a complexidade de replicação.",
+    "question_type": "WH_WHAT",
+    "exercise_mode": "ANSWER_FROM_QUESTION",
+    "grammar_focus": "concesivas - multi-región",
+    "difficulty_score": 6,
+    "xp_reward": 50,
+    "sort_order": 14,
+    "accepted_answers": [
+      {
+        "id": 60141,
+        "question_text": "Aunque garantiza recuperación inmediata ante desastres, duplica el costo y complejiza la replicación de datos.",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 60142,
+        "question_text": "Implica lidiar con la latencia entre regiones y resolver posibles conflictos de escritura concurrente.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60143,
+        "question_text": "Mejora enormemente la resiliencia, pero requiere una infraestructura de red mucho más sofisticada.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 60141,
+        "hint_order": 1,
+        "hint_text": "Em engenharia, 'trade-offs' traduz-se como 'los compromisos técnicos', 'las contrapartidas' ou 'los trade-offs'.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 60142,
+        "hint_order": 2,
+        "hint_text": "Responda: 'Aunque garantiza recuperación inmediata ante desastres, duplica el costo...'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 60143,
+        "hint_order": 3,
+        "hint_text": "Aunque garantiza recuperación inmediata ante desastres, duplica el costo y complejiza la replicación de datos.",
+        "hint_type": "answer"
+      }
+    ],
+    "prompt_text": "¿Qué compromisos implica desplegar una arquitectura activo-activo en dos regiones geográficas distintas?"
+  },
+  {
+    "id": 6015,
+    "level_id": 6,
+    "category_id": 17,
+    "answer_text": "Nuestra latencia en el percentil noventa y nueve se mantiene por debajo de los cien milisegundos bajo carga máxima.",
+    "context_text": "Pergunte quanto é a latência no percentil 99 (p99) sob carga máxima.",
+    "question_type": "WH_HOW_MUCH",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "presente - percentil de latencia",
+    "difficulty_score": 6,
+    "xp_reward": 50,
+    "sort_order": 15,
+    "accepted_answers": [
+      {
+        "id": 60151,
+        "question_text": "¿Cuánto es la latencia en el percentil noventa y nueve?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 60152,
+        "question_text": "En cuánto se mantiene el tiempo de respuesta bajo carga",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60153,
+        "question_text": "¿Cuál es la latencia máxima en el percentil noventa y nueve?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60154,
+        "question_text": "¿Cuántos milisegundos tarda el percentil noventa y nueve?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 60151,
+        "hint_order": 1,
+        "hint_text": "Vocabulário de performance: 'el percentil noventa y nueve (p99)', 'bajo carga máxima' (under peak load).",
+        "hint_type": "structural"
+      },
+      {
+        "id": 60152,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Cuánto es la latencia en el percentil noventa y nueve?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 60153,
+        "hint_order": 3,
+        "hint_text": "¿Cuánto es la latencia en el percentil noventa y nueve?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 6016,
+    "level_id": 6,
+    "category_id": 17,
+    "answer_text": "Sí, si cae el nodo primario, la conmutación por error promueve la réplica secundaria en menos de treinta segundos.",
+    "context_text": "Pergunte se o failover (conmutación por error) promove a réplica automaticamente.",
+    "question_type": "YES_NO",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "sí/no - conmutación por error",
+    "difficulty_score": 6,
+    "xp_reward": 50,
+    "sort_order": 16,
+    "accepted_answers": [
+      {
+        "id": 60161,
+        "question_text": "¿La conmutación por error promueve la réplica automáticamente?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 60162,
+        "question_text": "Se activa el failover automático si cae el nodo primario",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60163,
+        "question_text": "¿La base de datos cambia al nodo secundario sola?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60164,
+        "question_text": "¿Está automatizada la recuperación ante caída del primario?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 60161,
+        "hint_order": 1,
+        "hint_text": "Em espanhol técnico, 'failover' é 'la conmutación por error' e 'promote a replica' é 'promover la réplica'.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 60162,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿La conmutación por error promueve la réplica automáticamente?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 60163,
+        "hint_order": 3,
+        "hint_text": "¿La conmutación por error promueve la réplica automáticamente?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 6017,
+    "level_id": 6,
+    "category_id": 18,
+    "answer_text": "En el documento ADR registramos el contexto del problema, las alternativas evaluadas y la decisión tomada.",
+    "context_text": "Pergunte o que vocês documentam em um ADR (Architecture Decision Record).",
+    "question_type": "WH_WHAT",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "presente - registro de decisiones de arquitectura",
+    "difficulty_score": 6,
+    "xp_reward": 50,
+    "sort_order": 17,
+    "accepted_answers": [
+      {
+        "id": 60171,
+        "question_text": "¿Qué registran en el documento de decisión de arquitectura?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 60172,
+        "question_text": "Qué secciones incluye un ADR en el equipo",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60173,
+        "question_text": "¿Qué documentan antes de cambiar la arquitectura?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60174,
+        "question_text": "¿Qué información contiene ese registro técnico?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 60171,
+        "hint_order": 1,
+        "hint_text": "ADR em espanhol é 'el Registro de Decisión de Arquitectura (ADR)'.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 60172,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Qué registran en el documento de decisión de arquitectura?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 60173,
+        "hint_order": 3,
+        "hint_text": "¿Qué registran en el documento de decisión de arquitectura?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 6018,
+    "level_id": 6,
+    "category_id": 18,
+    "answer_text": "Publicamos la propuesta técnica anticipadamente para recibir comentarios de seguridad y datos antes de escribir código.",
+    "context_text": "Pergunte por que publicaram a proposta técnica (RFC) antes de começar a codificar.",
+    "question_type": "WH_WHY",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "pretérito indefinido - solicitud de comentarios (RFC)",
+    "difficulty_score": 6,
+    "xp_reward": 50,
+    "sort_order": 18,
+    "accepted_answers": [
+      {
+        "id": 60181,
+        "question_text": "¿Por qué publicaron la propuesta técnica antes de programar?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 60182,
+        "question_text": "Para qué compartieron el RFC con los otros equipos",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60183,
+        "question_text": "¿Por qué pidieron comentarios antes de implementar?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60184,
+        "question_text": "¿Cuál es el objetivo de revisar el diseño por escrito?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 60181,
+        "hint_order": 1,
+        "hint_text": "Em espanhol: 'la propuesta técnica / solicitud de comentarios (RFC)', 'recibir retroalimentación'.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 60182,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Por qué publicaron la propuesta técnica antes de programar?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 60183,
+        "hint_order": 3,
+        "hint_text": "¿Por qué publicaron la propuesta técnica antes de programar?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 6019,
+    "level_id": 6,
+    "category_id": 18,
+    "answer_text": "Todas las guías operativas y procedimientos de guardia están publicados en la wiki interna de ingeniería.",
+    "context_text": "Pergunte onde estão publicados os runbooks (guias operacionais) da equipe.",
+    "question_type": "WH_WHERE",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "voz pasiva - manuales operativos",
+    "difficulty_score": 6,
+    "xp_reward": 50,
+    "sort_order": 19,
+    "accepted_answers": [
+      {
+        "id": 60191,
+        "question_text": "¿Dónde están publicadas las guías operativas?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 60192,
+        "question_text": "En dónde puedo encontrar los manuales de guardia",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60193,
+        "question_text": "¿Dónde se guarda la documentación técnica del equipo?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60194,
+        "question_text": "¿En qué repositorio están los procedimientos de soporte?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 60191,
+        "hint_order": 1,
+        "hint_text": "Runbook em espanhol é 'la guía operativa' ou 'el manual de procedimientos'.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 60192,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Dónde están publicadas las guías operativas?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 60193,
+        "hint_order": 3,
+        "hint_text": "¿Dónde están publicadas las guías operativas?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 6020,
+    "level_id": 6,
+    "category_id": 18,
+    "answer_text": "Enviaremos las notas de la versión a los clientes mañana junto con la guía de migración de la API.",
+    "context_text": "Pergunte quando enviarão as release notes (notas da versão) aos clientes.",
+    "question_type": "WH_WHEN",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "futuro - notas de versión",
+    "difficulty_score": 6,
+    "xp_reward": 50,
+    "sort_order": 20,
+    "accepted_answers": [
+      {
+        "id": 60201,
+        "question_text": "¿Cuándo enviarán las notas de la versión a los clientes?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 60202,
+        "question_text": "En qué momento se publica el registro de cambios",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60203,
+        "question_text": "¿Cuándo saldrá el comunicado con las novedades de la versión?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60204,
+        "question_text": "¿Cuándo compartiremos la guía de migración?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 60201,
+        "hint_order": 1,
+        "hint_text": "Release notes em espanhol é 'las notas de la versión' e changelog é 'el registro de cambios'.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 60202,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Cuándo enviarán las notas de la versión a los clientes?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 60203,
+        "hint_order": 3,
+        "hint_text": "¿Cuándo enviarán las notas de la versión a los clientes?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 6021,
+    "level_id": 6,
+    "category_id": 18,
+    "answer_text": "¿Qué elementos no pueden faltar nunca en un buen informe post-mortem tras un incidente crítico?",
+    "context_text": "Responda que deve incluir a linha do tempo, o impacto nos usuários, a causa raiz e um plano de ação com responsáveis.",
+    "question_type": "WH_WHAT",
+    "exercise_mode": "ANSWER_FROM_QUESTION",
+    "grammar_focus": "liderazgo - informe post-mortem",
+    "difficulty_score": 6,
+    "xp_reward": 50,
+    "sort_order": 21,
+    "accepted_answers": [
+      {
+        "id": 60211,
+        "question_text": "Debe incluir la línea de tiempo, el impacto en los usuarios, la causa raíz y un plan de acción con responsables.",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 60212,
+        "question_text": "No pueden faltar las métricas de afectación, las lecciones aprendidas y las tareas preventivas.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60213,
+        "question_text": "Tiene que detallar cómo se detectó la falla, cómo se mitigó y qué haremos para que no se repita.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 60211,
+        "hint_order": 1,
+        "hint_text": "Vocabulário de escrita técnica: 'la línea de tiempo' (timeline), 'el plan de acción', 'lecciones aprendidas'.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 60212,
+        "hint_order": 2,
+        "hint_text": "Responda: 'Debe incluir la línea de tiempo, el impacto en los usuarios, la causa raíz...'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 60213,
+        "hint_order": 3,
+        "hint_text": "Debe incluir la línea de tiempo, el impacto en los usuarios, la causa raíz y un plan de acción con responsables.",
+        "hint_type": "answer"
+      }
+    ],
+    "prompt_text": "¿Qué elementos no pueden faltar nunca en un buen informe post-mortem tras un incidente crítico?"
+  },
+  {
+    "id": 6022,
+    "level_id": 6,
+    "category_id": 18,
+    "answer_text": "¿Cómo logras que la documentación de incorporación para nuevos desarrolladores no quede obsoleta rápidamente?",
+    "context_text": "Responda que automatizamos o setup com scripts e atualizamos o guia sempre que alguém novo entra na equipe.",
+    "question_type": "WH_HOW",
+    "exercise_mode": "ANSWER_FROM_QUESTION",
+    "grammar_focus": "presente - claridad en documentación",
+    "difficulty_score": 6,
+    "xp_reward": 50,
+    "sort_order": 22,
+    "accepted_answers": [
+      {
+        "id": 60221,
+        "question_text": "Automatizamos la configuración con scripts y actualizamos la guía cada vez que ingresa alguien nuevo al equipo.",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 60222,
+        "question_text": "Incluimos la revisión de la documentación como parte de la definición de terminado de cada tarea.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60223,
+        "question_text": "Mantenemos los archivos de documentación dentro del mismo repositorio de código para revisarlos en cada pull request.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 60221,
+        "hint_order": 1,
+        "hint_text": "Onboarding em espanhol é 'la incorporación / la inducción de nuevos integrantes'.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 60222,
+        "hint_order": 2,
+        "hint_text": "Responda: 'Automatizamos la configuración con scripts y actualizamos la guía...'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 60223,
+        "hint_order": 3,
+        "hint_text": "Automatizamos la configuración con scripts y actualizamos la guía cada vez que ingresa alguien nuevo al equipo.",
+        "hint_type": "answer"
+      }
+    ],
+    "prompt_text": "¿Cómo logras que la documentación de incorporación para nuevos desarrolladores no quede obsoleta rápidamente?"
+  },
+  {
+    "id": 6023,
+    "level_id": 6,
+    "category_id": 18,
+    "answer_text": "Sí, incluimos un diagrama de secuencia para explicar el flujo de autorización entre el cliente y el servidor.",
+    "context_text": "Pergunte se incluíram um diagrama de sequência no documento de desenho técnico.",
+    "question_type": "YES_NO",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "sí/no - diagramas de secuencia",
+    "difficulty_score": 6,
+    "xp_reward": 50,
+    "sort_order": 23,
+    "accepted_answers": [
+      {
+        "id": 60231,
+        "question_text": "¿Incluyeron un diagrama de secuencia en el documento?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 60232,
+        "question_text": "Agregaste un diagrama para explicar el flujo de autorización",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60233,
+        "question_text": "¿Tiene diagramas de arquitectura la propuesta?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60234,
+        "question_text": "¿Ilustraron la interacción entre cliente y servidor?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 60231,
+        "hint_order": 1,
+        "hint_text": "Use '¿Incluyeron un diagrama de secuencia...?'",
+        "hint_type": "structural"
+      },
+      {
+        "id": 60232,
+        "hint_order": 2,
+        "hint_text": "Vocabulário: 'diagrama de secuencia', 'flujo de autorización'.",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 60233,
+        "hint_order": 3,
+        "hint_text": "¿Incluyeron un diagrama de secuencia en el documento?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 6024,
+    "level_id": 6,
+    "category_id": 18,
+    "answer_text": "El documento de diseño técnico fue revisado y aprobado por los arquitectos principales de la empresa.",
+    "context_text": "Pergunte por quem o documento de desenho técnico foi aprovado.",
+    "question_type": "WH_WHO",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "voz pasiva - aprobación de RFC",
+    "difficulty_score": 6,
+    "xp_reward": 50,
+    "sort_order": 24,
+    "accepted_answers": [
+      {
+        "id": 60241,
+        "question_text": "¿Por quién fue aprobado el documento de diseño técnico?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 60242,
+        "question_text": "Quién aprobó la propuesta de arquitectura",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60243,
+        "question_text": "¿Quiénes revisaron y firmaron el RFC?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60244,
+        "question_text": "¿Quién dio el visto bueno al diseño?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 60241,
+        "hint_order": 1,
+        "hint_text": "Expressão muito comum em espanhol profissional: 'dar el visto bueno' (dar o de acordo / aprovar).",
+        "hint_type": "structural"
+      },
+      {
+        "id": 60242,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Por quién fue aprobado el documento de diseño técnico?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 60243,
+        "hint_order": 3,
+        "hint_text": "¿Por quién fue aprobado el documento de diseño técnico?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 6025,
+    "level_id": 6,
+    "category_id": 27,
+    "answer_text": "La expansión del trabajo remoto ha transformado la economía de muchas ciudades medianas en toda Latinoamérica.",
+    "context_text": "Pergunte como o trabalho remoto impactou ou transformou as cidades da região.",
+    "question_type": "WH_HOW",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "pretérito perfecto - trabajo remoto",
+    "difficulty_score": 6,
+    "xp_reward": 50,
+    "sort_order": 25,
+    "accepted_answers": [
+      {
+        "id": 60251,
+        "question_text": "¿Cómo ha transformado el trabajo remoto a las ciudades?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 60252,
+        "question_text": "Qué impacto ha tenido el teletrabajo en la región",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60253,
+        "question_text": "¿De qué manera cambió la economía local el trabajo a distancia?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60254,
+        "question_text": "¿Cómo influyó la modalidad remota en Latinoamérica?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 60251,
+        "hint_order": 1,
+        "hint_text": "Em espanhol formal, 'trabalho remoto / home office' também é chamado de 'el teletrabajo' ou 'trabajo a distancia'.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 60252,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Cómo ha transformado el trabajo remoto a las ciudades?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 60253,
+        "hint_order": 3,
+        "hint_text": "¿Cómo ha transformado el trabajo remoto a las ciudades?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 6026,
+    "level_id": 6,
+    "category_id": 27,
+    "answer_text": "El mayor desafío educativo actual es capacitar a los trabajadores en herramientas digitales y pensamiento crítico.",
+    "context_text": "Pergunte qual é o maior desafio educacional diante da transformação digital.",
+    "question_type": "WH_WHAT",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "presente - inteligencia artificial y empleo",
+    "difficulty_score": 6,
+    "xp_reward": 50,
+    "sort_order": 26,
+    "accepted_answers": [
+      {
+        "id": 60261,
+        "question_text": "¿Cuál es el mayor desafío educativo actual?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 60262,
+        "question_text": "Qué reto enfrenta la educación ante la automatización",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60263,
+        "question_text": "¿Qué habilidades necesitan adquirir los profesionales hoy?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60264,
+        "question_text": "¿En qué debe enfocarse la formación laboral?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 60261,
+        "hint_order": 1,
+        "hint_text": "Em espanhol, 'desafio' é 'el desafío' ou 'el reto', e 'capacitar/treinar' é 'capacitar / formar'.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 60262,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Cuál es el mayor desafío educativo actual?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 60263,
+        "hint_order": 3,
+        "hint_text": "¿Cuál es el mayor desafío educativo actual?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 6027,
+    "level_id": 6,
+    "category_id": 27,
+    "answer_text": "Las billeteras digitales crecieron tan rápido porque millones de personas antes no tenían acceso a la banca tradicional.",
+    "context_text": "Pergunte por que as carteiras digitais (fintechs) cresceram tão rápido na América Latina.",
+    "question_type": "WH_WHY",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "presente - inclusión financiera",
+    "difficulty_score": 6,
+    "xp_reward": 50,
+    "sort_order": 27,
+    "accepted_answers": [
+      {
+        "id": 60271,
+        "question_text": "¿Por qué crecieron tan rápido las billeteras digitales?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 60272,
+        "question_text": "Por qué tuvieron tanto éxito las aplicaciones financieras",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60273,
+        "question_text": "¿Cuál fue la causa del auge de los pagos digitales?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60274,
+        "question_text": "¿Por qué adoptó tanta gente las billeteras virtuales?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 60271,
+        "hint_order": 1,
+        "hint_text": "Vocabulário de fintech e sociedade: 'las billeteras digitales / virtuales', 'inclusión financiera', 'banca tradicional'.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 60272,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Por qué crecieron tan rápido las billeteras digitales?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 60273,
+        "hint_order": 3,
+        "hint_text": "¿Por qué crecieron tan rápido las billeteras digitales?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 6028,
+    "level_id": 6,
+    "category_id": 27,
+    "answer_text": "El banco central mantuvo la tasa de interés de referencia para controlar la inflación interanual.",
+    "context_text": "Pergunte para que ou quanto o banco central ajustou a taxa de juros.",
+    "question_type": "WH_HOW_MUCH",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "presente - inflación y economía",
+    "difficulty_score": 6,
+    "xp_reward": 50,
+    "sort_order": 28,
+    "accepted_answers": [
+      {
+        "id": 60281,
+        "question_text": "¿Cuánto ajustó la tasa de interés el banco central?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 60282,
+        "question_text": "Qué medida tomó el banco central contra la inflación",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60283,
+        "question_text": "¿Para qué mantuvieron la tasa de interés de referencia?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60284,
+        "question_text": "¿Cómo buscan estabilizar los precios?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 60281,
+        "hint_order": 1,
+        "hint_text": "Vocabulário econômico: 'la tasa de interés' (taxa de juros), 'la inflación interanual', 'el tipo de cambio' (câmbio).",
+        "hint_type": "structural"
+      },
+      {
+        "id": 60282,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Cuánto ajustó la tasa de interés el banco central?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 60283,
+        "hint_order": 3,
+        "hint_text": "¿Cuánto ajustó la tasa de interés el banco central?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 6029,
+    "level_id": 6,
+    "category_id": 27,
+    "answer_text": "¿Qué opinas sobre la regulación del uso de inteligencia artificial en la toma de decisiones automatizadas?",
+    "context_text": "Responda que embora a regulação não deva frear a inovação, é indispensável garantir transparência e privacidade.",
+    "question_type": "WH_WHAT",
+    "exercise_mode": "ANSWER_FROM_QUESTION",
+    "grammar_focus": "concesivas - debate tecnológico",
+    "difficulty_score": 6,
+    "xp_reward": 50,
+    "sort_order": 29,
+    "accepted_answers": [
+      {
+        "id": 60291,
+        "question_text": "Aunque la regulación no debe frenar la innovación, es indispensable garantizar la transparencia y la privacidad.",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 60292,
+        "question_text": "Opino que debe existir un marco ético claro para evitar sesgos algorítmicos en decisiones críticas.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60293,
+        "question_text": "Si bien la tecnología avanza rápido, es fundamental proteger los derechos y datos de los ciudadanos.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 60291,
+        "hint_order": 1,
+        "hint_text": "Vocabulário C1: 'frenar la innovación', 'sesgos algorítmicos' (algorithmic bias), 'marco ético'.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 60292,
+        "hint_order": 2,
+        "hint_text": "Responda: 'Aunque la regulación no debe frenar la innovación, es indispensable garantizar...'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 60293,
+        "hint_order": 3,
+        "hint_text": "Aunque la regulación no debe frenar la innovación, es indispensable garantizar la transparencia y la privacidad.",
+        "hint_type": "answer"
+      }
+    ],
+    "prompt_text": "¿Qué opinas sobre la regulación del uso de inteligencia artificial en la toma de decisiones automatizadas?"
+  },
+  {
+    "id": 6030,
+    "level_id": 6,
+    "category_id": 27,
+    "answer_text": "¿Cómo mejoraría la calidad de vida en las grandes capitales si se descentralizaran las oficinas corporativas?",
+    "context_text": "Responda que diminuiria drasticamente o tempo perdido no trânsito e revitalizaria o comércio dos bairros.",
+    "question_type": "WH_HOW",
+    "exercise_mode": "ANSWER_FROM_QUESTION",
+    "grammar_focus": "condicional - calidad de vida urbana",
+    "difficulty_score": 6,
+    "xp_reward": 50,
+    "sort_order": 30,
+    "accepted_answers": [
+      {
+        "id": 60301,
+        "question_text": "Disminuiría drásticamente el tiempo perdido en el tráfico y se revitalizaría el comercio de los barrios.",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 60302,
+        "question_text": "Las personas tendrían más horas libres para su familia, su salud y su desarrollo personal.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60303,
+        "question_text": "Se reduciría la congestión del transporte público en las horas punta.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 60301,
+        "hint_order": 1,
+        "hint_text": "Use o Condicional Simple ('Disminuiría...', 'Las personas tendrían...', 'Se reduciría...').",
+        "hint_type": "structural"
+      },
+      {
+        "id": 60302,
+        "hint_order": 2,
+        "hint_text": "Responda: 'Disminuiría drásticamente el tiempo perdido en el tráfico...'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 60303,
+        "hint_order": 3,
+        "hint_text": "Disminuiría drásticamente el tiempo perdido en el tráfico y se revitalizaría el comercio de los barrios.",
+        "hint_type": "answer"
+      }
+    ],
+    "prompt_text": "¿Cómo mejoraría la calidad de vida en las grandes capitales si se descentralizaran las oficinas corporativas?"
+  },
+  {
+    "id": 6031,
+    "level_id": 6,
+    "category_id": 27,
+    "answer_text": "Sí, la legislación exige el consentimiento explícito del ciudadano antes de compartir sus datos con terceros.",
+    "context_text": "Pergunte se a lei exige o consentimento explícito do usuário para compartilhar dados.",
+    "question_type": "YES_NO",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "sí/no - protección de datos personales",
+    "difficulty_score": 6,
+    "xp_reward": 50,
+    "sort_order": 31,
+    "accepted_answers": [
+      {
+        "id": 60311,
+        "question_text": "¿Exige la ley el consentimiento explícito del usuario?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 60312,
+        "question_text": "Es obligatorio pedir permiso antes de compartir datos personales",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60313,
+        "question_text": "¿Protege la legislación la privacidad de los ciudadanos?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60314,
+        "question_text": "¿Se requiere autorización para ceder datos a terceros?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 60311,
+        "hint_order": 1,
+        "hint_text": "Vocabulário jurídico/LGPD em espanhol: 'el consentimiento explícito', 'compartir datos con terceros'.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 60312,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Exige la ley el consentimiento explícito del usuario?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 60313,
+        "hint_order": 3,
+        "hint_text": "¿Exige la ley el consentimiento explícito del usuario?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 6032,
+    "level_id": 6,
+    "category_id": 27,
+    "answer_text": "Ciudades como Ciudad de México, Bogotá, Santiago, Buenos Aires y Medellín se han consolidado como polos tecnológicos.",
+    "context_text": "Pergunte onde se consolidaram os principais polos tecnológicos de língua espanhola na região.",
+    "question_type": "WH_WHERE",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "presente - polos tecnológicos",
+    "difficulty_score": 6,
+    "xp_reward": 50,
+    "sort_order": 32,
+    "accepted_answers": [
+      {
+        "id": 60321,
+        "question_text": "¿Dónde se han consolidado los principales polos tecnológicos?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 60322,
+        "question_text": "En qué ciudades creció más la industria del software",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60323,
+        "question_text": "¿Dónde están los centros de innovación en Hispanoamérica?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60324,
+        "question_text": "¿En dónde se concentran las empresas de tecnología?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 60321,
+        "hint_order": 1,
+        "hint_text": "Use '¿Dónde se han consolidado...?' (Pretérito Perfecto).",
+        "hint_type": "structural"
+      },
+      {
+        "id": 60322,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Dónde se han consolidado los principales polos tecnológicos?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 60323,
+        "hint_order": 3,
+        "hint_text": "¿Dónde se han consolidado los principales polos tecnológicos?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 6033,
+    "level_id": 6,
+    "category_id": 28,
+    "answer_text": "Cuando decimos 'dar en el clavo', significa que alguien encontró exactamente la causa o solución del problema.",
+    "context_text": "Pergunte o que significa a expressão idiomática 'dar en el clavo'.",
+    "question_type": "WH_WHAT",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "presente - modismos de trabajo",
+    "difficulty_score": 6,
+    "xp_reward": 50,
+    "sort_order": 33,
+    "accepted_answers": [
+      {
+        "id": 60331,
+        "question_text": "¿Qué significa la expresión dar en el clavo?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 60332,
+        "question_text": "Qué quiere decir dar en el clavo en una reunión",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60333,
+        "question_text": "¿A qué se refiere alguien cuando dice que diste en el clavo?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60334,
+        "question_text": "¿Qué significado tiene esa frase?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 60331,
+        "hint_order": 1,
+        "hint_text": "'Dar en el clavo' equivale a 'acertar em cheio / acertar na mosca' (hit the nail on the head).",
+        "hint_type": "structural"
+      },
+      {
+        "id": 60332,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Qué significa la expresión dar en el clavo?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 60333,
+        "hint_order": 3,
+        "hint_text": "¿Qué significa la expresión dar en el clavo?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 6034,
+    "level_id": 6,
+    "category_id": 28,
+    "answer_text": "¡Claro que sí! Termino esta llamada y te echo una mano para destrabar la configuración del servidor.",
+    "context_text": "Usando a expressão 'echar una mano', peça ao colega se ele pode te dar uma mãozinha com o servidor.",
+    "question_type": "YES_NO",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "sí/no - echar una mano",
+    "difficulty_score": 6,
+    "xp_reward": 50,
+    "sort_order": 34,
+    "accepted_answers": [
+      {
+        "id": 60341,
+        "question_text": "¿Me puedes echar una mano con el servidor?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 60342,
+        "question_text": "Me echas una mano para configurar esto",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60343,
+        "question_text": "¿Podrías darme una mano con este problema?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60344,
+        "question_text": "¿Tienes diez minutos para echarme una mano?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 60341,
+        "hint_order": 1,
+        "hint_text": "'Echar una mano' ou 'dar una mano' significa 'dar uma mão / ajudar alguém'.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 60342,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Me puedes echar una mano con el servidor?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 60343,
+        "hint_order": 3,
+        "hint_text": "¿Me puedes echar una mano con el servidor?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 6035,
+    "level_id": 6,
+    "category_id": 28,
+    "answer_text": "Nos pusimos las pilas toda la semana porque queríamos llegar a la demostración del viernes con todo funcionando.",
+    "context_text": "Pergunte por que a equipe trabalhou com tanta energia ('se puso las pilas') nesta semana.",
+    "question_type": "WH_WHY",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "pretérito indefinido - ponerse las pilas",
+    "difficulty_score": 6,
+    "xp_reward": 50,
+    "sort_order": 35,
+    "accepted_answers": [
+      {
+        "id": 60351,
+        "question_text": "¿Por qué se pusieron las pilas esta semana?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 60352,
+        "question_text": "Por qué trabajaron con tanto enfoque para el viernes",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60353,
+        "question_text": "¿Qué los motivó a ponerse las pilas con el proyecto?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60354,
+        "question_text": "¿Por qué aceleraron el ritmo de entrega?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 60351,
+        "hint_order": 1,
+        "hint_text": "'Ponerse las pilas' é uma das expressões mais usadas na América Latina: significa 'focar / dedicar-se com energia'!",
+        "hint_type": "structural"
+      },
+      {
+        "id": 60352,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Por qué se pusieron las pilas esta semana?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 60353,
+        "hint_order": 3,
+        "hint_text": "¿Por qué se pusieron las pilas esta semana?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 6036,
+    "level_id": 6,
+    "category_id": 28,
+    "answer_text": "La reunión ejecutiva duró solo quince minutos porque fuimos directo al grano sin rodeos.",
+    "context_text": "Pergunte como conseguiram terminar a reunião executiva tão rápido.",
+    "question_type": "WH_HOW",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "pretérito indefinido - ir al grano",
+    "difficulty_score": 6,
+    "xp_reward": 50,
+    "sort_order": 36,
+    "accepted_answers": [
+      {
+        "id": 60361,
+        "question_text": "¿Cómo lograron terminar la reunión tan rápido?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 60362,
+        "question_text": "Cómo hicieron para que la llamada fuera tan corta",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60363,
+        "question_text": "¿Por qué duró solo quince minutos la reunión?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60364,
+        "question_text": "¿Cómo presentaron el informe ejecutivo?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 60361,
+        "hint_order": 1,
+        "hint_text": "'Ir al grano' significa 'ir direto ao ponto / ser objetivo', e 'sin rodeos' é 'sem enrolação'.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 60362,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Cómo lograron terminar la reunión tan rápido?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 60363,
+        "hint_order": 3,
+        "hint_text": "¿Cómo lograron terminar la reunión tan rápido?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 6037,
+    "level_id": 6,
+    "category_id": 28,
+    "answer_text": "¿Qué le dices a un compañero cuando quieres que revise rápidamente tu propuesta antes de enviarla al cliente?",
+    "context_text": "Responda pedindo que ele dê uma olhada ('le eche un ojo' ou 'le dé una mirada') para ver se não escapou nenhum detalhe.",
+    "question_type": "WH_WHAT",
+    "exercise_mode": "ANSWER_FROM_QUESTION",
+    "grammar_focus": "presente - tener en cuenta y echar un ojo",
+    "difficulty_score": 6,
+    "xp_reward": 50,
+    "sort_order": 37,
+    "accepted_answers": [
+      {
+        "id": 60371,
+        "question_text": "¿Le puedes echar un ojo a mi propuesta para ver si no se me pasó ningún detalle?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 60372,
+        "question_text": "¿Le das una mirada rápida a este documento antes de que lo envíe al cliente?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60373,
+        "question_text": "Por favor, échale un vistazo y dime si hay algo que debamos ajustar.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 60371,
+        "hint_order": 1,
+        "hint_text": "Três expressões naturais para 'dar uma olhada': 'echar un ojo', 'dar una mirada' e 'echar un vistazo', e 'deixar passar algo' é 'pasarse un detalle'.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 60372,
+        "hint_order": 2,
+        "hint_text": "Responda: '¿Le puedes echar un ojo a mi propuesta para ver si no se me pasó ningún detalle?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 60373,
+        "hint_order": 3,
+        "hint_text": "¿Le puedes echar un ojo a mi propuesta para ver si no se me pasó ningún detalle?",
+        "hint_type": "answer"
+      }
+    ],
+    "prompt_text": "¿Qué le dices a un compañero cuando quieres que revise rápidamente tu propuesta antes de enviarla al cliente?"
+  },
+  {
+    "id": 6038,
+    "level_id": 6,
+    "category_id": 28,
+    "answer_text": "¿Cómo explicas con naturalidad en una reunión que el equipo tiene demasiados pedidos simultáneos y no consegue atender tudo?",
+    "context_text": "Responda dizendo que com tantos chamados urgentes a equipe 'no da abasto' (não está dando conta) e precisa priorizar.",
+    "question_type": "WH_WHAT",
+    "exercise_mode": "ANSWER_FROM_QUESTION",
+    "grammar_focus": "condicional - no dar abasto",
+    "difficulty_score": 6,
+    "xp_reward": 50,
+    "sort_order": 38,
+    "accepted_answers": [
+      {
+        "id": 60381,
+        "question_text": "Con tantos pedidos urgentes el equipo no da abasto y necesitamos priorizar el backlog.",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 60382,
+        "question_text": "Ahora mismo estamos a tope de capacidad y no damos abasto con las nuevas solicitudes.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60383,
+        "question_text": "Si seguimos sumando tareas sin sacar otras, el equipo no va a dar abasto.",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 60381,
+        "hint_order": 1,
+        "hint_text": "'No dar abasto' é a expressão exata em espanhol para 'não dar conta da demanda / estar sobrecarregado'!",
+        "hint_type": "structural"
+      },
+      {
+        "id": 60382,
+        "hint_order": 2,
+        "hint_text": "Responda: 'Con tantos pedidos urgentes el equipo no da abasto y necesitamos priorizar...'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 60383,
+        "hint_order": 3,
+        "hint_text": "Con tantos pedidos urgentes el equipo no da abasto y necesitamos priorizar el backlog.",
+        "hint_type": "answer"
+      }
+    ],
+    "prompt_text": "¿Cómo explicas con naturalidad en una reunión que el equipo tiene demasiados pedidos simultáneos y no consegue atender tudo?"
+  },
+  {
+    "id": 6039,
+    "level_id": 6,
+    "category_id": 28,
+    "answer_text": "Sí, después de haber migrado el servicio principal, actualizar este módulo pequeño será pan comido.",
+    "context_text": "Confirme se atualizar esse módulo pequeno será moleza ('pan comido'), certo?",
+    "question_type": "TAG",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "confirmación - pan comido",
+    "difficulty_score": 6,
+    "xp_reward": 50,
+    "sort_order": 39,
+    "accepted_answers": [
+      {
+        "id": 60391,
+        "question_text": "Actualizar este módulo será pan comido, ¿verdad?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 60392,
+        "question_text": "Este cambio va a ser pan comido para el equipo, ¿no?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60393,
+        "question_text": "Después de la migración esto es pan comido, ¿cierto?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 60391,
+        "hint_order": 1,
+        "hint_text": "'Ser pan comido' significa 'ser moleza / ser muito fácil' (a piece of cake).",
+        "hint_type": "structural"
+      },
+      {
+        "id": 60392,
+        "hint_order": 2,
+        "hint_text": "Estrutura: 'Actualizar este módulo será pan comido, ¿verdad?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 60393,
+        "hint_order": 3,
+        "hint_text": "Actualizar este módulo será pan comido, ¿verdad?",
+        "hint_type": "answer"
+      }
+    ]
+  },
+  {
+    "id": 6040,
+    "level_id": 6,
+    "category_id": 28,
+    "answer_text": "Tomaremos cartas en el asunto de inmediato si el proveedor vuelve a incumplir los tiempos de respuesta acordados.",
+    "context_text": "Pergunte quando vocês tomarão providências ('tomarán cartas en el asunto') com o fornecedor.",
+    "question_type": "WH_WHEN",
+    "exercise_mode": "QUESTION_FROM_ANSWER",
+    "grammar_focus": "presente - tomar cartas en el asunto",
+    "difficulty_score": 6,
+    "xp_reward": 50,
+    "sort_order": 40,
+    "accepted_answers": [
+      {
+        "id": 60401,
+        "question_text": "¿Cuándo tomarán cartas en el asunto con el proveedor?",
+        "is_primary": true,
+        "match_threshold": 0.8
+      },
+      {
+        "id": 60402,
+        "question_text": "En qué momento van a intervenir si sigue fallando",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60403,
+        "question_text": "¿Cuándo actuarán respecto al incumplimiento del proveedor?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      },
+      {
+        "id": 60404,
+        "question_text": "¿Cuándo van a tomar medidas formales?",
+        "is_primary": false,
+        "match_threshold": 0.78
+      }
+    ],
+    "hints": [
+      {
+        "id": 60401,
+        "hint_order": 1,
+        "hint_text": "'Tomar cartas en el asunto' significa 'tomar providências / intervir formalmente em um problema'.",
+        "hint_type": "structural"
+      },
+      {
+        "id": 60402,
+        "hint_order": 2,
+        "hint_text": "Estrutura: '¿Cuándo tomarán cartas en el asunto con el proveedor?'",
+        "hint_type": "vocabulary"
+      },
+      {
+        "id": 60403,
+        "hint_order": 3,
+        "hint_text": "¿Cuándo tomarán cartas en el asunto con el proveedor?",
         "hint_type": "answer"
       }
     ]

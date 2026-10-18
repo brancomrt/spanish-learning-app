@@ -31,6 +31,29 @@ class GrammarParser {
      * sejam verificados antes de palavras menores.
      */
     private val whWords: Map<String, QuestionType> = mapOf(
+        // Espanhol com preposição inicial (ex: ¿En qué...?, ¿A qué hora...?, ¿De dónde...?)
+        "a que hora" to QuestionType.WH_WHEN,
+        "desde cuando" to QuestionType.WH_WHEN,
+        "hasta cuando" to QuestionType.WH_WHEN,
+        "para cuando" to QuestionType.WH_WHEN,
+        "con que frecuencia" to QuestionType.WH_HOW,
+        "de donde" to QuestionType.WH_WHERE,
+        "a donde" to QuestionType.WH_WHERE,
+        "hacia donde" to QuestionType.WH_WHERE,
+        "por donde" to QuestionType.WH_WHERE,
+        "en donde" to QuestionType.WH_WHERE,
+        "con quien" to QuestionType.WH_WHO,
+        "de quien" to QuestionType.WH_WHO,
+        "para quien" to QuestionType.WH_WHO,
+        "a quien" to QuestionType.WH_WHO,
+        "en que" to QuestionType.WH_WHAT,
+        "de que" to QuestionType.WH_WHAT,
+        "con que" to QuestionType.WH_WHAT,
+        "a que" to QuestionType.WH_WHAT,
+        "para que" to QuestionType.WH_WHY,
+        "por cual" to QuestionType.WH_WHICH,
+        "en cual" to QuestionType.WH_WHICH,
+
         // Espanhol (normalizado sem acentos)
         "por que" to QuestionType.WH_WHY,
         "porque" to QuestionType.WH_WHY,
@@ -48,7 +71,7 @@ class GrammarParser {
         "como" to QuestionType.WH_HOW,
         "que" to QuestionType.WH_WHAT,
 
-        // Inglês (compatibilidade)
+        // Inglês (compatibilidade com testes unitários)
         "what" to QuestionType.WH_WHAT,
         "where" to QuestionType.WH_WHERE,
         "when" to QuestionType.WH_WHEN,

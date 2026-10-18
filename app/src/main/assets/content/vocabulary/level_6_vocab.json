@@ -1,44 +1,804 @@
 {
   "cards": [
     {
-      "word": "deuda técnica / technical debt",
-      "definition": "custo implícito de retrabalho futuro causado por escolher soluções rápidas no presente",
-      "example_sentence": "Debemos destinar al menos el veinte por ciento del sprint a pagar deuda técnica.",
+      "word": "la cultura sin culpas (blameless culture)",
+      "definition": "a cultura sem culpas (foco no sistema e aprendizado)",
+      "example_sentence": "En los análisis post-mortem promovemos siempre una cultura sin culpas.",
       "level_id": 6,
-      "category_id": 18,
+      "category_id": 16,
       "image_url": "local:vocab_leadership.xml"
     },
     {
-      "word": "post-mortem / análisis de causa raíz",
-      "definition": "reunião e relatório sem culpa após um incidente para aprender e evitar repetições",
-      "example_sentence": "En el documento post-mortem establecimos medidas preventivas para que no vuelva a ocurrir.",
+      "word": "la sesión individual (reunión uno a uno)",
+      "definition": "a reunião 1-on-1 de acompanhamento e mentoria",
+      "example_sentence": "Tengo sesiones individuales quincenales con cada integrante del equipo.",
       "level_id": 6,
-      "category_id": 18,
+      "category_id": 16,
       "image_url": "local:vocab_leadership.xml"
     },
     {
-      "word": "estimación en puntos de historia",
-      "definition": "avaliação relativa de complexidade de uma tarefa em metodologias ágeis",
-      "example_sentence": "El equipo acordó una estimación de cinco puntos para esta historia de usuario.",
+      "word": "la retroalimentación constructiva (feedback)",
+      "definition": "o feedback construtivo",
+      "example_sentence": "Dar retroalimentación constructiva y a tiempo impulsa el crecimiento del equipo.",
+      "level_id": 6,
+      "category_id": 16,
+      "image_url": "local:vocab_leadership.xml"
+    },
+    {
+      "word": "el plan de carrera y desarrollo",
+      "definition": "o plano de carreira e evolução profissional",
+      "example_sentence": "Definimos objetivos claros para su promoción a ingeniero sénior en su plan de carrera.",
+      "level_id": 6,
+      "category_id": 16,
+      "image_url": "local:vocab_leadership.xml"
+    },
+    {
+      "word": "la autonomía y alineación",
+      "definition": "a autonomia com alinhamento estratégico",
+      "example_sentence": "Buscamos que cada célula tenga autonomía técnica con fuerte alineación al negocio.",
+      "level_id": 6,
+      "category_id": 16,
+      "image_url": "local:vocab_leadership.xml"
+    },
+    {
+      "word": "la rotación de talento (turnover)",
+      "definition": "o turnover / rotatividade de profissionais",
+      "example_sentence": "Un buen ambiente de trabajo mantiene muy baja la rotación de talento.",
+      "level_id": 6,
+      "category_id": 16,
+      "image_url": "local:vocab_leadership.xml"
+    },
+    {
+      "word": "la incorporación de personal (onboarding)",
+      "definition": "o onboarding / integração de novos membros",
+      "example_sentence": "Mejoramos el proceso de incorporación para que un nuevo desarrollador despliegue en su primera semana.",
+      "level_id": 6,
+      "category_id": 16,
+      "image_url": "local:vocab_leadership.xml"
+    },
+    {
+      "word": "delegar responsabilidades",
+      "definition": "delegar responsabilidades com clareza",
+      "example_sentence": "Un buen líder técnico sabe delegar responsabilidades y acompañar con mentoría.",
+      "level_id": 6,
+      "category_id": 16,
+      "image_url": "local:vocab_leadership.xml"
+    },
+    {
+      "word": "el síndrome de desgaste profesional (burnout)",
+      "definition": "o burnout / esgotamento profissional",
+      "example_sentence": "Cuidamos la carga de trabajo y las guardias para prevenir el desgaste profesional.",
+      "level_id": 6,
+      "category_id": 16,
+      "image_url": "local:vocab_leadership.xml"
+    },
+    {
+      "word": "gestionar las expectativas",
+      "definition": "gerenciar expectativas com produto e diretoria",
+      "example_sentence": "Es fundamental gestionar las expectativas comunicando los riesgos técnicos temprano.",
+      "level_id": 6,
+      "category_id": 16,
+      "image_url": "local:vocab_leadership.xml"
+    },
+    {
+      "word": "el consenso técnico",
+      "definition": "o consenso técnico na equipe",
+      "example_sentence": "Llegamos a un consenso técnico tras evaluar los pros y contras de ambas propuestas.",
+      "level_id": 6,
+      "category_id": 16,
+      "image_url": "local:vocab_leadership.xml"
+    },
+    {
+      "word": "el retorno de inversión (ROI)",
+      "definition": "o retorno sobre o investimento",
+      "example_sentence": "Justificamos la refactorización mostrando el retorno de inversión en velocidad de entrega.",
+      "level_id": 6,
+      "category_id": 16,
+      "image_url": "local:vocab_leadership.xml"
+    },
+    {
+      "word": "desbloquear al equipo",
+      "definition": "destravar a equipe / remover impedimentos",
+      "example_sentence": "Mi función principal como líder es desbloquear al equipo y facilitar sus decisiones.",
+      "level_id": 6,
+      "category_id": 16,
+      "image_url": "local:vocab_leadership.xml"
+    },
+    {
+      "word": "la evaluación de desempeño",
+      "definition": "a avaliação de desempenho semestral ou anual",
+      "example_sentence": "Preparamos evidencias concretas de impacto para la evaluación de desempeño.",
+      "level_id": 6,
+      "category_id": 16,
+      "image_url": "local:vocab_leadership.xml"
+    },
+    {
+      "word": "el pensamiento estratégico",
+      "definition": "o pensamento estratégico de longo prazo",
+      "example_sentence": "La arquitectura requiere pensamiento estratégico para anticipar el crecimiento del negocio.",
+      "level_id": 6,
+      "category_id": 16,
+      "image_url": "local:vocab_leadership.xml"
+    },
+    {
+      "word": "la mentoría entre pares",
+      "definition": "a mentoria entre pares / programação em par",
+      "example_sentence": "La programación en par aceleró la transferencia de conocimiento en la célula.",
+      "level_id": 6,
+      "category_id": 16,
+      "image_url": "local:vocab_leadership.xml"
+    },
+    {
+      "word": "la transferencia de conocimiento",
+      "definition": "a transferência de conhecimento (knowledge sharing)",
+      "example_sentence": "Evitamos los silos de información mediante sesiones semanales de transferencia de conocimiento.",
+      "level_id": 6,
+      "category_id": 16,
+      "image_url": "local:vocab_leadership.xml"
+    },
+    {
+      "word": "el factor autobús (bus factor)",
+      "definition": "o bus factor (risco de apenas uma pessoa conhecer um sistema)",
+      "example_sentence": "Documentamos y rotamos las tareas críticas para mejorar nuestro factor autobús.",
+      "level_id": 6,
+      "category_id": 16,
+      "image_url": "local:vocab_leadership.xml"
+    },
+    {
+      "word": "dar el visto bueno",
+      "definition": "dar o aval / aprovar formalmente",
+      "example_sentence": "El comité de arquitectura dio el visto bueno para iniciar la migración.",
+      "level_id": 6,
+      "category_id": 16,
+      "image_url": "local:vocab_leadership.xml"
+    },
+    {
+      "word": "liderar con el ejemplo",
+      "definition": "liderar pelo exemplo",
+      "example_sentence": "Escribir pruebas claras y revisar código con respeto es liderar con el ejemplo.",
+      "level_id": 6,
+      "category_id": 16,
+      "image_url": "local:vocab_leadership.xml"
+    },
+    {
+      "word": "el particionamiento horizontal (sharding)",
+      "definition": "o sharding / particionamento horizontal de banco de dados",
+      "example_sentence": "Aplicamos particionamiento horizontal por región para escalar la base de datos.",
       "level_id": 6,
       "category_id": 17,
-      "image_url": "local:vocab_leadership.xml"
+      "image_url": "local:vocab_architecture.xml"
     },
     {
-      "word": "acuerdo de nivel de servicio / SLA",
-      "definition": "compromisso formal de disponibilidade e tempo de resposta para clientes",
-      "example_sentence": "Nuestro SLA garantiza un noventa y nueve coma nueve por ciento de disponibilidad mensual.",
+      "word": "el teorema CAP (consistencia, disponibilidad, partición)",
+      "definition": "o teorema CAP de sistemas distribuídos",
+      "example_sentence": "Ante una partición de red, debes elegir entre consistencia inmediata o disponibilidad.",
       "level_id": 6,
-      "category_id": 16,
-      "image_url": "local:vocab_leadership.xml"
+      "category_id": 17,
+      "image_url": "local:vocab_architecture.xml"
     },
     {
-      "word": "alineación con stakeholders",
-      "definition": "reunião e consenso com partes interessadas e líderes de produto",
-      "example_sentence": "Antes de empezar la refactorización necesitamos una alineación clara con los stakeholders.",
+      "word": "el percentil noventa y nueve (p99)",
+      "definition": "o percentil 99 de latência",
+      "example_sentence": "Optimizamos las consultas más lentas para bajar el percentil noventa y nueve a cincuenta milisegundos.",
       "level_id": 6,
-      "category_id": 16,
-      "image_url": "local:vocab_leadership.xml"
+      "category_id": 17,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "el caudal de procesamiento (throughput)",
+      "definition": "o throughput / vazão de requisições por segundo",
+      "example_sentence": "El nuevo motor duplicó el caudal de procesamiento con la misma cantidad de servidores.",
+      "level_id": 6,
+      "category_id": 17,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "la conmutación por error (failover)",
+      "definition": "o failover automático para o nó secundário",
+      "example_sentence": "Probamos la conmutación por error de la base de datos y tardó menos de veinte segundos.",
+      "level_id": 6,
+      "category_id": 17,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "la arquitectura activo-activo (active-active)",
+      "definition": "a arquitetura ativo-ativo multi-região",
+      "example_sentence": "Operamos en esquema activo-activo entre dos regiones para garantizar continuidad total.",
+      "level_id": 6,
+      "category_id": 17,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "la invalidación de caché",
+      "definition": "a invalidação de cache",
+      "example_sentence": "La invalidación de caché y el nombrado de cosas son dos de los retos clásicos en informática.",
+      "level_id": 6,
+      "category_id": 17,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "la red de entrega de contenidos (CDN)",
+      "definition": "a CDN (Content Delivery Network)",
+      "example_sentence": "Servimos todas las imágenes y archivos estáticos desde los nodos de borde de la CDN.",
+      "level_id": 6,
+      "category_id": 17,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "la contrapresión (backpressure)",
+      "definition": "o backpressure (controle de fluxo quando o consumidor é mais lento que o produtor)",
+      "example_sentence": "Implementamos mecanismos de contrapresión para que el consumidor no se quede sin memoria.",
+      "level_id": 6,
+      "category_id": 17,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "el punto único de fallo (SPOF)",
+      "definition": "o ponto único de falha (Single Point of Failure)",
+      "example_sentence": "Revisamos el diagrama de arquitectura para eliminar cualquier punto único de fallo.",
+      "level_id": 6,
+      "category_id": 17,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "la replicación síncrona vs asíncrona",
+      "definition": "a replicação síncrona vs assíncrona",
+      "example_sentence": "Para transacciones financieras usamos replicación síncrona hacia al menos un nodo secundario.",
+      "level_id": 6,
+      "category_id": 17,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "el hash consistente (consistent hashing)",
+      "definition": "o hash consistente para distribuir carga em cache/nós",
+      "example_sentence": "El hash consistente minimiza el movimiento de claves cuando se agrega un nodo al clúster.",
+      "level_id": 6,
+      "category_id": 17,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "el almacenamiento en frío (cold storage)",
+      "definition": "o armazenamento frio de baixo custo para arquivos antigos",
+      "example_sentence": "Movemos las facturas de hace más de cinco años al almacenamiento en frío.",
+      "level_id": 6,
+      "category_id": 17,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "los compromisos técnicos (trade-offs)",
+      "definition": "os trade-offs / escolhas e contrapartidas de arquitetura",
+      "example_sentence": "En diseño de sistemas no hay soluciones mágicas, solo compromisos técnicos bien evaluados.",
+      "level_id": 6,
+      "category_id": 17,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "la concurrencia y el paralelismo",
+      "definition": "a concorrência e o paralelismo",
+      "example_sentence": "Manejamos la alta concurrencia utilizando corrutinas ligeras sin bloquear hilos.",
+      "level_id": 6,
+      "category_id": 17,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "la condición de carrera (race condition)",
+      "definition": "a condição de corrida (concorrência sem sincronização)",
+      "example_sentence": "Un bloqueo distribuido en Redis evitó la condición de carrera al descontar el inventario.",
+      "level_id": 6,
+      "category_id": 17,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "el bloqueo mutuo (deadlock)",
+      "definition": "o deadlock (impasse entre duas transações)",
+      "example_sentence": "Ordenar siempre las actualizaciones por clave primaria previno los bloqueos mutuos.",
+      "level_id": 6,
+      "category_id": 17,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "el aprovisionamiento previo (pre-warming)",
+      "definition": "o pré-aquecimento de cache e instâncias antes de grandes eventos",
+      "example_sentence": "Hicimos precalentamiento de la caché y de los balanceadores antes del evento de descuentos.",
+      "level_id": 6,
+      "category_id": 17,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "la segregación de lectura y escritura (CQRS)",
+      "definition": "a separação de comandos de escrita e consultas de leitura (CQRS)",
+      "example_sentence": "Aplicamos segregación de lectura y escritura para escalar las búsquedas de forma independiente.",
+      "level_id": 6,
+      "category_id": 17,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "la fuente de eventos (event sourcing)",
+      "definition": "o Event Sourcing (estado derivado da sequência imutável de eventos)",
+      "example_sentence": "Guardamos cada movimiento contable como un evento inmutable auditable.",
+      "level_id": 6,
+      "category_id": 17,
+      "image_url": "local:vocab_architecture.xml"
+    },
+    {
+      "word": "la solicitud de comentarios (RFC)",
+      "definition": "o documento de proposta técnica aberta para revisão (RFC)",
+      "example_sentence": "Escribí un RFC detallando la migración del servicio de notificaciones.",
+      "level_id": 6,
+      "category_id": 18,
+      "image_url": "local:vocab_docs.xml"
+    },
+    {
+      "word": "el registro de decisión de arquitectura (ADR)",
+      "definition": "o documento curto que registra uma decisão arquitetural (ADR)",
+      "example_sentence": "Cada decisión importante queda documentada en un ADR dentro del repositorio.",
+      "level_id": 6,
+      "category_id": 18,
+      "image_url": "local:vocab_docs.xml"
+    },
+    {
+      "word": "la guía operativa (runbook / playbook)",
+      "definition": "o runbook / manual passo a passo para operação e incidentes",
+      "example_sentence": "Seguí la guía operativa paso a paso y pude restaurar el servicio en cinco minutos.",
+      "level_id": 6,
+      "category_id": 18,
+      "image_url": "local:vocab_docs.xml"
+    },
+    {
+      "word": "el informe post-mortem",
+      "definition": "o relatório pós-incidente (post-mortem)",
+      "example_sentence": "El informe post-mortem incluye la línea de tiempo y las tareas preventivas.",
+      "level_id": 6,
+      "category_id": 18,
+      "image_url": "local:vocab_docs.xml"
+    },
+    {
+      "word": "las notas de la versión (release notes)",
+      "definition": "as release notes / notas de lançamento",
+      "example_sentence": "Redactamos las notas de la versión con lenguaje claro para los equipos comerciales.",
+      "level_id": 6,
+      "category_id": 18,
+      "image_url": "local:vocab_docs.xml"
+    },
+    {
+      "word": "el registro de cambios (changelog)",
+      "definition": "o histórico de alterações do projeto (changelog)",
+      "example_sentence": "Generamos el registro de cambios automáticamente a partir de los mensajes de commit.",
+      "level_id": 6,
+      "category_id": 18,
+      "image_url": "local:vocab_docs.xml"
+    },
+    {
+      "word": "el resumen ejecutivo",
+      "definition": "o resumo executivo no início de um documento",
+      "example_sentence": "Incluye siempre un resumen ejecutivo de un párrafo al comienzo de la propuesta.",
+      "level_id": 6,
+      "category_id": 18,
+      "image_url": "local:vocab_docs.xml"
+    },
+    {
+      "word": "los supuestos y restricciones",
+      "definition": "as premissas e restrições do projeto",
+      "example_sentence": "En la sección de alcance listamos explícitamente los supuestos y restricciones.",
+      "level_id": 6,
+      "category_id": 18,
+      "image_url": "local:vocab_docs.xml"
+    },
+    {
+      "word": "las alternativas descartadas",
+      "definition": "as alternativas avaliadas e descartadas",
+      "example_sentence": "Es muy útil documentar las alternativas descartadas y por qué no se eligieron.",
+      "level_id": 6,
+      "category_id": 18,
+      "image_url": "local:vocab_docs.xml"
+    },
+    {
+      "word": "el diagrama de secuencia y componentes",
+      "definition": "o diagrama de sequência e de componentes",
+      "example_sentence": "Un buen diagrama de secuencia aclara más que tres páginas de texto.",
+      "level_id": 6,
+      "category_id": 18,
+      "image_url": "local:vocab_docs.xml"
+    },
+    {
+      "word": "la guía de estilo y convenciones",
+      "definition": "o guia de estilo e padrões de código",
+      "example_sentence": "Seguimos una guía de estilo unificada para que todo el código sea consistente.",
+      "level_id": 6,
+      "category_id": 18,
+      "image_url": "local:vocab_docs.xml"
+    },
+    {
+      "word": "la documentación viva",
+      "definition": "a documentação viva (que evolui junto com o código)",
+      "example_sentence": "Los tests de aceptación funcionan como documentación viva del comportamiento del sistema.",
+      "level_id": 6,
+      "category_id": 18,
+      "image_url": "local:vocab_docs.xml"
+    },
+    {
+      "word": "el glosario de dominio (lenguaje ubicuo)",
+      "definition": "o glossário de termos do negócio (linguagem ubíqua)",
+      "example_sentence": "Creamos un glosario compartido entre producto y tecnología para hablar el mismo idioma.",
+      "level_id": 6,
+      "category_id": 18,
+      "image_url": "local:vocab_docs.xml"
+    },
+    {
+      "word": "conciso y sin ambigüedades",
+      "definition": "conciso, direto e sem ambiguidades",
+      "example_sentence": "En la escritura técnica es clave ser conciso y evitar cualquier ambigüedad.",
+      "level_id": 6,
+      "category_id": 18,
+      "image_url": "local:vocab_docs.xml"
+    },
+    {
+      "word": "la guía de migración",
+      "definition": "o guia de migração para clientes da API",
+      "example_sentence": "Publicamos una guía de migración con ejemplos de código para pasar a la versión dos.",
+      "level_id": 6,
+      "category_id": 18,
+      "image_url": "local:vocab_docs.xml"
+    },
+    {
+      "word": "el plan de reversión (rollback plan)",
+      "definition": "o plano de rollback documentado na mudança",
+      "example_sentence": "Toda solicitud de cambio en producción debe detallar su plan de reversión.",
+      "level_id": 6,
+      "category_id": 18,
+      "image_url": "local:vocab_docs.xml"
+    },
+    {
+      "word": "el estado del documento (borrador / en revisión / aprobado)",
+      "definition": "o status do documento (rascunho / em revisão / aprovado)",
+      "example_sentence": "El documento pasó de estado borrador a aprobado tras la reunión de arquitectura.",
+      "level_id": 6,
+      "category_id": 18,
+      "image_url": "local:vocab_docs.xml"
+    },
+    {
+      "word": "el público objetivo del documento",
+      "definition": "o público-alvo da documentação",
+      "example_sentence": "Adapta el nivel de detalle técnico según quién sea el público objetivo del documento.",
+      "level_id": 6,
+      "category_id": 18,
+      "image_url": "local:vocab_docs.xml"
+    },
+    {
+      "word": "la plantilla estándar",
+      "definition": "o modelo / template padrão de documento",
+      "example_sentence": "Usamos una plantilla estándar en Markdown para todos los diseños técnicos.",
+      "level_id": 6,
+      "category_id": 18,
+      "image_url": "local:vocab_docs.xml"
+    },
+    {
+      "word": "dejar constancia por escrito",
+      "definition": "registrar formalmente por escrito",
+      "example_sentence": "Siempre es recomendable dejar constancia por escrito de los acuerdos de una reunión.",
+      "level_id": 6,
+      "category_id": 18,
+      "image_url": "local:vocab_docs.xml"
+    },
+    {
+      "word": "la inclusión financiera",
+      "definition": "a inclusão financeira / bancarização",
+      "example_sentence": "Las fintechs impulsaron una revolución de inclusión financiera en toda América Latina.",
+      "level_id": 6,
+      "category_id": 27,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "la transformación digital",
+      "definition": "a transformação digital de empresas e governos",
+      "example_sentence": "La transformación digital permitió realizar trámites públicos desde el celular.",
+      "level_id": 6,
+      "category_id": 27,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "la brecha digital",
+      "definition": "a exclusão / desigualdade digital",
+      "example_sentence": "Llevar conectividad de alta velocidad a zonas rurales reduce la brecha digital.",
+      "level_id": 6,
+      "category_id": 27,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "la fuga de cerebros vs exportación de servicios",
+      "definition": "a evasão de talentos vs exportação de serviços de tecnologia",
+      "example_sentence": "El trabajo remoto permite exportar servicios de ingeniería sin emigrar de tu país.",
+      "level_id": 6,
+      "category_id": 27,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "la inflación y el poder adquisitivo",
+      "definition": "a inflação e o poder de compra",
+      "example_sentence": "Las familias buscan instrumentos financieros para proteger su poder adquisitivo.",
+      "level_id": 6,
+      "category_id": 27,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "la tasa de interés de referencia",
+      "definition": "a taxa básica de juros (Selic / taxa do Banco Central)",
+      "example_sentence": "El banco central redujo la tasa de interés para estimular el crédito y la inversión.",
+      "level_id": 6,
+      "category_id": 27,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "el emprendimiento / las empresas emergentes (startups)",
+      "definition": "o empreendedorismo / as startups",
+      "example_sentence": "El ecosistema de startups en la región atrajo inversiones récord en tecnología.",
+      "level_id": 6,
+      "category_id": 27,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "la protección de datos personales",
+      "definition": "a proteção de dados pessoais e privacidade",
+      "example_sentence": "Cumplimos con las leyes de protección de datos personales de cada país donde operamos.",
+      "level_id": 6,
+      "category_id": 27,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "el sesgo algorítmico",
+      "definition": "o viés algorítmico em modelos de IA",
+      "example_sentence": "Auditamos los modelos de inteligencia artificial para evitar sesgos algorítmicos.",
+      "level_id": 6,
+      "category_id": 27,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "la ética en la inteligencia artificial",
+      "definition": "a ética e responsabilidade no uso de IA",
+      "example_sentence": "El uso responsable y la ética en la inteligencia artificial son debates centrales hoy.",
+      "level_id": 6,
+      "category_id": 27,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "la educación continua / reconversión laboral",
+      "definition": "a educação continuada / requalificação profissional",
+      "example_sentence": "Los programas de reconversión laboral capacitan a miles de jóvenes en programación.",
+      "level_id": 6,
+      "category_id": 27,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "la calidad de vida",
+      "definition": "a qualidade de vida",
+      "example_sentence": "Ahorrar dos horas diarias de transporte mejora enormemente la calidad de vida.",
+      "level_id": 6,
+      "category_id": 27,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "la descentralización laboral",
+      "definition": "a descentralização do trabalho para fora das grandes capitais",
+      "example_sentence": "La descentralización laboral ha dinamizado la economía de ciudades intermedias.",
+      "level_id": 6,
+      "category_id": 27,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "la equidad de género en tecnología",
+      "definition": "a equidade de gênero na área de tecnologia",
+      "example_sentence": "Impulsamos becas y mentorías para promover la equidad de género en ingeniería.",
+      "level_id": 6,
+      "category_id": 27,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "el comercio electrónico transfronterizo",
+      "definition": "o e-commerce internacional / cross-border",
+      "example_sentence": "La logística moderna facilitó el crecimiento del comercio electrónico en la región.",
+      "level_id": 6,
+      "category_id": 27,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "la ciberseguridad nacional",
+      "definition": "a segurança cibernética de infraestruturas críticas",
+      "example_sentence": "Proteger los servicios públicos digitales es una prioridad de ciberseguridad.",
+      "level_id": 6,
+      "category_id": 27,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "el marco regulatorio",
+      "definition": "o marco regulatório / legislação do setor",
+      "example_sentence": "El marco regulatorio de banca abierta fomentó la competencia y mejores servicios.",
+      "level_id": 6,
+      "category_id": 27,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "la banca abierta (open banking / open finance)",
+      "definition": "o Open Finance / sistema financeiro aberto",
+      "example_sentence": "La banca abierta permite que el usuario sea dueño de su historial financiero.",
+      "level_id": 6,
+      "category_id": 27,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "el pensamiento crítico",
+      "definition": "o pensamento crítico e analítico",
+      "example_sentence": "En la era de la automatización, el pensamiento crítico humano es más valioso que nunca.",
+      "level_id": 6,
+      "category_id": 27,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "el impacto social",
+      "definition": "o impacto social positivo",
+      "example_sentence": "Desarrollamos tecnología con propósito para generar un impacto social real.",
+      "level_id": 6,
+      "category_id": 27,
+      "image_url": "local:vocab_work.xml"
+    },
+    {
+      "word": "ponerse las pilas",
+      "definition": "focar com energia / colocar a mão na massa / ligar no 220v",
+      "example_sentence": "¡Hay que ponerse las pilas esta semana para cerrar todas las tareas del sprint!",
+      "level_id": 6,
+      "category_id": 28,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "dar en el clavo",
+      "definition": "acertar em cheio / acertar na mosca (identificar exatamente o problema)",
+      "example_sentence": "Con tu análisis de los registros diste exactamente en el clavo.",
+      "level_id": 6,
+      "category_id": 28,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "echar una mano / dar una mano",
+      "definition": "dar uma mãozinha / ajudar alguém",
+      "example_sentence": "¿Me puedes echar una mano para revisar por qué falla esta consulta?",
+      "level_id": 6,
+      "category_id": 28,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "echar un ojo / dar una mirada / echar un vistazo",
+      "definition": "dar uma olhada rápida em algo",
+      "example_sentence": "Por favor, échale un ojo a mi pull request antes del mediodía.",
+      "level_id": 6,
+      "category_id": 28,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "ir al grano / sin rodeos",
+      "definition": "ir direto ao ponto / sem enrolação",
+      "example_sentence": "Como tenemos poco tiempo en la llamada, vayamos directo al grano.",
+      "level_id": 6,
+      "category_id": 28,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "no dar abasto",
+      "definition": "não dar conta da demanda / estar sobrecarregado",
+      "example_sentence": "El servidor antiguo no daba abasto durante las campañas de descuentos.",
+      "level_id": 6,
+      "category_id": 28,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "ser pan comido",
+      "definition": "ser moleza / ser muito fácil",
+      "example_sentence": "Con la nueva librería, implementar la autenticación fue pan comido.",
+      "level_id": 6,
+      "category_id": 28,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "tomar cartas en el asunto",
+      "definition": "tomar providências / intervir para resolver uma situação",
+      "example_sentence": "El equipo de seguridad tomó cartas en el asunto apenas detectó la anomalía.",
+      "level_id": 6,
+      "category_id": 28,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "tener en cuenta",
+      "definition": "levar em conta / considerar",
+      "example_sentence": "Debemos tener en cuenta la diferencia horaria al agendar la reunión con México.",
+      "level_id": 6,
+      "category_id": 28,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "pasar por alto / pasarse un detalle",
+      "definition": "deixar passar batido / esquecer um detalhe sem perceber",
+      "example_sentence": "Menos mal que revisaste el código, se me había pasado por alto validar los nulos.",
+      "level_id": 6,
+      "category_id": 28,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "estar al tanto / poner al tanto",
+      "definition": "estar a par / deixar alguém a par das novidades",
+      "example_sentence": "Mantenme al tanto de cómo evoluciona el despliegue en producción.",
+      "level_id": 6,
+      "category_id": 28,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "sacar adelante un proyecto",
+      "definition": "tocar em frente e concluir com sucesso um projeto difícil",
+      "example_sentence": "Entre todos logramos sacar adelante el lanzamiento a tiempo.",
+      "level_id": 6,
+      "category_id": 28,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "dar la cara",
+      "definition": "assumir a responsabilidade com transparência",
+      "example_sentence": "Cuando ocurre un incidente, damos la cara ante el cliente con un plan claro.",
+      "level_id": 6,
+      "category_id": 28,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "estar en la misma página / en sintonía",
+      "definition": "estar na mesma página / alinhado com a equipe",
+      "example_sentence": "Hicimos una llamada corta de diez minutos para asegurarnos de estar en sintonía.",
+      "level_id": 6,
+      "category_id": 28,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "buscarle la quinta pata al gato",
+      "definition": "complicar o que é simples / procurar pelo em ovo (sobre-engenharia)",
+      "example_sentence": "No le busquemos la quinta pata al gato; usemos una solución simple que funcione hoy.",
+      "level_id": 6,
+      "category_id": 28,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "empezar de cero",
+      "definition": "começar do zero",
+      "example_sentence": "En vez de parchar el módulo viejo, decidimos reescribirlo desde cero.",
+      "level_id": 6,
+      "category_id": 28,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "sobre la marcha",
+      "definition": "no caminho / enquanto as coisas acontecem (on the fly)",
+      "example_sentence": "Iremos ajustando los detalles menores sobre la marcha durante la iteración.",
+      "level_id": 6,
+      "category_id": 28,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "valer la pena",
+      "definition": "valer a pena / compensar o esforço",
+      "example_sentence": "Valió totalmente la pena invertir dos días en automatizar las pruebas.",
+      "level_id": 6,
+      "category_id": 28,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "quedarse corto",
+      "definition": "ser insuficiente / subestimar",
+      "example_sentence": "Nos quedamos cortos con la estimación porque no vimos la dependencia externa.",
+      "level_id": 6,
+      "category_id": 28,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "a primera vista",
+      "definition": "à primeira vista",
+      "example_sentence": "A primera vista parece un error de red, pero revisemos los registros del servidor.",
+      "level_id": 6,
+      "category_id": 28,
+      "image_url": "local:vocab_people.xml"
     }
   ]
 }

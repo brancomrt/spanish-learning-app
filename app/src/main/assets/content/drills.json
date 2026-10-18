@@ -1,313 +1,1259 @@
 {
-  "description": "Exercícios práticos de memorização de frases e expressões de TI em Espanhol Latino (A1 a C1)",
+  "description": "Drilling completo de Espanhol Latino-Americano para TI e Cotidiano (Stages 1 a 12 — A1 a C1+)",
   "drills": [
     {
       "id": 1,
       "level": 1,
+      "prompt": "¿Cómo te llamas?",
+      "answer": "Me llamo Carlos y soy de Brasil.",
+      "alt_answers": [
+        "Mi nombre es Carlos.",
+        "Me llamo Carlos."
+      ],
+      "grammar": "presente - presentaciones"
+    },
+    {
+      "id": 2,
+      "level": 1,
+      "prompt": "¿De dónde eres?",
+      "answer": "Soy de Brasil y vivo en São Paulo.",
+      "alt_answers": [
+        "Soy brasileño.",
+        "Vengo de Brasil."
+      ],
+      "grammar": "presente - origen"
+    },
+    {
+      "id": 3,
+      "level": 1,
+      "prompt": "¿Dónde vives actualmente?",
+      "answer": "Vivo en un departamento cerca del centro.",
+      "alt_answers": [
+        "Vivo en el centro de la ciudad.",
+        "Vivo en una casa tranquila."
+      ],
+      "grammar": "presente - vivienda"
+    },
+    {
+      "id": 4,
+      "level": 1,
+      "prompt": "¿A qué hora te despiertas entre semana?",
+      "answer": "Me despierto a las siete de la mañana.",
+      "alt_answers": [
+        "Me levanto a las siete.",
+        "A las siete de la mañana."
+      ],
+      "grammar": "presente - rutina diaria"
+    },
+    {
+      "id": 5,
+      "level": 1,
+      "prompt": "¿Tomas café por la mañana?",
+      "answer": "Sí, tomo una taza de café todas las mañanas.",
+      "alt_answers": [
+        "Sí, siempre desayuno con café.",
+        "No, prefiero tomar té o mate."
+      ],
+      "grammar": "sí/no - desayuno"
+    },
+    {
+      "id": 6,
+      "level": 1,
+      "prompt": "¿Cómo vas al trabajo normalmente?",
+      "answer": "Trabajo desde casa la mayoría de los días.",
+      "alt_answers": [
+        "Voy en metro al trabajo.",
+        "Voy en autobús a la oficina."
+      ],
+      "grammar": "presente - transporte"
+    },
+    {
+      "id": 7,
+      "level": 1,
+      "prompt": "¿A qué te dedicas?",
+      "answer": "Soy ingeniero de software.",
+      "alt_answers": [
+        "Trabajo como desarrollador.",
+        "Trabajo en el área de tecnología."
+      ],
+      "grammar": "presente - profesión"
+    },
+    {
+      "id": 8,
+      "level": 1,
+      "prompt": "¿Hablas español en el trabajo?",
+      "answer": "Sí, hablo español con mis compañeros de Latinoamérica.",
+      "alt_answers": [
+        "Sí, practico español todos los días.",
+        "Sí, tenemos reuniones en español."
+      ],
+      "grammar": "presente - idiomas"
+    },
+    {
+      "id": 9,
+      "level": 1,
+      "prompt": "¿Qué haces los fines de semana?",
+      "answer": "Los fines de semana descanso y salgo con mi familia.",
+      "alt_answers": [
+        "Me gusta pasear por el parque.",
+        "Veo películas y hago deporte."
+      ],
+      "grammar": "presente - tiempo libre"
+    },
+    {
+      "id": 10,
+      "level": 1,
+      "prompt": "¿Tienes hermanos?",
+      "answer": "Sí, tengo un hermano y una hermana.",
+      "alt_answers": [
+        "Soy hijo único.",
+        "Sí, tengo dos hermanos."
+      ],
+      "grammar": "presente - familia"
+    },
+    {
+      "id": 11,
+      "level": 1,
+      "prompt": "¿A qué hora almuerzas?",
+      "answer": "Normalmente almuerzo a la una de la tarde.",
+      "alt_answers": [
+        "Almuerzo al mediodía.",
+        "A las doce y media."
+      ],
+      "grammar": "presente - horarios"
+    },
+    {
+      "id": 12,
+      "level": 1,
+      "prompt": "¿Me escuchas bien en la llamada?",
+      "answer": "Sí, te escucho perfectamente.",
+      "alt_answers": [
+        "Sí, se escucha muy claro.",
+        "Sí, te escucho fuerte y claro."
+      ],
+      "grammar": "sí/no - videollamadas"
+    },
+    {
+      "id": 13,
+      "level": 2,
       "prompt": "¿Qué especificaciones tiene tu computadora de trabajo?",
       "answer": "Tiene dieciséis gigas de RAM y disco de estado sólido.",
       "alt_answers": [
         "Tiene 16 gigas de memoria RAM y disco SSD.",
         "Mi computadora tiene dieciséis gigas de RAM."
       ],
-      "grammar": "especificaciones de equipo"
-    },
-    {
-      "id": 2,
-      "level": 1,
-      "prompt": "¿Tienes acceso a la VPN de la empresa?",
-      "answer": "Sí, ya tengo acceso a la VPN.",
-      "alt_answers": [
-        "Sí, ya me dieron acceso a la VPN corporativa.",
-        "Sí, ya puedo conectarme a la VPN."
-      ],
-      "grammar": "preguntas de confirmación - accesos"
-    },
-    {
-      "id": 3,
-      "level": 1,
-      "prompt": "¿A qué hora comienza la jornada laboral?",
-      "answer": "Comienza a las nueve de la mañana.",
-      "alt_answers": [
-        "Arranca a las 9 de la mañana.",
-        "Empieza a las nueve."
-      ],
-      "grammar": "horarios y rutinas"
-    },
-    {
-      "id": 4,
-      "level": 1,
-      "prompt": "¿Cuál es tu rol dentro de este squad?",
-      "answer": "Soy desarrollador backend.",
-      "alt_answers": [
-        "Trabajo como desarrollador backend en el equipo.",
-        "Mi rol es desarrollador backend."
-      ],
-      "grammar": "identificación y cargos de TI"
-    },
-    {
-      "id": 5,
-      "level": 1,
-      "prompt": "¿Puedes compartir pantalla en la llamada?",
-      "answer": "Sí, ya estoy compartiendo mi pantalla.",
-      "alt_answers": [
-        "Sí, claro, comparto pantalla ahora mismo.",
-        "Sí, dame un segundo y comparto la pantalla."
-      ],
-      "grammar": "peticiones en videoconferencias"
-    },
-    {
-      "id": 6,
-      "level": 2,
-      "prompt": "¿En qué estás trabajando hoy?",
-      "answer": "Estoy trabajando en el endpoint de pagos.",
-      "alt_answers": [
-        "Hoy estoy avanzando con el endpoint de pagos.",
-        "Estoy trabajando en la API de pagos."
-      ],
-      "grammar": "daily meeting - tarea del día"
-    },
-    {
-      "id": 7,
-      "level": 2,
-      "prompt": "¿Tienes algún blocker o impedimento?",
-      "answer": "No, no tengo ningún blocker para avanzar.",
-      "alt_answers": [
-        "No tengo impedimentos hoy.",
-        "No, no estoy trabado con nada."
-      ],
-      "grammar": "daily meeting - blockers"
-    },
-    {
-      "id": 8,
-      "level": 2,
-      "prompt": "¿Estás trabado con alguna tarea?",
-      "answer": "Sí, estoy trabado con los permisos de AWS.",
-      "alt_answers": [
-        "Sí, tengo un blocker con la configuración de AWS.",
-        "Sí, necesito ayuda con las credenciales de AWS."
-      ],
-      "grammar": "estar trabado / pedir ayuda"
-    },
-    {
-      "id": 9,
-      "level": 2,
-      "prompt": "¿En qué columna del tablero está tu ticket?",
-      "answer": "Está en la columna En Progreso.",
-      "alt_answers": [
-        "El ticket está en progreso.",
-        "Está en la columna de pruebas."
-      ],
-      "grammar": "tablero Kanban / Jira"
-    },
-    {
-      "id": 10,
-      "level": 2,
-      "prompt": "¿Cómo se reproduce el bug que encontraste?",
-      "answer": "Se reproduce al enviar el formulario con campos vacíos.",
-      "alt_answers": [
-        "Ocurre cuando el usuario hace clic sin completar el correo.",
-        "Pasa cuando mandas el formulario vacío."
-      ],
-      "grammar": "reporte y reproducción de fallas"
-    },
-    {
-      "id": 11,
-      "level": 3,
-      "prompt": "¿A partir de qué rama creaste tu nueva rama?",
-      "answer": "La creé a partir de la rama develop.",
-      "alt_answers": [
-        "Hice el branch desde develop.",
-        "Saqué la rama a partir de develop."
-      ],
-      "grammar": "flujo de trabajo en Git"
-    },
-    {
-      "id": 12,
-      "level": 3,
-      "prompt": "¿Pudiste revisar mi pull request?",
-      "answer": "Sí, ya lo revisé y te dejé dos comentarios.",
-      "alt_answers": [
-        "Sí, ya miré tu PR y te dejé comentarios.",
-        "Sí, ya lo revisé y está aprobado."
-      ],
-      "grammar": "revisión de código / code review"
-    },
-    {
-      "id": 13,
-      "level": 3,
-      "prompt": "¿Resolviste los conflictos de merge en tu rama?",
-      "answer": "Sí, ya resolví todos los conflictos manualmente.",
-      "alt_answers": [
-        "Sí, ya hice el rebase y resolví los conflictos.",
-        "Sí, ya quedaron resueltos los conflictos."
-      ],
-      "grammar": "resolución de conflictos Git"
+      "grammar": "presente - hardware TI"
     },
     {
       "id": 14,
-      "level": 3,
-      "prompt": "¿Por qué falló la prueba unitaria en el pipeline?",
-      "answer": "Falló porque faltaba mockear el servicio externo.",
+      "level": 2,
+      "prompt": "¿Ya tienes acceso a la VPN de la empresa?",
+      "answer": "Sí, ya tengo acceso a la VPN.",
       "alt_answers": [
-        "Falla porque el servicio externo no responde.",
-        "Falló por un error de aserción en los datos."
+        "Sí, ya me dieron acceso a la VPN corporativa.",
+        "Sí, ya puedo conectarme a la red."
       ],
-      "grammar": "causa de fallo en pruebas unitarias"
+      "grammar": "sí/no - accesos TI"
     },
     {
       "id": 15,
-      "level": 3,
-      "prompt": "¿Ya tienes las aprobaciones necesarias para hacer el merge?",
-      "answer": "Sí, ya cuento con dos aprobaciones de mis compañeros.",
+      "level": 2,
+      "prompt": "¿Puedes compartir tu pantalla un momento?",
+      "answer": "Sí, claro, ya estoy compartiendo mi pantalla.",
       "alt_answers": [
-        "Sí, ya tengo dos approves en GitHub.",
-        "Sí, ya está aprobado para hacer merge."
+        "Sí, dame un segundo y comparto pantalla.",
+        "Claro, ahí comparto mi pantalla."
       ],
-      "grammar": "aprobación de pull requests"
+      "grammar": "verbos modales - llamadas"
     },
     {
       "id": 16,
-      "level": 4,
-      "prompt": "¿A qué hora haremos el despliegue a producción?",
-      "answer": "Haremos el despliegue a las once de la noche.",
+      "level": 2,
+      "prompt": "¿A qué hora empieza la reunión diaria?",
+      "answer": "Empieza a las nueve y media de la mañana.",
       "alt_answers": [
-        "El deploy a producción será a las 11 de la noche.",
-        "Haremos el pase a producción esta noche."
+        "Comienza a las nueve en punto.",
+        "Arranca a las nueve y media."
       ],
-      "grammar": "planificación de deploy"
+      "grammar": "presente - reuniones"
     },
     {
       "id": 17,
-      "level": 4,
-      "prompt": "¿Por qué se cayó el servidor en producción?",
-      "answer": "Se cayó debido a una fuga de memoria.",
+      "level": 2,
+      "prompt": "¿Dónde está la puerta de embarque número diez?",
+      "answer": "Está al final del pasillo a la derecha.",
       "alt_answers": [
-        "Hubo una caída por un memory leak en el backend.",
-        "Se cayó porque se agotó la memoria del servidor."
+        "Queda caminando derecho a la derecha.",
+        "Está en el segundo piso del aeropuerto."
       ],
-      "grammar": "análisis de incidente de producción"
+      "grammar": "presente - aeropuerto"
     },
     {
       "id": 18,
-      "level": 4,
-      "prompt": "¿Fue necesario hacer un rollback de la versión?",
-      "answer": "Sí, tuvimos que hacer un rollback de inmediato.",
+      "level": 2,
+      "prompt": "¿A qué hora sale tu vuelo hacia Bogotá?",
+      "answer": "Mi vuelo sale a las tres de la tarde.",
       "alt_answers": [
-        "Sí, revertimos los cambios a la versión previa.",
-        "Sí, hicimos rollback para restablecer el servicio."
+        "Sale a las quince horas.",
+        "Despega a las tres en punto."
       ],
-      "grammar": "gestión de rollback"
+      "grammar": "presente - vuelos"
     },
     {
       "id": 19,
-      "level": 4,
-      "prompt": "¿Revisaste los logs de la aplicación para ver la excepción?",
-      "answer": "Sí, revisé los logs en CloudWatch y encontré el error.",
+      "level": 2,
+      "prompt": "¿Tiene usted una reservación en el hotel?",
+      "answer": "Sí, tengo una reservación a mi nombre por tres noches.",
       "alt_answers": [
-        "Sí, ya miré los logs de error en el servidor.",
-        "Sí, estuve revisando los registros de logs."
+        "Sí, reservé una habitación doble.",
+        "Sí, hice la reserva por internet."
       ],
-      "grammar": "inspección de logs"
+      "grammar": "sí/no - hotel"
     },
     {
       "id": 20,
-      "level": 4,
-      "prompt": "¿Ya aplicaron el parche de seguridad en los servidores?",
-      "answer": "Sí, ya parcheamos todos los servidores de producción.",
+      "level": 2,
+      "prompt": "¿El desayuno está incluido en la tarifa?",
+      "answer": "Sí, el desayuno buffet y el wifi están incluidos.",
       "alt_answers": [
-        "Sí, el parche de seguridad ya fue aplicado.",
-        "Sí, ya actualizamos los paquetes vulnerables."
+        "Sí, incluye desayuno de siete a diez.",
+        "Sí, está incluido en el precio."
       ],
-      "grammar": "parches de seguridad"
+      "grammar": "sí/no - servicios de hotel"
     },
     {
       "id": 21,
-      "level": 5,
-      "prompt": "¿Dónde se localiza el cuello de botella del sistema?",
-      "answer": "Está en la consulta sin índice a la base de datos.",
+      "level": 2,
+      "prompt": "¿Cuántas maletas va a documentar hoy?",
+      "answer": "Voy a documentar una sola maleta y llevo mochila de mano.",
       "alt_answers": [
-        "El cuello de botella está en la base de datos transaccional.",
-        "Se ubica en la serialización de datos pesados."
+        "Solo despacho una valija.",
+        "Una maleta grande y mi equipaje de mano."
       ],
-      "grammar": "análisis de rendimiento / cuellos de botella"
+      "grammar": "futuro - equipaje"
     },
     {
       "id": 22,
-      "level": 5,
-      "prompt": "¿Cómo podemos desacoplar estos dos microservicios?",
-      "answer": "Podemos desacoplarlos implementando una cola de mensajes asíncrona.",
+      "level": 2,
+      "prompt": "¿Cuánto cuesta el taxi hasta el centro histórico?",
+      "answer": "Cuesta unos veinte dólares aproximadamente.",
       "alt_answers": [
-        "Podemos usar eventos con Kafka para desacoplarlos.",
-        "Podemos desacoplar la comunicación mediante colas."
+        "Sale veinte dólares hasta el centro.",
+        "El viaje cuesta veinte dólares."
       ],
-      "grammar": "patrones de arquitectura / desacoplamiento"
+      "grammar": "presente - precios de viaje"
     },
     {
       "id": 23,
-      "level": 5,
-      "prompt": "¿Cuál es la latencia promedio que tiene la API?",
-      "answer": "Tiene una latencia promedio de cuarenta milisegundos.",
+      "level": 2,
+      "prompt": "¿Dónde puedo cambiar dinero cerca de aquí?",
+      "answer": "Hay una casa de cambio a dos cuadras por esta avenida.",
       "alt_answers": [
-        "La latencia promedio es de 40 milisegundos.",
-        "Ronda los cuarenta milisegundos en el percentil 95."
+        "Puedes cambiar en el banco de la esquina.",
+        "En la casa de cambio del primer piso."
       ],
-      "grammar": "métricas de latencia y SLA"
+      "grammar": "verbos modales - divisas"
     },
     {
       "id": 24,
-      "level": 5,
-      "prompt": "¿El balanceador de carga soporta escalabilidad horizontal?",
-      "answer": "Sí, distribuye el tráfico entre nuevos pods automáticamente.",
+      "level": 2,
+      "prompt": "¿Con cuántas pantallas trabajas en tu escritorio?",
+      "answer": "Trabajo con la portátil y un monitor externo grande.",
       "alt_answers": [
-        "Sí, soporta auto-scaling horizontal en Kubernetes.",
-        "Sí, permite agregar más instancias según la demanda."
+        "Uso dos pantallas para programar.",
+        "Trabajo con dos monitores externos."
       ],
-      "grammar": "infraestructura cloud y balanceo"
+      "grammar": "presente - espacio de trabajo"
     },
     {
       "id": 25,
-      "level": 6,
-      "prompt": "¿Cuánto tiempo estiman para completar esta épica?",
-      "answer": "Estimamos dos sprints de desarrollo con el equipo completo.",
+      "level": 3,
+      "prompt": "¿Qué le gustaría pedir de plato fuerte?",
+      "answer": "Me gustaría pedir el pescado a la plancha con ensalada.",
       "alt_answers": [
-        "Calculamos que tomará dos sprints de trabajo.",
-        "Estimamos unas tres semanas incluyendo pruebas de carga."
+        "Voy a pedir el pollo asado con arroz.",
+        "Quiero la carne a la parrilla, por favor."
       ],
-      "grammar": "estimaciones de proyectos técnicos"
+      "grammar": "condicional - restaurante"
     },
     {
       "id": 26,
-      "level": 6,
-      "prompt": "¿Cuál es la principal conclusión del post-mortem?",
-      "answer": "Debemos mejorar las alertas tempranas y la documentación de contingencia.",
+      "level": 3,
+      "prompt": "¿En qué término prefiere la carne?",
+      "answer": "La prefiero a término medio, por favor.",
       "alt_answers": [
-        "El acuerdo es implementar monitoreo sintético y alarmas.",
-        "Acordamos robustecer las pruebas de estrés antes del deploy."
+        "Bien cocida, por favor.",
+        "A punto, término medio."
       ],
-      "grammar": "análisis post-mortem y lecciones aprendidas"
+      "grammar": "presente - restaurante"
     },
     {
       "id": 27,
-      "level": 6,
-      "prompt": "¿Cómo vamos a priorizar el pago de la deuda técnica?",
-      "answer": "Asignaremos el veinte por ciento de la capacidad de cada sprint.",
+      "level": 3,
+      "prompt": "¿Tienen opciones vegetarianas en la carta?",
+      "answer": "Sí, tenemos tres platos vegetarianos y ensaladas frescas.",
       "alt_answers": [
-        "Dedicaremos un día por semana a refactorizar código legado.",
-        "Vamos a reservar un porcentaje de puntos para refactor."
+        "Sí, hay varias opciones sin carne.",
+        "Sí, el menú incluye platos vegetarianos."
       ],
-      "grammar": "gestión y negociación de deuda técnica"
+      "grammar": "sí/no - alimentación"
     },
     {
       "id": 28,
-      "level": 6,
-      "prompt": "¿Ya te alineaste con el product manager sobre los criterios de entrega?",
-      "answer": "Sí, ya nos alineamos y acordamos el alcance del MVP.",
+      "level": 3,
+      "prompt": "¿Nos puede traer la cuenta, por favor?",
+      "answer": "Por supuesto, enseguida les traigo la cuenta.",
       "alt_answers": [
-        "Sí, ya tuvimos la reunión de alineación con producto.",
-        "Sí, los criterios de aceptación ya quedaron definidos."
+        "Sí, claro, ¿van a pagar con tarjeta?",
+        "Ahorita mismo se la traigo."
       ],
-      "grammar": "comunicación con stakeholders de producto"
+      "grammar": "verbos modales - restaurante"
+    },
+    {
+      "id": 29,
+      "level": 3,
+      "prompt": "¿Qué síntomas tienes desde ayer?",
+      "answer": "Me duele la garganta y tengo un poco de fiebre.",
+      "alt_answers": [
+        "Tengo dolor de cabeza y cansancio.",
+        "Estoy resfriado y tengo tos."
+      ],
+      "grammar": "presente - consulta médica"
+    },
+    {
+      "id": 30,
+      "level": 3,
+      "prompt": "¿Eres alérgico a algún medicamento?",
+      "answer": "No, no soy alérgico a ningún medicamento.",
+      "alt_answers": [
+        "No tengo alergias conocidas.",
+        "No, a ninguno."
+      ],
+      "grammar": "sí/no - salud"
+    },
+    {
+      "id": 31,
+      "level": 3,
+      "prompt": "¿Cada cuántas horas debo tomar esta pastilla?",
+      "answer": "Debes tomar una pastilla cada ocho horas después de comer.",
+      "alt_answers": [
+        "Cada ocho horas durante cinco días.",
+        "Tres veces al día con agua."
+      ],
+      "grammar": "verbos modales - farmacia"
+    },
+    {
+      "id": 32,
+      "level": 3,
+      "prompt": "¿Qué error te sale en la pantalla?",
+      "answer": "Me sale un error de credenciales inválidas al iniciar sesión.",
+      "alt_answers": [
+        "Aparece un mensaje de acceso denegado.",
+        "Me da un error de conexión al servidor."
+      ],
+      "grammar": "presente - soporte TI"
+    },
+    {
+      "id": 33,
+      "level": 3,
+      "prompt": "¿Ya probaste reiniciando la computadora?",
+      "answer": "Sí, ya la reinicié dos veces pero sigue igual.",
+      "alt_answers": [
+        "Sí, reinicié el equipo hace diez minutos.",
+        "Sí, ya probé pero el error continúa."
+      ],
+      "grammar": "pretérito indefinido - soporte TI"
+    },
+    {
+      "id": 34,
+      "level": 3,
+      "prompt": "¿Cómo puedo restablecer mi contraseña corporativa?",
+      "answer": "Puedes restablecerla desde el portal de autogestión.",
+      "alt_answers": [
+        "Haz clic en olvidé mi contraseña en el portal.",
+        "Pide un enlace de recuperación a soporte."
+      ],
+      "grammar": "verbos modales - accesos"
+    },
+    {
+      "id": 35,
+      "level": 3,
+      "prompt": "¿Por qué se escucha entrecortado el audio en la llamada?",
+      "answer": "Porque mi señal de wifi está un poco inestable hoy.",
+      "alt_answers": [
+        "Porque hay pérdida de paquetes en la red.",
+        "Voy a apagar la cámara para mejorar el audio."
+      ],
+      "grammar": "presente - conectividad"
+    },
+    {
+      "id": 36,
+      "level": 3,
+      "prompt": "¿Qué sistema operativo usas para desarrollar?",
+      "answer": "Uso Linux Ubuntu porque es muy rápido con contenedores.",
+      "alt_answers": [
+        "Trabajo con macOS en la portátil de la empresa.",
+        "Uso Windows con el subsistema de Linux."
+      ],
+      "grammar": "presente - software"
+    },
+    {
+      "id": 37,
+      "level": 4,
+      "prompt": "¿En qué estás trabajando hoy?",
+      "answer": "Hoy estoy trabajando en el servicio de notificaciones.",
+      "alt_answers": [
+        "Estoy avanzando con el endpoint de pagos.",
+        "Estoy corrigiendo un bug en el formulario de registro."
+      ],
+      "grammar": "gerundio - daily standup"
+    },
+    {
+      "id": 38,
+      "level": 4,
+      "prompt": "¿Qué pudiste terminar ayer?",
+      "answer": "Ayer terminé las pruebas unitarias y abrí el pull request.",
+      "alt_answers": [
+        "Ayer completé la integración con la base de datos.",
+        "Cerré el ticket que tenía asignado en el sprint."
+      ],
+      "grammar": "pretérito indefinido - daily standup"
+    },
+    {
+      "id": 39,
+      "level": 4,
+      "prompt": "¿Tienes algún impedimento o estás trabado con algo?",
+      "answer": "No, no tengo ningún blocker por ahora.",
+      "alt_answers": [
+        "Sí, estoy trabado esperando las credenciales de pruebas.",
+        "No, vengo avanzando bien sin bloqueos."
+      ],
+      "grammar": "daily - blockers"
+    },
+    {
+      "id": 40,
+      "level": 4,
+      "prompt": "¿Le pudiste dar una mirada a mi pull request?",
+      "answer": "Sí, ya lo revisé y te dejé dos comentarios menores.",
+      "alt_answers": [
+        "Sí, ya aprobé los cambios para que hagas merge.",
+        "Todavía no, lo reviso apenas termine esta reunión."
+      ],
+      "grammar": "revisión de código - PRs"
+    },
+    {
+      "id": 41,
+      "level": 4,
+      "prompt": "¿Desde qué rama debo sacar mi rama de trabajo?",
+      "answer": "Debes crearla siempre a partir de la rama de desarrollo.",
+      "alt_answers": [
+        "Sácala desde la rama principal actualizada.",
+        "Crea tu rama desde develop."
+      ],
+      "grammar": "verbos modales - Git"
+    },
+    {
+      "id": 42,
+      "level": 4,
+      "prompt": "¿En cuántas cuotas sin interés se puede pagar?",
+      "answer": "Puedes pagar hasta en seis cuotas mensuales sin interés.",
+      "alt_answers": [
+        "Ofrecemos tres y seis meses sin intereses.",
+        "Se puede dividir en seis pagos con tarjeta."
+      ],
+      "grammar": "presente - compras y finanzas"
+    },
+    {
+      "id": 43,
+      "level": 4,
+      "prompt": "¿Aceptan pagos con tarjeta de crédito o código QR?",
+      "answer": "Sí, aceptamos todas las tarjetas y billeteras digitales.",
+      "alt_answers": [
+        "Sí, puedes pagar con tarjeta o transferencia.",
+        "Sí, claro, sin recargo adicional."
+      ],
+      "grammar": "sí/no - pagos"
+    },
+    {
+      "id": 44,
+      "level": 4,
+      "prompt": "¿Dónde están los probadores de ropa?",
+      "answer": "Están al fondo del local a la izquierda.",
+      "alt_answers": [
+        "Quedan al lado de las cajas.",
+        "Por aquel pasillo a la derecha."
+      ],
+      "grammar": "presente - compras"
+    },
+    {
+      "id": 45,
+      "level": 4,
+      "prompt": "¿Puedo cambiar esta camisa si no me queda bien la talla?",
+      "answer": "Sí, tienes treinta días para cambiarla presentando la factura.",
+      "alt_answers": [
+        "Sí, puedes cambiar el talle en cualquier sucursal.",
+        "Sí, conservando la etiqueta y el ticket."
+      ],
+      "grammar": "condicional - garantía y cambios"
+    },
+    {
+      "id": 46,
+      "level": 4,
+      "prompt": "¿Qué deporte practicas en tu tiempo libre?",
+      "answer": "Salgo a correr tres veces por semana y juego al fútbol.",
+      "alt_answers": [
+        "Voy al gimnasio antes de empezar a trabajar.",
+        "Ando en bicicleta los fines de semana."
+      ],
+      "grammar": "presente - deportes"
+    },
+    {
+      "id": 47,
+      "level": 4,
+      "prompt": "¿Adónde fueron a pasear el fin de semana pasado?",
+      "answer": "Fuimos a hacer senderismo a la montaña.",
+      "alt_answers": [
+        "Fuimos a conocer un pueblo cercano.",
+        "Salimos a cenar y al cine con amigos."
+      ],
+      "grammar": "pretérito indefinido - ocio"
+    },
+    {
+      "id": 48,
+      "level": 4,
+      "prompt": "¿Te gustaría ir a tomar un café este sábado?",
+      "answer": "¡Me encantaría! ¿Quedamos a las cuatro de la tarde?",
+      "alt_answers": [
+        "Sí, claro, me parece un excelente plan.",
+        "Sí, con gusto, nos vemos el sábado."
+      ],
+      "grammar": "condicional - invitaciones"
+    },
+    {
+      "id": 49,
+      "level": 5,
+      "prompt": "¿Por qué tarda tanto en responder esa consulta SQL?",
+      "answer": "Porque falta crear un índice en la columna de fecha.",
+      "alt_answers": [
+        "Porque está haciendo un escaneo completo de la tabla.",
+        "Porque la tabla tiene millones de registros sin paginar."
+      ],
+      "grammar": "presente - bases de datos"
+    },
+    {
+      "id": 50,
+      "level": 5,
+      "prompt": "¿Hicieron una copia de seguridad antes de correr la migración?",
+      "answer": "Sí, hicimos un respaldo completo y verificamos su integridad.",
+      "alt_answers": [
+        "Sí, el respaldo automático corrió hace diez minutos.",
+        "Sí, ya tenemos el backup guardado en la nube."
+      ],
+      "grammar": "pretérito indefinido - backups"
+    },
+    {
+      "id": 51,
+      "level": 5,
+      "prompt": "¿Cómo evitamos saturar la base de datos principal con los reportes?",
+      "answer": "Dirigimos todas las consultas de reportes hacia la réplica de solo lectura.",
+      "alt_answers": [
+        "Consultamos la réplica secundaria en lugar del nodo primario.",
+        "Agregamos una capa de caché en memoria con Redis."
+      ],
+      "grammar": "presente - optimización DB"
+    },
+    {
+      "id": 52,
+      "level": 5,
+      "prompt": "¿En qué región de la nube están alojados nuestros servidores?",
+      "answer": "Están alojados en la región de São Paulo con respaldo en Estados Unidos.",
+      "alt_answers": [
+        "Corren en tres zonas de disponibilidad de Sudamérica.",
+        "Están hospedados en nuestra nube privada virtual."
+      ],
+      "grammar": "voz pasiva - cloud"
+    },
+    {
+      "id": 53,
+      "level": 5,
+      "prompt": "¿Cómo reducimos el gasto de la nube en los entornos de prueba?",
+      "answer": "Programamos el apagado automático fuera del horario laboral.",
+      "alt_answers": [
+        "Apagamos las instancias de desarrollo durante la noche.",
+        "Ajustamos el tamaño de los contenedores para no desperdiciar memoria."
+      ],
+      "grammar": "presente - costos cloud"
+    },
+    {
+      "id": 54,
+      "level": 5,
+      "prompt": "¿Cuánto pagas de alquiler mensual por el departamento?",
+      "answer": "Pago seiscientos dólares al mes más los gastos comunes del edificio.",
+      "alt_answers": [
+        "El arriendo cuesta seiscientos dólares mensuales.",
+        "Pago quinientos dólares y las expensas aparte."
+      ],
+      "grammar": "presente - vivienda"
+    },
+    {
+      "id": 55,
+      "level": 5,
+      "prompt": "¿El departamento se alquila amueblado o vacío?",
+      "answer": "Se alquila totalmente amueblado y con electrodomésticos.",
+      "alt_answers": [
+        "Viene equipado con muebles y lavadora.",
+        "Se alquila sin muebles, solo con cocina."
+      ],
+      "grammar": "voz pasiva - alquiler"
+    },
+    {
+      "id": 56,
+      "level": 5,
+      "prompt": "¿Hace cuánto tiempo te mudaste a este barrio?",
+      "answer": "Me mudé hace ocho meses porque es mucho más silencioso.",
+      "alt_answers": [
+        "Vivimos aquí desde el año pasado.",
+        "Nos mudamos hace medio año."
+      ],
+      "grammar": "pretérito indefinido - mudanza"
+    },
+    {
+      "id": 57,
+      "level": 5,
+      "prompt": "¿Por qué tuviste que llamar al plomero hoy?",
+      "answer": "Porque había una pérdida de agua debajo del lavaplatos.",
+      "alt_answers": [
+        "Porque la llave de la ducha estaba goteando.",
+        "Para arreglar una tubería de la cocina."
+      ],
+      "grammar": "pretérito indefinido - hogar"
+    },
+    {
+      "id": 58,
+      "level": 5,
+      "prompt": "¿Cómo te llevas con tus nuevos compañeros de equipo?",
+      "answer": "Me llevo excelente con todos, son muy colaborativos.",
+      "alt_answers": [
+        "Nos llevamos muy bien desde el primer día.",
+        "Me caen genial, hay un gran ambiente de trabajo."
+      ],
+      "grammar": "presente - relaciones"
+    },
+    {
+      "id": 59,
+      "level": 5,
+      "prompt": "¿Cómo mantienen el contacto con los amigos que viven lejos?",
+      "answer": "Hacemos videollamadas los domingos para ponernos al día.",
+      "alt_answers": [
+        "Hablamos seguido por nuestro grupo y nos visitamos en vacaciones.",
+        "Nos ponemos al día por teléfono cada semana."
+      ],
+      "grammar": "presente - amistad"
+    },
+    {
+      "id": 60,
+      "level": 5,
+      "prompt": "Ustedes se encargan de llevar el postre para la cena, ¿verdad?",
+      "answer": "Sí, nosotros llevamos un postre casero y las bebidas.",
+      "alt_answers": [
+        "Sí, claro, cuenta con eso.",
+        "Por supuesto, nosotros nos encargamos del postre."
+      ],
+      "grammar": "confirmación - eventos sociales"
+    },
+    {
+      "id": 61,
+      "level": 6,
+      "prompt": "¿Cuándo haremos el despliegue a producción?",
+      "answer": "Lo haremos hoy a las diez de la noche cuando baje el tráfico.",
+      "alt_answers": [
+        "Mañana a primera hora durante la ventana de mantenimiento.",
+        "En cuanto aprueben las pruebas en preproducción."
+      ],
+      "grammar": "despliegues - producción"
+    },
+    {
+      "id": 62,
+      "level": 6,
+      "prompt": "¿Por qué se rompió el pipeline de integración continua?",
+      "answer": "Porque fallaron dos pruebas de integración tras el último cambio.",
+      "alt_answers": [
+        "Porque expiró el token de acceso al registro de contenedores.",
+        "Porque la imagen de Docker superó el límite de tiempo."
+      ],
+      "grammar": "pretérito indefinido - CI/CD"
+    },
+    {
+      "id": 63,
+      "level": 6,
+      "prompt": "¿Tuvieron que hacer un rollback de la versión?",
+      "answer": "Sí, revertimos los cambios en dos minutos a la versión estable.",
+      "alt_answers": [
+        "Sí, hicimos rollback preventivo al ver subir la latencia.",
+        "No hizo falta, aplicamos un ajuste rápido en caliente."
+      ],
+      "grammar": "despliegues - rollback"
+    },
+    {
+      "id": 64,
+      "level": 6,
+      "prompt": "¿Cómo gestionan la infraestructura del clúster de Kubernetes?",
+      "answer": "Aprovisionamos todos los recursos mediante código con Terraform.",
+      "alt_answers": [
+        "Usamos infraestructura como código versionada en Git.",
+        "Automatizamos el despliegue de nodos con plantillas declarativas."
+      ],
+      "grammar": "presente - IaC"
+    },
+    {
+      "id": 65,
+      "level": 6,
+      "prompt": "¿Qué vulnerabilidad detectaron durante la auditoría de seguridad?",
+      "answer": "Detectaron un problema de permisos excesivos en un rol antiguo.",
+      "alt_answers": [
+        "Encontraron una librería desactualizada que ya parcheamos.",
+        "Reportaron que faltaba limitar los intentos de inicio de sesión."
+      ],
+      "grammar": "pretérito indefinido - seguridad"
+    },
+    {
+      "id": 66,
+      "level": 6,
+      "prompt": "¿Cómo protegen las credenciales y claves secretas en producción?",
+      "answer": "Las inyectamos cifradas desde el gestor de secretos de la nube.",
+      "alt_answers": [
+        "Nunca las guardamos en el código; usamos bóvedas de secretos.",
+        "Las rotamos automáticamente y las leemos en memoria al arrancar."
+      ],
+      "grammar": "presente - seguridad"
+    },
+    {
+      "id": 67,
+      "level": 6,
+      "prompt": "¿Qué debemos hacer de inmediato si se filtra un token de API?",
+      "answer": "Debemos revocar el token al instante y rotar las claves afectadas.",
+      "alt_answers": [
+        "Invalidar la credencial comprometida y revisar el registro de auditoría.",
+        "Bloquear el acceso de inmediato y generar credenciales nuevas."
+      ],
+      "grammar": "verbos modales - incidentes de seguridad"
+    },
+    {
+      "id": 68,
+      "level": 6,
+      "prompt": "¿Dónde identificaron el cuello de botella del servicio?",
+      "answer": "El cuello de botella estaba en una llamada síncrona a un servicio externo.",
+      "alt_answers": [
+        "Estaba en la serialización de archivos grandes en memoria.",
+        "Se producía por falta de conexiones disponibles hacia la base de datos."
+      ],
+      "grammar": "cuello de botella - rendimiento"
+    },
+    {
+      "id": 69,
+      "level": 6,
+      "prompt": "¿Por qué decidieron desacoplar esos dos módulos con una cola?",
+      "answer": "Para que el servicio de pagos no dependa del envío de correos.",
+      "alt_answers": [
+        "Para absorber los picos de tráfico de forma asíncrona.",
+        "Para evitar que una caída secundaria afecte el flujo principal."
+      ],
+      "grammar": "cuello de botella - arquitectura"
+    },
+    {
+      "id": 70,
+      "level": 6,
+      "prompt": "¿Cómo aseguran que el endpoint de cobro sea idempotente?",
+      "answer": "Validamos una clave única de idempotencia en cada transacción.",
+      "alt_answers": [
+        "Si recibimos la misma petición dos veces, no volvemos a ejecutar el cobro.",
+        "Guardamos el identificador de la operación en Redis para evitar duplicados."
+      ],
+      "grammar": "presente - diseño de APIs"
+    },
+    {
+      "id": 71,
+      "level": 7,
+      "prompt": "¿En cuántos puntos de historia estimaron esta tarea?",
+      "answer": "La estimamos en cinco puntos porque incluye pruebas de extremo a extremo.",
+      "alt_answers": [
+        "Le dimos ocho puntos por la complejidad de la migración.",
+        "Tres puntos de historia, ya que el cambio está bien acotado."
+      ],
+      "grammar": "liderazgo - planificación"
+    },
+    {
+      "id": 72,
+      "level": 7,
+      "prompt": "¿Cuáles son los criterios de aceptación para cerrar esta historia?",
+      "answer": "Debe validar los datos de entrada, pasar las pruebas y actualizar la documentación.",
+      "alt_answers": [
+        "Tiene que funcionar en móviles y cumplir con el diseño acordado.",
+        "Pasar la revisión de código y las pruebas de regresión en preproducción."
+      ],
+      "grammar": "presente - calidad ágil"
+    },
+    {
+      "id": 73,
+      "level": 7,
+      "prompt": "¿Por qué tuvimos que posponer esa funcionalidad para el próximo sprint?",
+      "answer": "Porque surgió un incidente crítico en producción que tomó dos días.",
+      "alt_answers": [
+        "Porque todavía no estaba lista la dependencia del equipo de plataforma.",
+        "Para no comprometer la calidad del entregable principal del sprint."
+      ],
+      "grammar": "pretérito indefinido - gestión de alcance"
+    },
+    {
+      "id": 74,
+      "level": 7,
+      "prompt": "¿Qué mejora propusiste durante la retrospectiva del viernes?",
+      "answer": "Propuse automatizar las pruebas de regresión para desplegar más rápido.",
+      "alt_answers": [
+        "Sugerí definir mejor los contratos de la API durante el refinamiento.",
+        "Acordamos limitar el trabajo en curso para cerrar historias antes de abrir nuevas."
+      ],
+      "grammar": "liderazgo - mejora continua"
+    },
+    {
+      "id": 75,
+      "level": 7,
+      "prompt": "¿Cuál es el objetivo principal del producto mínimo viable?",
+      "answer": "Validar nuestra hipótesis de negocio con usuarios reales lo antes posible.",
+      "alt_answers": [
+        "Salir al mercado rápido con el flujo esencial y aprender del uso real.",
+        "Reducir el riesgo antes de invertir meses en funcionalidades secundarias."
+      ],
+      "grammar": "presente - estrategia de producto"
+    },
+    {
+      "id": 76,
+      "level": 7,
+      "prompt": "¿Podrías confirmarme cuándo estará listo el entorno de homologación?",
+      "answer": "Sí, el entorno estará listo hoy a las cuatro de la tarde.",
+      "alt_answers": [
+        "Claro, terminamos de cargar los datos de prueba en media hora.",
+        "Por supuesto, ya está disponible para que el equipo valide."
+      ],
+      "grammar": "condicional - comunicación entre equipos"
+    },
+    {
+      "id": 77,
+      "level": 7,
+      "prompt": "¿Cómo evitamos el desvío de alcance durante el desarrollo del sprint?",
+      "answer": "Cualquier requerimiento nuevo se evalúa y se agenda para el siguiente sprint.",
+      "alt_answers": [
+        "Mantenemos foco en el objetivo acordado en la planificación.",
+        "Negociamos con producto intercambiar una tarea equivalente si entra algo urgente."
+      ],
+      "grammar": "presente - negociación ágil"
+    },
+    {
+      "id": 78,
+      "level": 7,
+      "prompt": "¿Qué métrica de negocio estamos buscando mover este trimestre?",
+      "answer": "Queremos aumentar la conversión del carrito de compras en un diez por ciento.",
+      "alt_answers": [
+        "Buscamos reducir el tiempo de registro de nuevos clientes a la mitad.",
+        "Nuestro objetivo es disminuir la tasa de abandono en el paso de pago."
+      ],
+      "grammar": "presente - resultados de negocio"
+    },
+    {
+      "id": 79,
+      "level": 8,
+      "prompt": "¿Cuál fue la causa raíz de la interrupción del servicio anoche?",
+      "answer": "Un cambio de configuración agotó las conexiones de la base de datos.",
+      "alt_answers": [
+        "Una fuga de memoria en el contenedor tras el último despliegue.",
+        "El vencimiento inesperado de un certificado interno entre servicios."
+      ],
+      "grammar": "pretérito indefinido - post-mortem"
+    },
+    {
+      "id": 80,
+      "level": 8,
+      "prompt": "¿Cómo lograron mitigar el incidente tan rápido durante la guardia?",
+      "answer": "Seguimos la guía operativa y activamos el cortacircuitos hacia el proveedor lento.",
+      "alt_answers": [
+        "Revertimos el despliegue y escalamos horizontalmente los nodos.",
+        "Redirigimos el tráfico hacia la región secundaria mientras corregíamos el error."
+      ],
+      "grammar": "pretérito indefinido - guardia SRE"
+    },
+    {
+      "id": 81,
+      "level": 8,
+      "prompt": "¿Quién está de guardia técnica este fin de semana?",
+      "answer": "Este fin de semana estoy yo de guardia principal y Laura de respaldo.",
+      "alt_answers": [
+        "Le toca la guardia al equipo de plataforma hasta el lunes.",
+        "Martín cubre el turno del sábado y yo el del domingo."
+      ],
+      "grammar": "presente - guardia técnica"
+    },
+    {
+      "id": 82,
+      "level": 8,
+      "prompt": "¿Cuál es nuestro acuerdo de nivel de servicio de disponibilidad anual?",
+      "answer": "Garantizamos un noventa y nueve coma nueve por ciento de tiempo de actividad.",
+      "alt_answers": [
+        "Tres nueves de disponibilidad mensual medida en la puerta de enlace.",
+        "No podemos superar los cuarenta minutos de inactividad al mes."
+      ],
+      "grammar": "presente - SLA y SLO"
+    },
+    {
+      "id": 83,
+      "level": 8,
+      "prompt": "¿Para qué propagamos un identificador de correlación en cada petición?",
+      "answer": "Para poder rastrear el recorrido completo de una transacción entre todos los microservicios.",
+      "alt_answers": [
+        "Para cruzar los registros de distintos contenedores cuando investigamos un error.",
+        "Porque es indispensable para la trazabilidad distribuida."
+      ],
+      "grammar": "presente - observabilidad"
+    },
+    {
+      "id": 84,
+      "level": 8,
+      "prompt": "¿Adónde van los eventos de Kafka que fallan después de todos los reintentos?",
+      "answer": "Se envían a una cola de mensajes muertos para analizarlos sin frenar el flujo.",
+      "alt_answers": [
+        "Van a una cola de contingencia y disparan una alerta al equipo.",
+        "Se guardan en la cola de mensajes fallidos para reprocesarlos luego."
+      ],
+      "grammar": "presente - mensajería asíncrona"
+    },
+    {
+      "id": 85,
+      "level": 8,
+      "prompt": "¿Cómo manejan las transacciones que abarcan varios microservicios?",
+      "answer": "Implementamos el patrón Saga con eventos de compensación en caso de error.",
+      "alt_answers": [
+        "Usamos consistencia eventual y confirmaciones asíncronas por eventos.",
+        "Si falla el último paso, publicamos un evento para revertir la reserva previa."
+      ],
+      "grammar": "presente - sistemas distribuidos"
+    },
+    {
+      "id": 86,
+      "level": 8,
+      "prompt": "¿Cómo actualizan un endpoint sin romper las aplicaciones móviles antiguas?",
+      "answer": "Creamos una versión nueva de la ruta y mantenemos la anterior por seis meses.",
+      "alt_answers": [
+        "Garantizamos siempre la compatibilidad hacia atrás en los contratos JSON.",
+        "Usamos versionado de API y monitoreamos cuándo deja de usarse la versión vieja."
+      ],
+      "grammar": "presente - evolución de APIs"
+    },
+    {
+      "id": 87,
+      "level": 9,
+      "prompt": "¿Por qué es tan útil escuchar pódcast de distintos países de Latinoamérica?",
+      "answer": "Porque te ayuda a familiarizarte con los acentos de México, Colombia, Perú, Chile y Argentina.",
+      "alt_answers": [
+        "Porque aprendes los modismos reales que usan tus compañeros en las reuniones.",
+        "Porque entrenas el oído para comprender distintas velocidades y entonaciones."
+      ],
+      "grammar": "presente - comprensión auditiva"
+    },
+    {
+      "id": 88,
+      "level": 9,
+      "prompt": "¿Qué diferencia hay entre el uso de 'tú', 'vos' y 'usted' en la región?",
+      "answer": "En Argentina y Uruguay predomina el 'vos', mientras que en México y Perú se usa más el 'tú'.",
+      "alt_answers": [
+        "En Colombia es muy frecuente usar 'usted' con cercanía y respeto.",
+        "En el plural toda Latinoamérica utiliza 'ustedes' sin excepción."
+      ],
+      "grammar": "presente - variedades del español"
+    },
+    {
+      "id": 89,
+      "level": 9,
+      "prompt": "¿Por qué ven las películas con subtítulos en español en lugar de portugués?",
+      "answer": "Para asociar la pronunciación exacta con la escritura de cada palabra.",
+      "alt_answers": [
+        "Porque leer y escuchar en el mismo idioma acelera mucho el aprendizaje.",
+        "Para no traducir mentalmente mientras seguimos la historia."
+      ],
+      "grammar": "presente - inmersión cultural"
+    },
+    {
+      "id": 90,
+      "level": 9,
+      "prompt": "¿Qué significa quedarse haciendo 'sobremesa' después de almorzar?",
+      "answer": "Significa quedarse conversando tranquilamente en la mesa después de comer.",
+      "alt_answers": [
+        "En español 'sobremesa' es la charla tras la comida, mientras que el dulce es 'el postre'.",
+        "Es una costumbre muy valorada para compartir tiempo con familia y amigos."
+      ],
+      "grammar": "presente - falsos amigos y cultura"
+    },
+    {
+      "id": 91,
+      "level": 9,
+      "prompt": "¿Cómo separan los residuos reciclables donde vives?",
+      "answer": "Clasificamos el papel, el plástico, el vidrio y los residuos orgánicos en bolsas distintas.",
+      "alt_answers": [
+        "Llevamos los envases limpios al punto verde del barrio cada semana.",
+        "Separamos todo lo reciclable para reducir la basura que va al vertedero."
+      ],
+      "grammar": "presente - ecología cotidiana"
+    },
+    {
+      "id": 92,
+      "level": 9,
+      "prompt": "¿Por qué están migrando los centros de datos hacia energías renovables?",
+      "answer": "Para reducir drásticamente su huella de carbono y el impacto en el cambio climático.",
+      "alt_answers": [
+        "Porque la energía solar y eólica permite operar infraestructura sustentable.",
+        "Para cumplir con las metas globales de cero emisiones netas."
+      ],
+      "grammar": "presente - sostenibilidad y TI"
+    },
+    {
+      "id": 93,
+      "level": 9,
+      "prompt": "¿Qué pasaría si optimizáramos el consumo de recursos en nuestros servidores?",
+      "answer": "Ahorraríamos costos financieros y reduciríamos el consumo eléctrico innecesario.",
+      "alt_answers": [
+        "Disminuiríamos tanto la factura mensual de la nube como nuestra huella ambiental.",
+        "Necesitaríamos menos máquinas encendidas para procesar el mismo tráfico."
+      ],
+      "grammar": "condicional - ingeniería verde"
+    },
+    {
+      "id": 94,
+      "level": 9,
+      "prompt": "¿Qué haces con los aparatos electrónicos o baterías que ya no funcionan?",
+      "answer": "Los llevo a un punto de recolección especial para residuos electrónicos.",
+      "alt_answers": [
+        "Nunca los tiro a la basura común porque contaminan el suelo y el agua.",
+        "Donamos las computadoras que aún sirven y reciclamos los componentes dañados."
+      ],
+      "grammar": "presente - economía circular"
+    },
+    {
+      "id": 95,
+      "level": 10,
+      "prompt": "¿Cómo negociaste con producto reservar tiempo para pagar deuda técnica?",
+      "answer": "Mostré con métricas que reducir la deuda técnica aceleraría las entregas futuras.",
+      "alt_answers": [
+        "Acordamos destinar el veinte por ciento de la capacidad de cada sprint a mejoras técnicas.",
+        "Explicamos el riesgo de estabilidad si no actualizábamos la arquitectura ahora."
+      ],
+      "grammar": "liderazgo - negociación técnica"
+    },
+    {
+      "id": 96,
+      "level": 10,
+      "prompt": "¿Cómo promueves una cultura sin culpas tras un incidente en producción?",
+      "answer": "Nos enfocamos en corregir los procesos y las defensas del sistema, nunca en culpar personas.",
+      "alt_answers": [
+        "Agradecemos a quien detecta y reporta el problema rápido y analizamos qué falló en las pruebas.",
+        "Usamos el post-mortem como una oportunidad de aprendizaje para toda el área."
+      ],
+      "grammar": "liderazgo - cultura de ingeniería"
+    },
+    {
+      "id": 97,
+      "level": 10,
+      "prompt": "¿Qué temas priorizas en tus reuniones individuales uno a uno?",
+      "answer": "Escucho cómo se siente la persona, su motivación, sus bloqueos y su plan de carrera.",
+      "alt_answers": [
+        "Doy retroalimentación constructiva y busco oportunidades para su crecimiento profesional.",
+        "Me aseguro de que tenga claridad en sus objetivos y un buen equilibrio laboral."
+      ],
+      "grammar": "liderazgo - mentoría"
+    },
+    {
+      "id": 98,
+      "level": 10,
+      "prompt": "¿Qué harías si dos ingenieros sénior no se ponen de acuerdo sobre un diseño?",
+      "answer": "Les pediría redactar un documento corto con los pros, contras y costos de cada opción.",
+      "alt_answers": [
+        "Facilitaría una sesión técnica enfocada en datos objetivos y en las necesidades del negocio.",
+        "Propongo hacer una prueba de concepto rápida para validar cuál alternativa rinde mejor."
+      ],
+      "grammar": "condicional - resolución de conflictos"
+    },
+    {
+      "id": 99,
+      "level": 10,
+      "prompt": "¿Cómo evitas que una sola persona concentre todo el conocimiento de un módulo crítico?",
+      "answer": "Fomentamos la programación en par, las rotaciones de guardia y la documentación clara.",
+      "alt_answers": [
+        "Hacemos sesiones de transferencia de conocimiento y revisiones cruzadas en el equipo.",
+        "Ningún cambio se aprueba sin que al menos otro integrante conozca bien ese componente."
+      ],
+      "grammar": "presente - gestión del conocimiento"
+    },
+    {
+      "id": 100,
+      "level": 10,
+      "prompt": "¿Por qué decidieron no adoptar ese nuevo framework todavía?",
+      "answer": "Porque aunque es innovador, aún no tiene la madurez necesaria para nuestro volumen de producción.",
+      "alt_answers": [
+        "Preferimos esperar a una versión estable con soporte a largo plazo para no asumir riesgos innecesarios.",
+        "El costo de curva de aprendizaje no justificaba el cambio en este trimestre."
+      ],
+      "grammar": "concesivas - decisiones tecnológicas"
+    },
+    {
+      "id": 101,
+      "level": 11,
+      "prompt": "¿Cómo diseñarías el sistema para soportar diez veces más tráfico durante un evento masivo?",
+      "answer": "Colocaría una CDN en el borde, caché distribuida y colas asíncronas para amortiguar las escrituras.",
+      "alt_answers": [
+        "Escalaría preventivamente los nodos y usaría particionamiento horizontal en la base de datos.",
+        "Desacoplaría las operaciones pesadas y aplicaría degradación elegante en servicios no críticos."
+      ],
+      "grammar": "condicional - diseño de sistemas"
+    },
+    {
+      "id": 102,
+      "level": 11,
+      "prompt": "¿Qué compromisos técnicos implica elegir consistencia eventual sobre consistencia fuerte?",
+      "answer": "Ganas muchísima disponibilidad y menor latencia, pero la interfaz debe tolerar datos que tardan un segundo en actualizarse.",
+      "alt_answers": [
+        "Permite que el sistema siga operando aunque falle un nodo, a cambio de manejar estados intermedios.",
+        "Reduce los bloqueos en base de datos, aunque requiere diseñar operaciones idempotentes."
+      ],
+      "grammar": "concesivas - arquitectura avanzada"
+    },
+    {
+      "id": 103,
+      "level": 11,
+      "prompt": "¿Cómo evitan que una avalancha de peticiones venza la caché al mismo tiempo?",
+      "answer": "Añadimos una variación aleatoria al tiempo de expiración y recargamos la caché en segundo plano.",
+      "alt_answers": [
+        "Usamos bloqueos por clave para que solo un hilo consulte la base de datos al expirar la caché.",
+        "Aplicamos precalentamiento de las claves más consultadas antes de los picos de tráfico."
+      ],
+      "grammar": "presente - caché avanzada"
+    },
+    {
+      "id": 104,
+      "level": 11,
+      "prompt": "¿Qué secciones incluyes siempre al redactar una propuesta técnica o RFC?",
+      "answer": "El resumen ejecutivo, el contexto del problema, la arquitectura propuesta, los riesgos y las alternativas descartadas.",
+      "alt_answers": [
+        "Detallo el impacto en seguridad, las métricas de éxito y el plan de migración y reversión.",
+        "Empiezo por el problema que resolvemos y por qué vale la pena hacerlo ahora."
+      ],
+      "grammar": "presente - escritura técnica"
+    },
+    {
+      "id": 105,
+      "level": 11,
+      "prompt": "¿Cómo ha impactado el trabajo remoto a los profesionales de tecnología en Latinoamérica?",
+      "answer": "Ha permitido trabajar desde cualquier ciudad para equipos globales mejorando la calidad de vida.",
+      "alt_answers": [
+        "Abrió oportunidades internacionales sin necesidad de emigrar lejos de la familia.",
+        "Impulsó la colaboración multicultural entre ingenieros de Brasil y toda Hispanoamérica."
+      ],
+      "grammar": "pretérito perfecto - sociedad y trabajo"
+    },
+    {
+      "id": 106,
+      "level": 11,
+      "prompt": "¿Por qué es indispensable considerar la ética y la privacidad al diseñar software?",
+      "answer": "Porque manejamos datos sensibles de millones de ciudadanos y debemos ganarnos su confianza.",
+      "alt_answers": [
+        "Porque los algoritmos mal diseñados pueden reproducir sesgos o vulnerar derechos fundamentales.",
+        "Porque la seguridad y la privacidad por diseño son pilares de la ingeniería responsable."
+      ],
+      "grammar": "presente - ética tecnológica"
+    },
+    {
+      "id": 107,
+      "level": 12,
+      "prompt": "¿Qué quiere decir que un compañero 'dio en el clavo' durante el diagnóstico?",
+      "answer": "Quiere decir que acertó exactamente con la causa real del problema.",
+      "alt_answers": [
+        "Significa que encontró la solución precisa que estábamos buscando.",
+        "Que hizo el diagnóstico correcto a la primera."
+      ],
+      "grammar": "modismos - dar en el clavo"
+    },
+    {
+      "id": 108,
+      "level": 12,
+      "prompt": "¿Me puedes echar una mano con la configuración de este entorno?",
+      "answer": "¡Claro que sí! Termino de subir este cambio y te echo una mano enseguida.",
+      "alt_answers": [
+        "Por supuesto, compartamos pantalla y lo resolvemos juntos en diez minutos.",
+        "Con mucho gusto, dime qué error te está saliendo."
+      ],
+      "grammar": "modismos - echar una mano"
+    },
+    {
+      "id": 109,
+      "level": 12,
+      "prompt": "¿Por qué dices que el equipo 'no da abasto' esta semana?",
+      "answer": "Porque entraron demasiados pedidos urgentes al mismo tiempo y estamos al límite de capacidad.",
+      "alt_answers": [
+        "Porque tenemos más carga de trabajo de la que podemos procesar sin sacrificar calidad.",
+        "Porque necesitamos priorizar y posponer tareas secundarias para poder cumplir."
+      ],
+      "grammar": "modismos - no dar abasto"
+    },
+    {
+      "id": 110,
+      "level": 12,
+      "prompt": "¿Le puedes echar un ojo a mi documento antes de enviarlo a dirección?",
+      "answer": "Sí, pásamelo por el chat y le doy una mirada ahora mismo.",
+      "alt_answers": [
+        "Claro, le echo un vistazo en cinco minutos y te dejo mis comentarios.",
+        "Por supuesto, yo lo reviso para que no se nos pase ningún detalle."
+      ],
+      "grammar": "modismos - echar un ojo / dar una mirada"
+    },
+    {
+      "id": 111,
+      "level": 12,
+      "prompt": "Como tenemos solo quince minutos, vayamos directo al grano, ¿les parece?",
+      "answer": "Totalmente de acuerdo, revisemos directamente los tres puntos clave y tomemos una decisión.",
+      "alt_answers": [
+        "Me parece perfecto, empecemos por el bloqueo principal sin rodeos.",
+        "Excelente idea, vayamos directo a los números y al plan de acción."
+      ],
+      "grammar": "modismos - ir al grano"
+    },
+    {
+      "id": 112,
+      "level": 12,
+      "prompt": "¡Nos tenemos que poner las pilas si queremos llegar a la demostración del viernes!",
+      "answer": "Sí, dividamos las tareas pendientes hoy mismo para sacar adelante la entrega.",
+      "alt_answers": [
+        "Totalmente, enfoquémonos en cerrar las pruebas hoy para llegar tranquilos al viernes.",
+        "Cuenta conmigo, hoy mismo dejo lista toda la parte del backend."
+      ],
+      "grammar": "modismos - ponerse las pilas"
+    },
+    {
+      "id": 113,
+      "level": 12,
+      "prompt": "Después de haber migrado el motor principal, este ajuste será pan comido, ¿verdad?",
+      "answer": "Sí, comparado con la migración anterior, esto va a ser sumamente sencillo.",
+      "alt_answers": [
+        "Tal cual, ya tenemos toda la estructura lista así que será pan comido.",
+        "Sí, en un par de horas lo tendremos funcionando en preproducción."
+      ],
+      "grammar": "modismos - ser pan comido"
+    },
+    {
+      "id": 114,
+      "level": 12,
+      "prompt": "¿Cuándo van a tomar cartas en el asunto respecto a la lentitud del proveedor?",
+      "answer": "Hoy mismo tendremos una reunión formal con su gerencia técnica para exigir un plan de mejora.",
+      "alt_answers": [
+        "Ya tomamos cartas en el asunto y habilitamos un proveedor secundario de respaldo.",
+        "Acabamos de escalar el caso para resolverlo de forma definitiva esta semana."
+      ],
+      "grammar": "modismos - tomar cartas en el asunto"
     }
   ]
 }

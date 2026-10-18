@@ -157,7 +157,7 @@ fun HomeContent(
             TopAppBar(
                 title = {
                     Text(
-                        text = "English Learning",
+                        text = "Español Latino",
                         style = MaterialTheme.typography.titleLarge,
                         fontWeight = FontWeight.Bold
                     )

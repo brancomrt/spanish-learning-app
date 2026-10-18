@@ -1,76 +1,804 @@
 {
   "cards": [
     {
-      "word": "reunión diaria / daily",
-      "definition": "reunião diária de alinhamento no Scrum (daily standup)",
-      "example_sentence": "En la reunión diaria cada uno cuenta en qué está trabajando y si tiene algún blocker.",
+      "word": "el ticket de soporte",
+      "definition": "o chamado de suporte técnico",
+      "example_sentence": "Abrí un ticket de soporte para solicitar acceso al servidor de pruebas.",
       "level_id": 2,
       "category_id": 4,
-      "image_url": "local:vocab_agile.xml"
+      "image_url": "local:vocab_tech.xml"
     },
     {
-      "word": "estar trabado / tener un blocker",
-      "definition": "estar travado / ter um impedimento que bloqueia o progresso (expressão cotidiana LatAm)",
-      "example_sentence": "Estoy trabado con la autenticación OAuth, necesito ayuda de arquitectura.",
+      "word": "restablecer la contraseña",
+      "definition": "redefinir / resetar a senha",
+      "example_sentence": "Si bloqueas tu cuenta, debes restablecer la contraseña desde el portal.",
       "level_id": 2,
       "category_id": 4,
-      "image_url": "local:vocab_agile.xml"
+      "image_url": "local:vocab_tech.xml"
     },
     {
-      "word": "levantar la mano",
-      "definition": "pedir ajuda ou sinalizar um problema na equipe",
-      "example_sentence": "Si estás bloqueado más de dos horas, levanta la mano en el canal del squad.",
+      "word": "los permisos de administrador",
+      "definition": "as permissões de administrador",
+      "example_sentence": "Necesito permisos de administrador para instalar las herramientas de desarrollo.",
       "level_id": 2,
       "category_id": 4,
-      "image_url": "local:vocab_agile.xml"
+      "image_url": "local:vocab_tech.xml"
     },
     {
-      "word": "tablero Kanban / Jira",
-      "definition": "quadro de tarefas com colunas To Do, In Progress, Done",
-      "example_sentence": "Por favor actualiza el estado de tu tarea en el tablero de Jira.",
+      "word": "reiniciar el equipo",
+      "definition": "reiniciar o computador / equipamento",
+      "example_sentence": "Después de instalar los controladores es necesario reiniciar el equipo.",
+      "level_id": 2,
+      "category_id": 4,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "bloquearse / congelarse",
+      "definition": "travar / congelar (a tela ou o sistema)",
+      "example_sentence": "Se me congeló la pantalla en medio de la presentación.",
+      "level_id": 2,
+      "category_id": 4,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "el mensaje de error",
+      "definition": "a mensagem de erro",
+      "example_sentence": "Toma una captura de pantalla del mensaje de error que te sale.",
+      "level_id": 2,
+      "category_id": 4,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "la captura de pantalla",
+      "definition": "o print da tela / screenshot",
+      "example_sentence": "Adjunté la captura de pantalla en el comentario del ticket.",
+      "level_id": 2,
+      "category_id": 4,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "el acceso denegado",
+      "definition": "o acesso negado",
+      "example_sentence": "Me sale un aviso de acceso denegado al entrar a la carpeta financiera.",
+      "level_id": 2,
+      "category_id": 4,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "la mesa de ayuda (help desk)",
+      "definition": "a central de suporte / service desk",
+      "example_sentence": "Comunícate con la mesa de ayuda si tienes problemas con el correo.",
+      "level_id": 2,
+      "category_id": 4,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "la sesión expirada",
+      "definition": "a sessão expirada",
+      "example_sentence": "Por seguridad, la sesión expira tras veinte minutos de inactividad.",
+      "level_id": 2,
+      "category_id": 4,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "el respaldo / la copia de seguridad",
+      "definition": "o backup / cópia de segurança",
+      "example_sentence": "Antes de formatear la máquina verificamos que el respaldo estuviera completo.",
+      "level_id": 2,
+      "category_id": 4,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "configurar la cuenta",
+      "definition": "configurar a conta",
+      "example_sentence": "El técnico me ayudó a configurar la cuenta en el teléfono corporativo.",
+      "level_id": 2,
+      "category_id": 4,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "dar de alta a un usuario",
+      "definition": "cadastrar / ativar um novo usuário no sistema",
+      "example_sentence": "Hoy tenemos que dar de alta a los tres desarrolladores nuevos.",
+      "level_id": 2,
+      "category_id": 4,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "dar de baja un acceso",
+      "definition": "revogar / desativar o acesso de um usuário",
+      "example_sentence": "Cuando alguien cambia de área, damos de baja sus permisos anteriores.",
+      "level_id": 2,
+      "category_id": 4,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "el escritorio remoto",
+      "definition": "a área de trabalho remota (Remote Desktop)",
+      "example_sentence": "Me conecté por escritorio remoto para revisar la configuración.",
+      "level_id": 2,
+      "category_id": 4,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "solucionar un problema",
+      "definition": "resolver um problema técnico (troubleshoot)",
+      "example_sentence": "Pasamos media hora intentando solucionar el problema del micrófono.",
+      "level_id": 2,
+      "category_id": 4,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "el tiempo de espera agotado",
+      "definition": "o tempo limite esgotado (timeout)",
+      "example_sentence": "La petición falló por tiempo de espera agotado en el servidor.",
+      "level_id": 2,
+      "category_id": 4,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "las credenciales de acceso",
+      "definition": "as credenciais de acesso (usuário e senha)",
+      "example_sentence": "Nunca compartas tus credenciales de acceso por canales públicos.",
+      "level_id": 2,
+      "category_id": 4,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "el entorno de pruebas",
+      "definition": "o ambiente de testes (QA / Sandbox)",
+      "example_sentence": "Primero validamos el cambio en el entorno de pruebas.",
+      "level_id": 2,
+      "category_id": 4,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "funcionar correctamente",
+      "definition": "funcionar corretamente",
+      "example_sentence": "Después del ajuste, la aplicación volvió a funcionar correctamente.",
+      "level_id": 2,
+      "category_id": 4,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "el disco de estado sólido (SSD)",
+      "definition": "o disco de estado sólido (SSD)",
+      "example_sentence": "Cambiar el disco mecánico por un SSD aceleró el arranque del sistema.",
       "level_id": 2,
       "category_id": 5,
-      "image_url": "local:vocab_agile.xml"
+      "image_url": "local:vocab_tech.xml"
     },
     {
-      "word": "asignar un ticket",
-      "definition": "atribuir uma tarefa/ticket a um desenvolvedor",
-      "example_sentence": "El tech lead me asignó el ticket de optimización de la API.",
+      "word": "la memoria RAM",
+      "definition": "a memória RAM",
+      "example_sentence": "Para correr varios contenedores locales se recomiendan dieciséis gigas de RAM.",
       "level_id": 2,
       "category_id": 5,
-      "image_url": "local:vocab_agile.xml"
+      "image_url": "local:vocab_tech.xml"
     },
     {
-      "word": "criterios de aceptación",
-      "definition": "condições necessárias para que uma história de usuário seja dada como concluída",
-      "example_sentence": "Revisa bien los criterios de aceptación antes de mandar el código a revisión.",
+      "word": "el procesador / la CPU",
+      "definition": "o processador / a CPU",
+      "example_sentence": "El uso del procesador llegó al cien por ciento durante la compilación.",
       "level_id": 2,
       "category_id": 5,
-      "image_url": "local:vocab_docs.xml"
+      "image_url": "local:vocab_tech.xml"
     },
     {
-      "word": "reproducir el fallo / bug",
-      "definition": "reproduzir o erro seguindo os passos descritos pelo usuário ou QA",
-      "example_sentence": "No logré reproducir el bug en mi ambiente local de desarrollo.",
+      "word": "el sistema operativo",
+      "definition": "o sistema operacional",
+      "example_sentence": "¿Prefieres programar en Linux, macOS o Windows?",
       "level_id": 2,
-      "category_id": 6,
-      "image_url": "local:vocab_code.xml"
+      "category_id": 5,
+      "image_url": "local:vocab_tech.xml"
     },
     {
-      "word": "entorno de pruebas / staging",
-      "definition": "ambiente de homologação/staging para validação antes de produção",
-      "example_sentence": "El equipo de QA está validando la nueva versión en el entorno de pruebas.",
+      "word": "la actualización de software",
+      "definition": "a atualização de software (update)",
+      "example_sentence": "Hay una actualización crítica pendiente en tu sistema operativo.",
       "level_id": 2,
-      "category_id": 6,
-      "image_url": "local:vocab_code.xml"
+      "category_id": 5,
+      "image_url": "local:vocab_tech.xml"
     },
     {
-      "word": "caso límite / edge case",
-      "definition": "cenário de borda ou situação extrema em testes de software",
-      "example_sentence": "Debemos cubrir los casos límite cuando el usuario ingresa datos nulos.",
+      "word": "el controlador / el driver",
+      "definition": "o driver de dispositivo",
+      "example_sentence": "Actualicé el controlador de audio y el micrófono volvió a funcionar.",
+      "level_id": 2,
+      "category_id": 5,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "el cargador",
+      "definition": "o carregador de bateria",
+      "example_sentence": "Siempre llevo el cargador de la portátil en mi mochila.",
+      "level_id": 2,
+      "category_id": 5,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "el enchufe / el tomacorriente",
+      "definition": "a tomada elétrica",
+      "example_sentence": "¿Sabes dónde hay un enchufe libre para conectar mi computadora?",
+      "level_id": 2,
+      "category_id": 5,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "el cable HDMI / USB-C",
+      "definition": "o cabo HDMI / USB-C",
+      "example_sentence": "Conecté el monitor externo mediante un cable USB-C.",
+      "level_id": 2,
+      "category_id": 5,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "la batería agotada",
+      "definition": "a bateria descarregada / sem carga",
+      "example_sentence": "Se me apagó el celular porque tenía la batería agotada.",
+      "level_id": 2,
+      "category_id": 5,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "el almacenamiento libre",
+      "definition": "o espaço de armazenamento livre",
+      "example_sentence": "Necesitas al menos veinte gigas de almacenamiento libre para instalar el SDK.",
+      "level_id": 2,
+      "category_id": 5,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "el navegador web",
+      "definition": "o navegador de internet (browser)",
+      "example_sentence": "Limpia las cookies y la caché del navegador para probar de nuevo.",
+      "level_id": 2,
+      "category_id": 5,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "la extensión / el complemento",
+      "definition": "a extensão / o plug-in",
+      "example_sentence": "Instalé una extensión para formatear archivos JSON en el navegador.",
+      "level_id": 2,
+      "category_id": 5,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "la licencia de software",
+      "definition": "a licença de software",
+      "example_sentence": "La empresa renovó las licencias anuales del entorno de desarrollo.",
+      "level_id": 2,
+      "category_id": 5,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "el código abierto (open source)",
+      "definition": "o código aberto (open source)",
+      "example_sentence": "Utilizamos herramientas de código abierto en toda nuestra plataforma.",
+      "level_id": 2,
+      "category_id": 5,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "el ventilador / cooler",
+      "definition": "a ventoinha / cooler do computador",
+      "example_sentence": "El ventilador hace ruido cuando la computadora se calienta mucho.",
+      "level_id": 2,
+      "category_id": 5,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "la cámara web",
+      "definition": "a webcam",
+      "example_sentence": "Enciende la cámara web unos minutos para saludar al equipo nuevo.",
+      "level_id": 2,
+      "category_id": 5,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "el atajo de teclado",
+      "definition": "o atalho de teclado (shortcut)",
+      "example_sentence": "Aprender los atajos de teclado del editor te ahorra mucho tiempo.",
+      "level_id": 2,
+      "category_id": 5,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "instalar / desinstalar",
+      "definition": "instalar / desinstalar um programa",
+      "example_sentence": "Tuve que desinstalar la versión antigua antes de instalar la nueva.",
+      "level_id": 2,
+      "category_id": 5,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "la versión estable",
+      "definition": "a versão estável do software",
+      "example_sentence": "En producción siempre instalamos la versión estable con soporte extendido.",
+      "level_id": 2,
+      "category_id": 5,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "la red inalámbrica (wifi)",
+      "definition": "a rede sem fio (Wi-Fi)",
+      "example_sentence": "Conéctate a la red inalámbrica corporativa del quinto piso.",
       "level_id": 2,
       "category_id": 6,
-      "image_url": "local:vocab_code.xml"
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "el ancho de banda",
+      "definition": "a largura de banda",
+      "example_sentence": "Las videollamadas en alta definición consumen bastante ancho de banda.",
+      "level_id": 2,
+      "category_id": 6,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "la dirección IP",
+      "definition": "o endereço IP",
+      "example_sentence": "Debemos autorizar tu dirección IP fija en el servidor de base de datos.",
+      "level_id": 2,
+      "category_id": 6,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "el servidor DNS",
+      "definition": "o servidor de nomes de domínio (DNS)",
+      "example_sentence": "El problema no era la aplicación, sino que fallaba la resolución del DNS.",
+      "level_id": 2,
+      "category_id": 6,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "el cortafuegos (firewall)",
+      "definition": "o firewall / barreira de proteção de rede",
+      "example_sentence": "El cortafuegos bloqueó las conexiones entrantes por ese puerto.",
+      "level_id": 2,
+      "category_id": 6,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "el puerto de red",
+      "definition": "a porta de rede (ex: puerto 80, puerto 443)",
+      "example_sentence": "La aplicación web escucha peticiones seguras en el puerto cuatrocientos cuarenta y tres.",
+      "level_id": 2,
+      "category_id": 6,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "la red privada virtual (VPN)",
+      "definition": "a rede privada virtual (VPN)",
+      "example_sentence": "Activa la VPN antes de conectarte al entorno interno de la empresa.",
+      "level_id": 2,
+      "category_id": 6,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "la latencia de red",
+      "definition": "a latência de rede (tempo de resposta)",
+      "example_sentence": "La latencia entre Buenos Aires y São Paulo es muy baja.",
+      "level_id": 2,
+      "category_id": 6,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "la pérdida de paquetes",
+      "definition": "a perda de pacotes na rede",
+      "example_sentence": "El audio se escucha entrecortado porque hay pérdida de paquetes.",
+      "level_id": 2,
+      "category_id": 6,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "el enrutador / el router",
+      "definition": "o roteador de rede",
+      "example_sentence": "Reinicié el router de mi casa y mejoró la velocidad de conexión.",
+      "level_id": 2,
+      "category_id": 6,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "el cable de red (Ethernet)",
+      "definition": "o cabo de rede Ethernet",
+      "example_sentence": "Para dar presentaciones importantes prefiero conectar el cable de red.",
+      "level_id": 2,
+      "category_id": 6,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "la fibra óptica",
+      "definition": "a fibra óptica",
+      "example_sentence": "Contraté un plan de internet por fibra óptica de quinientos megas.",
+      "level_id": 2,
+      "category_id": 6,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "la velocidad de subida y bajada",
+      "definition": "a velocidade de upload e download",
+      "example_sentence": "Necesito buena velocidad de subida para subir las imágenes de contenedores.",
+      "level_id": 2,
+      "category_id": 6,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "la señal inestable",
+      "definition": "o sinal instável / oscilando",
+      "example_sentence": "Hoy tengo la señal de internet un poco inestable por la tormenta.",
+      "level_id": 2,
+      "category_id": 6,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "la subred privada",
+      "definition": "a sub-rede privada (private subnet)",
+      "example_sentence": "Las bases de datos se ubican en una subred privada sin acceso directo desde internet.",
+      "level_id": 2,
+      "category_id": 6,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "el certificado SSL / TLS",
+      "definition": "o certificado digital de segurança SSL/TLS",
+      "example_sentence": "El navegador muestra un candado verde cuando el certificado SSL es válido.",
+      "level_id": 2,
+      "category_id": 6,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "el dominio y subdominio",
+      "definition": "o domínio e subdomínio web",
+      "example_sentence": "Configuramos un subdominio nuevo para la documentación de la API.",
+      "level_id": 2,
+      "category_id": 6,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "hacer ping al servidor",
+      "definition": "executar um comando ping para testar conectividade",
+      "example_sentence": "Hice ping al servidor y responde en menos de diez milisegundos.",
+      "level_id": 2,
+      "category_id": 6,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "caerse la red / cortarse el internet",
+      "definition": "cair a rede / cair a internet",
+      "example_sentence": "Se cayó la red en el edificio durante diez minutos.",
+      "level_id": 2,
+      "category_id": 6,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "el tráfico de red",
+      "definition": "o tráfego de rede",
+      "example_sentence": "Monitoreamos el tráfico de red para detectar picos inusuales.",
+      "level_id": 2,
+      "category_id": 6,
+      "image_url": "local:vocab_tech.xml"
+    },
+    {
+      "word": "el menú / la carta",
+      "definition": "o cardápio do restaurante",
+      "example_sentence": "¿Nos podría traer la carta para ver los platos del día, por favor?",
+      "level_id": 2,
+      "category_id": 19,
+      "image_url": "local:vocab_food.xml"
+    },
+    {
+      "word": "la entrada / el entrante",
+      "definition": "a entrada (prato inicial)",
+      "example_sentence": "Pedimos unas empanadas calientes de entrada para compartir.",
+      "level_id": 2,
+      "category_id": 19,
+      "image_url": "local:vocab_food.xml"
+    },
+    {
+      "word": "el plato fuerte / plato principal",
+      "definition": "o prato principal",
+      "example_sentence": "De plato fuerte voy a pedir el salmón a la plancha con verduras.",
+      "level_id": 2,
+      "category_id": 19,
+      "image_url": "local:vocab_food.xml"
+    },
+    {
+      "word": "el postre",
+      "definition": "a sobremesa",
+      "example_sentence": "De postre compartimos un flan casero con dulce de leche.",
+      "level_id": 2,
+      "category_id": 19,
+      "image_url": "local:vocab_food.xml"
+    },
+    {
+      "word": "la cuenta",
+      "definition": "a conta do restaurante",
+      "example_sentence": "Mesero, ¿nos trae la cuenta cuando pueda, por favor?",
+      "level_id": 2,
+      "category_id": 19,
+      "image_url": "local:vocab_food.xml"
+    },
+    {
+      "word": "la propina",
+      "definition": "a gorjeta",
+      "example_sentence": "En muchos países se acostumbra dejar un diez por ciento de propina.",
+      "level_id": 2,
+      "category_id": 19,
+      "image_url": "local:vocab_food.xml"
+    },
+    {
+      "word": "el mesero / el mozo",
+      "definition": "o garçom (México/Colômbia: mesero; Argentina/Uruguai: mozo; Chile: garzón)",
+      "example_sentence": "El mesero nos recomendó probar el plato típico de la región.",
+      "level_id": 2,
+      "category_id": 19,
+      "image_url": "local:vocab_food.xml"
+    },
+    {
+      "word": "a la plancha / a la parrilla",
+      "definition": "grelhado na chapa / na churrasqueira",
+      "example_sentence": "Prefiero el pollo a la plancha en vez de frito.",
+      "level_id": 2,
+      "category_id": 19,
+      "image_url": "local:vocab_food.xml"
+    },
+    {
+      "word": "el término de la carne",
+      "definition": "o ponto da carne (jugoso = malpassado; término medio = ao ponto; bien cocido = bem-passado)",
+      "example_sentence": "Quiero el bife a término medio, por favor.",
+      "level_id": 2,
+      "category_id": 19,
+      "image_url": "local:vocab_food.xml"
+    },
+    {
+      "word": "picante / que pica",
+      "definition": "apimentado / picante",
+      "example_sentence": "¿Esta salsa pica mucho o es suave?",
+      "level_id": 2,
+      "category_id": 19,
+      "image_url": "local:vocab_food.xml"
+    },
+    {
+      "word": "sin gluten / apto para celíacos",
+      "definition": "sem glúten",
+      "example_sentence": "En esta panadería tienen varias opciones deliciosas sin gluten.",
+      "level_id": 2,
+      "category_id": 19,
+      "image_url": "local:vocab_food.xml"
+    },
+    {
+      "word": "vegetariano / vegano",
+      "definition": "vegetariano / vegano",
+      "example_sentence": "El restaurante ofrece un menú ejecutivo vegetariano muy completo.",
+      "level_id": 2,
+      "category_id": 19,
+      "image_url": "local:vocab_food.xml"
+    },
+    {
+      "word": "la guarnición / el acompañamiento",
+      "definition": "o acompanhamento / a guarnição do prato",
+      "example_sentence": "Puedes elegir ensalada fresca, arroz o papas fritas de guarnición.",
+      "level_id": 2,
+      "category_id": 19,
+      "image_url": "local:vocab_food.xml"
+    },
+    {
+      "word": "el aguacate / la palta",
+      "definition": "o abacate (México/Colômbia: aguacate; Argentina/Chile/Peru: palta)",
+      "example_sentence": "Me encanta agregar palta o aguacate a las ensaladas.",
+      "level_id": 2,
+      "category_id": 19,
+      "image_url": "local:vocab_food.xml"
+    },
+    {
+      "word": "el jugo natural / el zumo",
+      "definition": "o suco natural (em toda a América Latina usa-se 'el jugo')",
+      "example_sentence": "Pedí un jugo de naranja recién exprimido para desayunar.",
+      "level_id": 2,
+      "category_id": 19,
+      "image_url": "local:vocab_food.xml"
+    },
+    {
+      "word": "el vaso de agua",
+      "definition": "o copo de água (atenção ao falso amigo: 'copo' em espanhol é 'el vaso'!)",
+      "example_sentence": "¿Me podrías traer un vaso de agua sin gas, por favor?",
+      "level_id": 2,
+      "category_id": 19,
+      "image_url": "local:vocab_food.xml"
+    },
+    {
+      "word": "la copa",
+      "definition": "a taça (de vinho ou espumante — falso amigo com 'copo')",
+      "example_sentence": "Brindamos con una copa de vino tinto chileno en la cena.",
+      "level_id": 2,
+      "category_id": 19,
+      "image_url": "local:vocab_food.xml"
+    },
+    {
+      "word": "los cubiertos (tenedor, cuchillo, cuchara)",
+      "definition": "os talheres (garfo, faca, colher)",
+      "example_sentence": "Falta un juego de cubiertos en nuestra mesa.",
+      "level_id": 2,
+      "category_id": 19,
+      "image_url": "local:vocab_food.xml"
+    },
+    {
+      "word": "la servilleta",
+      "definition": "o guardanapo",
+      "example_sentence": "¿Me pasas una servilleta de papel, por favor?",
+      "level_id": 2,
+      "category_id": 19,
+      "image_url": "local:vocab_food.xml"
+    },
+    {
+      "word": "para llevar / pedir a domicilio",
+      "definition": "para viagem / pedir delivery em casa",
+      "example_sentence": "Como llovía mucho, pedimos comida a domicilio por la aplicación.",
+      "level_id": 2,
+      "category_id": 19,
+      "image_url": "local:vocab_food.xml"
+    },
+    {
+      "word": "doler (me duele / me duelen)",
+      "definition": "doer (dói-me / estou com dor em...)",
+      "example_sentence": "Me duele un poco la cabeza después de tantas reuniones seguidas.",
+      "level_id": 2,
+      "category_id": 20,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "el dolor de espalda / cuello",
+      "definition": "a dor nas costas / no pescoço",
+      "example_sentence": "Ajusté la altura del monitor para evitar el dolor de cuello.",
+      "level_id": 2,
+      "category_id": 20,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "la fiebre / la temperatura",
+      "definition": "a febre",
+      "example_sentence": "Tuvo fiebre anoche, así que hoy se tomó el día por enfermedad.",
+      "level_id": 2,
+      "category_id": 20,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "el resfriado / la gripe",
+      "definition": "o resfriado / a gripe",
+      "example_sentence": "Estoy un poco resfriado por el cambio brusco de clima.",
+      "level_id": 2,
+      "category_id": 20,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "la receta médica",
+      "definition": "a receita / prescrição médica",
+      "example_sentence": "Necesitas presentar la receta médica para comprar este antibiótico.",
+      "level_id": 2,
+      "category_id": 20,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "la pastilla / el comprimido",
+      "definition": "o comprimido / a pílula",
+      "example_sentence": "Toma esta pastilla con un vaso de agua después del almuerzo.",
+      "level_id": 2,
+      "category_id": 20,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "el jarabe",
+      "definition": "o xarope",
+      "example_sentence": "El médico me recetó un jarabe natural para aliviar la tos.",
+      "level_id": 2,
+      "category_id": 20,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "la farmacia / la droguería",
+      "definition": "a farmácia (na Colômbia também se chama 'la droguería')",
+      "example_sentence": "Hay una farmacia de turno abierta las veinticuatro horas en la esquina.",
+      "level_id": 2,
+      "category_id": 20,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "el turno médico / la cita médica",
+      "definition": "a consulta médica agendada",
+      "example_sentence": "Pedí un turno con el oftalmólogo para revisar mi vista.",
+      "level_id": 2,
+      "category_id": 20,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "la obra social / el seguro médico",
+      "definition": "o plano de saúde / convênio médico",
+      "example_sentence": "La empresa incluye un excelente seguro médico privado para toda la familia.",
+      "level_id": 2,
+      "category_id": 20,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "la guardia / urgencias",
+      "definition": "o pronto-socorro / atendimento de emergência",
+      "example_sentence": "Fuimos a la guardia de la clínica porque tenía mucho dolor estomacal.",
+      "level_id": 2,
+      "category_id": 20,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "ser alérgico a",
+      "definition": "ser alérgico a algo",
+      "example_sentence": "Avísale al médico si eres alérgico a algún medicamento.",
+      "level_id": 2,
+      "category_id": 20,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "las pausas activas",
+      "definition": "as pausas ativas (alongamento durante o expediente)",
+      "example_sentence": "Hacemos cinco minutos de pausas activas a media tarde.",
+      "level_id": 2,
+      "category_id": 20,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "estirar / el estiramiento",
+      "definition": "alongar / o alongamento",
+      "example_sentence": "Es importante estirar los brazos y la espalda cada dos horas.",
+      "level_id": 2,
+      "category_id": 20,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "la silla ergonómica",
+      "definition": "a cadeira ergonômica",
+      "example_sentence": "Invertir en una buena silla ergonómica cuida mucho tu postura.",
+      "level_id": 2,
+      "category_id": 20,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "la vista cansada",
+      "definition": "a vista cansada / fadiga ocular",
+      "example_sentence": "Uso lentes con filtro de luz azul para evitar la vista cansada.",
+      "level_id": 2,
+      "category_id": 20,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "hidratarse / tomar agua",
+      "definition": "hidratar-se / beber água",
+      "example_sentence": "Siempre tengo una botella de agua en el escritorio para mantenerme hidratado.",
+      "level_id": 2,
+      "category_id": 20,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "el bienestar físico y mental",
+      "definition": "o bem-estar físico e mental",
+      "example_sentence": "Dormir ocho horas es clave para el bienestar físico y mental.",
+      "level_id": 2,
+      "category_id": 20,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "la licencia médica / incapacidad",
+      "definition": "o atestado médico / afastamento por saúde",
+      "example_sentence": "El doctor le dio tres días de reposo y licencia médica.",
+      "level_id": 2,
+      "category_id": 20,
+      "image_url": "local:vocab_people.xml"
+    },
+    {
+      "word": "mejorarse / recuperarse",
+      "definition": "melhorar / recuperar-se de uma doença",
+      "example_sentence": "¡Espero que te mejores muy pronto!",
+      "level_id": 2,
+      "category_id": 20,
+      "image_url": "local:vocab_people.xml"
     }
   ]
 }

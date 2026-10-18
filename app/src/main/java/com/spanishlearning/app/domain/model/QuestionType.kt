@@ -20,18 +20,18 @@ enum class QuestionType {
     CHOICE;       // Do you prefer tea or coffee?
 
     fun displayName(): String = when (this) {
-        WH_WHAT     -> "Pregunta con 'Qué' (Wh-what)"
-        WH_WHERE    -> "Pregunta con 'Dónde' (Wh-where)"
-        WH_WHEN     -> "Pregunta con 'Cuándo' (Wh-when)"
-        WH_WHO      -> "Pregunta con 'Quién' (Wh-who)"
-        WH_WHY      -> "Pregunta con 'Por qué' (Wh-why)"
-        WH_HOW      -> "Pregunta con 'Cómo' (Wh-how)"
-        WH_HOW_MUCH -> "Pregunta con 'Cuánto/a' (Wh-how much)"
-        WH_HOW_MANY -> "Pregunta con 'Cuántos/as' (Wh-how many)"
-        WH_WHICH    -> "Pregunta con 'Cuál/es' (Wh-which)"
-        YES_NO      -> "Pregunta Sí/No (Yes/No question)"
-        TAG         -> "Pregunta de confirmación (Tag question)"
-        INDIRECT    -> "Pregunta indirecta (Indirect question)"
-        CHOICE      -> "Pregunta de opción (Choice question)"
+        WH_WHAT     -> "Pregunta con 'Qué'"
+        WH_WHERE    -> "Pregunta con 'Dónde'"
+        WH_WHEN     -> "Pregunta con 'Cuándo'"
+        WH_WHO      -> "Pregunta con 'Quién'"
+        WH_WHY      -> "Pregunta con 'Por qué'"
+        WH_HOW      -> "Pregunta con 'Cómo'"
+        WH_HOW_MUCH -> "Pregunta con 'Cuánto/a'"
+        WH_HOW_MANY -> "Pregunta con 'Cuántos/as'"
+        WH_WHICH    -> "Pregunta con 'Cuál/es'"
+        YES_NO      -> "Pregunta de Sí/No"
+        TAG         -> "Pregunta de confirmación (¿verdad? / ¿no?)"
+        INDIRECT    -> "Pregunta indirecta"
+        CHOICE      -> "Pregunta de opción"
     }
 }

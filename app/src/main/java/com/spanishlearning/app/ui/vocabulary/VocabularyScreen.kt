@@ -165,14 +165,13 @@ private fun SelectionScreen(
             horizontalArrangement = Arrangement.spacedBy(8.dp)
         ) {
             items(state.levels) { level ->
-                val name = when (level.nameKey) {
-                    "level_beginner" -> "A1"
-                    "level_elementary" -> "A2"
-                    "level_pre_intermediate" -> "A2+"
-                    "level_intermediate" -> "B1"
-                    "level_upper_intermediate" -> "B2"
-                    "level_advanced" -> "C1"
-                    else -> level.nameKey.replace("level_", "")
+                val name = when (level.id) {
+                    1 -> "A1"
+                    2 -> "A2"
+                    3 -> "A2+"
+                    4 -> "B1"
+                    5 -> "B2"
+                    else -> "C1"
                 }
                 FilterChip(
                     selected = level.id == state.selectedLevelId,
@@ -782,47 +781,47 @@ private fun StatChip(label: String, value: String) {
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
 
-/** Converte nameKey da categoria para label legível. */
+/** Converte nameKey da categoria para label legível em português. */
 private fun categoryDisplayName(nameKey: String): String = when (nameKey) {
-    // Level 1
-    "category_daily_life"        -> "Daily Life"
-    "category_work"              -> "Work"
-    "category_travel"            -> "Travel"
-    // Level 2 - TI
-    "category_it_support"        -> "IT Support"
+    // Level 1 (A1)
+    "category_daily_life"        -> "Cotidiano"
+    "category_work"              -> "Trabalho"
+    "category_travel"            -> "Viagens"
+    // Level 2 (A2) - TI
+    "category_it_support"        -> "Suporte TI"
     "category_hardware_software" -> "Hardware & SW"
-    "category_networking_basics" -> "Networking"
-    // Level 2 - Cotidiano
-    "category_food_cooking"      -> "Food & Cooking"
-    "category_health_body"       -> "Health & Body"
-    // Level 3 - TI
-    "category_software_dev"      -> "Software Dev"
-    "category_databases"         -> "Databases"
+    "category_networking_basics" -> "Redes"
+    // Level 2 (A2) - Cotidiano
+    "category_food_cooking"      -> "Alimentação"
+    "category_health_body"       -> "Saúde & Corpo"
+    // Level 3 (A2+) - TI
+    "category_software_dev"      -> "Desenvolvimento"
+    "category_databases"         -> "Bancos de Dados"
     "category_cloud_basics"      -> "Cloud"
-    // Level 3 - Cotidiano
-    "category_shopping_money"    -> "Shopping & Money"
-    "category_sports_leisure"    -> "Sports & Leisure"
-    // Level 4 - TI
+    // Level 3 (A2+) - Cotidiano
+    "category_shopping_money"    -> "Compras & Finanças"
+    "category_sports_leisure"    -> "Esportes & Lazer"
+    // Level 4 (B1) - TI
     "category_devops"            -> "DevOps"
-    "category_security"          -> "Security"
-    "category_architecture"      -> "Architecture"
-    // Level 4 - Cotidiano
-    "category_home_housing"      -> "Home & Housing"
-    "category_relationships"     -> "Relationships"
-    // Level 5 - TI
-    "category_agile_pm"          -> "Agile & PM"
-    "category_sre_reliability"   -> "SRE"
-    "category_microservices"     -> "Microservices"
-    // Level 5 - Cotidiano
-    "category_media_culture"     -> "Media & Culture"
-    "category_environment"       -> "Environment"
-    // Level 6 - TI
-    "category_tech_leadership"   -> "Leadership"
+    "category_security"          -> "Segurança"
+    "category_architecture"      -> "Arquitetura"
+    // Level 4 (B1) - Cotidiano
+    "category_home_housing"      -> "Moradia & Casa"
+    "category_relationships"     -> "Relacionamentos"
+    // Level 5 (B2) - TI
+    "category_agile_pm"          -> "Agile & Scrum"
+    "category_sre_reliability"   -> "SRE & Confiabilidade"
+    "category_microservices"     -> "Microsserviços"
+    // Level 5 (B2) - Cotidiano
+    "category_media_culture"     -> "Mídia & Cultura"
+    "category_environment"       -> "Meio Ambiente"
+    // Level 6 (C1) - TI
+    "category_tech_leadership"   -> "Liderança Técnica"
     "category_system_design"     -> "System Design"
-    "category_tech_writing"      -> "Tech Writing"
-    // Level 6 - Cotidiano
-    "category_society_politics"  -> "Society & Politics"
-    "category_idioms_expressions"-> "Idioms"
+    "category_tech_writing"      -> "Escrita Técnica"
+    // Level 6 (C1) - Cotidiano
+    "category_society_politics"  -> "Sociedade & Política"
+    "category_idioms_expressions"-> "Expressões Idiomáticas"
     else -> nameKey.removePrefix("category_")
         .replace("_", " ")
         .split(" ")

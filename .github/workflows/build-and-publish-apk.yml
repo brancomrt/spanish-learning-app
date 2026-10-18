@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - feature/spanish-tech-learning-app
     tags:
       - 'v*'
   workflow_dispatch:
@@ -40,74 +39,41 @@ jobs:
         run: |
           ls -la app/build/outputs/apk/debug/
           test -f app/build/outputs/apk/debug/spanish-learning-app.apk
-          cp app/build/outputs/apk/debug/spanish-learning-app.apk app/build/outputs/apk/debug/spanish-learning-app-v1.0.0.apk
+          cp app/build/outputs/apk/debug/spanish-learning-app.apk app/build/outputs/apk/debug/spanish-learning-app-v1.1.0.apk
 
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: spanish-learning-app-v1.0.0
+          name: spanish-learning-app-v1.1.0
           path: |
-            app/build/outputs/apk/debug/spanish-learning-app-v1.0.0.apk
+            app/build/outputs/apk/debug/spanish-learning-app-v1.1.0.apk
             app/build/outputs/apk/debug/spanish-learning-app.apk
           if-no-files-found: error
 
-      - name: Create GitHub Release (Tag v1.0.0)
+      - name: Create GitHub Release (Tag v1.1.0)
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: v1.0.0
-          name: v1.0.0 - Spanish Tech Learning App (Espanhol Latino para TI)
+          tag_name: v1.1.0
+          name: v1.1.0 - Español Latino (TI & Cotidiano — A1 a C1)
           body: |
-            ## Spanish Tech Learning App v1.0.0
+            ## Español Latino — TI & Cotidiano (v1.1.0)
 
-            Aplicativo Android nativo focado em **Espanhol Latino-Americano para Tecnologia e TI** (níveis A1 a C1).
+            Aplicativo Android nativo completo de **Espanhol Latino-Americano voltado para Tecnologia (TI) e Situações do Cotidiano** (todos os 6 níveis CEFR: A1, A2, A2+, B1, B2 e C1).
 
-            ### Destaques da Versão
-            - ⚡ **Tech Drilling:** Exercícios rápidos para memorizar expressões e frases completas de TI (*lexical chunks*).
-            - 📚 **Vocabulário Latino de TI:** Mais de 180 termos técnicos autênticos do mercado latino-americano com repetição espaçada FSRS-4.5.
-            - 🗣️ **Reconhecimento de Voz e Pronúncia (`es-419` / `es-MX`):** Prática oral com sotaque latino-americano.
+            ### Novidades da v1.1.0
+            - 🌎 **Conteúdo Completo TI + Cotidiano (28 Categorias):** Cobre desde rotina diária, viagens, alimentação, saúde, compras, finanças, moradia, lazer, cultura latina e expressões idiomáticas até suporte TI, desenvolvimento, bancos de dados, cloud, DevOps, segurança, arquitetura, Agile/Scrum, SRE, microsserviços, liderança técnica, System Design e escrita técnica.
+            - ✏️ **229 Exercícios Interativos (A1 a C1):** Prática ativa de formulação de perguntas e respostas em espanhol latino com dicas progressivas.
+            - 📚 **575 Cards de Vocabulário FSRS-4.5:** Repetição espaçada inteligente em todas as 28 categorias.
+            - ⚡ **114 Drills Rápidos (Stages 1 a 12):** Memorização ágil de expressões e frases completas para TI e cotidiano.
+            - 🧹 **Interface 100% Limpa (PT-BR / Español):** Remoção completa de todas as referências legadas ao inglês.
 
             ### Instalação
-            1. Baixe o arquivo `spanish-learning-app-v1.0.0.apk` abaixo.
+            1. Baixe o arquivo `spanish-learning-app-v1.1.0.apk` abaixo (ou diretamente na raiz da branch `main`).
             2. Habilite "Instalar apps de fontes desconhecidas" no Android.
             3. Instale o APK.
           files: |
-            app/build/outputs/apk/debug/spanish-learning-app-v1.0.0.apk
+            app/build/outputs/apk/debug/spanish-learning-app-v1.1.0.apk
             app/build/outputs/apk/debug/spanish-learning-app.apk
           fail_on_unmatched_files: false
           draft: false
           prerelease: false
-
-      - name: Publish APK to release-apk branch
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          mkdir -p /tmp/apk-dist
-          cp app/build/outputs/apk/debug/spanish-learning-app.apk /tmp/apk-dist/spanish-learning-app.apk
-          cp app/build/outputs/apk/debug/spanish-learning-app-v1.0.0.apk /tmp/apk-dist/spanish-learning-app-v1.0.0.apk
-
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          git checkout --orphan release-apk
-          git rm -rf . || true
-
-          cp /tmp/apk-dist/spanish-learning-app.apk ./spanish-learning-app.apk
-          cp /tmp/apk-dist/spanish-learning-app-v1.0.0.apk ./spanish-learning-app-v1.0.0.apk
-          cat << 'EOF' > README.md
-          # Spanish Tech Learning App — APK Release (v1.0.0)
-
-          Esta branch contém a versão compilada (APK) mais recente do **Spanish Tech Learning App** (`v1.0.0` - `versionCode 1`).
-
-          ### Download Direto:
-          - **[spanish-learning-app-v1.0.0.apk](./spanish-learning-app-v1.0.0.apk?raw=true)**
-          - **[spanish-learning-app.apk](./spanish-learning-app.apk?raw=true)**
-
-          ### Como instalar no seu dispositivo Android:
-          1. Baixe o arquivo `spanish-learning-app-v1.0.0.apk` no seu celular.
-          2. Se solicitado, habilite a permissão para **Instalar apps de fontes desconhecidas** nas configurações do Android.
-          3. Abra o arquivo baixado e toque em **Instalar**.
-          EOF
-
-          git add -f spanish-learning-app.apk spanish-learning-app-v1.0.0.apk README.md
-          git commit -m "build: publish spanish-learning-app v1.0.0 APK [skip ci]"
-          git push origin release-apk --force

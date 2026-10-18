@@ -85,7 +85,7 @@ private val DarkColorScheme = darkColorScheme(
  * @param content        Conteúdo Compose a ser exibido dentro do tema.
  */
 @Composable
-fun EnglishLearningTheme(
+fun SpanishLearningTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     // false = sempre usa a paleta customizada (não depende do wallpaper do Android 12+)
     dynamicColor: Boolean = false,
