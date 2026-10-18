@@ -24,7 +24,7 @@ O APK compilado está disponível diretamente nesta branch (`main`) e nas Releas
 | **6 — C1 (Avançado)** | Liderança Técnica & Gestão, System Design & Escalabilidade, Escrita Técnica & RFCs | Expressões Idiomáticas |
 
 ### Resumo do Banco de Dados (`spanish_learning_db`)
-- **6 Níveis CEFR** (`A1` a `C1`, todos desbloqueados para estudo livre)
+- **6 Níveis CEFR** (`A1` desbloqueado inicialmente; `A2` a `C1` desbloqueados progressivamente conforme seu avanço nos exercícios, ou manualmente nas Configurações)
 - **28 Categorias Temáticas** (18 de TI + 10 do Cotidiano)
 - **229 Exercícios Interativos** (formulação de perguntas e respostas completas em espanhol latino, com 3 dicas progressivas em português)
 - **575 Cartões de Vocabulário FSRS-4.5** (repetição espaçada com exemplos contextualizados e pronúncia TTS `es-MX` / `es-419`)
@@ -40,3 +40,4 @@ O APK compilado está disponível diretamente nesta branch (`main`) e nas Releas
 ```
 
 O APK compilado é gerado em `app/build/outputs/apk/debug/spanish-learning-app.apk`.
+

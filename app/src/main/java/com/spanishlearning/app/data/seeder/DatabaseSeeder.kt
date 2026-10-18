@@ -63,6 +63,17 @@ class DatabaseSeeder @Inject constructor(
             return
         }
 
+        if (prefs.getBoolean("db_seeded_es_v2", false)) {
+            Log.i(TAG, "Updating level unlock defaults from v2 to v3...")
+            try {
+                seedLevels()
+                prefs.edit().putBoolean(KEY_DB_SEEDED, true).apply()
+            } catch (e: Exception) {
+                Log.e(TAG, "Level update failed — will retry on next launch.", e)
+            }
+            return
+        }
+
         Log.i(TAG, "Starting database seeding...")
         try {
             seedLevels()
@@ -370,7 +381,7 @@ class DatabaseSeeder @Inject constructor(
     companion object {
         private const val TAG = "DatabaseSeeder"
         private const val PREFS_NAME = "app_prefs"
-        private const val KEY_DB_SEEDED = "db_seeded_es_v2"
+        private const val KEY_DB_SEEDED = "db_seeded_es_v3"
         private const val LEVELS_ASSET_PATH = "content/levels.json"
         private const val CATEGORIES_ASSET_PATH = "content/categories.json"
         private const val EXERCISES_ASSET_DIR = "content/exercises"

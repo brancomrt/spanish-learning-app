@@ -14,7 +14,7 @@
     "description_key": "Suporte técnico, hardware, redes, alimentação, restaurantes e saúde",
     "min_score": 1000,
     "max_score": 2500,
-    "is_unlocked": true,
+    "is_unlocked": false,
     "sort_order": 2
   },
   {
@@ -23,7 +23,7 @@
     "description_key": "Desenvolvimento de software, bancos de dados, cloud, compras, finanças e lazer",
     "min_score": 2500,
     "max_score": 5000,
-    "is_unlocked": true,
+    "is_unlocked": false,
     "sort_order": 3
   },
   {
@@ -32,7 +32,7 @@
     "description_key": "DevOps, segurança da informação, arquitetura, moradia e relacionamentos",
     "min_score": 5000,
     "max_score": 10000,
-    "is_unlocked": true,
+    "is_unlocked": false,
     "sort_order": 4
   },
   {
@@ -41,7 +41,7 @@
     "description_key": "Agile & Scrum, SRE, microsserviços, mídia, cultura latina e meio ambiente",
     "min_score": 10000,
     "max_score": 20000,
-    "is_unlocked": true,
+    "is_unlocked": false,
     "sort_order": 5
   },
   {
@@ -50,7 +50,7 @@
     "description_key": "Liderança técnica, System Design, escrita técnica, sociedade e expressões idiomáticas",
     "min_score": 20000,
     "max_score": 35000,
-    "is_unlocked": true,
+    "is_unlocked": false,
     "sort_order": 6
   }
 ]
